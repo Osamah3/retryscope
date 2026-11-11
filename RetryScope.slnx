@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RetryScope.Model/RetryScope.Model.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RetryScope.Model.Tests/RetryScope.Model.Tests.csproj" />
+  </Folder>
+</Solution>

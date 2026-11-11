@@ -1,0 +1,8 @@
+<Project>
+  <!-- Central Package Management: every NuGet version is pinned here. -->
+  <ItemGroup>
+    <!-- Tests run on Microsoft.Testing.Platform (opted in via global.json), which xunit.v3 includes.
+         Microsoft.NET.Test.Sdk and xunit.runner.visualstudio are VSTest-only and are not used. -->
+    <PackageVersion Include="xunit.v3" Version="4.0.3" />
+  </ItemGroup>
+</Project>
