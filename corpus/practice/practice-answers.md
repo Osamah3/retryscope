@@ -1,6 +1,6 @@
 # Practice answers (open only after labelling)
 
-| Item | target | pattern_codes | attempts_get | attempts_post | retrying | retry_handlers | attempt_timeout_s | total_timeout_s | breaker | retry_count_source | Why |
+| Item | target | pattern_codes | attempt_bound_get | attempt_bound_post | retrying | retry_handlers | attempt_timeout_s | total_timeout_s | breaker | retry_count_source | Why |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | PI-1 | catalog | P1;P14 | 4 | 4 | Y | 1 | 10 | 30 | Y | default | Defaults add one standard handler: 3 retries → 4 attempts, for every method |
 | PI-2 | payments | P1;P2;P3;P6;P14 | 24 | 24 | Y | 2 | 5 | 30 | Y | explicit | Defaults (3+1) × per-client (5+1) = 24. Innermost attempt timeout is the per-client handler's 5 s if that handler is innermost; **note the ordering assumption** in notes |

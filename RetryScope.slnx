@@ -2,7 +2,20 @@
   <Folder Name="/src/">
     <Project Path="src/RetryScope.Model/RetryScope.Model.csproj" />
   </Folder>
+  <Folder Name="/fixtures/">
+    <Project Path="fixtures/Shared.ServiceDefaults/Shared.ServiceDefaults.csproj" />
+    <Project Path="fixtures/P01-aspire-defaults/Fixture.P01.csproj" />
+    <Project Path="fixtures/P02-per-client-standard/Fixture.P02.csproj" />
+    <Project Path="fixtures/P03-lambda-options/Fixture.P03.csproj" />
+    <Project Path="fixtures/P04-config-bound/Fixture.P04.csproj" />
+    <Project Path="fixtures/P05-custom-pipeline/Fixture.P05.csproj" />
+    <Project Path="fixtures/P06-stacked-defaults-and-client/Fixture.P06.csproj" />
+    <Project Path="fixtures/P07-remove-then-custom/Fixture.P07.csproj" />
+    <Project Path="fixtures/P08-unsafe-methods-disabled/Fixture.P08.csproj" />
+    <Project Path="fixtures/P12-polly-v7/Fixture.P12.csproj" />
+  </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/RetryScope.Model.Tests/RetryScope.Model.Tests.csproj" />
+    <Project Path="tests/RetryScope.Fixtures.OracleTests/RetryScope.Fixtures.OracleTests.csproj" />
   </Folder>
 </Solution>

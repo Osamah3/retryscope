@@ -1,8 +1,14 @@
 <Project>
-  <!-- Central Package Management: every NuGet version is pinned here. -->
+  <!-- Central Package Management: every NuGet version is pinned here (versions taken from upstream release tags). -->
   <ItemGroup>
-    <!-- Tests run on Microsoft.Testing.Platform (opted in via global.json), which xunit.v3 includes.
-         Microsoft.NET.Test.Sdk and xunit.runner.visualstudio are VSTest-only and are not used. -->
+    <!-- Tests run on Microsoft.Testing.Platform (opted in via global.json), which xunit.v3 includes. -->
     <PackageVersion Include="xunit.v3" Version="4.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Used by fixtures and the behaviour oracle: the libraries whose behaviour RetryScope models. -->
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.15" />
+    <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="10.11.0" />
+    <PackageVersion Include="Microsoft.Extensions.Http.Polly" Version="10.0.15" />
   </ItemGroup>
 </Project>

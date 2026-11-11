@@ -1,0 +1,25 @@
+{
+  "fixture": "P08-unsafe-methods-disabled",
+  "description": "P2 + P3 + P8: retries disabled for unsafe HTTP methods (POST gets one attempt).",
+  "service": "api",
+  "bindings": [
+    {
+      "client": "ordering",
+      "clientKind": "named",
+      "target": "ordering",
+      "patternCodes": [
+        "P2",
+        "P3",
+        "P8"
+      ],
+      "attemptBoundGet": 4,
+      "attemptBoundPost": 1,
+      "retryCountSource": "default",
+      "attemptTimeoutSeconds": 10,
+      "totalTimeoutSeconds": 30,
+      "breaker": true,
+      "retryHandlers": 1,
+      "conditional": false
+    }
+  ]
+}

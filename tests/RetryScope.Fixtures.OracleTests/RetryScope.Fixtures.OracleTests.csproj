@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.v3" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\fixtures\P01-aspire-defaults\Fixture.P01.csproj" />
+    <ProjectReference Include="..\..\fixtures\P02-per-client-standard\Fixture.P02.csproj" />
+    <ProjectReference Include="..\..\fixtures\P03-lambda-options\Fixture.P03.csproj" />
+    <ProjectReference Include="..\..\fixtures\P04-config-bound\Fixture.P04.csproj" />
+    <ProjectReference Include="..\..\fixtures\P05-custom-pipeline\Fixture.P05.csproj" />
+    <ProjectReference Include="..\..\fixtures\P06-stacked-defaults-and-client\Fixture.P06.csproj" />
+    <ProjectReference Include="..\..\fixtures\P07-remove-then-custom\Fixture.P07.csproj" />
+    <ProjectReference Include="..\..\fixtures\P08-unsafe-methods-disabled\Fixture.P08.csproj" />
+    <ProjectReference Include="..\..\fixtures\P12-polly-v7\Fixture.P12.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>

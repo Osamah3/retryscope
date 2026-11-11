@@ -1,4 +1,4 @@
-# RetryScope labelling guide — v1
+# RetryScope labelling guide — v1.1
 
 Status: draft for the pre-registration (`prereg-v1`). Any change after registration bumps the version and is logged
 in `docs/deviations.md`.
@@ -31,24 +31,28 @@ host name.
 | `client_kind` | `named` / `typed` / `default` / `direct` | `direct` = `new HttpClient()` |
 | `target` | resource name, host, or `?` | From `BaseAddress` or the URL used |
 | `pattern_codes` | `P1`–`P14`, `;`-separated | Every pattern that affects this client (§5) |
-| `attempts_get` | integer, or `?` | Maximum attempts for one GET call (§4) |
-| `attempts_post` | integer, or `?` | Maximum attempts for one POST call (§4) |
-| `retrying` | `Y` / `N` | `Y` if `attempts_get` or `attempts_post` > 1 |
+| `attempt_bound_get` | integer, or `?` | Maximum attempts for one GET call (§4) |
+| `attempt_bound_post` | integer, or `?` | Maximum attempts for one POST call (§4) |
+| `retrying` | `Y` / `N` | `Y` if `attempt_bound_get` or `attempt_bound_post` > 1 |
 | `retry_handlers` | integer | Number of handlers on this client that contain a retry (2+ = stacking) |
 | `attempt_timeout_s` | number / `none` / `?` | Innermost per-attempt timeout |
 | `total_timeout_s` | number / `none` / `?` | Outermost whole-call timeout |
 | `breaker` | `Y` / `N` / `?` | Any circuit breaker in any handler |
 | `retry_count_source` | `explicit` / `config` / `default` / `unresolved` / `opaque` | Where the retry count comes from (§4.4) |
 | `conditional` | `Y` / `N` | Registration depends on an `if` / environment check |
-| `confidence` | 1 (unsure) – 3 (certain) | Your confidence in `attempts_get` |
+| `confidence` | 1 (unsure) – 3 (certain) | Your confidence in `attempt_bound_get` |
 | `notes` | text | Anything a reviewer needs; required when confidence < 3 |
 
 ## 4. Computing attempts
 
 ### 4.1 The rule
 
-**Attempts per call = the product of (retries + 1) over every retry strategy on that client that applies to the
-method.** Order does not matter for the count. A client with no retry strategy has 1 attempt.
+**Attempt bound per call = the product of (retries + 1) over every retry strategy on that client that applies to the
+method.** Order does not matter for the count. A client with no retry strategy has a bound of 1.
+
+The attempt bound is an **upper bound read from code**. Timeouts can stop a real call earlier: for example, an outer
+handler's 30 s total timeout can cut short the inner handler's retries. Do not try to account for that here; the
+simulator handles timing. Label the count only.
 
 Examples: one standard handler → (3+1) = 4. Aspire defaults plus a second standard handler → 4 × 4 = 16.
 
@@ -81,7 +85,7 @@ gets a standard handler (pattern P1), **in addition to** any per-client handler 
   `default`.
 - `default`: not set anywhere; use §4.2.
 - `unresolved`: comes from an environment variable, secret store, or a computed expression you cannot evaluate.
-  **Still fill `attempts_*`**: use the code's own literal fallback if one is visible (e.g. `?? "2"`), otherwise the
+  **Still fill `attempt_bound_*`**: use the code's own literal fallback if one is visible (e.g. `?? "2"`), otherwise the
   library default from §4.2. Set confidence ≤ 2 and write the expression in `notes`.
 - `opaque`: count is known but a custom `ShouldHandle` decides which failures are retried. Count as if failures are
   retried.
@@ -105,7 +109,7 @@ disables the listed methods. Apply this per retry strategy before multiplying.
 | P8 | `DisableForUnsafeHttpMethods()` / `DisableFor(...)` | §4.5 |
 | P9 | Custom `ShouldHandle` | `retry_count_source = opaque` unless the count is also unresolved |
 | P10 | Keyed pipeline (`AddResiliencePipeline(key, …)`) executed around HttpClient calls | Count it only if you can see it wraps this client's calls |
-| P11 | `AddStandardHedgingHandler` | `attempts_* = ?`, note it |
+| P11 | `AddStandardHedgingHandler` | `attempt_bound_* = ?`, note it |
 | P12 | Polly v7 (`AddPolicyHandler`, `AddTransientHttpErrorPolicy`) | Count `WaitAndRetry(n, …)` as n retries if literal |
 | P13 | Hand-written retry loop around the call | Count the loop's bound if literal; note it |
 | P14 | Aspire AppHost `WithReference` | Use it to fill `target` |
@@ -114,7 +118,7 @@ disables the listed methods. Apply this per retry strategy before multiplying.
 
 1. **Conditional registration** (`if (env.IsProduction())`): label the Production behaviour and set `conditional = Y`.
 2. **Helper extension methods** (`services.AddMyClients()`): follow them into their definition.
-3. **Code you cannot follow** (reflection, dynamic registration): `attempts_* = ?`, confidence 1, explain.
+3. **Code you cannot follow** (reflection, dynamic registration): `attempt_bound_* = ?`, confidence 1, explain.
 4. **Two retry strategies inside one `AddResilienceHandler`**: they also multiply.
 5. **Never guess silently.** A `?` with a clear note is a correct label; a confident wrong number is not.
 
