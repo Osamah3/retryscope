@@ -16,19 +16,25 @@ internal sealed record ExpectedFixture(string Fixture, string Description, strin
 }
 
 /// <summary>Expected labels for one HttpClient binding.</summary>
+/// <param name="AttemptBoundGet">Expected attempt bound for GET; null when the labelling guide says "?" (e.g. hedging).</param>
+/// <param name="AttemptBoundPost">Expected attempt bound for POST; null when unknown.</param>
+/// <param name="Oracle">False when the behaviour cannot be observed through IHttpClientFactory (e.g. <c>new HttpClient()</c>).</param>
+/// <param name="StackOrder">For stacked handlers: registration origins, outermost first (e.g. <c>defaults</c>, <c>perClient</c>).</param>
 internal sealed record ExpectedBinding(
     string Client,
     string ClientKind,
     string? Target,
     IReadOnlyList<string> PatternCodes,
-    int AttemptBoundGet,
-    int AttemptBoundPost,
+    int? AttemptBoundGet,
+    int? AttemptBoundPost,
     string RetryCountSource,
     double? AttemptTimeoutSeconds,
     double? TotalTimeoutSeconds,
     bool Breaker,
     int RetryHandlers,
-    bool Conditional);
+    bool Conditional,
+    bool Oracle = true,
+    IReadOnlyList<string>? StackOrder = null);
 
 /// <summary>Finds fixture folders relative to the repository root (the folder holding RetryScope.slnx).</summary>
 internal static class FixturePaths

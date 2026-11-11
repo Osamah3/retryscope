@@ -1,0 +1,24 @@
+{
+  "fixture": "V02-typed-client",
+  "description": "Variant of P2: a typed client (its client name is the type name).",
+  "service": "api",
+  "bindings": [
+    {
+      "clientKind": "typed",
+      "retryHandlers": 1,
+      "attemptTimeoutSeconds": 10,
+      "totalTimeoutSeconds": 30,
+      "breaker": true,
+      "conditional": false,
+      "client": "CatalogClient",
+      "target": "catalog",
+      "patternCodes": [
+        "P2"
+      ],
+      "attemptBoundGet": 4,
+      "attemptBoundPost": 4,
+      "retryCountSource": "default",
+      "oracle": true
+    }
+  ]
+}

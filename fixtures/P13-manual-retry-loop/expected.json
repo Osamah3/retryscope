@@ -1,0 +1,25 @@
+{
+  "fixture": "P13-manual-retry-loop",
+  "description": "P13: a hand-written retry loop in a typed client (no Polly). A known blind spot for V1 extraction.",
+  "service": "api",
+  "bindings": [
+    {
+      "clientKind": "typed",
+      "retryHandlers": 0,
+      "attemptTimeoutSeconds": null,
+      "totalTimeoutSeconds": null,
+      "breaker": false,
+      "conditional": false,
+      "client": "ReportClient",
+      "target": "reports",
+      "patternCodes": [
+        "P13"
+      ],
+      "attemptBoundGet": 3,
+      "attemptBoundPost": 3,
+      "retryCountSource": "explicit",
+      "invoke": "ReportClient",
+      "oracle": true
+    }
+  ]
+}

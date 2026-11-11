@@ -33,7 +33,7 @@ The first restore creates `packages.lock.json` files. Commit them: CI restores i
 | `fixtures/` | One small project per configuration pattern, with expected labels (`expected.json`) |
 | `tests/RetryScope.Model.Tests` | Unit tests for the IR |
 | `tests/RetryScope.Fixtures.OracleTests` | Behavioural oracle: runs each fixture against an in-memory failing stub and counts real attempts |
-| `docs/` | Labelling guide, ADRs, deviations log |
+| `docs/` | Labelling guide, ADRs, empirical findings, deviations log |
 | `corpus/practice/` | Practice items for the labelling guide |
 
 Planned: `RetryScope.Extraction`, `RetryScope.Topology`, `RetryScope.Simulation`, `RetryScope.Cli`, `fixtures/`,

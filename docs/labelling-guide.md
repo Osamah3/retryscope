@@ -1,7 +1,9 @@
-# RetryScope labelling guide — v1.1
+# RetryScope labelling guide — v1.2
 
 Status: draft for the pre-registration (`prereg-v1`). Any change after registration bumps the version and is logged
 in `docs/deviations.md`.
+
+Changes in v1.2: added §4.6 (stacking order), settled by fixtures V06/V07; see `docs/findings.md` F1.
 
 ## 1. Purpose
 
@@ -94,6 +96,22 @@ gets a standard handler (pattern P1), **in addition to** any per-client handler 
 
 `Retry.DisableForUnsafeHttpMethods()` disables retries for POST, PUT, PATCH, DELETE and CONNECT. `DisableFor(...)`
 disables the listed methods. Apply this per retry strategy before multiplying.
+
+### 4.6 Stacking order (which handler is outer)
+
+Order never changes the attempt bound (§4.1), but it decides which timeouts are innermost.
+
+**Handlers added through `ConfigureHttpClientDefaults` (including Aspire's `AddServiceDefaults()`) are always outer;
+per-client handlers sit inside them. This holds regardless of whether `AddServiceDefaults()` is called before or
+after the per-client registration.** Among per-client handlers on the same client, the one added first is outer.
+
+So for `attempt_timeout_s`, take the per-client handler's attempt timeout when one exists, and for
+`total_timeout_s` take the outermost (defaults) handler's total timeout.
+
+Basis: behaviour tests V06 (defaults registered first) and V07 (per-client registered first), both of which observed
+the defaults handler outermost (`docs/findings.md`, F1). The rule is verified for
+Microsoft.Extensions.Http.Resilience 10.11.0 and Microsoft.Extensions.Http 10.0.15; the tests are rerun whenever
+those versions change.
 
 ## 5. Pattern codes
 

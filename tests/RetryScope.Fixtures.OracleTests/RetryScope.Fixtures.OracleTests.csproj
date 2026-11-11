@@ -21,7 +21,18 @@
     <ProjectReference Include="..\..\fixtures\P06-stacked-defaults-and-client\Fixture.P06.csproj" />
     <ProjectReference Include="..\..\fixtures\P07-remove-then-custom\Fixture.P07.csproj" />
     <ProjectReference Include="..\..\fixtures\P08-unsafe-methods-disabled\Fixture.P08.csproj" />
+    <ProjectReference Include="..\..\fixtures\P09-custom-predicate\Fixture.P09.csproj" />
+    <ProjectReference Include="..\..\fixtures\P10-keyed-pipeline\Fixture.P10.csproj" />
+    <ProjectReference Include="..\..\fixtures\P11-hedging\Fixture.P11.csproj" />
     <ProjectReference Include="..\..\fixtures\P12-polly-v7\Fixture.P12.csproj" />
+    <ProjectReference Include="..\..\fixtures\P13-manual-retry-loop\Fixture.P13.csproj" />
+    <ProjectReference Include="..\..\fixtures\V01-direct-httpclient\Fixture.V01.csproj" />
+    <ProjectReference Include="..\..\fixtures\V02-typed-client\Fixture.V02.csproj" />
+    <ProjectReference Include="..\..\fixtures\V03-helper-extension\Fixture.V03.csproj" />
+    <ProjectReference Include="..\..\fixtures\V04-conditional-environment\Fixture.V04.csproj" />
+    <ProjectReference Include="..\..\fixtures\V05-production-override\Fixture.V05.csproj" />
+    <ProjectReference Include="..\..\fixtures\V06-stack-order-defaults-first\Fixture.V06.csproj" />
+    <ProjectReference Include="..\..\fixtures\V07-stack-order-client-first\Fixture.V07.csproj" />
   </ItemGroup>
 
   <ItemGroup>
