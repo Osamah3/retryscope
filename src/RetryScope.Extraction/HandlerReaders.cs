@@ -18,7 +18,7 @@ internal sealed class HandlerReaders(ExtractionContext context)
     /// </summary>
     public Handler ReadCustomPipeline(IInvocationOperation addResilienceHandler, SourceLocation location)
     {
-        var name = Argument(addResilienceHandler, "pipelineName")?.ConstantValue is { HasValue: true, Value: string constant } ? constant : null;
+        var name = context.Resolve(Argument(addResilienceHandler, "pipelineName"))?.ConstantValue is { HasValue: true, Value: string constant } ? constant : null;
         var strategies = new List<Strategy>();
 
         if (Lambda(Argument(addResilienceHandler, "configure")) is not { Symbol.Parameters.Length: > 0 } lambda)
@@ -93,7 +93,7 @@ internal sealed class HandlerReaders(ExtractionContext context)
                 var countArgument = Argument(policy, "retryCount");
                 retries = countArgument is null
                     ? Values.Explicit(1, context.LocationOf(policy.Syntax)) // RetryAsync() with no count retries once.
-                    : ConstantEvaluator.TryInt(countArgument, out var count)
+                    : ConstantEvaluator.TryInt(context.Resolve(countArgument), out var count)
                         ? Values.Explicit(count, context.LocationOf(countArgument.Syntax))
                         : Values.Unresolved(1, Shorten(countArgument.Syntax), context.LocationOf(countArgument.Syntax));
             }
@@ -139,7 +139,7 @@ internal sealed class HandlerReaders(ExtractionContext context)
             if (Argument(call, "timeout") is { } timeout)
             {
                 var at = context.LocationOf(timeout.Syntax);
-                return new TimeoutStrategy(role, ConstantEvaluator.TryTimeSpan(timeout, out var value)
+                return new TimeoutStrategy(role, ConstantEvaluator.TryTimeSpan(context.Resolve(timeout), out var value)
                     ? Values.Explicit(value, at)
                     : Values.Unresolved(TimeSpan.FromSeconds(30), Shorten(timeout.Syntax), at));
             }

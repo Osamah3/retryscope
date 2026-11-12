@@ -30,6 +30,8 @@ public class FixtureExtractionTests
         "V05-production-override",
         "V06-stack-order-defaults-first",
         "V07-stack-order-client-first",
+        "V08-generic-helper",
+        "V09-local-base-address",
     ];
 
     public static TheoryData<string> Supported

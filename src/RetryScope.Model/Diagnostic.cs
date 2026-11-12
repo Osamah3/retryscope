@@ -49,4 +49,10 @@ public static class DiagnosticCodes
 
     /// <summary>Package defaults were verified for a different library version than the one the project references.</summary>
     public const string DefaultsVersionUnverified = "RS009";
+
+    /// <summary>A call on the registration path did not bind (usually compiler errors); anything it registers is missed.</summary>
+    public const string UnboundCall = "RS010";
+
+    /// <summary>A client outside V1 scope (e.g. gRPC) was registered; it is reported, not modelled.</summary>
+    public const string OutOfScopeClient = "RS011";
 }

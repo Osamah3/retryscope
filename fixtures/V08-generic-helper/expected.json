@@ -1,0 +1,35 @@
+{
+  "fixture": "V08-generic-helper",
+  "description": "Typed clients registered through generic helpers; type, address and retry count come from the caller (dev-set D4).",
+  "service": "api",
+  "bindings": [
+    {
+      "client": "CatalogClient",
+      "clientKind": "typed",
+      "target": "catalog",
+      "patternCodes": [],
+      "attemptBoundGet": 1,
+      "attemptBoundPost": 1,
+      "retryCountSource": "none",
+      "attemptTimeoutSeconds": null,
+      "totalTimeoutSeconds": null,
+      "breaker": false,
+      "retryHandlers": 0,
+      "conditional": false
+    },
+    {
+      "client": "OrdersClient",
+      "clientKind": "typed",
+      "target": "orders",
+      "patternCodes": ["P2", "P3"],
+      "attemptBoundGet": 2,
+      "attemptBoundPost": 2,
+      "retryCountSource": "explicit",
+      "attemptTimeoutSeconds": 10,
+      "totalTimeoutSeconds": 30,
+      "breaker": true,
+      "retryHandlers": 1,
+      "conditional": false
+    }
+  ]
+}

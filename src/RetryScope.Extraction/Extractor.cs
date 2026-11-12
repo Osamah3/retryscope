@@ -51,10 +51,15 @@ public static class Extractor
 
         var diagnostics = new List<RsDiagnostic>();
 
-        // Compiler errors mean some calls may not bind to a symbol; say so rather than silently under-report.
-        foreach (var error in compilation.GetDiagnostics(cancellationToken).Where(d => d.Severity == DiagnosticSeverity.Error).Take(20))
+        // Compiler errors (often generator output, e.g. Razor, missing from the workspace: dev-set finding D1) are a
+        // warning, not an error: code that binds is extracted normally, and every call on the registration path that
+        // does not bind is reported individually as RS010.
+        var errors = compilation.GetDiagnostics(cancellationToken).Where(d => d.Severity == DiagnosticSeverity.Error).ToList();
+        if (errors.Count > 0)
         {
-            diagnostics.Add(new RsDiagnostic(DiagnosticCodes.WorkspaceLoad, Severity.Error, $"Compiler error {error.Id}: {error.GetMessage()}"));
+            var first = string.Join("; ", errors.Take(3).Select(e => $"{e.Id} {e.GetMessage(System.Globalization.CultureInfo.InvariantCulture)}"));
+            diagnostics.Add(new RsDiagnostic(DiagnosticCodes.WorkspaceLoad, Severity.Warning,
+                $"{errors.Count} compiler error(s) in the workspace compilation (first: {first}). Calls that do not bind are reported as RS010."));
         }
 
         var resilienceVersion = ResiliencePackageVersion(compilation, diagnostics);
@@ -135,12 +140,12 @@ public static class Extractor
             return $"{ResilienceAssembly}@not-referenced";
         }
 
-        if (identity.Version != StandardHandlerDefaults.VerifiedVersion)
+        if (!StandardHandlerDefaults.VerifiedVersions.Contains(identity.Version))
         {
             diagnostics.Add(new RsDiagnostic(
                 DiagnosticCodes.DefaultsVersionUnverified,
                 Severity.Warning,
-                $"Defaults were verified for {ResilienceAssembly} {StandardHandlerDefaults.VerifiedVersion}; " +
+                $"Defaults were verified for {ResilienceAssembly} {string.Join(", ", StandardHandlerDefaults.VerifiedVersions.Order())}; " +
                 $"this project references {identity.Version}. Package-default values may differ."));
         }
 

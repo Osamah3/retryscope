@@ -21,7 +21,11 @@ outside this list produces a diagnostic, never a silent guess.
 | P12 | Polly v7 `AddTransientHttpErrorPolicy` / `AddPolicyHandler` with `RetryAsync`/`WaitAndRetryAsync` | Literal count only (RS002) |
 | V01 | `new HttpClient(...)` anywhere in the project | Direct client, no factory handlers (RS003) |
 | V02 | typed clients `AddHttpClient<T>()` | Named after the short type name |
-| V03 | helper methods with source in the solution | Followed up to depth 8 |
+| V03 | helper methods with source in the solution | Followed up to depth 8, once per call site |
+| V08 | generic helpers: `AddServiceClient<TClient>(string baseAddress)` | Caller's type arguments and constant arguments substituted (call frames) |
+| V09 | `var uri = new Uri("..."); ... BaseAddress = uri` | Locals with one initializer and no reassignment |
+| — | `AddHttpClient("")` | The default client (kind `default`) |
+| — | `AddGrpcClient<T>()` | Out of scope; reported (RS011) |
 | V04 | `if (env.IsProduction())`, `IsDevelopment`, `IsStaging`, `IsEnvironment("X")`, `EnvironmentName == "X"`, `!`, `&&`, `\|\|`, `?:` | Decided for the configured environment |
 | — | builder held in a local: `var b = services.AddHttpClient(...); b.AddStandardResilienceHandler();` | Initializer only |
 
@@ -45,7 +49,13 @@ outside this list produces a diagnostic, never a silent guess.
 6. **Configuration.** Only `appsettings.json` and `appsettings.{Environment}.json` are read, with the runtime's own
    configuration library. Environment variables, command-line arguments, user secrets and other providers are not
    visible statically; every config-bound value's note says so.
-7. **Unresolved values.** A modelled option set to something non-constant keeps its previous value as a fallback with
+7. **Helpers and locals.** When a helper is followed, its parameters resolve to the caller's arguments and its method
+   type parameters to the caller's type arguments, in the caller's frame; locals resolve to their initializer when they
+   are never reassigned or passed by `ref`/`out`. A helper called from two places is walked twice.
+8. **Compiler errors.** Generator output that the workspace does not run (e.g. Razor) causes compiler errors in code that
+   usually registers no clients. They are summarised as a warning; every call on the walked path that does not bind is
+   reported as RS010, so a missed registration is visible.
+9. **Unresolved values.** A modelled option set to something non-constant keeps its previous value as a fallback with
    provenance `unresolved`. Options the model does not represent are reported as `Info` and ignored.
 
 ## Known gaps (reported, not hidden)
@@ -58,6 +68,6 @@ outside this list produces a diagnostic, never a silent guess.
 Both need data-flow analysis inside the typed client's methods. Their frequency in the real-repository corpus is
 measured and reported as the recall of those strata; if either proves common, it is a candidate for V2.
 
-Other limitations: reassigned locals (only the initializer is tracked), conditions in `switch` statements and loops
+Other limitations: reassigned locals (not resolved), `TimeSpan.FromX(parameter)` in a helper (not resolved), conditions in `switch` statements and loops
 (not treated as conditional), `ConfigureHttpClientDefaults` with a method group, options configured via
 `services.Configure<HttpStandardResilienceOptions>(...)` named options, and hedging options.

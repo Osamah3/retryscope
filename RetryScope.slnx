@@ -2,6 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/RetryScope.Model/RetryScope.Model.csproj" />
     <Project Path="src/RetryScope.Extraction/RetryScope.Extraction.csproj" />
+    <Project Path="src/RetryScope.Cli/RetryScope.Cli.csproj" />
   </Folder>
   <Folder Name="/fixtures/">
     <Project Path="fixtures/Shared.ServiceDefaults/Shared.ServiceDefaults.csproj" />
@@ -25,10 +26,13 @@
     <Project Path="fixtures/V05-production-override/Fixture.V05.csproj" />
     <Project Path="fixtures/V06-stack-order-defaults-first/Fixture.V06.csproj" />
     <Project Path="fixtures/V07-stack-order-client-first/Fixture.V07.csproj" />
+    <Project Path="fixtures/V08-generic-helper/Fixture.V08.csproj" />
+    <Project Path="fixtures/V09-local-base-address/Fixture.V09.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/RetryScope.Model.Tests/RetryScope.Model.Tests.csproj" />
     <Project Path="tests/RetryScope.Fixtures.OracleTests/RetryScope.Fixtures.OracleTests.csproj" />
     <Project Path="tests/RetryScope.Extraction.Tests/RetryScope.Extraction.Tests.csproj" />
+    <Project Path="tests/RetryScope.Cli.Tests/RetryScope.Cli.Tests.csproj" />
   </Folder>
 </Solution>

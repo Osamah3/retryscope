@@ -37,5 +37,7 @@ evaluation evidence.**
 | V05-production-override | P2, P4 | 6 / 6 |  |
 | V06-stack-order-defaults-first | P1, P2, P3, P6 | 16 / 16 | stack-order probe |
 | V07-stack-order-client-first | P1, P2, P3, P6 | 16 / 16 | stack-order probe |
+| V08-generic-helper | P2, P3 | 1 / 1 and 2 / 2 | generic helpers, arguments from caller (dev-set D4) |
+| V09-local-base-address | P2 | 4 / 4 | base address in a local (dev-set D5) |
 
 P14 (Aspire AppHost topology) comes with the topology importer: it needs a multi-project system and the Aspire SDK.

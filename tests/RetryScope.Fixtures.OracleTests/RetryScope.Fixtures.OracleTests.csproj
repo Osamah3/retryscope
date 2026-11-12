@@ -33,6 +33,8 @@
     <ProjectReference Include="..\..\fixtures\V05-production-override\Fixture.V05.csproj" />
     <ProjectReference Include="..\..\fixtures\V06-stack-order-defaults-first\Fixture.V06.csproj" />
     <ProjectReference Include="..\..\fixtures\V07-stack-order-client-first\Fixture.V07.csproj" />
+    <ProjectReference Include="..\..\fixtures\V08-generic-helper\Fixture.V08.csproj" />
+    <ProjectReference Include="..\..\fixtures\V09-local-base-address\Fixture.V09.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -8,6 +8,7 @@ it was read from. Re-verify whenever a pinned package version changes.
 | Library | Pinned / resolved version | Source read | Notes |
 | --- | --- | --- | --- |
 | Microsoft.Extensions.Http.Resilience | 10.11.0 (assembly version 10.11.0.0) | dotnet/extensions tag `v10.11.0` (25f07af) | |
+| Microsoft.Extensions.Http.Resilience | 10.10.0 (assembly version 10.10.0.0) | dotnet/extensions tag `v10.10.0` (294665a) | Library folder identical to v10.11.0 (zero diff, 12 Nov 2026; dev-set D2) |
 | Polly.Core, Polly.RateLimiting | 8.4.2, resolved in `packages.lock.json` (12 Nov 2026; Polly.Core contentHash `BpE2I6HB…`) | App-vNext/Polly tag `8.4.2` | Exactly the version read; constants also identical on Polly main (98eaf12) |
 | Microsoft.Extensions.Http | 10.0.x | dotnet/runtime tag `v10.0.0` | API shapes only (`AddHttpClient`, `ConfigureHttpClientDefaults`, typed-client naming) |
 

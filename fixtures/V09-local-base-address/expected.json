@@ -1,0 +1,21 @@
+{
+  "fixture": "V09-local-base-address",
+  "description": "Base address held in a local variable with a single initializer (dev-set D5).",
+  "service": "api",
+  "bindings": [
+    {
+      "client": "WeatherClient",
+      "clientKind": "typed",
+      "target": "weather",
+      "patternCodes": ["P2"],
+      "attemptBoundGet": 4,
+      "attemptBoundPost": 4,
+      "retryCountSource": "default",
+      "attemptTimeoutSeconds": 10,
+      "totalTimeoutSeconds": 30,
+      "breaker": true,
+      "retryHandlers": 1,
+      "conditional": false
+    }
+  ]
+}

@@ -36,6 +36,8 @@ public static class FixtureCatalog
         ["V05-production-override"] = new(V05.Registration.Register),
         ["V06-stack-order-defaults-first"] = new(V06.Registration.Register),
         ["V07-stack-order-client-first"] = new(V07.Registration.Register),
+        ["V08-generic-helper"] = new(V08.Registration.Register),
+        ["V09-local-base-address"] = new(V09.Registration.Register),
     };
 
     public static TheoryData<string> Ids => new(Entries.Keys.Order(StringComparer.Ordinal));

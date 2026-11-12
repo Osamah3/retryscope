@@ -46,32 +46,52 @@ internal sealed class ClientRecord(string name, ClientKind kind, SourceLocation 
 
 /// <summary>
 /// Walks the code reachable from a root method and records HttpClient registrations and resilience handlers.
-/// Calls into methods that have source in the solution (helpers, Aspire ServiceDefaults) are followed; library
-/// calls are matched by resolved symbol (<see cref="KnownApis"/>). Call <see cref="Complete"/> after the last root.
+/// Calls into methods that have source in the solution (helpers, Aspire ServiceDefaults) are followed with a
+/// <see cref="CallFrame"/>, so a helper's parameters resolve to the caller's arguments; library calls are matched by
+/// resolved symbol (<see cref="KnownApis"/>). Call <see cref="Complete"/> after the last root.
 /// </summary>
 /// <remarks>
 /// Branches guarded by host-environment checks are decided for the configured environment; registrations under any
-/// other condition are kept (both branches) and marked conditional, with a warning. Anything not understood produces a
-/// diagnostic rather than a silent guess.
+/// other condition are kept (both branches) and marked conditional, with a warning when something is registered there.
+/// Anything not understood produces a diagnostic rather than a silent guess.
 /// </remarks>
-internal sealed class RegistrationWalker(Solution solution, ExtractionContext context, AppSettingsReader? appSettings)
+internal sealed class RegistrationWalker
 {
     private const int MaxDepth = 8;
 
-    private readonly HandlerReaders _readers = new(context);
-    private readonly HashSet<(string File, int Start)> _visited = [];
+    private readonly Solution _solution;
+    private readonly ExtractionContext _context;
+    private readonly AppSettingsReader? _appSettings;
+    private readonly HandlerReaders _readers;
+
+    // Methods on the current call path (recursion guard). A helper called from two places is walked twice, once per
+    // call frame, because it can register different clients each time.
+    private readonly HashSet<string> _callPath = new(StringComparer.Ordinal);
 
     // Lambda parameters that stand for "every client" (the IHttpClientBuilder inside ConfigureHttpClientDefaults).
     private readonly HashSet<ISymbol> _defaultsBuilders = new(SymbolEqualityComparer.Default);
 
     // Handlers are collected first and built in Complete(), so that chained Configure(...) calls, which the pre-order
     // walk sees before the AddStandardResilienceHandler call they wrap, are applied in runtime order. Sequence numbers
-    // order handlers and removals as they run.
-    private readonly Dictionary<SyntaxNode, PendingHandler> _pending = new();
-    private readonly HashSet<SyntaxNode> _appliedConfigureCalls = [];
-    private readonly HashSet<SyntaxNode> _recordedRemovals = [];
+    // order handlers and removals as they run. Keys include the frame: the same syntax in a helper is a different
+    // registration for each call.
+    private readonly Dictionary<(SyntaxNode Node, CallFrame Frame), PendingHandler> _pending = new();
+    private readonly HashSet<(SyntaxNode, CallFrame)> _appliedConfigureCalls = [];
+    private readonly HashSet<(SyntaxNode, CallFrame)> _recordedRemovals = [];
+    private readonly HashSet<(SyntaxNode, CallFrame)> _reportedOutOfScope = [];
     private readonly HashSet<SyntaxNode> _warnedConditions = [];
+    private readonly HashSet<SyntaxNode> _reportedUnbound = [];
     private int _sequence;
+    private CallFrame _frame = CallFrame.Root;
+
+    public RegistrationWalker(Solution solution, ExtractionContext context, AppSettingsReader? appSettings)
+    {
+        _solution = solution;
+        _context = context;
+        _appSettings = appSettings;
+        _readers = new HandlerReaders(context);
+        _context.Resolve = operation => _frame.Resolve(operation).Operation;
+    }
 
     public Dictionary<string, ClientRecord> Clients { get; } = new(StringComparer.Ordinal);
 
@@ -82,7 +102,7 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
     public bool DefaultsConditional { get; private set; }
 
     public Task WalkAsync(IMethodSymbol root, CancellationToken cancellationToken) =>
-        WalkMethodAsync(root, depth: 0, conditional: false, cancellationToken);
+        WalkMethodAsync(root, depth: 0, Guard.None, CallFrame.Root, cancellationToken);
 
     /// <summary>Builds the collected handlers and attaches them to their clients (or to the defaults).</summary>
     public void Complete()
@@ -90,22 +110,24 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
         foreach (var pending in _pending.Values.OrderBy(p => p.Sequence))
         {
             var origin = pending.Target is DefaultsTarget ? HandlerOrigin.Defaults : HandlerOrigin.PerClient;
-            var handler = (pending.Built ?? pending.Standard!.Build(origin, pending.Location)) with { Origin = origin };
 
             switch (pending.Target)
             {
                 case DefaultsTarget:
-                    DefaultHandlers.Add(handler);
+                    DefaultHandlers.Add(Build(pending, origin));
                     DefaultsConditional |= pending.Conditional;
                     break;
                 case ClientTarget(var client):
-                    client.Registered.Add((pending.Sequence, handler));
+                    client.Registered.Add((pending.Sequence, Build(pending, origin)));
                     client.Conditional |= pending.Conditional;
                     break;
             }
         }
 
         _pending.Clear();
+
+        static Handler Build(PendingHandler pending, HandlerOrigin origin) =>
+            (pending.Built ?? pending.Standard!.Build(origin, pending.Location)) with { Origin = origin };
     }
 
     /// <summary>
@@ -114,6 +136,7 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
     /// </summary>
     public async Task ScanDirectClientsAsync(Project project, CancellationToken cancellationToken)
     {
+        _frame = CallFrame.Root;
         foreach (var document in project.Documents)
         {
             if (await document.GetSyntaxRootAsync(cancellationToken).ConfigureAwait(false) is not { } root
@@ -133,9 +156,9 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
                 var name = EnclosingMemberName(model, creation.SpanStart);
                 if (!Clients.TryGetValue($"direct:{name}", out var client))
                 {
-                    client = new ClientRecord(name, ClientKind.Direct, context.LocationOf(creation));
+                    client = new ClientRecord(name, ClientKind.Direct, _context.LocationOf(creation));
                     Clients.Add($"direct:{name}", client);
-                    context.Info(DiagnosticCodes.DirectHttpClient,
+                    _context.Info(DiagnosticCodes.DirectHttpClient,
                         $"'new HttpClient()' in {name} bypasses IHttpClientFactory; no factory resilience handlers apply.", creation);
                 }
 
@@ -143,57 +166,75 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
                 {
                     if (initializer is ISimpleAssignmentOperation { Target: IPropertyReferenceOperation { Property.Name: "BaseAddress" } } assignment)
                     {
-                        ReadUri(assignment, client);
+                        ReadUri(assignment, client, CallFrame.Root);
                     }
                 }
             }
         }
     }
 
-    private async Task WalkMethodAsync(IMethodSymbol method, int depth, bool conditional, CancellationToken cancellationToken)
+    private async Task WalkMethodAsync(IMethodSymbol method, int depth, Guard guard, CallFrame frame, CancellationToken cancellationToken)
     {
-        foreach (var reference in method.DeclaringSyntaxReferences)
+        var key = CallFrame.KeyOf(method);
+        if (!_callPath.Add(key))
         {
-            if (!_visited.Add((reference.SyntaxTree.FilePath, reference.Span.Start)))
-            {
-                continue;
-            }
+            return; // recursion
+        }
 
-            var document = solution.GetDocument(reference.SyntaxTree);
-            if (document is null || await document.GetSemanticModelAsync(cancellationToken).ConfigureAwait(false) is not { } model)
+        var previous = _frame;
+        try
+        {
+            foreach (var reference in method.DeclaringSyntaxReferences)
             {
-                context.Warn(DiagnosticCodes.WorkspaceLoad, $"Source of '{method.ToDisplayString()}' is not part of the loaded solution; not followed.");
-                continue;
-            }
+                var document = _solution.GetDocument(reference.SyntaxTree);
+                if (document is null || await document.GetSemanticModelAsync(cancellationToken).ConfigureAwait(false) is not { } model)
+                {
+                    _context.Warn(DiagnosticCodes.WorkspaceLoad, $"Source of '{method.ToDisplayString()}' is not part of the loaded solution; not followed.");
+                    continue;
+                }
 
-            var body = await reference.GetSyntaxAsync(cancellationToken).ConfigureAwait(false);
+                var body = await reference.GetSyntaxAsync(cancellationToken).ConfigureAwait(false);
 
-            // Pre-order: an outer call (e.g. ConfigureHttpClientDefaults) is seen before the calls inside its lambda.
-            foreach (var invocation in body.DescendantNodes().OfType<InvocationExpressionSyntax>())
-            {
-                await VisitInvocationAsync(invocation, model, body, depth, conditional, cancellationToken).ConfigureAwait(false);
+                // Pre-order: an outer call (e.g. ConfigureHttpClientDefaults) is seen before the calls inside its lambda.
+                foreach (var invocation in body.DescendantNodes().OfType<InvocationExpressionSyntax>())
+                {
+                    _frame = frame;
+                    await VisitInvocationAsync(invocation, model, body, depth, guard, cancellationToken).ConfigureAwait(false);
+                }
             }
+        }
+        finally
+        {
+            _frame = previous;
+            _callPath.Remove(key);
         }
     }
 
     private async Task VisitInvocationAsync(
-        InvocationExpressionSyntax syntax, SemanticModel model, SyntaxNode body, int depth, bool inheritedConditional, CancellationToken cancellationToken)
+        InvocationExpressionSyntax syntax, SemanticModel model, SyntaxNode body, int depth, Guard inherited, CancellationToken cancellationToken)
     {
-        if (model.GetOperation(syntax, cancellationToken) is not IInvocationOperation invocation)
+        var operation = model.GetOperation(syntax, cancellationToken);
+        if (operation is not IInvocationOperation invocation)
         {
+            // Dev-set finding D1: report calls on the walked path that do not bind; whatever they register is missed.
+            if (operation is IInvalidOperation && _reportedUnbound.Add(syntax))
+            {
+                _context.Warn(DiagnosticCodes.UnboundCall, $"Call '{Shorten(syntax)}' does not bind; anything it registers is not extracted.", syntax);
+            }
+
             return;
         }
 
-        var (skip, branchConditional) = BranchState(syntax, model, body);
-        var conditional = inheritedConditional || branchConditional;
+        var (skip, guard) = BranchState(syntax, model, body, inherited);
         var method = invocation.TargetMethod;
+        var frame = _frame;
 
         if (skip)
         {
             // The branch does not run in this environment, but the client's behaviour still depends on it.
             if (IsHandlerRegistration(method))
             {
-                switch (ResolveBuilder(Argument(invocation, ordinal: 0), register: false))
+                switch (ResolveBuilder(Argument(invocation, ordinal: 0), frame, register: false))
                 {
                     case ClientTarget(var client):
                         client.Conditional = true;
@@ -213,48 +254,52 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
         }
         else if (KnownApis.AddHttpClient.Matches(method))
         {
-            if (GetOrAddClient(invocation, register: true) is { } client)
+            if (GetOrAddClient(invocation, frame, register: true) is { } client)
             {
-                client.Conditional |= conditional;
+                client.Conditional |= Note(guard);
             }
         }
         else if (KnownApis.AddStandardResilienceHandler.Matches(method))
         {
-            _ = GetOrCreateStandard(invocation, conditional);
+            _ = GetOrCreateStandard(invocation, frame, guard);
         }
         else if (KnownApis.ConfigureStandardHandler.Matches(method))
         {
-            ApplyConfigureChain(invocation, conditional);
+            ApplyConfigureChain(invocation, frame, guard);
         }
         else if (KnownApis.AddResilienceHandler.Matches(method))
         {
-            CreateHandler(invocation, conditional, _readers.ReadCustomPipeline);
+            CreateHandler(invocation, frame, guard, _readers.ReadCustomPipeline);
         }
         else if (KnownApis.AddStandardHedgingHandler.Matches(method))
         {
-            CreateHandler(invocation, conditional, _readers.ReadStandardHedging);
+            CreateHandler(invocation, frame, guard, _readers.ReadStandardHedging);
         }
         else if (KnownApis.AddPollyV7Policy.Matches(method))
         {
-            CreateHandler(invocation, conditional, _readers.ReadPollyV7);
+            CreateHandler(invocation, frame, guard, _readers.ReadPollyV7);
         }
         else if (KnownApis.RemoveAllResilienceHandlers.Matches(method))
         {
-            RecordRemoval(invocation, conditional);
+            RecordRemoval(invocation, frame, guard);
+        }
+        else if (KnownApis.AddGrpcClient.Matches(method))
+        {
+            ReportOutOfScope(invocation, frame);
         }
         else if (KnownApis.AddResiliencePipeline.Matches(method))
         {
-            context.Warn(DiagnosticCodes.UnlinkedPipeline,
+            _context.Warn(DiagnosticCodes.UnlinkedPipeline,
                 "Keyed resilience pipeline registered in DI; code that executes it around HttpClient calls is not linked to a client in V1.",
                 invocation.Syntax);
         }
         else if (depth < MaxDepth)
         {
-            // Our own code (a helper extension, Aspire ServiceDefaults): follow it.
+            // Our own code (a helper extension, Aspire ServiceDefaults): follow it with the caller's arguments.
             var declared = (method.ReducedFrom ?? method).OriginalDefinition;
             if (declared.DeclaringSyntaxReferences.Length > 0)
             {
-                await WalkMethodAsync(declared, depth + 1, conditional, cancellationToken).ConfigureAwait(false);
+                await WalkMethodAsync(declared, depth + 1, guard, frame.Enter(declared, invocation), cancellationToken).ConfigureAwait(false);
             }
         }
     }
@@ -268,12 +313,11 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
         || KnownApis.RemoveAllResilienceHandlers.Matches(method);
 
     /// <summary>
-    /// Whether the call sits in an <c>if</c> branch or <c>?:</c> arm (within the walked method). Returns skip = true when
-    /// a host-environment condition rules the branch out; an undecidable condition keeps the call, with a warning.
+    /// Adds the <c>if</c> branches and <c>?:</c> arms enclosing the call (within the walked method) to the inherited
+    /// guard. Returns skip = true when a host-environment condition rules the branch out.
     /// </summary>
-    private (bool Skip, bool Conditional) BranchState(SyntaxNode syntax, SemanticModel model, SyntaxNode root)
+    private (bool Skip, Guard Guard) BranchState(SyntaxNode syntax, SemanticModel model, SyntaxNode root, Guard guard)
     {
-        var conditional = false;
         SyntaxNode child = syntax;
 
         for (var node = syntax.Parent; node is not null && child != root; child = node, node = node.Parent)
@@ -292,20 +336,36 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
                 continue;
             }
 
-            conditional = true;
-            switch (ConditionEvaluator.Evaluate(model.GetOperation(condition), context.Environment))
+            switch (ConditionEvaluator.Evaluate(model.GetOperation(condition), _context.Environment))
             {
-                case null when _warnedConditions.Add(condition):
-                    context.Warn(DiagnosticCodes.UnresolvedValue,
-                        $"Condition '{Shorten(condition)}' cannot be decided statically; registrations in both branches are kept and marked conditional.",
-                        condition);
+                case null:
+                    guard = guard with { Conditional = true, Undecided = guard.Undecided.Add(condition) };
                     break;
                 case { } taken when taken != inTrueBranch:
-                    return (true, true);
+                    return (true, guard with { Conditional = true });
+                default:
+                    guard = guard with { Conditional = true };
+                    break;
             }
         }
 
-        return (false, conditional);
+        return (false, guard);
+    }
+
+    /// <summary>
+    /// Called when something is registered under <paramref name="guard"/>: warns once per undecidable condition
+    /// (dev-set finding D3: conditions that guard no registration stay silent) and returns whether it is conditional.
+    /// </summary>
+    private bool Note(Guard guard)
+    {
+        foreach (var condition in guard.Undecided.Where(_warnedConditions.Add))
+        {
+            _context.Warn(DiagnosticCodes.UnresolvedValue,
+                $"Condition '{Shorten(condition)}' cannot be decided statically; registrations in both branches are kept and marked conditional.",
+                condition);
+        }
+
+        return guard.Conditional;
     }
 
     private void RegisterDefaultsLambda(IInvocationOperation invocation)
@@ -316,13 +376,13 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
             return;
         }
 
-        context.Warn(DiagnosticCodes.UnresolvedValue,
+        _context.Warn(DiagnosticCodes.UnresolvedValue,
             "ConfigureHttpClientDefaults is called with something other than a lambda; its handlers are not followed yet.",
             invocation.Syntax);
     }
 
     /// <summary>The client an <c>AddHttpClient</c> call configures; created only when <paramref name="register"/>.</summary>
-    private ClientRecord? GetOrAddClient(IInvocationOperation invocation, bool register)
+    private ClientRecord? GetOrAddClient(IInvocationOperation invocation, CallFrame frame, bool register)
     {
         var method = invocation.TargetMethod;
         string name;
@@ -330,24 +390,33 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
 
         if (method.TypeArguments.Length > 0)
         {
-            // Typed client: the factory names it after the short type name (TypeNameHelper, fullName: false).
-            name = method.TypeArguments[0].Name;
+            // Typed client: the factory names it after the short type name (TypeNameHelper, fullName: false). In a
+            // generic helper the type argument comes from the caller (dev-set finding D4).
+            var type = frame.Substitute(method.TypeArguments[0]);
+            name = type.Name;
             kind = ClientKind.Typed;
+            if (type is ITypeParameterSymbol && register)
+            {
+                _context.Warn(DiagnosticCodes.UnresolvedValue, $"Typed client type '{type.Name}' is a type parameter whose argument is unknown here.", invocation.Syntax);
+            }
         }
         else if (Argument(invocation, "name") is { } nameArgument)
         {
-            kind = ClientKind.Named;
-            if (nameArgument.ConstantValue is { HasValue: true, Value: string constant })
+            if (frame.Resolve(nameArgument).Operation?.ConstantValue is { HasValue: true, Value: string constant })
             {
                 name = constant;
+
+                // Dev-set finding D6: the empty name is the default client (Options.DefaultName).
+                kind = constant.Length == 0 ? ClientKind.Default : ClientKind.Named;
             }
             else
             {
-                var location = context.LocationOf(nameArgument.Syntax);
+                var location = _context.LocationOf(nameArgument.Syntax);
                 name = $"<unresolved:{location.File}:{location.Line}>";
+                kind = ClientKind.Named;
                 if (register)
                 {
-                    context.Warn(DiagnosticCodes.UnresolvedValue, $"Client name '{Shorten(nameArgument.Syntax)}' is not a compile-time constant.", nameArgument.Syntax);
+                    _context.Warn(DiagnosticCodes.UnresolvedValue, $"Client name '{Shorten(nameArgument.Syntax)}' is not a compile-time constant.", nameArgument.Syntax);
                 }
             }
         }
@@ -364,7 +433,7 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
                 return null;
             }
 
-            client = new ClientRecord(name, kind, context.LocationOf(MethodNameSyntax(invocation.Syntax)));
+            client = new ClientRecord(name, kind, _context.LocationOf(MethodNameSyntax(invocation.Syntax)));
             Clients.Add(name, client);
         }
 
@@ -374,7 +443,7 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
             {
                 if (assignment.Target is IPropertyReferenceOperation { Property.Name: "BaseAddress" })
                 {
-                    ReadUri(assignment, client);
+                    ReadUri(assignment, client, frame);
                 }
             }
         }
@@ -382,13 +451,19 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
         return client;
     }
 
-    /// <summary>Reads <c>BaseAddress = new Uri("...")</c>; anything non-constant is recorded as unresolved.</summary>
-    private void ReadUri(ISimpleAssignmentOperation assignment, ClientRecord client)
+    /// <summary>
+    /// Reads <c>BaseAddress = new Uri("...")</c>, following locals and helper parameters (dev-set findings D4, D5);
+    /// anything non-constant is recorded as unresolved.
+    /// </summary>
+    private void ReadUri(ISimpleAssignmentOperation assignment, ClientRecord client, CallFrame frame)
     {
-        var location = context.LocationOf(assignment.Syntax);
-        if (Unwrap(assignment.Value) is IObjectCreationOperation create
+        var location = _context.LocationOf(assignment.Syntax);
+        (var value, frame) = frame.Resolve(assignment.Value);
+
+        if (value is IObjectCreationOperation create
             && create.Type?.ToDisplayString() == "System.Uri"
-            && create.Arguments.FirstOrDefault()?.Value.ConstantValue is { HasValue: true, Value: string text }
+            && create.Arguments.Length > 0
+            && frame.Resolve(create.Arguments[0].Value).Operation?.ConstantValue is { HasValue: true, Value: string text }
             && Uri.TryCreate(text, UriKind.Absolute, out var uri))
         {
             client.BaseAddress = Values.Explicit(text, location);
@@ -402,16 +477,16 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
     }
 
     /// <summary>The pending standard handler for an <c>AddStandardResilienceHandler</c> call, created on first sight.</summary>
-    private PendingHandler GetOrCreateStandard(IInvocationOperation add, bool conditional)
+    private PendingHandler GetOrCreateStandard(IInvocationOperation add, CallFrame frame, Guard guard)
     {
-        if (_pending.TryGetValue(add.Syntax, out var existing))
+        if (_pending.TryGetValue((add.Syntax, frame), out var existing))
         {
-            existing.Conditional |= conditional;
+            existing.Conditional |= Note(guard);
             return existing;
         }
 
-        var pending = NewPending(add, conditional);
-        pending.Standard = new StandardHandlerSettings(context.ResilienceVersion);
+        var pending = NewPending(add, frame, guard);
+        pending.Standard = new StandardHandlerSettings(_context.ResilienceVersion);
 
         // AddStandardResilienceHandler(section) / AddStandardResilienceHandler(o => ...).
         ApplyOptions(add, pending.Standard);
@@ -419,48 +494,61 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
     }
 
     /// <summary>Records a non-standard handler (custom pipeline, hedging, Polly v7) built by <paramref name="read"/>.</summary>
-    private void CreateHandler(IInvocationOperation call, bool conditional, Func<IInvocationOperation, SourceLocation, Handler> read)
+    private void CreateHandler(IInvocationOperation call, CallFrame frame, Guard guard, Func<IInvocationOperation, SourceLocation, Handler> read)
     {
-        if (_pending.ContainsKey(call.Syntax))
+        if (_pending.ContainsKey((call.Syntax, frame)))
         {
             return;
         }
 
-        var pending = NewPending(call, conditional);
+        var pending = NewPending(call, frame, guard);
         pending.Built = read(call, pending.Location);
     }
 
     /// <summary>Resolves the client first (which may record a chained removal), then takes the next sequence number.</summary>
-    private PendingHandler NewPending(IInvocationOperation call, bool conditional)
+    private PendingHandler NewPending(IInvocationOperation call, CallFrame frame, Guard guard)
     {
-        var location = context.LocationOf(MethodNameSyntax(call.Syntax));
-        var target = ResolveBuilder(Argument(call, ordinal: 0), register: true);
+        var location = _context.LocationOf(MethodNameSyntax(call.Syntax));
+        var target = ResolveBuilder(Argument(call, ordinal: 0), frame, register: true);
         if (target is null)
         {
-            context.Warn(DiagnosticCodes.UnresolvedValue, "Could not determine which HttpClient this resilience handler belongs to.", call.Syntax);
+            _context.Warn(DiagnosticCodes.UnresolvedValue, "Could not determine which HttpClient this resilience handler belongs to.", call.Syntax);
         }
 
-        var pending = new PendingHandler(++_sequence, target, location) { Conditional = conditional };
-        _pending.Add(call.Syntax, pending);
+        var pending = new PendingHandler(++_sequence, target, location) { Conditional = Note(guard) };
+        _pending.Add((call.Syntax, frame), pending);
         return pending;
     }
 
-    private void RecordRemoval(IInvocationOperation removal, bool conditional)
+    private void RecordRemoval(IInvocationOperation removal, CallFrame frame, Guard guard)
     {
-        if (!_recordedRemovals.Add(removal.Syntax))
+        if (!_recordedRemovals.Add((removal.Syntax, frame)))
         {
             return;
         }
 
-        switch (ResolveBuilder(Argument(removal, ordinal: 0), register: true))
+        switch (ResolveBuilder(Argument(removal, ordinal: 0), frame, register: true))
         {
             case ClientTarget(var client):
                 client.RemovedAt = ++_sequence;
-                client.Conditional |= conditional;
+                client.Conditional |= Note(guard);
+                break;
+            case OutOfScopeTarget:
                 break;
             default:
-                context.Warn(DiagnosticCodes.UnresolvedValue, "RemoveAllResilienceHandlers on a builder that is not traced to one client; ignored.", removal.Syntax);
+                _context.Warn(DiagnosticCodes.UnresolvedValue, "RemoveAllResilienceHandlers on a builder that is not traced to one client; ignored.", removal.Syntax);
                 break;
+        }
+    }
+
+    /// <summary>Dev-set finding D7: clients outside V1 scope (gRPC) are reported, not silently dropped.</summary>
+    private void ReportOutOfScope(IInvocationOperation call, CallFrame frame)
+    {
+        if (_reportedOutOfScope.Add((call.Syntax, frame)))
+        {
+            var type = call.TargetMethod.TypeArguments.Length > 0 ? frame.Substitute(call.TargetMethod.TypeArguments[0]).ToDisplayString() : "?";
+            _context.Info(DiagnosticCodes.OutOfScopeClient,
+                $"gRPC client '{type}' is out of V1 scope (ADR 0002); ConfigureHttpClientDefaults handlers also apply to it.", call.Syntax);
         }
     }
 
@@ -468,7 +556,7 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
     /// Applies <c>.Configure(...)</c> calls chained on a standard handler, innermost first, which is the order they run in.
     /// Visiting the outermost call applies the whole chain; inner calls visited later are skipped.
     /// </summary>
-    private void ApplyConfigureChain(IInvocationOperation outermost, bool conditional)
+    private void ApplyConfigureChain(IInvocationOperation outermost, CallFrame frame, Guard guard)
     {
         var chain = new List<IInvocationOperation>();
         IOperation? current = outermost;
@@ -480,15 +568,15 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
 
         if (Unwrap(current) is not IInvocationOperation add || !KnownApis.AddStandardResilienceHandler.Matches(add.TargetMethod))
         {
-            context.Warn(DiagnosticCodes.UnresolvedValue,
+            _context.Warn(DiagnosticCodes.UnresolvedValue,
                 "Configure(...) is called on a pipeline builder that is not traced to an AddStandardResilienceHandler call; not interpreted.",
                 outermost.Syntax);
             return;
         }
 
-        var pending = GetOrCreateStandard(add, conditional);
+        var pending = GetOrCreateStandard(add, frame, guard);
         chain.Reverse();
-        foreach (var call in chain.Where(c => _appliedConfigureCalls.Add(c.Syntax)))
+        foreach (var call in chain.Where(c => _appliedConfigureCalls.Add((c.Syntax, frame))))
         {
             ApplyOptions(call, pending.Standard!);
         }
@@ -499,19 +587,19 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
     {
         if (Argument(call, "section") is { } section)
         {
-            var location = context.LocationOf(section.Syntax);
-            if (SectionPath(section) is not { } path)
+            var location = _context.LocationOf(section.Syntax);
+            if (SectionPath(section, _frame) is not { } path)
             {
                 MarkAllUnresolved(settings, $"configuration section not resolved: {Shorten(section.Syntax)}", location);
-                context.Warn(DiagnosticCodes.UnresolvedValue, $"Configuration section '{Shorten(section.Syntax)}' could not be resolved to a constant path.", section.Syntax);
+                _context.Warn(DiagnosticCodes.UnresolvedValue, $"Configuration section '{Shorten(section.Syntax)}' could not be resolved to a constant path.", section.Syntax);
             }
-            else if (appSettings is null)
+            else if (_appSettings is null)
             {
                 MarkAllUnresolved(settings, $"configuration section {path}: no appsettings files available", location);
             }
             else
             {
-                appSettings.Apply(path, settings, location);
+                _appSettings.Apply(path, settings, location);
             }
         }
 
@@ -523,8 +611,8 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
             }
             else
             {
-                MarkAllUnresolved(settings, $"options delegate is not a lambda: {Shorten(configure.Syntax)}", context.LocationOf(configure.Syntax));
-                context.Warn(DiagnosticCodes.OpaqueDelegate, $"Options delegate '{Shorten(configure.Syntax)}' is not a lambda; its settings are unresolved.", configure.Syntax);
+                MarkAllUnresolved(settings, $"options delegate is not a lambda: {Shorten(configure.Syntax)}", _context.LocationOf(configure.Syntax));
+                _context.Warn(DiagnosticCodes.OpaqueDelegate, $"Options delegate '{Shorten(configure.Syntax)}' is not a lambda; its settings are unresolved.", configure.Syntax);
             }
         }
     }
@@ -545,14 +633,14 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
             {
                 if (StandardHandlerSettings.TryGetKind(path, out var kind))
                 {
-                    if (context.Evaluate(assignment.Value, kind, settings.Current(path), context.LocationOf(assignment.Syntax)) is { } value)
+                    if (_context.Evaluate(assignment.Value, kind, settings.Current(path), _context.LocationOf(assignment.Syntax)) is { } value)
                     {
                         settings.Set(path, value);
                     }
                 }
                 else
                 {
-                    context.Info(DiagnosticCodes.UnresolvedValue, $"Option '{path}' is not modelled; ignored.", assignment.Syntax);
+                    _context.Info(DiagnosticCodes.UnresolvedValue, $"Option '{path}' is not modelled; ignored.", assignment.Syntax);
                 }
 
                 continue;
@@ -564,14 +652,14 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
                 continue;
             }
 
-            context.Warn(DiagnosticCodes.UnresolvedValue, $"Statement not interpreted: {Shorten(statement.Syntax)}", statement.Syntax);
+            _context.Warn(DiagnosticCodes.UnresolvedValue, $"Statement not interpreted: {Shorten(statement.Syntax)}", statement.Syntax);
             foreach (var nested in statement.Descendants().OfType<ISimpleAssignmentOperation>())
             {
                 if (PathFrom(nested.Target, options) is { } nestedPath
                     && StandardHandlerSettings.TryGetKind(nestedPath, out _)
                     && settings.Current(nestedPath) is { } fallback)
                 {
-                    settings.Set(nestedPath, Values.Unresolved<object>(fallback, $"assigned inside an uninterpreted statement: {Shorten(nested.Syntax)}", context.LocationOf(nested.Syntax)));
+                    settings.Set(nestedPath, Values.Unresolved<object>(fallback, $"assigned inside an uninterpreted statement: {Shorten(nested.Syntax)}", _context.LocationOf(nested.Syntax)));
                 }
             }
         }
@@ -604,7 +692,7 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
             }
             else
             {
-                context.Warn(DiagnosticCodes.UnresolvedValue, $"HTTP method '{Shorten(element.Syntax)}' is not a constant; retries for it are assumed enabled.", element.Syntax);
+                _context.Warn(DiagnosticCodes.UnresolvedValue, $"HTTP method '{Shorten(element.Syntax)}' is not a constant; retries for it are assumed enabled.", element.Syntax);
             }
         }
 
@@ -615,18 +703,19 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
     /// Resolves <c>config.GetSection("A").GetSection("B")</c> to <c>A:B</c>. The chain must start at the root
     /// configuration (a property or parameter typed as root configuration); anything else returns null.
     /// </summary>
-    private static string? SectionPath(IOperation? operation)
+    private static string? SectionPath(IOperation? operation, CallFrame frame)
     {
-        switch (Unwrap(operation))
+        (operation, frame) = frame.Resolve(operation);
+        switch (operation)
         {
             case IInvocationOperation { TargetMethod.Name: "GetSection" } call
                 when call.TargetMethod.ContainingType?.ToDisplayString() == KnownApis.ConfigurationInterface:
-                if (Argument(call, "key")?.ConstantValue is not { HasValue: true, Value: string key })
+                if (frame.Resolve(Argument(call, "key")).Operation?.ConstantValue is not { HasValue: true, Value: string key })
                 {
                     return null;
                 }
 
-                var prefix = SectionPath(call.Instance);
+                var prefix = SectionPath(call.Instance, frame);
                 return prefix is null ? null : prefix.Length == 0 ? key : $"{prefix}:{key}";
 
             case { } root when root is IPropertyReferenceOperation or IParameterReferenceOperation
@@ -639,49 +728,43 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
     }
 
     /// <summary>
-    /// Follows an <c>IHttpClientBuilder</c> expression back to the client (or defaults) it configures. With
-    /// <paramref name="register"/> false it has no side effects (used for branches that do not run).
+    /// Follows an <c>IHttpClientBuilder</c> expression back to the client (or defaults) it configures, through helper
+    /// parameters and locals. With <paramref name="register"/> false it has no side effects (branches that do not run).
     /// </summary>
-    private BuilderTarget? ResolveBuilder(IOperation? operation, bool register)
+    private BuilderTarget? ResolveBuilder(IOperation? operation, CallFrame frame, bool register)
     {
-        switch (Unwrap(operation))
+        (operation, frame) = frame.Resolve(operation);
+        switch (operation)
         {
             case IParameterReferenceOperation parameter when _defaultsBuilders.Contains(parameter.Parameter):
                 return DefaultsTarget.Instance;
 
             case IInvocationOperation call when KnownApis.AddHttpClient.Matches(call.TargetMethod):
-                return GetOrAddClient(call, register) is { } client ? new ClientTarget(client) : null;
+                return GetOrAddClient(call, frame, register) is { } client ? new ClientTarget(client) : null;
+
+            case IInvocationOperation call when KnownApis.AddGrpcClient.Matches(call.TargetMethod):
+                return OutOfScopeTarget.Instance;
 
             // A removal in the chain runs before whatever is chained after it.
             case IInvocationOperation call when KnownApis.RemoveAllResilienceHandlers.Matches(call.TargetMethod):
                 if (register)
                 {
-                    RecordRemoval(call, conditional: false);
+                    RecordRemoval(call, frame, Guard.None);
                 }
 
-                return ResolveBuilder(Argument(call, ordinal: 0), register);
+                return ResolveBuilder(Argument(call, ordinal: 0), frame, register);
 
             // A builder extension that returns its receiver (e.g. ConfigureHttpClient, AddHttpMessageHandler).
             case IInvocationOperation call when call.TargetMethod.IsExtensionMethod
                 && IsHttpClientBuilder(call.TargetMethod.ReturnType)
                 && call.TargetMethod.Parameters.Length > 0
                 && IsHttpClientBuilder(call.TargetMethod.Parameters[0].Type):
-                return ResolveBuilder(Argument(call, ordinal: 0), register);
-
-            // var search = services.AddHttpClient(...); search.AddStandardResilienceHandler(); (initializer only).
-            case ILocalReferenceOperation local when LocalInitializer(local) is { } initializer:
-                return ResolveBuilder(initializer, register);
+                return ResolveBuilder(Argument(call, ordinal: 0), frame, register);
 
             default:
                 return null;
         }
     }
-
-    /// <summary>The initializer of a local variable, if it has one. Later reassignments are not tracked.</summary>
-    private static IOperation? LocalInitializer(ILocalReferenceOperation local) =>
-        local.Local.DeclaringSyntaxReferences.FirstOrDefault()?.GetSyntax() is VariableDeclaratorSyntax { Initializer.Value: { } value }
-            ? local.SemanticModel?.GetOperation(value)
-            : null;
 
     private static string EnclosingMemberName(SemanticModel model, int position)
     {
@@ -708,6 +791,12 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
     private static bool IsHttpClientBuilder(ITypeSymbol type) =>
         type.ToDisplayString() == KnownApis.HttpClientBuilderInterface;
 
+    /// <summary>The conditions a call is under: whether any applies, and those that could not be decided.</summary>
+    private sealed record Guard(bool Conditional, ImmutableList<SyntaxNode> Undecided)
+    {
+        public static readonly Guard None = new(false, ImmutableList<SyntaxNode>.Empty);
+    }
+
     private sealed class PendingHandler(int sequence, BuilderTarget? target, SourceLocation location)
     {
         public int Sequence { get; } = sequence;
@@ -733,4 +822,10 @@ internal sealed class RegistrationWalker(Solution solution, ExtractionContext co
     }
 
     private sealed record ClientTarget(ClientRecord Client) : BuilderTarget;
+
+    /// <summary>A builder for a client outside V1 scope (gRPC): its handlers are not modelled.</summary>
+    private sealed record OutOfScopeTarget : BuilderTarget
+    {
+        public static readonly OutOfScopeTarget Instance = new();
+    }
 }

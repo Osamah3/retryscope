@@ -78,6 +78,9 @@ internal static class KnownApis
     public static readonly KnownMethod AddCircuitBreaker = new(PollyCore, "Polly.CircuitBreakerResiliencePipelineBuilderExtensions", "AddCircuitBreaker");
     public static readonly KnownMethod AddConcurrencyLimiter = new("Polly.RateLimiting", "Polly.RateLimiterResiliencePipelineBuilderExtensions", "AddConcurrencyLimiter");
 
+    /// <summary>gRPC clients (Grpc.Net.ClientFactory): out of V1 scope (ADR 0002), reported with RS011.</summary>
+    public static readonly KnownMethod AddGrpcClient = new("Grpc.Net.ClientFactory", null, "AddGrpcClient");
+
     /// <summary>Keyed pipelines in DI (Polly.Extensions); executions are not linked to clients in V1 (RS006).</summary>
     public static readonly KnownMethod AddResiliencePipeline = new("Polly.Extensions", null, "AddResiliencePipeline", "AddResiliencePipelines");
 

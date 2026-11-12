@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>retryscope</AssemblyName>
+    <RootNamespace>RetryScope.Cli</RootNamespace>
+    <Description>Command-line front end: extracts the HttpClient resilience configuration of a .NET project as JSON.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Referenced directly so the out-of-process BuildHost is copied next to the executable
+         (package build assets do not flow through project references). -->
+    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RetryScope.Extraction\RetryScope.Extraction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="RetryScope.Cli.Tests" />
+  </ItemGroup>
+
+</Project>

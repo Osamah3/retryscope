@@ -19,6 +19,12 @@ internal sealed class ExtractionContext(string rootDirectory, string resilienceV
 
     public List<RsDiagnostic> Diagnostics { get; } = [];
 
+    /// <summary>
+    /// Resolves an operation through the current call frame (parameters to the caller's arguments, single-assignment
+    /// locals to their initializer). Set by the walker while it visits a method.
+    /// </summary>
+    public Func<IOperation?, IOperation?> Resolve { get; set; } = operation => operation;
+
     public void Warn(string code, string message, SyntaxNode? node = null) => Add(code, Severity.Warning, message, node);
 
     public void Info(string code, string message, SyntaxNode? node = null) => Add(code, Severity.Info, message, node);
@@ -41,13 +47,14 @@ internal sealed class ExtractionContext(string rootDirectory, string resilienceV
             return Values.Opaque<object>(PredicateKind.Custom, $"custom predicate: {OperationHelpers.Shorten(value.Syntax)}", location);
         }
 
+        var resolved = Resolve(value) ?? value;
         object? result = kind switch
         {
-            SettingKind.Int when ConstantEvaluator.TryInt(value, out var i) => i,
-            SettingKind.Double when ConstantEvaluator.TryDouble(value, out var d) => d,
-            SettingKind.Bool when ConstantEvaluator.TryBool(value, out var b) => b,
-            SettingKind.TimeSpan when ConstantEvaluator.TryTimeSpan(value, out var t) => t,
-            SettingKind.Backoff when ConstantEvaluator.TryBackoff(value, out var e) => e,
+            SettingKind.Int when ConstantEvaluator.TryInt(resolved, out var i) => i,
+            SettingKind.Double when ConstantEvaluator.TryDouble(resolved, out var d) => d,
+            SettingKind.Bool when ConstantEvaluator.TryBool(resolved, out var b) => b,
+            SettingKind.TimeSpan when ConstantEvaluator.TryTimeSpan(resolved, out var t) => t,
+            SettingKind.Backoff when ConstantEvaluator.TryBackoff(resolved, out var e) => e,
             _ => null,
         };
 
