@@ -52,6 +52,7 @@ The project must restore and build; the extractor loads it through MSBuild. Scop
 | `corpus/practice/` | Practice items for the labelling guide |
 | `corpus/frame/`, `corpus/sample.csv`, `corpus/labels/` | Evaluation corpus: sampling frame, drawing ledger, blind labels (`docs/corpus-protocol.md`) |
 | `tools/sample_corpus.py` | Draws the corpus: `frame`, `draw`, `next` (Python standard library + `gh` CLI) |
+| `tools/prepare_corpus.py` | Clones drawn repositories at their pinned commit, scopes projects, builds them in the .NET SDK container |
 
 Planned: `RetryScope.Topology`, `RetryScope.Simulation`, `fixtures/`,
 `testbed/`, `experiments/`, `analysis/`, `paper/`.
