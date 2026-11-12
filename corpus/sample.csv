@@ -1,9 +1,10 @@
 round,stratum,rank,repo,commit,drawn_utc,status,reason
-1,S3,1,MCKRUZ/microsoft-agentic-harness,91e90990739afe74e1cfef82d0a60649c28be314,2026-11-12T10:16:07+00:00,drawn,
-1,S3,2,SonHuy160293/BookingSystem,ad535c6eba3e0e961aa6e1c8699ca5b990696eb6,2026-11-12T10:16:10+00:00,drawn,
-1,S3,3,kingkeamo/fishing-logbook,9d2e24c1a719eeb735664cf0ba836dfac0f25262,2026-11-12T10:16:13+00:00,drawn,
-1,S3,4,serfirazab/ResilientTelemedicine,59f8d5efd8a6938d00ebb5280c86a6ec5b083ebe,2026-11-12T10:16:15+00:00,drawn,
-1,S3,5,thinkbridge-thinkschool/thinkschool-AvishkarPatil,a215c34a0115d27ebb41eefecdf1771b1d110043,2026-11-12T10:16:18+00:00,drawn,
+1,S3,1,MCKRUZ/microsoft-agentic-harness,91e90990739afe74e1cfef82d0a60649c28be314,2026-11-12T10:16:07+00:00,included,5 project(s) built
+1,S3,2,SonHuy160293/BookingSystem,ad535c6eba3e0e961aa6e1c8699ca5b990696eb6,2026-11-12T10:16:10+00:00,included,5 project(s) built
+1,S3,3,kingkeamo/fishing-logbook,9d2e24c1a719eeb735664cf0ba836dfac0f25262,2026-11-12T10:16:13+00:00,included,3 project(s) built
+1,S3,4,serfirazab/ResilientTelemedicine,59f8d5efd8a6938d00ebb5280c86a6ec5b083ebe,2026-11-12T10:16:15+00:00,included,5 project(s) built
+1,S3,5,thinkbridge-thinkschool/thinkschool-AvishkarPatil,a215c34a0115d27ebb41eefecdf1771b1d110043,2026-11-12T10:16:18+00:00,replaced-missing,"clone failed: fatal: write error: No space left on device
+fatal: fetch-pack: invalid index-pack output"
 1,S4,1,PhuQuocKhanh/DotnetWebApi,f8d1ce15572f1ed8fbcd08e6c5541c5c3a590f51,2026-11-12T10:16:20+00:00,drawn,
 1,S4,2,waterstonsltd/CyberAlarmSecureSensor,075584736278c0f1cefcadf121a7cc6376c41395,2026-11-12T10:16:23+00:00,drawn,
 1,S4,3,ShreddingThrasher/Carsties,0777678ff035b76f9f36783babeddce99fe475eb,2026-11-12T10:16:25+00:00,drawn,
