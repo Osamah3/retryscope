@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+.idea/
+*.user
+TestResults/
+experiments/raw/
+analysis/.venv/
+__pycache__/
+*.pyc
+.DS_Store

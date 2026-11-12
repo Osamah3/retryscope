@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>RetryScope.Fixtures.V07</RootNamespace>
+    <AssemblyName>RetryScope.Fixtures.V07</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared.ServiceDefaults\Shared.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>

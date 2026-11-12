@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.v3" />
+    <!-- Referenced directly (not only through the extractor) so its out-of-process BuildHost is copied to this
+         project's output: package build assets do not flow through project references. -->
+    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" />
+    <!-- Real library assemblies for the in-memory symbol-matching tests. -->
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\RetryScope.Extraction\RetryScope.Extraction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- One definition of the expected.json format, shared with the behaviour oracle. -->
+    <Compile Include="..\RetryScope.Fixtures.OracleTests\ExpectedLabels.cs" Link="ExpectedLabels.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>

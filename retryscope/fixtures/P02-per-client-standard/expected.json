@@ -1,0 +1,23 @@
+{
+  "fixture": "P02-per-client-standard",
+  "description": "P2: the standard resilience handler on one named client, all defaults.",
+  "service": "api",
+  "bindings": [
+    {
+      "client": "catalog",
+      "clientKind": "named",
+      "target": "catalog",
+      "patternCodes": [
+        "P2"
+      ],
+      "attemptBoundGet": 4,
+      "attemptBoundPost": 4,
+      "retryCountSource": "default",
+      "attemptTimeoutSeconds": 10,
+      "totalTimeoutSeconds": 30,
+      "breaker": true,
+      "retryHandlers": 1,
+      "conditional": false
+    }
+  ]
+}

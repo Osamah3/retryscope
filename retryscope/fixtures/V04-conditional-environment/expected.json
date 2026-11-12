@@ -1,0 +1,25 @@
+{
+  "fixture": "V04-conditional-environment",
+  "description": "Variant: different resilience settings per environment. Labelled for Production; marked conditional.",
+  "service": "api",
+  "bindings": [
+    {
+      "clientKind": "named",
+      "retryHandlers": 1,
+      "attemptTimeoutSeconds": 10,
+      "totalTimeoutSeconds": 30,
+      "breaker": true,
+      "conditional": true,
+      "client": "search",
+      "target": "search",
+      "patternCodes": [
+        "P2",
+        "P3"
+      ],
+      "attemptBoundGet": 2,
+      "attemptBoundPost": 2,
+      "retryCountSource": "explicit",
+      "oracle": true
+    }
+  ]
+}
