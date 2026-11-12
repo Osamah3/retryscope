@@ -4,11 +4,11 @@ namespace RetryScope.Model.Tests;
 
 /// <summary>
 /// Builders for test graphs. The standard-handler defaults below were read from source on 11 Nov 2026
-/// (Polly 98eaf12, dotnet/extensions f8ee271); see the technical specification, "Verified library defaults".
+/// at the pinned release tags (Polly 8.4.2, dotnet/extensions v10.11.0); see docs/verified-defaults.md.
 /// </summary>
 internal static class TestData
 {
-    public const string DefaultsVersion = "Polly@98eaf12;Microsoft.Extensions.Http.Resilience@f8ee271";
+    public const string DefaultsVersion = "Microsoft.Extensions.Http.Resilience@10.11.0.0";
 
     public static Handler StandardHandler(HandlerOrigin origin = HandlerOrigin.Defaults, RetryStrategy? retry = null) =>
         new(HandlerKind.Standard, origin,

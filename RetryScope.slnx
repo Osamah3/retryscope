@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/RetryScope.Model/RetryScope.Model.csproj" />
+    <Project Path="src/RetryScope.Extraction/RetryScope.Extraction.csproj" />
   </Folder>
   <Folder Name="/fixtures/">
     <Project Path="fixtures/Shared.ServiceDefaults/Shared.ServiceDefaults.csproj" />
@@ -28,5 +29,6 @@
   <Folder Name="/tests/">
     <Project Path="tests/RetryScope.Model.Tests/RetryScope.Model.Tests.csproj" />
     <Project Path="tests/RetryScope.Fixtures.OracleTests/RetryScope.Fixtures.OracleTests.csproj" />
+    <Project Path="tests/RetryScope.Extraction.Tests/RetryScope.Extraction.Tests.csproj" />
   </Folder>
 </Solution>

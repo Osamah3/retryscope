@@ -43,4 +43,10 @@ public static class DiagnosticCodes
 
     /// <summary>The configuration would fail the standard handler's startup validation.</summary>
     public const string InvalidStandardOptions = "RS007";
+
+    /// <summary>The project could not be fully loaded or compiled; results may be incomplete.</summary>
+    public const string WorkspaceLoad = "RS008";
+
+    /// <summary>Package defaults were verified for a different library version than the one the project references.</summary>
+    public const string DefaultsVersionUnverified = "RS009";
 }

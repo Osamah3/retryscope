@@ -23,7 +23,7 @@ Versions for all entries below: Microsoft.Extensions.Http.Resilience 10.11.0, Mi
 
 - **Fixture:** P11-hedging (`AttemptBoundOracleTests`, logged only).
 - **Observed:** GET = 2, POST = 2.
-- **Explanation:** Polly's `HedgingConstants.DefaultMaxHedgedAttempts = 1` (Polly commit 98eaf12), and the standard
+- **Explanation:** Polly's `HedgingConstants.DefaultMaxHedgedAttempts = 1` (Polly tag 8.4.2; unchanged on main), and the standard
   hedging handler does not override it. That gives the primary request plus one hedge. The per-endpoint pipeline has no
   retry strategy.
 - **Status:** informative only. Hedging remains out of scope for the V1 simulator (ADR 0002), so P11's label stays

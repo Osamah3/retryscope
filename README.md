@@ -30,13 +30,15 @@ The first restore creates `packages.lock.json` files. Commit them: CI restores i
 | Path | Contents |
 | --- | --- |
 | `src/RetryScope.Model` | The intermediate representation (`ResilienceGraph`), value provenance, validation, canonical JSON |
+| `src/RetryScope.Extraction` | Roslyn extractor: loads a project and produces its `ResilienceGraph` (in progress: P1, P2) |
 | `fixtures/` | One small project per configuration pattern, with expected labels (`expected.json`) |
 | `tests/RetryScope.Model.Tests` | Unit tests for the IR |
+| `tests/RetryScope.Extraction.Tests` | Extractor output vs every supported fixture's `expected.json`, field by field |
 | `tests/RetryScope.Fixtures.OracleTests` | Behavioural oracle: runs each fixture against an in-memory failing stub and counts real attempts |
-| `docs/` | Labelling guide, ADRs, empirical findings, deviations log |
+| `docs/` | Labelling guide, verified library defaults, ADRs, empirical findings, deviations log |
 | `corpus/practice/` | Practice items for the labelling guide |
 
-Planned: `RetryScope.Extraction`, `RetryScope.Topology`, `RetryScope.Simulation`, `RetryScope.Cli`, `fixtures/`,
+Planned: `RetryScope.Topology`, `RetryScope.Simulation`, `RetryScope.Cli`, `fixtures/`,
 `testbed/`, `experiments/`, `analysis/`, `paper/`.
 
 ## Licence
