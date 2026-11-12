@@ -3,20 +3,40 @@ round,stratum,rank,repo,commit,drawn_utc,status,reason
 1,S3,2,SonHuy160293/BookingSystem,ad535c6eba3e0e961aa6e1c8699ca5b990696eb6,2026-11-12T10:16:10+00:00,included,5 project(s) built
 1,S3,3,kingkeamo/fishing-logbook,9d2e24c1a719eeb735664cf0ba836dfac0f25262,2026-11-12T10:16:13+00:00,included,3 project(s) built
 1,S3,4,serfirazab/ResilientTelemedicine,59f8d5efd8a6938d00ebb5280c86a6ec5b083ebe,2026-11-12T10:16:15+00:00,included,5 project(s) built
-1,S3,5,thinkbridge-thinkschool/thinkschool-AvishkarPatil,a215c34a0115d27ebb41eefecdf1771b1d110043,2026-11-12T10:16:18+00:00,replaced-missing,"clone failed: fatal: write error: No space left on device
-fatal: fetch-pack: invalid index-pack output"
-1,S4,1,PhuQuocKhanh/DotnetWebApi,f8d1ce15572f1ed8fbcd08e6c5541c5c3a590f51,2026-11-12T10:16:20+00:00,drawn,
-1,S4,2,waterstonsltd/CyberAlarmSecureSensor,075584736278c0f1cefcadf121a7cc6376c41395,2026-11-12T10:16:23+00:00,drawn,
-1,S4,3,ShreddingThrasher/Carsties,0777678ff035b76f9f36783babeddce99fe475eb,2026-11-12T10:16:25+00:00,drawn,
-1,S4,4,DFE-Digital/Dfe.Academies.External,c62af387d3841309417b5b065e148d262e393f67,2026-11-12T10:16:28+00:00,drawn,
-1,S4,5,musmanrafiq/Usman.Architecture,20ea0bb7c86a18b59492a51fbc0c78ddf0253541,2026-11-12T10:16:30+00:00,drawn,
-1,S2,1,Melser/net-garminconnect,afde07c2d4643e2b2ca1723fed0d6363102c95df,2026-11-12T10:16:32+00:00,drawn,
-1,S2,2,hurtamat/spotPriceCalc,5480e4a87f93b1459f7e0292a5a8b9de44011de5,2026-11-12T10:16:35+00:00,drawn,
-1,S2,3,NghiaNguyen170192/cloud-computing-asm3,cc36c2f6be2de0d3037bda5aad0a2f4f0caa7a98,2026-11-12T10:16:37+00:00,drawn,
-1,S2,4,dundich/sa,cba908eaa343cce6c4d9981e224d4cc3d36912b1,2026-11-12T10:16:40+00:00,drawn,
-1,S2,5,mahendraputra21/AspireAppNET9,36e5464de6fb9dd2aef4d618692b67de5da2eb7e,2026-11-12T10:16:42+00:00,drawn,
-1,S1,1,Qas1modo/Software-Architectures,7a912544c73dd240a591c033d71ec948d32cc79b,2026-11-12T10:16:44+00:00,drawn,
-1,S1,2,shefat2002/AspireGame,add99c6297ff09835262afabf91211e2774cd23b,2026-11-12T10:16:48+00:00,drawn,
-1,S1,3,MoongyProjetos/hello-dotnet10,68569705504049c3cfeab55987b942d234868d70,2026-11-12T10:16:51+00:00,drawn,
-1,S1,4,D16IT6/EzioLearning,9b2cda2de29c77d1b3533daa498ca8c80af20d4a,2026-11-12T10:16:53+00:00,drawn,
-1,S1,5,MrSanderSi/NullamWebApp,f2a8bf79b79d88888cd1319d1c3f11e67706ba25,2026-11-12T10:16:55+00:00,drawn,
+1,S3,5,thinkbridge-thinkschool/thinkschool-AvishkarPatil,a215c34a0115d27ebb41eefecdf1771b1d110043,2026-11-12T10:16:18+00:00,included,5 project(s) built
+1,S4,1,PhuQuocKhanh/DotnetWebApi,f8d1ce15572f1ed8fbcd08e6c5541c5c3a590f51,2026-11-12T10:16:20+00:00,included,5 project(s) built
+1,S4,2,waterstonsltd/CyberAlarmSecureSensor,075584736278c0f1cefcadf121a7cc6376c41395,2026-11-12T10:16:23+00:00,included,2 project(s) built
+1,S4,3,ShreddingThrasher/Carsties,0777678ff035b76f9f36783babeddce99fe475eb,2026-11-12T10:16:25+00:00,included,5 project(s) built
+1,S4,4,DFE-Digital/Dfe.Academies.External,c62af387d3841309417b5b065e148d262e393f67,2026-11-12T10:16:28+00:00,included,1 project(s) built
+1,S4,5,musmanrafiq/Usman.Architecture,20ea0bb7c86a18b59492a51fbc0c78ddf0253541,2026-11-12T10:16:30+00:00,included,2 project(s) built
+1,S2,1,Melser/net-garminconnect,afde07c2d4643e2b2ca1723fed0d6363102c95df,2026-11-12T10:16:32+00:00,replaced-no-scope,no deployable non-test project
+1,S2,2,hurtamat/spotPriceCalc,5480e4a87f93b1459f7e0292a5a8b9de44011de5,2026-11-12T10:16:35+00:00,included,1 project(s) built
+1,S2,3,NghiaNguyen170192/cloud-computing-asm3,cc36c2f6be2de0d3037bda5aad0a2f4f0caa7a98,2026-11-12T10:16:37+00:00,included,5 project(s) built
+1,S2,4,dundich/sa,cba908eaa343cce6c4d9981e224d4cc3d36912b1,2026-11-12T10:16:40+00:00,included,1 project(s) built
+1,S2,5,mahendraputra21/AspireAppNET9,36e5464de6fb9dd2aef4d618692b67de5da2eb7e,2026-11-12T10:16:42+00:00,included,2 project(s) built
+1,S1,1,Qas1modo/Software-Architectures,7a912544c73dd240a591c033d71ec948d32cc79b,2026-11-12T10:16:44+00:00,included,4 project(s) built
+1,S1,2,shefat2002/AspireGame,add99c6297ff09835262afabf91211e2774cd23b,2026-11-12T10:16:48+00:00,included,2 project(s) built
+1,S1,3,MoongyProjetos/hello-dotnet10,68569705504049c3cfeab55987b942d234868d70,2026-11-12T10:16:51+00:00,included,5 project(s) built
+1,S1,4,D16IT6/EzioLearning,9b2cda2de29c77d1b3533daa498ca8c80af20d4a,2026-11-12T10:16:53+00:00,included,1 project(s) built
+1,S1,5,MrSanderSi/NullamWebApp,f2a8bf79b79d88888cd1319d1c3f11e67706ba25,2026-11-12T10:16:55+00:00,included,2 project(s) built
+2,S3,6,erik-mostert/erik-mostert-profile-resilient-integration,2496f683f5104ca4a722d410b97a6cba3d9f5b0a,2026-11-12T21:14:19+00:00,included,2 project(s) built
+2,S3,7,GuedesPlace/SimpleDynamicsConnector,5e075d57c1ad32cdabdc9b8e406fe2c6f5d395dc,2026-11-12T21:14:21+00:00,replaced-no-scope,no deployable non-test project
+2,S3,8,emata6/MovieApp,a1d2aa0dc4888a1d4b3374b523308e2c94f63552,2026-11-12T21:14:24+00:00,included,1 project(s) built
+2,S3,9,krosoft-dev/Krosoft.Extensions.Resilience,aa0ee2ec372fd9f26bf3bed75144e18ff87fb248,2026-11-12T21:14:26+00:00,replaced-no-scope,no deployable non-test project
+2,S3,10,FIAP-G04/iburguer-shopping-cart,86ac9d191bc66d8790b425aeb7617152261b5cbc,2026-11-12T21:14:29+00:00,included,1 project(s) built
+2,S4,6,danielnagami/Robot-TR,6828000bef08039c083fa0c7fde261afd2e228e9,2026-11-12T21:14:31+00:00,included,5 project(s) built
+2,S4,7,TenTonsOfHat/allocation_tracker_connector_poc,2fd5bf207253bb9e26edb6a6f611043dfd9fcdb3,2026-11-12T21:14:33+00:00,included,2 project(s) built
+2,S4,8,reb0ot1/MoneySaver.SPA,86e1c5e08b850cbbae453f961968810732aca61e,2026-11-12T21:14:35+00:00,included,1 project(s) built
+2,S4,9,molidestroyer/AmazonCreators.Net,0f002da46a617bd9ed662806a2c3678c45d4cf4f,2026-11-12T21:14:37+00:00,included,2 project(s) built
+2,S4,10,MinhTrietTran/mini-ecommerce-microservices,e7b7d59fed11f8a44b8d3c12ce84db6052a19842,2026-11-12T21:14:39+00:00,included,2 project(s) built
+2,S2,6,openiddict/openiddict-samples,c706392545121516f05ee27b02d734fb3a6db4b1,2026-11-12T21:14:42+00:00,included,5 project(s) built
+2,S2,7,inventware/plugin.mundus.security.client,6e127248f78364abf2c160beb314f9eb95f84ff9,2026-11-12T21:14:44+00:00,replaced-no-scope,no deployable non-test project
+2,S2,8,marcominerva/AspireDemoApp,d1b70dec54dd28d29fdcee55d41305311065c2c7,2026-11-12T21:14:46+00:00,included,3 project(s) built
+2,S2,9,Djohnnie/CSharpWars-Orleans,45a9f26be054e7697ba9c3e7fa2c9612f5a43b09,2026-11-12T21:14:48+00:00,included,5 project(s) built
+2,S2,10,JamieKennedy/expense-planner,51c9889c139b9bd4803203d859a58e0a59d39f21,2026-11-12T21:14:52+00:00,included,2 project(s) built
+2,S2,11,mikolajj04/Investment-Predictor,7fa1a22a2b3a46dc7df30f9488510ff6c149d354,2026-11-12T21:14:54+00:00,included,1 project(s) built
+2,S1,6,KralGmbh/Dynamics365-BusinessCentral,944113d232e02be3b63fb7ea675a76168169b571,2026-11-12T21:14:57+00:00,replaced-no-scope,no deployable non-test project
+2,S1,7,NikiforovAll/typical-rag-dotnet,ef39ec5e85a448662380bd9ec2016051d15524be,2026-11-12T21:14:59+00:00,included,1 project(s) built
+2,S1,8,HillPhelmuth/AIChess,24b50cb5acbdd031236fe3aaab2ecc03316529f6,2026-11-12T21:15:01+00:00,included,1 project(s) built
+2,S1,9,Mitrivxxx/team-hub,401ebc7e8b9d6aae750682bf27cedd7f66628cb2,2026-11-12T21:15:03+00:00,replaced-no-scope,no deployable non-test project
+2,S1,10,jerkerolofsson/testbucket,25ae48064d0e1a4a334dc23f0b835f1b75d7aca3,2026-11-12T21:15:06+00:00,included,5 project(s) built
