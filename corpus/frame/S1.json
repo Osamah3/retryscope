@@ -1,0 +1,6684 @@
+[
+  {
+    "repo": "007-Productions/EZATradeBot07",
+    "files": [
+      "EZATradeBot07.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "0Ankit0/Futsal",
+    "files": [
+      "FutsalApi/FutsalApi.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "0xharkirat/aca-jobs-locally",
+    "files": [
+      "AcaJobs.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "19balazs86/PlayingWithGenerativeAI",
+    "files": [
+      "WebApiSK/Program.cs"
+    ]
+  },
+  {
+    "repo": "1iveowl/PlatformPlatform",
+    "files": [
+      "application/shared-kernel/SharedKernel/Configuration/SharedInfrastructureConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "2dotd/CleanArchitecture",
+    "files": [
+      "src/CustomerService/tests/Web.AcceptanceTests/AspireSetup.cs",
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "3Oon-SIna6/test",
+    "files": [
+      "NanoMessenger.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "aaronpowell/copilot-sdk-web-app",
+    "files": [
+      "CopilotSdkWebApp.Server/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Aaryan-Urunkar/Overflow",
+    "files": [
+      "Overflow.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "aayazakpinarli/HospitalAppointmentProject",
+    "files": [
+      "HospitalAppointmentProject.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ab476/ASP.NET_FullStack_App",
+    "files": [
+      "WebAPI/Aspire.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "ab476/Aspire_Udemy_Mehmet",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ab476/MiniWebApp",
+    "files": [
+      "MiniWebApp/MiniWebApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Abdullah-Anwar05/ai-dotnet-demo",
+    "files": [
+      "AiDotnetDemo/Program.cs"
+    ]
+  },
+  {
+    "repo": "abdullamahmudov/TaskManagerBackend",
+    "files": [
+      "MSTestProject/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "abhishekpandaOfficial/Opzenix-dev",
+    "files": [
+      "Opzenix.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "abossard/aks-the-good-stuff",
+    "files": [
+      "app/CatManager/CatManager.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "abossard/always-on-v2",
+    "files": [
+      "src/DarkUxChallenge/DarkUxChallenge.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ACRT-EVAL/semantic-kernel-25-cr10",
+    "files": [
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatCompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "ACRT-EVAL/semantic-kernel-25-cr11",
+    "files": [
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatCompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "ACRT-EVAL/semantic-kernel-25-cr5",
+    "files": [
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatCompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "ACRT-EVAL/semantic-kernel-25-cr9",
+    "files": [
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatCompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "ACRT-EVAL/semantic-kernel-549-cr1",
+    "files": [
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatClientTests.cs"
+    ]
+  },
+  {
+    "repo": "ACRT-EVAL/semantic-kernel-549-cr11",
+    "files": [
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatClientTests.cs"
+    ]
+  },
+  {
+    "repo": "ACRT-EVAL/semantic-kernel-549-cr7",
+    "files": [
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatClientTests.cs"
+    ]
+  },
+  {
+    "repo": "ACRT-EVAL/semantic-kernel-549-cr9",
+    "files": [
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatClientTests.cs"
+    ]
+  },
+  {
+    "repo": "AdrianoGuzzo/InitialAspireProject",
+    "files": [
+      "InitialAspireProject.Tests/Web/WebTests.cs",
+      "InitialAspireProject.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "AdrianToman1/github-traffic-insights",
+    "files": [
+      "tests/FunctionApp.IntegrationTests/ManualTriggerTest.cs"
+    ]
+  },
+  {
+    "repo": "afnan/allspice-clean-modular-monolith-template",
+    "files": [
+      "AllSpice.CleanModularMonolith.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "agusstiinbt/Labora",
+    "files": [
+      "Labora.Tests/WebTests.cs",
+      "Labora.Tests/WebTests.cs",
+      "Labora.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "agutierrezcu/SwiftLift",
+    "files": [
+      "src/SwiftLift.Infrastructure/HttpClient/HttpClientDefaultsServiceCollectionExtensions.cs",
+      "src/SwiftLift.Infrastructure/HttpClient/HttpClientDefaultsServiceCollectionExtensions.cs",
+      "src/SwiftLift.Infrastructure/HttpClient/HttpClientDefaultsServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Ahmed-Shehzad/Sol9",
+    "files": [
+      "Sol9.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "AigioL/Common",
+    "files": [
+      "src/AigioL.Common.AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "AikonaZA/DynamicCatalogue",
+    "files": [
+      "DynamicCatalogue.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "AikonaZA/GlassCuttingOptimizer",
+    "files": [
+      "GlassCuttingOptimizer.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "akade/Akade.Workshops.ModernNet2026",
+    "files": [
+      "AI.StarterApp/AI.StarterApp.Web/OllamaResilienceHandlerExtensions.cs"
+    ]
+  },
+  {
+    "repo": "akayyali/AspireBlazorAppWithKeyCloak",
+    "files": [
+      "KeyCloakAspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "aknagar/mfe-portal",
+    "files": [
+      "backend/tests/AugmentService/AugmentService.E2eTests/AppHostTests.cs",
+      "backend/tests/AugmentService/AugmentService.LoadTests/K6LoadTests.cs",
+      "backend/AugmentService/AugmentService.Api/Program.cs",
+      "backend/AugmentService/AugmentService.Api/Program.cs",
+      "backend/MfePortal.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "AlanMcBee/Lexicon",
+    "files": [
+      "Lexicon.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Alanzhoffmann/sample-project-with-aspire",
+    "files": [
+      "AspireSampleApp.Tests/WebTests.cs",
+      "AspireSampleApp.Tests/WebTests.cs",
+      "AspireSampleApp.Tests/WebTests.cs",
+      "AspireSampleApp.Tests/CorrelationIdIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "albiek1/MTOGO",
+    "files": [
+      "MTOGO.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "albx/KITT",
+    "files": [
+      "src/KITT.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "alex1ozr/TelegramBot",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "AlexandruJurju/book-shop",
+    "files": [
+      "src/BookShop.EndToEndTests/AppFixture.cs"
+    ]
+  },
+  {
+    "repo": "AlexandruJurju/template-backend",
+    "files": [
+      "src/template-tests/Template.E2ETests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "alexchaomander/semantic-kernel-v1.0-hackathon",
+    "files": [
+      "submissions/DocGenPlugin/sk-csharp-chatgpt-plugin/azure-function/Program.cs"
+    ]
+  },
+  {
+    "repo": "alexnoddings/Quibble",
+    "files": [
+      "src/api/Hosting/Api.cs"
+    ]
+  },
+  {
+    "repo": "alexsandrocruz/ZenAspire",
+    "files": [
+      "tests/CleanAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "algiro/nInvoices",
+    "files": [
+      "src/nInvoices.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "alihoshaimyaveva/AspireApp",
+    "files": [
+      "AspireApp.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "AlisaAkiron/owobot",
+    "files": [
+      "src/owoBot.Aspire.ServiceDefaults/Extension.cs"
+    ]
+  },
+  {
+    "repo": "alkampfergit/SemanticKernelPlayground",
+    "files": [
+      "99_CSharp/Program.cs"
+    ]
+  },
+  {
+    "repo": "allanlevsen/BitScheduler2025",
+    "files": [
+      "AspireBitSchedule.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "allanlevsen/ListKeeper",
+    "files": [
+      "ListKeeper.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "allilova/AspireMicroservicesApp",
+    "files": [
+      "Shop/Shop.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "altemiq/aspire",
+    "files": [
+      "tests/Aspire.Hosting.LocalStack.Tests/GlobalHooks.cs",
+      "tests/Aspire.Hosting.MiniStack.Tests/GlobalHooks.cs"
+    ]
+  },
+  {
+    "repo": "altemiq/las",
+    "files": [
+      "tests/IO.Las.Http.Tests/AppFixture.cs",
+      "tests/IO.Las.S3.Tests/AppFixture.cs",
+      "tests/IO.Las.S3.Tests/AppFixture.cs",
+      "tests/IO.Las.S3.Tests/AppFixture.cs"
+    ]
+  },
+  {
+    "repo": "Altinn/altinn-authorization-utils",
+    "files": [
+      "src/pkgs/Altinn.Authorization.ServiceDefaults/src/ServiceDefaults/Microsoft.Extensions.Hosting/AltinnServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "AlxTray/monorepo-api",
+    "files": [
+      "API/API.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ANcpLua/DotNetTests",
+    "files": [
+      "IntegrationTests/AppFixture.cs"
+    ]
+  },
+  {
+    "repo": "AndersonCosta28/IBAPAM",
+    "files": [
+      "IBAPAM.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "andonisan/bootstrap",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "andreatosato/AspireNet9",
+    "files": [
+      "src/AspireAppNet9.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "AndreiRodevich/AR_Task1_FilesStorageTest",
+    "files": [
+      "AR_Task1_FilesStorageTest/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "AndreiRodevich/OtodomTests",
+    "files": [
+      "OtodomTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "andrejonland/bouvet-bergen-fagdag-dotnet-aspire",
+    "files": [
+      "complete/IntegrationTests/IntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "andres-m-rodriguez/EcoData",
+    "files": [
+      "src/Host/EcoData.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "andrewjpoole/aspire-asb-emulator-ui",
+    "files": [
+      "aspire/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "AndriiYer/AspireTest",
+    "files": [
+      "AspireTest.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "andysterland/VSWhatsNewWebsite",
+    "files": [
+      "WhatsNewWebsite.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "AngeloDotNet/TestAspireWebApi",
+    "files": [
+      "src/TestAspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "anthonyP1202/TPDotNet",
+    "files": [
+      "StacktimSolution/StacktimApi.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "AquaNerd/AspireDistributedSystem",
+    "files": [
+      "AspireDistributedSystem.Tests/IntegrationTests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "aquilacf/payment-gateway-challenge-dotnet",
+    "files": [
+      "tests/PaymentGateway.IntegrationTests/ServerFixture.cs"
+    ]
+  },
+  {
+    "repo": "archerzou/dev-record",
+    "files": [
+      "DevRecord/DevRecord.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "ardaatik/pomodoro",
+    "files": [
+      "server/Server.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "arflisch/CampusHub",
+    "files": [
+      "Shared/ServiceDefaults/HostingExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Armor-test/apache-kafka",
+    "files": [
+      "dotnet/src/IntegrationTests/BaseIntegrationTest.cs",
+      "dotnet/samples/Concepts/DependencyInjection/HttpClient_Resiliency.cs",
+      "dotnet/samples/Concepts/TextToImage/OpenAI_TextToImageDalle3.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAICompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "ArslanTheGreat/intro-to-programming",
+    "files": [
+      "src/AspireDemoWithStarter/AspireDemoWithStarter.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "artemponomarevjetski/legal-genai-rag-eval",
+    "files": [
+      "sk/semantic-kernel-engineering/dotnet/src/IntegrationTests/BaseIntegrationTest.cs",
+      "sk/semantic-kernel-engineering/dotnet/samples/Concepts/TextToImage/OpenAI_TextToImageLegacy.cs",
+      "sk/semantic-kernel-engineering/dotnet/samples/Concepts/TextToImage/OpenAI_TextToImageLegacy.cs",
+      "sk/semantic-kernel-engineering/dotnet/samples/Concepts/TextToImage/OpenAI_TextToImage.cs",
+      "sk/semantic-kernel-engineering/dotnet/src/IntegrationTests/Connectors/AzureAIInference/AzureAIInferenceChatCompletionServiceTests.cs",
+      "sk/semantic-kernel-engineering/dotnet/samples/Demos/ProcessFrameworkWithAspire/ProcessFramework.Aspire/ProcessFramework.Aspire.ServiceDefaults/CommonExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Asifpc/My-Web-Project-Repository",
+    "files": [
+      "dotnet/src/IntegrationTests/BaseIntegrationTest.cs",
+      "dotnet/samples/KernelSyntaxExamples/Example18_DallE.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAICompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "askpt/openfeature-aspire-sample",
+    "files": [
+      "src/Garage.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "aspirant-project/aspirant",
+    "files": [
+      "tests/SamplesTests/YarpResourceSample.cs"
+    ]
+  },
+  {
+    "repo": "atc-net/atc-aspire",
+    "files": [
+      "test/Atc.Aspire.Testing/AspireIntegrationTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "AterDev/blog-sample",
+    "files": [
+      "test/ApiTest/GlobalSetup.cs"
+    ]
+  },
+  {
+    "repo": "AterDev/ProjectD",
+    "files": [
+      "tests/ApiTest/GlobalSetup.cs"
+    ]
+  },
+  {
+    "repo": "atlemagnussen/dotnet8-api-docker",
+    "files": [
+      "WebApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "Aurora-Science-Hub/Framework",
+    "files": [
+      "tests/UnitTests/Ai/ServiceCollectionExtensionsTests.cs"
+    ]
+  },
+  {
+    "repo": "Aventix-AB/PlateLib",
+    "files": [
+      "Tests/PlateLib.IntegrationTests/AspireAppFixture.cs",
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "avresial/FinanceManager",
+    "files": [
+      "code/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ayzdru/AyazDuru.Samples.Aspire",
+    "files": [
+      "source/AyazDuru.Samples.Aspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "azharalsaadi/OmanDigitalShopPlatformSolution",
+    "files": [
+      "OmanDigitalShopPlatformSolution.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Azure-Samples/octopets",
+    "files": [
+      "servicedefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Azure/aspire-templates",
+    "files": [
+      "templates/aspire-azure-starter/Aspire-StarterApplication.1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Back-Buddy/Backend",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "back-org/nexus-os-platform",
+    "files": [
+      "backend/NexusOS.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "badhitman/BlankCRM",
+    "files": [
+      "BlankCRM.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "bagermen/aspire-learn",
+    "files": [
+      "tests/Aspire.Tests/TestingAspireAppHost.cs"
+    ]
+  },
+  {
+    "repo": "bagermoon/otuscode",
+    "files": [
+      "tests/RestoRate.E2ETests/Base/AspireAppHost.cs"
+    ]
+  },
+  {
+    "repo": "BaileyMillerSSI/MusicShare",
+    "files": [
+      "MusicShare.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "baoduy/sample-aspire-dotnet-testing",
+    "files": [
+      "Aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "BAppaGeeky/OwnTest",
+    "files": [
+      "Mms.System/tests/MMS.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "barretb/MissionControlDemo",
+    "files": [
+      "MissionControl.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "bassambhamed/claude-code-dev-devops",
+    "files": [
+      "labs/lab10-observabilite/solution/src/ECommerce.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Basvich/TestMinimalApi.Net",
+    "files": [
+      "Aspire9Test.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "BatistaCo-Pedro/Clean-Architecture-Template",
+    "files": [
+      "tests/Tests.Aspire/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "bc414/TheCanalaveLibrary",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "bdiogoandre/corporate-cashflow",
+    "files": [
+      "tests/Corporate.Cashflow.Integrations.Texts/TestContainerFixture.cs",
+      "tests/Corporate.Cashflow.Integrations.Texts/TestContainerFixture.cs",
+      "tests/Corporate.Cashflow.Integrations.Texts/TestContainerFixture.cs"
+    ]
+  },
+  {
+    "repo": "behm/aspire-compose",
+    "files": [
+      "AspireComposeDemo.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Benjamin-Curlier/piscine-dotnet",
+    "files": [
+      "content/rushes/r6-asteria-distribue/solution/ServiceDefaults.cs",
+      "content/modules/43-aspire/exercises/ex01-service-defaults/solution/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "BennayaNaru/MIA-Project",
+    "files": [
+      "OpenSch/tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "Big-Maikel/TuneScout-project",
+    "files": [
+      "Unittesten/IntegrationTest1.cs",
+      "Unittesten/IntegrationTest1.cs",
+      "Unittesten/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "binarymash/aspire-payment-gateway",
+    "files": [
+      "src/AspirePaymentGateway.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "binarytrails-ai/aigenius-maf-travel-assistant",
+    "files": [
+      "src/ContosoTravel.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "bit365/hello-shop",
+    "files": [
+      "tests/HelloShop.FunctionalTests/Helpers/TestingAspireAppHost.cs"
+    ]
+  },
+  {
+    "repo": "bit365/hello-world",
+    "files": [
+      "tests/HelloWorld.Tests/HelloWorld.FunctionalTests/Helpers/TestingAspireAppHost.cs"
+    ]
+  },
+  {
+    "repo": "bitfoundation/bit-templates-playground",
+    "files": [
+      "src/Server/Bit.TemplatePlayground.Server.Shared/Infrastructure/Extensions/WebApplicationBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Bitworx-cz/Updater-Web",
+    "files": [
+      "Updater.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "bjablonsky/staffifyr-public",
+    "files": [
+      "src/Staffifyr.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "bkisly/Saver",
+    "files": [
+      "test/Saver.IntegrationTests/IntegrationTest1.cs",
+      "test/Saver.IntegrationTests/IntegrationTest1.cs",
+      "test/Saver.IntegrationTests/IntegrationTest1.cs",
+      "src/Saver.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "bklimowicz/aspireapp",
+    "files": [
+      "AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "BogdanMadose/Path-of-Boredom",
+    "files": [
+      "Path of Boredom.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "bovrhovn/azure-demos-multitenancy-agentic-ai",
+    "files": [
+      "src/MTOA/MTOA.ServiceDefaults/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "bradygaster/AugmentR",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "bradygaster/MultiAgent",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "bradygaster/RockPaperOrleans",
+    "files": [
+      "src/Defaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "bradygaster/squad-places",
+    "files": [
+      "tests/SquadPlaces.IntegrationTests/AppHostFixture.cs",
+      "tests/SquadPlaces.AppHost.Tests/ApiValidationTests.cs"
+    ]
+  },
+  {
+    "repo": "bradygaster/WoodgroveBank",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "BridgingIT-GmbH/bITdevKit.Examples.BookFiesta",
+    "files": [
+      "src/Modules/Catalog/Catalog.IntegrationTests/Presentation/Web/AspireAppHostFixture.cs"
+    ]
+  },
+  {
+    "repo": "bronc72/BreweryFinder",
+    "files": [
+      "BreweryFinder/Test/IntegrationTest1.cs",
+      "BreweryFinder/Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "brucedog/AspireServiceApp",
+    "files": [
+      "AspireServiceApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "bryanboettcher/KbStore",
+    "files": [
+      "KbStore.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "BryanWilhite/dotnet-core",
+    "files": [
+      "dotnet-aspire-starter/My.AspireStarterApp/My.AspireStarterApp.Tests/WebTests.cs",
+      "dotnet-aspire-starter/My.AspireStarterApp/My.AspireStarterApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "buzzripper/app1-common",
+    "files": [
+      "src/Common.Api/Extensions/SvcCollExtensions/HttpExtensions.cs"
+    ]
+  },
+  {
+    "repo": "c0548543948-debug/DeliveryManagementAppServer",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "Cagriucaroglu/MeadiaTR",
+    "files": [
+      "MediaTR.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "camidesarrollo/GestionPedidos",
+    "files": [
+      "GestionPedidos.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "capitalZer0/EBCaseStudy",
+    "files": [
+      "EBCaseStudy.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "captainderek101/IT326_Project",
+    "files": [
+      "Ups_Downs_API/Ups_Downs_API.Tests/WebTests.cs",
+      "Ups_Downs_API/Ups_Downs_API.Tests/CommentOnPostTests.cs"
+    ]
+  },
+  {
+    "repo": "captainsafia/AspireAzureFunctionsSample",
+    "files": [
+      "AzureFunctionsTest/AzureFunctionsTest.Tests/IntegrationTest.cs"
+    ]
+  },
+  {
+    "repo": "Carl-Hugo/LinkedIn-Code",
+    "files": [
+      "2025/Aspire-001-empty/MyApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "carlosdh12335-ship-it/INTELIGENCIA-VASTA-DA-IA-",
+    "files": [
+      "external_sources/autogen/dotnet/samples/dev-team/DevTeam.ServiceDefaults/Extensions.cs",
+      "external_sources/autogen/dotnet/samples/dev-team/DevTeam.ServiceDefaults/Extensions.cs",
+      "external_sources/autogen/dotnet/samples/dev-team/DevTeam.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "CaseyDevs/MyCal",
+    "files": [
+      "MyCal.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ceceayo/kraliquack",
+    "files": [
+      "server/UGS.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Cethric/home-screen",
+    "files": [
+      "HomeScreen.Integration.Tests/IntegrationTest1.cs",
+      "HomeScreen.Integration.Tests/IntegrationTest1.cs",
+      "HomeScreen.Integration.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "cfonseca23/CF.AspireApp.Llm",
+    "files": [
+      "CF.AspireApp.Llm.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "chalcolith/aspire_parameter_override",
+    "files": [
+      "AspireParameterOverride.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ChilliCream/fusion-demo",
+    "files": [
+      "src/Defaults/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "chrismeller/archiveteam-exporter",
+    "files": [
+      "src/ArchiveTeam.Exporter.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "christiantricarico/Gestionale-DotNet",
+    "files": [
+      "src/Gdn.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "christophwille/OTel-de-Wille",
+    "files": [
+      "LamplightCsharp/LamplightCsharp.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "chuanboz/AspireTestApp",
+    "files": [
+      "AspireTestApp.Tests/AspireAppHostFixture.cs"
+    ]
+  },
+  {
+    "repo": "Cipher-4O4/GZ-AD",
+    "files": [
+      "src/GZCTF/Extensions/Startup/AppBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "cjramos-shift/calendar.schedule",
+    "files": [
+      "Aspire.Calendar/Aspire.Calendar.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Clifftech123/AspireTodoApp",
+    "files": [
+      "AspireTodoApp.Server.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "ClockWorkTeddy/cellesseum",
+    "files": [
+      "Celleseum.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "CloudFitSoftware/react-webapi-oidc",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "cloudfy/AlphaUrsae",
+    "files": [
+      "src/hosts/AlphaUrsae.ServiceDefaults/ServiceDefaultExtensions.cs"
+    ]
+  },
+  {
+    "repo": "cluka/serilog_problem",
+    "files": [
+      "WebApplication1/Program.cs"
+    ]
+  },
+  {
+    "repo": "CNILearn/bastaspring2024",
+    "files": [
+      "telemetry/AspireSample/AspireSample.ServiceDefaults/Extensions.cs",
+      "telemetry/AspireSample/AspireSample.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "codebytes/dotnet-configuration-in-depth",
+    "files": [
+      "28-aspire/AspireSample.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "CodeStencil-Demos/MudBlazor-ChinookWebApp",
+    "files": [
+      "src/ChinookWebApp.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "colinccook/blog-dotnet9-cross-docker-network-communication-with-aspire",
+    "files": [
+      "ColinCCook.AppHost.AppHost.IntegrationTests/AspireRunServiceTests.cs",
+      "ColinCCook.AppHost.AppHost.IntegrationTests/AspireRunServiceTests.cs",
+      "ColinCCook.AppHost.AppHost.IntegrationTests/AspireRunServiceTests.cs"
+    ]
+  },
+  {
+    "repo": "colinccook/throwaway-aspire-experiment",
+    "files": [
+      "SimpleRest.AppHost.Tests/RootTests.cs"
+    ]
+  },
+  {
+    "repo": "colincmac/agentic-voice-ai",
+    "files": [
+      "src/Shared/Showcase.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "colincmac/ai-rag-techniques-on-azure",
+    "files": [
+      "rag-demos/app_host/Showcase.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "colincmac/github-copilot-bitesized-extensions",
+    "files": [
+      "dotnet/Showcase.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "colincmac/showcase-ai",
+    "files": [
+      "Showcase.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "colinwilliams91/gnr-v1",
+    "files": [
+      "gnr-v1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "collabskus/weather",
+    "files": [
+      "src/Weather.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "ColmKenna/Field-Sales",
+    "files": [
+      "tests/Unit/FieldSales.Web/CatalogueHttpContractTests.cs"
+    ]
+  },
+  {
+    "repo": "CommunityToolkit/Maui",
+    "files": [
+      "samples/CommunityToolkit.Maui.Sample/MauiProgram.cs"
+    ]
+  },
+  {
+    "repo": "context-and-oss/xrm-emulator",
+    "files": [
+      "tests/XrmEmulator.Tests/XrmEmulatorFixture.cs"
+    ]
+  },
+  {
+    "repo": "cooper538/eshop-demo",
+    "files": [
+      "tests/E2E.Tests/Fixtures/E2EAuthTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "crglovejoy/chameleon-service-virtualization-api",
+    "files": [
+      "Chameleon.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "CRGorman/CRGorman.Demo",
+    "files": [
+      "CRGorman.Demo.Tests/WebTests.cs",
+      "CRGorman.Demo.Tests/GuideApiTests.cs"
+    ]
+  },
+  {
+    "repo": "Cristian-Stanescu/JoyJourney",
+    "files": [
+      "test/JoyJourney.IntegrationTests/IntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "cristofima/BankSystemMicroservices",
+    "files": [
+      "src/aspire-app/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "cristofima/TaskAgent-AgenticAI",
+    "files": [
+      "src/backend/TaskAgent.ServiceDefaults/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "CrunkA3/OpenHR",
+    "files": [
+      "OpenHR.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "CrunkA3/TripPlanner",
+    "files": [
+      "TripPlanner.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "csharpfritz/AspireDevToDeploy",
+    "files": [
+      "demo1/ServiceDefaults/Extensions.cs",
+      "demo3/ServiceDefaults/Extensions.cs",
+      "demo4/ServiceDefaults/Extensions.cs",
+      "demo2/ServiceDefaults/Extensions.cs",
+      "complete/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "csharpfritz/AspirePlaywrightDemo",
+    "files": [
+      "Tests/IntegrationTests.cs",
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "csharpfritz/CopilotThatJawn",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ctorresunimag95/my-local-app",
+    "files": [
+      "Cinema.Functional.Tests/AppHost/AspireAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "CuddleYourCat/touchline-ai",
+    "files": [
+      "src/Touchline.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Cyberdine-Systems-Corporation/ShiftFlow-sdaf",
+    "files": [
+      "src/ShiftFlow.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "cyharyanto/llassist",
+    "files": [
+      "llassist.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "CZEMacLeod/C3D.Extensions.Aspire",
+    "files": [
+      "samples/SWA/SWACore/Program.cs",
+      "tests/SWATestProject/Tests/SWAIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "D16IT6/EzioLearning",
+    "files": [
+      "src/EzioLearning.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "dahlsailrunner/cloud-ready-with-aspire",
+    "files": [
+      "CarvedRock.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "dahlsailrunner/using-csharp-mcp-sdk",
+    "files": [
+      "tests/CarvedRock.IntegrationTests/Utils/AppFixture.cs"
+    ]
+  },
+  {
+    "repo": "dakotalantrip/PWA-APIv2",
+    "files": [
+      "PWAApi.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "DamianEdwards/AspireStarterDb",
+    "files": [
+      "AspireStarterDb.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "DamianNS/AgenteCoff",
+    "files": [
+      "AgenteCoff.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "damienbod/keycloak-backchannel",
+    "files": [
+      "Idp.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "damienbod/WebGeoElasticsearch",
+    "files": [
+      "Elastic.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "DanielJSantos96/HackerNewsIntegration",
+    "files": [
+      "HackerNewsIntegration.Tests/Api/Endpoints/BestStories/GetBestStoriesIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "danielmackay/dotnet-clean-architecture-graphql",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "danielproctor31/contentful-dotnet-starter",
+    "files": [
+      "Contentful.DotNet.Starter.Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "danzuep/CustomAuthenticationApp",
+    "files": [
+      "CustomAuthenticationAspireApp.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "danzuep/OpenBible",
+    "files": [
+      "Bible.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "daohainam/catalog-api",
+    "files": [
+      "ProductCatalog.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "daohainam/corebanking-api",
+    "files": [
+      "CoreBanking.IntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "daolvera/Dao.SWC",
+    "files": [
+      "Dao.SWC.Tests/WebTests.cs",
+      "Dao.SWC.Tests/WebTests.cs",
+      "Dao.SWC.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "darianferrer/OpenTelemetryPlayground",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Darlan82/Mercado_D",
+    "files": [
+      "src/MercadoD.Di.Ioc/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Dativerse/DotriStack.AuthCenter",
+    "files": [
+      "tests-integration/DotriStack.AuthCenter.ApiHost.Integration.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "datndhhe170720/Translate-ChatGPT",
+    "files": [
+      "Translate_ChatGPT/Translate_ChatGPT.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "davechampion-dev/DavesDartsClub",
+    "files": [
+      "src/DavesDartsClub.IntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "DavianShah/HackToday_platform",
+    "files": [
+      "src/GZCTF/Extensions/Startup/AppBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "DavianShah/ITFest-GZCTF-Demo",
+    "files": [
+      "src/GZCTF/Extensions/Startup/AppBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Davicloud-NET/DDT",
+    "files": [
+      "src/DDT.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "davidfowl/aspire-13-samples",
+    "files": [
+      "vite-csharp-postgres/api/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "davidfowl/aspire-demos",
+    "files": [
+      "vite-api/Api/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "davidfowl/Build2024AspireDemo",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "davidfowl/ImageFun",
+    "files": [
+      "ImageFun.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "davidfowl/pr-dashboard",
+    "files": [
+      "pr-timeline-app.Server/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "davidop/agent-jira-mcp-accelerator",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "davidop/agentcamp-madrid-2026",
+    "files": [
+      "src/AspireApp2.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "davidop/agentcon-ponferrada-2025",
+    "files": [
+      "src/AspireApp2.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "davidop/christmas-power-data-platform-2025",
+    "files": [
+      "src/AspireApp2.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "davidpizon/DoxaEnterprise",
+    "files": [
+      "src/Doxa.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "davidsgv/Prueba-Tecnica",
+    "files": [
+      "backend/FlashLogistic.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "DavisKolakowski/pulse-by-mirthsystems",
+    "files": [
+      "tests/Application.IntegrationTests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "davypaulino/guadian",
+    "files": [
+      "guardian.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "davypaulino/p-game-core",
+    "files": [
+      "src/PungCoreGame/PungCoreGame.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "dawidpereira/opentelemetry-demo",
+    "files": [
+      "OpenTelemetryDemo.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "dcostea/Apex.RobotCarGpt",
+    "files": [
+      "Apex.RobotCarGpt/Program.cs"
+    ]
+  },
+  {
+    "repo": "destacey/Wayd",
+    "files": [
+      "Wayd.Infrastructure/src/Wayd.Infrastructure/ConfigureServices.cs"
+    ]
+  },
+  {
+    "repo": "DevExpress-Examples/xaf-blazor-aspire-advanced",
+    "files": [
+      "CS/XafAspireDemo.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "devkimchi/az-sub-cost-management",
+    "files": [
+      "tests/AzureCostDashboard.EndToEndTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "DevPartner/dotnet-review-assistant",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "devsanx/infra",
+    "files": [
+      "Tests/WebTests.cs",
+      "Website/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "devv-guru/Arkana",
+    "files": [
+      "archive/legacy/_test/AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Dewiride-Open-Source/ERP-AI-Pro",
+    "files": [
+      "backend/BuildingBlocks/Observability/Dewiride.Erp.BuildingBlocks.Observability/Resilience/HttpClientResilience.cs"
+    ]
+  },
+  {
+    "repo": "Dextar713/FriendNetApp",
+    "files": [
+      "FriendNetApp.IntegrationTests/AspireAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "Dhee1810/CRN.ProductManagement",
+    "files": [
+      "CRN.ProductManagement.API.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "dheltanumericz/vibe-pos",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "DimonSmart/NotesCommander",
+    "files": [
+      "NotesCommander/NotesCommander.MauiServiceDefaults/ServiceDefaultExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Djohnnie/HalloContainerApps-APHogeschool-2025",
+    "files": [
+      "example-5/AspireExample.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Djohnnie/HelloAzureContainerApps-UpdateConferenceKrakow-2025",
+    "files": [
+      "example-5/AspireExample.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Dlucap/TradingPlatform",
+    "files": [
+      "BackEnd/TradingPlatform/OrderAccumulator.Infrastructure/Configurations/ServiceDefaults.cs"
+    ]
+  },
+  {
+    "repo": "dniggeler/PensionTools",
+    "files": [
+      "src/aspire/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "DNikolayD/FS",
+    "files": [
+      "FS.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "doctorspider42/llm-eval-studio",
+    "files": [
+      "src/LlmEval.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "DohrMelanie/POSE",
+    "files": [
+      "homework/05-invoicer/starter/WebApiTests/WebApiTestFixture.cs",
+      "homework/08-bracelet/starter/WebApiTests/WebApiTestFixture.cs",
+      "homework/07-travelex/solution/WebApiTests/WebApiTestFixture.cs",
+      "homework/10-running2/WebApiTests/WebApiTestFixture.cs",
+      "homework/07-travelex/starter/WebApiTests/WebApiTestFixture.cs",
+      "homework/04-todo-list/WebApiTests/WebApiTestFixture.cs",
+      "homework/09-running/starter/WebApiTests/WebApiTestFixture.cs",
+      "homework/06-wishlist/starter/WebApiTests/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "Dometrain/getting-started-graphql-in-dotnet",
+    "files": [
+      "Chapter08/Complete/Lesson2/src/eShop.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "DominicCronin/KnabAssignment",
+    "files": [
+      "ExchangeRates/ExchangeRates.IntegrationTests/IntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "dominik74/excelconverter",
+    "files": [
+      "ExcelConverter/IntegrationTest1.cs",
+      "ExcelConverter/IntegrationTest1.cs",
+      "ExcelConverter/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "dontloseyourheadsu/DistributedShoppingStore",
+    "files": [
+      "application/TradingStore.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Dotfinity/proxysql-admin-ui",
+    "files": [
+      "ProxysqlAdminUi.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "dotnet-presentations/eshop-app-workshop",
+    "files": [
+      "src/IntegrationTests/WebAppTests.cs"
+    ]
+  },
+  {
+    "repo": "dotnetcrew/sentimeter",
+    "files": [
+      "tests/Sentimeter.AppHost.Test/MyIntegrationTest.cs"
+    ]
+  },
+  {
+    "repo": "douglasfls/desafio-backend",
+    "files": [
+      "DesafioBackend.Tests.ApiService/IntegrationTest1.cs",
+      "DesafioBackend.Tests.ApiService/IntegrationTest1.cs",
+      "DesafioBackend.Tests.ApiService/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "dragon1353/test-msAI",
+    "files": [
+      "src/build-2024/06 - Modifying Kernel Behavior with Dependency Injection/Program.cs"
+    ]
+  },
+  {
+    "repo": "Drazzz/shiny-enigma",
+    "files": [
+      "src/Aspire.Playground.AppHost.UnitTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "Drikus/quad-assignment",
+    "files": [
+      "Quad.Trivia/Quad.Trivia.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "dronkoff/five9-adapter",
+    "files": [
+      "SpeechTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "dtorannpu/AspireTodoApp",
+    "files": [
+      "AspireTodoApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "duanenewman/ConnectedAppsWithMaui",
+    "files": [
+      "tests/ConnectedApps.Integration.Tests/AppHostStartupTests.cs",
+      "tests/ConnectedApps.Integration.Tests/AppHostStartupTests.cs",
+      "tests/ConnectedApps.Integration.Tests/AppHostStartupTests.cs"
+    ]
+  },
+  {
+    "repo": "dukeb1212/WopiHost",
+    "files": [
+      "infra/WopiHost.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "duongphuhiep/netcoretuto2",
+    "files": [
+      "GenericAspApi/AppFactory.cs"
+    ]
+  },
+  {
+    "repo": "DuruGncy/HotelBooking",
+    "files": [
+      "HotelBooking.Gateway/Program.cs"
+    ]
+  },
+  {
+    "repo": "Duysss-uit/GameVaultManager",
+    "files": [
+      "GameVaultManager.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "dvdalves/aspire-blazor-keycloak",
+    "files": [
+      "aspire-blazor-keycloak.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "dwalleck/basic-budget",
+    "files": [
+      "tests/BasicBudget.IntegrationTests/CategoryScenarioTests.cs",
+      "tests/BasicBudget.IntegrationTests/BudgetScenarioTests.cs"
+    ]
+  },
+  {
+    "repo": "dwalleck/CompanyManagementApi",
+    "files": [
+      "src/Employee.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "e89wrhi/ai-net",
+    "files": [
+      "Src/Aspire/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "e89wrhi/sports-net",
+    "files": [
+      "Src/Aspire/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ecocybernetyc/knowledge-base",
+    "files": [
+      "templates/NET/Aspire/Aspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ecoDriverltd/FoundryAgentsExperiment",
+    "files": [
+      "FoundryAgentsExperiment.SampleParityTests/SampleParitySessionStoreTests.cs"
+    ]
+  },
+  {
+    "repo": "ECU-Pirate-Forge/pulse-2.0",
+    "files": [
+      "src/Pulse.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "edsml-kl121/agent-unit-testing",
+    "files": [
+      "src/AgentEvalsWorkshop.ServiceDefaults/Extensions.cs",
+      "src/AgentEvalsWorkshop.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "edualmeida/BlogLab.Backend",
+    "files": [
+      "BlogLab.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "egarabini/chatbot_geralda",
+    "files": [
+      "Chatbot.Geralda.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "egarabini/conecta_rede",
+    "files": [
+      "ConectaRede.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "egorychmaster/PizzaSaga",
+    "files": [
+      "src/Host/PizzaSaga.ServiceDefaults/Extensions/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Ekrem-A/App-microServices",
+    "files": [
+      "Idendity.Api/Idendity.Infrastructure/Services/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "elastic/elastic-otel-dotnet",
+    "files": [
+      "examples/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "elbruno/26-07-15-AINET-LocalAI-MAF",
+    "files": [
+      "samples/08-aichatweb-azure-vs-local/02-aichatweb-local/02-aichatweb-local.Web/OllamaResilienceHandlerExtensions.cs"
+    ]
+  },
+  {
+    "repo": "elbruno/AIWebChatApp-FuggingFaceMcp",
+    "files": [
+      "AIWebChat-HF-Ollama/AIWebChat-HF-Ollama.Web/OllamaResilienceHandlerExtensions.cs"
+    ]
+  },
+  {
+    "repo": "elbruno/CopilotAspireArchitectureGeneration",
+    "files": [
+      "src/AspireApp2.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "EmilienBe/BattleJop",
+    "files": [
+      "Web/BattleJop.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "emilyireland3/intro-to-programming",
+    "files": [
+      "src/AspireDemoWithStarter/AspireDemoWithStarter.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "emimontesdeoca/azure-ai-connect-2026-semantic-kernel",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "emrgcl/octopets-demo",
+    "files": [
+      "servicedefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Engisabokenock/-thomhurst__tunit__5472",
+    "files": [
+      "TUnit.Templates/content/TUnit.Aspire.Test/IntegrationTest1.cs",
+      "TUnit.Templates.Tests/Snapshots/InstantiationTest.TUnit.Aspire.Starter._.verified/TUnit.Aspire.Starter/TUnit.Aspire.Starter.TestProject/AppFixture.cs",
+      "TUnit.Templates/content/TUnit.Aspire.Starter/ExampleNamespace.TestProject/AppFixture.cs",
+      "TUnit.Templates.Tests/Snapshots/InstantiationTest.TUnit.Aspire.Test._.verified/TUnit.Aspire.Test/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "enigmatry/entry-blueprint",
+    "files": [
+      "Enigmatry.Entry.Blueprint.ServiceDefaults/ProgramExtensions.cs"
+    ]
+  },
+  {
+    "repo": "EnlivenBot/Enliven",
+    "files": [
+      "Aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ericuellendahl/Aspire.Net",
+    "files": [
+      "Aspire.Net.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ericwood8/TimeEntryServer",
+    "files": [
+      "TimeEntry.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "erion0101/HRsmartAspireProjects",
+    "files": [
+      "HRsmartAspireProject.ApiService/Program.cs"
+    ]
+  },
+  {
+    "repo": "Ermesx/pinventory",
+    "files": [
+      "src/Pinventory.Web/ApiClients/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "escendit/coldframe",
+    "files": [
+      "apps/cs/server/Hosting/ServiceDefaultsExtensions.cs",
+      "apps/cs/server/Hosting/ServiceDefaultsExtensions.cs",
+      "apps/cs/server/Hosting/ServiceDefaultsExtensions.cs",
+      "tests/cs/server.tests/Notifications/PushHostingTests.cs",
+      "tests/cs/web.e2e/MorningNudgeFixture.cs"
+    ]
+  },
+  {
+    "repo": "escendit/extensions-hosting",
+    "files": [
+      "src/ServiceDefaults/ServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "eten-tech/bible-well",
+    "files": [
+      "src/BibleWell.App/App.axaml.cs",
+      "src/BibleWell.App/App.axaml.cs"
+    ]
+  },
+  {
+    "repo": "Evilazaro/Azure-LogicApps-Monitoring",
+    "files": [
+      "app.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "excos-platform/excos",
+    "files": [
+      "test/Excos.Platform.AppHostTests/AppHost.cs",
+      "src/Excos.Platform.WebApiHost/Program.cs"
+    ]
+  },
+  {
+    "repo": "fabio-marini/aspire-shell",
+    "files": [
+      "src/AzdAspire.Tests/IntegrationTest1.cs",
+      "src/AzdAspire.Tests/IntegrationTest1.cs",
+      "src/AzdAspire.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "fadilakarimli/EvTap-Api",
+    "files": [
+      "tests/EvTap.IntegrationTests/EvTapAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "FahadAkash/Blockchain-Based-Voting-System",
+    "files": [
+      "Blockchain Based Voting System/Blockchain Based Voting System.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "farooq-teqniqly/aspire-openspec",
+    "files": [
+      "AspireApp/AspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "FaruqHAO/TicketingSystem",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "fboucher/2d6-dungeon-app",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "fboucher/my-gpx-activities",
+    "files": [
+      "my-gpx-activities/my-gpx-activities.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "fdonnet/yarp-security-api-and-ui",
+    "files": [
+      "UbikLink.ServiceDefaults/Extensions.cs",
+      "UbikLink.IntegrationTests/AspireFixture.cs"
+    ]
+  },
+  {
+    "repo": "felipextrindade/AspireApp.Ollama.Example",
+    "files": [
+      "AspireApp.Ollama.Example.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "fengb3/WHY",
+    "files": [
+      "WHY.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "fenixdevsreborn/Fase5-Hackathon",
+    "files": [
+      "src/ConexaoSolidaria.Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "fenterbug/AspireWalkthrough",
+    "files": [
+      "AspireWalkthrough.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "FilimonEnc/PackageUniverse",
+    "files": [
+      "PackageUniverse.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "filonenkoalex/ultimate_fullstack",
+    "files": [
+      "UltimateApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "firdausng/event.orchestrator",
+    "files": [
+      "src/events.subscriber/Program.cs"
+    ]
+  },
+  {
+    "repo": "fnandop/nando-aspire-temporal",
+    "files": [
+      "tests/Nando.Aspire.Temporal.IntegrationTests/TemporalIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "forres-jiang/MySolution",
+    "files": [
+      "My.XXX.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "foxminchan/BookWorm",
+    "files": [
+      "src/Aspire/BookWorm.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "fragonardo/WOT.BoatApp",
+    "files": [
+      "Boat.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "frankvdb7/Hagalaz",
+    "files": [
+      "Hagalaz.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "fred2u/XtreamForge",
+    "files": [
+      "tests/XtreamForge.Tests/Infrastructure/RateLimiting/RateLimitHandlerTests.cs"
+    ]
+  },
+  {
+    "repo": "Frederik91/Linksy",
+    "files": [
+      "src/Linksy.Api.Tests/IntegrationTest1.cs",
+      "src/Linksy.Api.Tests/IntegrationTest1.cs",
+      "src/Linksy.Api.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "frostaura/fa.libraries.dotnet",
+    "files": [
+      "src/Semantic.Core/Data/OpenAILanguageModelsDataAccess.cs"
+    ]
+  },
+  {
+    "repo": "fsmaiorano/marketspace",
+    "files": [
+      "infra/MarketSpace.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Funigun/MyHomeRamen",
+    "files": [
+      "MyHomeRamen.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "furkanpasaoglu/StadiaPass",
+    "files": [
+      "orchestrator/StadiaPass.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "fvandillen/opentelemetry-dotnet-demo",
+    "files": [
+      "OpenTelemetryDemo.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "g4rc1ss/projects-templates",
+    "files": [
+      "dotnet/Web/Completed/test/CompletedWeb.HostWebApi.Tests/ApiServiceFixture.cs",
+      "dotnet/Web/Completed/test/CompletedWeb.HostWebApi.Tests/ApiServiceFixture.cs"
+    ]
+  },
+  {
+    "repo": "g4solio/LibraryReservationManagementSystem",
+    "files": [
+      "LibraryReservationManagementSystem.Tests/IntegrationTest.cs"
+    ]
+  },
+  {
+    "repo": "GabiestDev/CRM-Blazor-Aspire",
+    "files": [
+      "CRM.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "gabisonia/temporal-dotnet-demo-with-aspire",
+    "files": [
+      "TemporalDemo.AppHost.Tests/AppHostFixture.cs"
+    ]
+  },
+  {
+    "repo": "gabrielcastellani/ClothingManager",
+    "files": [
+      "ClothingManager.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "GameFrameX/GameFrameX.Server.Source",
+    "files": [
+      "GameFrameX.StartUp/ServiceDefaults/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "GamerYuan/MehrakBot",
+    "files": [
+      "MehrakBot/Services/Mehrak.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "gayashan4lk/aspire-cv-analyzer",
+    "files": [
+      "aspire-cv-analyzer.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "gbrribeiro/finance-ai-api",
+    "files": [
+      "finance-ai.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "georgebjork/FairwayFinder",
+    "files": [
+      "src/FairwayFinder.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "gh05tdog/DAPM_Master_Thesis_Group_D",
+    "files": [
+      "DAPM/DAPM.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "GhaniKnz/Instant_Aspire",
+    "files": [
+      "Aspire/Aspire.TestProject/GlobalSetup.cs"
+    ]
+  },
+  {
+    "repo": "GhaniKnz/Instant_Aspire_Catalogue",
+    "files": [
+      "Aspire/Aspire.TestProject/GlobalSetup.cs"
+    ]
+  },
+  {
+    "repo": "ghubprojects/AnkiBridge-original",
+    "files": [
+      "tests/AnkiBridge.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ghubprojects/BankingSystem",
+    "files": [
+      "src/IntegrationTests/IntegrationTest1.cs",
+      "src/IntegrationTests/BankingAppIntegrationTest.cs",
+      "src/IntegrationTests/BankingAppIntegrationTest.cs"
+    ]
+  },
+  {
+    "repo": "Gibbs-Morris/mississippi",
+    "files": [
+      "samples/Crescent/Crescent.L2Tests/CrescentFixture.cs"
+    ]
+  },
+  {
+    "repo": "giometrix/Xtensible.Aspire.Hosting.Cassandra",
+    "files": [
+      "test/Xtensible.Aspire.Hosting.Cassandra.Tests/CassandraTestAppHostFixture.cs"
+    ]
+  },
+  {
+    "repo": "giorgiocrp/quizplatform",
+    "files": [
+      "QuizPlatform.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "giovanibolonha/Auctions",
+    "files": [
+      "Bolonha.Auctions.Tests/AuctionsApiFixture.cs"
+    ]
+  },
+  {
+    "repo": "gizemorak/ECommerce",
+    "files": [
+      "ServiceDefaults1/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "gjprieto/contaflow",
+    "files": [
+      "Applications/Alicazum.Contaflow.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "glensouza/csdac-pathfinder-25-honor-photography",
+    "files": [
+      "PathfinderPhotography.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "gogetenk/realtime-transactions-poc",
+    "files": [
+      "RealtimeTransactions/RealtimeTransactions.EndToEndTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "goingmyway243/AspireLearningApp",
+    "files": [
+      "AspireLearningApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "goldytech/whatsapp-ai-travel-agent",
+    "files": [
+      "src/AgentForge.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Gopal-Pattar/GpRestaurant",
+    "files": [
+      "GpRestaurant/GpRestaurant.Tests/WebTests.cs",
+      "GpRestaurant/GpRestaurant.Tests/WebTests.cs",
+      "GpRestaurant/GpRestaurant.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "goranzr85/modular-monolith",
+    "files": [
+      "src/modular-monolith.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "governmentbg/CIPDR",
+    "files": [
+      "URegister.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "gowthamece/CSharpEssentials",
+    "files": [
+      "Entra ID/App-Workflow/EntraID-Workflow/EntraID-Workflow.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "gowthamece/MS-EntraID-Workflow",
+    "files": [
+      "EntraID-Workflow.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Gravicode/MLBuilderChatBot",
+    "files": [
+      "src/MLAgent/Services/ChatService.cs"
+    ]
+  },
+  {
+    "repo": "greghesom/umuthi",
+    "files": [
+      "umuthi.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Greven145/ModuleBuilder",
+    "files": [
+      "ModuleBuilder.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "GreYak/poc-aspire",
+    "files": [
+      "AspireServiceDefaults/Networking/HttpClientResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "GreyFoxHFG/personal-dotnet-aspire-workshop",
+    "files": [
+      "complete/IntegrationTests/IntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "gtkpad/CashFlow",
+    "files": [
+      "src/CashFlow.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "GuildSaber/GuildSaber",
+    "files": [
+      "tests/GuildSaber.AspireTests/GlobalSetup.cs"
+    ]
+  },
+  {
+    "repo": "GZTimeWalker/GZCTF",
+    "files": [
+      "src/GZCTF/Extensions/Startup/AppBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "haacked/ai-demo",
+    "files": [
+      "src/AIDemo.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "HaasLuca/prog-5AHIF-Haas",
+    "files": [
+      "homework/30-invoicer/starter/WebApiTests/WebApiTestFixture.cs",
+      "homework/30-invoicer/solution/WebApiTests/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "HaasLuca/tennis-tournament-haas",
+    "files": [
+      "WebApiTests/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "HackerspaceMumbai/Visage",
+    "files": [
+      "Visage.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Hangsolow/TriTrainer",
+    "files": [
+      "tests/TriTrainer.PlaywrightTests/AppFixture.cs",
+      "tests/TriTrainer.IntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "haris-begluk/ecommerce-poseidon",
+    "files": [
+      "poseidon.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "harpreetset1/semantic-kernel-extn",
+    "files": [
+      "dotnet/samples/KernelSyntaxExamples/Example18_DallE.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAICompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "harrykimpel/microsoft-foundry-o11y-samples",
+    "files": [
+      "agent-framework-travel-planner/dotnet/AspireApp.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "HarryWEB/POI",
+    "files": [
+      "src/build-2024/06 - Modifying Kernel Behavior with Dependency Injection/Program.cs"
+    ]
+  },
+  {
+    "repo": "hco556/AspireWebApi",
+    "files": [
+      "AspireWebApi.Tests/WebTests.cs",
+      "AspireWebApi.Tests/WebTests.cs",
+      "AspireWebApi.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "hco556/NorthwindAspire",
+    "files": [
+      "NorthwindAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "HDnnay/LocationSystem",
+    "files": [
+      "LocationSystem.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "HeChuQIU/Hddis",
+    "files": [
+      "Hddis.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "HeliosPersonal/overflow",
+    "files": [
+      "Overflow.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "hemantshelar/entra-id-app-portal",
+    "files": [
+      "entra-id-app-portal/entra-id-app-portal.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "henrik-me/authzandentitlements",
+    "files": [
+      "src/AuthzEntitlements.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "herolava259/Software-Design-Practice",
+    "files": [
+      "OOPDesignProject/OOPDesignProject.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "hervehobbes/CleanArchitecture",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "Hexalith/Hexalith.NetAspire",
+    "files": [
+      "src/libraries/Hexalith.NetAspire.Defaults/AspireExtensions.cs"
+    ]
+  },
+  {
+    "repo": "HillPhelmuth/AdventuresInSemanticKernel",
+    "files": [
+      "SkPluginLibrary/Examples/Example08_RetryHandler.cs",
+      "SkPluginLibrary/CoreKernelService.cs",
+      "SkPluginLibrary/CoreKernelService.CustomExamples.cs"
+    ]
+  },
+  {
+    "repo": "HillPhelmuth/AIChess",
+    "files": [
+      "AIChess.Core/Services/ChessService.cs",
+      "AIChess.Core/Services/ChessDataGenerator.cs"
+    ]
+  },
+  {
+    "repo": "HillPhelmuth/AiGeneratedCodeDocs",
+    "files": [
+      "AiGeneratedCodeDocs/Services/CreateDocumentService.cs"
+    ]
+  },
+  {
+    "repo": "HillPhelmuth/AINovelWriter",
+    "files": [
+      "AINovelWriter.Shared/Services/NovelWriterService.cs",
+      "AINovelWriter.Shared/Services/ImageGenService.cs"
+    ]
+  },
+  {
+    "repo": "HillPhelmuth/CSharpUnitTestGen",
+    "files": [
+      "TestGenCore/UnitTestGeneratorService.cs",
+      "TestGenCore/UnitTestGeneratorService.cs"
+    ]
+  },
+  {
+    "repo": "hinakhuman/FleetKnowledge",
+    "files": [
+      "FleetKnowledge/tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "hoangnlhut/NetCore10MVC",
+    "files": [
+      "CoreBankingAspire/CoreBanking.IntegrationTests/CoreBankingIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "hollismarek/HL7App",
+    "files": [
+      "HL7App.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Homemade-Cookies/Aspiring",
+    "files": [
+      "Aspiring.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "hosein-pourtaghi/CleanArchitecture_dotnet10",
+    "files": [
+      "src/SharedApi/Extensions/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "houghj16/PetHoroscopeGenerator",
+    "files": [
+      "PetHoroscopeGenerator.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "houmam86/sample-forexground",
+    "files": [
+      "ForexGround.Tests/WebTests.cs",
+      "ForexGround.Tests/ForexApiIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "houmam86/sample-frankfurter",
+    "files": [
+      "Frankfurter.Api/FrankfurterApiService.cs",
+      "Frankfurter.Api/FrankfurterApiService.cs",
+      "Frankfurter.Api/FrankfurterApiService.cs"
+    ]
+  },
+  {
+    "repo": "HuberAndreas1/PO-Performance",
+    "files": [
+      "starter/WebApiTests/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "HuberAndreas1/prog-5ahif-huber",
+    "files": [
+      "homework/30-invoicer/WebApiTests/WebApiTestFixture.cs",
+      "homework/40-product-mgmt/WebApiTests/WebApiTestFixture.cs",
+      "homework/50-wishlist/starter/WebApiTests/WebApiTestFixture.cs",
+      "homework/80-bracelet/starter/WebApiTests/WebApiTestFixture.cs",
+      "homework/50-wishlist/solution/WebApiTests/WebApiTestFixture.cs",
+      "homework/90-running/starter/WebApiTests/WebApiTestFixture.cs",
+      "homework/60-travelex/starter/WebApiTests/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "hur1can3/SWAPI-ASPIRE",
+    "files": [
+      "GE.SWAPI.Tests/WebTests.cs",
+      "GE.SWAPI.Tests/StarshipControllerTests.cs"
+    ]
+  },
+  {
+    "repo": "Hylfrd/BNBU-CTF",
+    "files": [
+      "src/GZCTF/Extensions/Startup/AppBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ianrathbone/aspire-me",
+    "files": [
+      "aspire.me.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ignatandrei/MicroservicesPortChooser",
+    "files": [
+      "src/MicroservicesPortChooser/Generator/MSPC_CRUD20231225/MSPC_CRUD20231225/DB2GUI.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ignatandrei/rscg_queryables",
+    "files": [
+      "src/rscg_queryables/Tests1/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "igor-henriques/ChatRoom",
+    "files": [
+      "tests/ChatRoom.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Igordornelles/CRUD",
+    "files": [
+      "Asp.net/M_V_C/M_V_C.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "IgorSantanaM/AspireSample",
+    "files": [
+      "sample-aspire-approach/CarvedRock-Aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "IIIA-KO/Lanka",
+    "files": [
+      "src/Api/Lanka.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ikkihimura/dotnetTemplate",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ILoveDotNet/ilovedotnet",
+    "files": [
+      "ILoveDotNet.DistributedTest/Utils/AppFixture.cs"
+    ]
+  },
+  {
+    "repo": "imamulkarim/SponsorShipFinance",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "imamulkarim/SponsorShipRequestEntraWorkforce",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "imamulkarim/SponsorShipRequestExternalEntraWorkforce",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "imamulkarim/TechAssesment",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "Incoders-Tools/zonar-hub-api",
+    "files": [
+      "ZonarHub.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Indie365/semantic-kernel",
+    "files": [
+      "dotnet/samples/KernelSyntaxExamples/Example18_DallE.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAICompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "InfinityFlowApp/aspire-temporal",
+    "files": [
+      "sample/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "InnovationCoreTechnology/ICT.PaymentGateway",
+    "files": [
+      "tests/ICT.PaymentGateway.Application.UnitTests/IntegrationTest1.cs",
+      "tests/ICT.PaymentGateway.Application.UnitTests/IntegrationTest1.cs",
+      "tests/ICT.PaymentGateway.Application.UnitTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "Intrinsic-Data-Solution/FlagExplorer",
+    "files": [
+      "Tests/FlagExplorer.IntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "IranMarley/Ims-DemoPlatform",
+    "files": [
+      "src/Ims.DemoPlatform.Gateway.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "IsaacAlves7/clean-architecture",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "IsaiasRdzc/ClinicaDental",
+    "files": [
+      "src/ClinicaDental/ClinicaDental.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "itn3000/Itn.Etcd.Configuration",
+    "files": [
+      "Itn.Etcd.Configuration.AspireTest/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "Itzshivam1908/pararth",
+    "files": [
+      "PARARTH.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "IuriiSokolov/TicketingSystem",
+    "files": [
+      "TicketingSystem.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ivanball/MMCA.Common",
+    "files": [
+      "Source/Presentation/MMCA.Common.Grpc/DependencyInjection.cs",
+      "Source/Hosting/MMCA.Common.Aspire/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ivanenkomaksym/dotnet-messagebroker-demo",
+    "files": [
+      "eshop-aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ivaylo-botusharov/UsaCensus",
+    "files": [
+      "src/UsaCensus/UsaCensus.BackgroundTasks/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "jamesburton/Aspire.Integrations",
+    "files": [
+      "Aspire.Integrations.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "jamesmontemagno/eShopLiteOnAspire",
+    "files": [
+      "eShopLite.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "janeski/iot-cloud-native",
+    "files": [
+      "tests/MJA.CloudNative.IIoTStarter.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "janeski/iot_with_ai_durable_functions",
+    "files": [
+      "2_IoT_AI/src/IoT_AI_Demo.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "JasonSilvestri/JSopX.ReactCore",
+    "files": [
+      "JSopX.ReactCore.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "jaythumma/FarmAppAspire",
+    "files": [
+      "FarmAppAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "jaythumma/KingsAspireSpec",
+    "files": [
+      "KingsAspireSpec.Tests/Integration/AspireHostFixture.cs",
+      "KingsAspireSpec.Tests/Integration/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "jbogard/nsb-diagnostics-poc",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "jeanhibbert/EventHubHostLight",
+    "files": [
+      "EventHubHostLight.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "jeanhibbert/RxDemo2025",
+    "files": [
+      "RxDemoApp/RxDemoApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "jeffreypalermo/aspire-ollama",
+    "files": [
+      "AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "JeffryGonzalez/web-api-200-may-2026",
+    "files": [
+      "src/help-desk-weds/HelpDeskSolution/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "JeffryGonzalez/web-api-200-nov-2026",
+    "files": [
+      "weds/SoftwareSolution/SystemIntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "JeffryGonzalez/web-api-apr-2026",
+    "files": [
+      "src/SoftwareCenter/SoftwareCenterSolution/Software.SystemsIntegration/IntegrationTest1.cs",
+      "src/SoftwareCenter/SoftwareCenterSolution/Software.SystemsIntegration/IntegrationTest1.cs",
+      "src/SoftwareCenter/SoftwareCenterSolution/Software.SystemsIntegration/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "jennermand/karsoe.dk",
+    "files": [
+      "karsoe.dk.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "jennyf19/Entra-Aspire-Test",
+    "files": [
+      "AspireApp1/AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "jeremiahflaga/RestCountries-DotNet-Aspire",
+    "files": [
+      "SampleApp.TestProject/GlobalSetup.cs",
+      "RestCountries.WebApi.Tests/GlobalSetup.cs"
+    ]
+  },
+  {
+    "repo": "jerkerolofsson/MudGantt",
+    "files": [
+      "src/MudGanttDemoApp/MudGanttDemoApp.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "jerkerolofsson/testbucket",
+    "files": [
+      "tests/TestBucket.IntegrationTests/Fixtures/TestBucketApp.cs",
+      "tests/TestBucket.IntegrationTests/Fixtures/TestBucketApp.cs",
+      "tests/TestBucket.Tests.EndToEndTests/Fixtures/PlaywrightFixture.cs"
+    ]
+  },
+  {
+    "repo": "JerrettDavis/FlowLedger",
+    "files": [
+      "src/FlowLedger.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "JesHulk/AuthenticationTest",
+    "files": [
+      "src/AuthenticationTest.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "jfuerlinger/tankbuch",
+    "files": [
+      "src/Tankbuch.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "jfversluis/MauiAspire",
+    "files": [
+      "MauiApp.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "jhofer/jarvis",
+    "files": [
+      "_legacy/jarvis.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "JLorand/DokployDemo",
+    "files": [
+      "DokployDemo.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "JMiles42/OtelDemov1",
+    "files": [
+      "OtelDemov1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "jocelynenglund/ChoreMonkey",
+    "files": [
+      "ChoreMonkey.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "JohanSmarius/AspireCommunityToolkitDemo",
+    "files": [
+      "AspireDemo.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "JohnnyDevCraft/LearningCore1",
+    "files": [
+      "LearningCore1.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "johnstaveley/MCPNet",
+    "files": [
+      "IntegrationTests/ApiTest.cs"
+    ]
+  },
+  {
+    "repo": "JonahLargen/Skycamp",
+    "files": [
+      "Skycamp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "jonathantwite/Timesheets",
+    "files": [
+      "Timesheets.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Joorak/RahkarWeb",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Jorjo6712/Acoustic-Hard-Drive-Health-Monitor",
+    "files": [
+      "backend/hdd-health-monitor/src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "JoseAlejandro0508/Smart-Routes",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "josephaw1022/AspireWithAzureFunctions",
+    "files": [
+      "AzureFunctionsExample.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "joydipkanjilal/inventorymanagementsystem",
+    "files": [
+      "InventoryManagement.ServiceDefaults/Extensions.cs",
+      "InventoryManagement.Tests/IntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "jponnampalam-wowcorp/Terminal-Gateway",
+    "files": [
+      "xUnit.Tests/IntegrationTest1.cs",
+      "xUnit.Tests/IntegrationTest1.cs",
+      "xUnit.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "jrippington/Archon",
+    "files": [
+      "src/Archon.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "jtjaskulski/JJDevHub",
+    "files": [
+      "src/aspire/JJDevHub.ServiceDefaults/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "juliankock/npu",
+    "files": [
+      "tests/NPU.Tests/ApiServiceTests.cs"
+    ]
+  },
+  {
+    "repo": "julianls/AgiExperiment",
+    "files": [
+      "AgiExperiment.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Just-dll/gamestore",
+    "files": [
+      "Gamestore.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "JustDunia/Navilo",
+    "files": [
+      "Navilo.Tests/WebTests.cs",
+      "Navilo.Tests/WebTests.cs",
+      "Navilo.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "justeattakeaway/JustSaying",
+    "files": [
+      "samples/src/JustSaying.Sample.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "JustinJmnz/fraud-guard",
+    "files": [
+      "src/fraud-guard.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "justinpaulosolo/Nutrition",
+    "files": [
+      "Nutrition.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "JWill392/FomMon",
+    "files": [
+      "FomMon.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "KaiUweSchmidt/LuminaVault",
+    "files": [
+      "src/LuminaVault.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "kambaruda/WebAppGeneral",
+    "files": [
+      "WebAppGeneral.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "kapilkhub/AspireApp1",
+    "files": [
+      "AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "karlsvan/Kevin",
+    "files": [
+      "Kevin.Tests/Integration/ShortUrlApiTests.cs",
+      "Kevin.Tests/Integration/ShortUrlApiTests.cs"
+    ]
+  },
+  {
+    "repo": "kartik786-git/AiChataandRagwithaiagentApp",
+    "files": [
+      "AiChataandRagwithaiagentApp/AiChataandRagwithaiagentApp.Web/OllamaResilienceHandlerExtensions.cs"
+    ]
+  },
+  {
+    "repo": "kartik786-git/AspiredotnetMcp",
+    "files": [
+      "AspiredotnetMcp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "kasuken/aspire-eshop-minimart",
+    "files": [
+      "aspire-eshop-minimart.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "KayzelW/FelineX",
+    "files": [
+      "Aspire/Aspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "KayzelW/SSO",
+    "files": [
+      "SSO.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "kbdavis07/Jobster07",
+    "files": [
+      "App.Library.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "Keegan-Wright/FinTrack",
+    "files": [
+      "Src/FinanceTracker.AppHost.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "kermitfrosch/DevHabit",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Kerpackie/FinalYearProject",
+    "files": [
+      "Source/Aspire/src/FinalYearProject.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "KeveenMenezes/DuckStore.AWS",
+    "files": [
+      "src/BuildingBlocks/BuildingBlocks.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "KhaiTrang1995/TechSpherex.CleanArchitecture",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "khoado-se/ypp4-dotnet-inflow",
+    "files": [
+      "projects/Inflow/Inflow.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "khomiak-denys/sprintle-api",
+    "files": [
+      "src/shared-libs/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "kiapanahi/GitlabMetricsAnalyzer",
+    "files": [
+      "test/KuriousLabs.Management.KPIAnalysis.Tests/IntegrationTest1.cs",
+      "test/KuriousLabs.Management.KPIAnalysis.Tests/IntegrationTest1.cs",
+      "test/KuriousLabs.Management.KPIAnalysis.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "kiapanahi/QueryHive",
+    "files": [
+      "test/QueryHive.Tests/AppHostTests.cs"
+    ]
+  },
+  {
+    "repo": "kierunb/AspireHostWebApi",
+    "files": [
+      "AspireAppHost/AspireAppHost.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "kirill-d-lappo/hot-chocolate-demo",
+    "files": [
+      "src/HCDemo.Gql.HostDefaults/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Kiryuumaru/RestfulHelpers",
+    "files": [
+      "RestfulHelpers.Test/RestfulHelpers.Test.UnitTest/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "knu-Capstone2025/Capstone-Interview-Assistant",
+    "files": [
+      "test/InterviewAssistant.AppHost.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "koepalex/OpcUaNodesetExporter",
+    "files": [
+      "tests/OpcUaNodesetExporter.Tests/IntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "kolebynov/EchoSphere",
+    "files": [
+      "src/EchoSphere.Web.Client/Program.cs"
+    ]
+  },
+  {
+    "repo": "komluk/Aspire.Template",
+    "files": [
+      "Edft.Project/Edft.Project.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "konnektr-io/graph",
+    "files": [
+      "src/AgeDigitalTwins.ApiService.Test/TestingAspireAppHost.cs",
+      "src/AgeDigitalTwins.ApiService.Test/DigitalTwinsTrackLastUpdatedByIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "konradcinkusz/school-search",
+    "files": [
+      "src/SchoolSearch.ServiceDefaults/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "koss054/mud-barber",
+    "files": [
+      "MudBarber.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "kostenuksoft/.asp",
+    "files": [
+      "Platform.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Kr0oked/DotnetProjectManagement",
+    "files": [
+      "tests/AppHost.IntegrationTests/AppFixture.cs"
+    ]
+  },
+  {
+    "repo": "KralGmbh/Dynamics365-BusinessCentral",
+    "files": [
+      "src/Dynamics365.BusinessCentral/BusinessCentralHttpClients.cs"
+    ]
+  },
+  {
+    "repo": "KrasimirStoimenov/ApiaryManagementSystem-AMS",
+    "files": [
+      "ApiaryManagementSystem/aspire/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Kreeed2/BoardGameTracker",
+    "files": [
+      "BoardGameTracker.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "KurtP20/UnitTestsInAspire",
+    "files": [
+      "UnitTestsInAspire.Tests/WebTests.cs",
+      "UnitTestsInAspire.Tests/CustomWebApplicationFactory.cs"
+    ]
+  },
+  {
+    "repo": "kzu/file-based-aspire-apphost",
+    "files": [
+      "api/ServiceDefaults.cs"
+    ]
+  },
+  {
+    "repo": "l0gin0v/CoMind",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "laderhad/FocusPocuss",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs",
+      "tests/Web.AcceptanceTests/AspireSetup.cs",
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "laderhad/HospitalManagement",
+    "files": [
+      "HospitalManagement/tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "lammensmichel/eShop-micro-service",
+    "files": [
+      "src/eShop.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "LaPapostia/GeoControl_PPI_2025",
+    "files": [
+      "Geocontrol_PPI_NET_9.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "laretics/Geode",
+    "files": [
+      "TopacioAspire/TopacioAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "laurabrovkina/MeetupAPI",
+    "files": [
+      "MeetupAPI/Program.cs"
+    ]
+  },
+  {
+    "repo": "lavedon/imageConversionExperiments",
+    "files": [
+      "imgCleanUp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Lawe02/aspireletter",
+    "files": [
+      "AspireWeb/AspireWeb.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Learnathon-By-Geeky-Solutions/earendel",
+    "files": [
+      "backend/Aspire/Aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "led-21/microsoft-hackathon-roi-calculator",
+    "files": [
+      "microsoft-hackathon-roi-calculator.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Leitee/Tasks.Poc",
+    "files": [
+      "src/tests/Tasks.Poc.E2eTests/WebTests.cs",
+      "src/tests/Tasks.Poc.ArchTests/WebTests.cs",
+      "src/aspire/Tasks.Poc.ServiceDefaults/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Leo-Oberndorfer2/time-is-money",
+    "files": [
+      "starter/WebApiTests/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "leokporto/OnTapApp",
+    "files": [
+      "OnTapApp.Web/Internal/ResilienceExtensions.cs",
+      "OnTapApp.API/Infrastructure/CrossCutting/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "leor3824GitHub/AMIS.9",
+    "files": [
+      "aspire/service-defaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "LevashenM/payflex-technical-assessment",
+    "files": [
+      "PaymentOrchestrator.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "levsena/apptemplate",
+    "files": [
+      "ListKeeper.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "LewisFoot96/DemoForAspire",
+    "files": [
+      "DemoForAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "LewisFoot96/ElevenLabsExample",
+    "files": [
+      "ElevenLabsExample.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "LewisFoot96/YeSqlExample",
+    "files": [
+      "YeSqlExample.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "LinaBodnar/CarpathiansApp",
+    "files": [
+      "platform/Carpathians.Platform.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "LionPay-Team1/lionpay",
+    "files": [
+      "aspire-tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "lobotrovao/dev",
+    "files": [
+      "NET10/Wex.PurchaseTransaction/Wex.PurchaseTransaction.Api/Extensions/ServiceDefaultsExtension.cs"
+    ]
+  },
+  {
+    "repo": "localstack-dotnet/dotnet-aspire-for-localstack",
+    "files": [
+      "playground/LocalStack.Playground.ServiceDefaults/LocalStackPlaygroundExtensions.cs"
+    ]
+  },
+  {
+    "repo": "locnso/CoreBanking",
+    "files": [
+      "CoreBanking.IntegrationTests/CorebankingIntegrationTests.cs",
+      "CoreBanking.IntegrationTests/CorebankingIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "lolochristen/Zemires.Aspire",
+    "files": [
+      "tests/Zemires.Aspire.Hosting.N8n.Tests/N8nIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "loxymartin/GlosGuru",
+    "files": [
+      "GlosGuru.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "lrlleandro/robot-trader",
+    "files": [
+      "RobotTrader.UnitTests/Web/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "luanmds/tests-dotnet-best-practices",
+    "files": [
+      "tests/PointsWallet.AspireIntegrationTests/Fixtures/AspireAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "lucasmatiasdev/Checkbus",
+    "files": [
+      "Checkbus.Tests/Auth/AuthLoginEndpointTests.cs",
+      "Checkbus.Tests/Auth/RegisterAccountE2ETests.cs"
+    ]
+  },
+  {
+    "repo": "Luiscota0127/Portfolio",
+    "files": [
+      "AspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "luisquintanilla/agent-drt",
+    "files": [
+      "dotnet/samples/AgentWebChat/AgentWebChat.ServiceDefaults/ServiceDefaultsExtensions.cs",
+      "dotnet/samples/AgentWebChat/AgentWebChat.ServiceDefaults/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "LuizhBrandao/LhzStore",
+    "files": [
+      "MarketplaceApi.Tests/ProductServiceTests.cs"
+    ]
+  },
+  {
+    "repo": "Lukan154/Player-Wallet-Service",
+    "files": [
+      "Player Wallet Service.Tests/DistributedApplicationFixture.cs"
+    ]
+  },
+  {
+    "repo": "LukasHKlg/lap-template-v2",
+    "files": [
+      "OnlineShop/OnlineShop.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "lyle-dodge/edge",
+    "files": [
+      "src/aspire/AspireApp/AspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "lyndychivs/UrlShortener",
+    "files": [
+      "UrlShortener.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "MaciejWozniczka/csharp-ai-rag-chat-buddy",
+    "files": [
+      "AiChatBuddy.Api/Extensions/OllamaResilienceHandlersExtensions.cs",
+      "AiChatBuddy.Api/Extensions/OllamaResilienceHandlersExtensions.cs",
+      "AiChatBuddy.Api/Extensions/OllamaResilienceHandlersExtensions.cs"
+    ]
+  },
+  {
+    "repo": "maddymontaquila/a3",
+    "files": [
+      "api-nyc/api-nyc.cs"
+    ]
+  },
+  {
+    "repo": "MadLongTom/DBLabAspire",
+    "files": [
+      "DBLabAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "madushaBandara/DOTNET_Assesment",
+    "files": [
+      "Test/IntegrationTest1.cs",
+      "Test/IntegrationTest1.cs",
+      "Test/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "MadWorldNL/Umiko",
+    "files": [
+      "source/MadWorldNL.Umiko.Controllers.EndToEndTests/Hooks/AspireHooks.cs",
+      "source/MadWorldNL.Umiko.Controllers.EndToEndTests/Hooks/AspireHooks.cs",
+      "source/MadWorldNL.Umiko.Controllers.EndToEndTests/Hooks/AspireHooks.cs",
+      "source/MadWorldNL.Umiko.Controllers.IntegrationTests/Hooks/AspireHooks.cs"
+    ]
+  },
+  {
+    "repo": "MalcolmMcNeely/Edict",
+    "files": [
+      "Sample/Sample.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "malikcornet/fivenine-collective",
+    "files": [
+      "projects/FiveNine-Collective.Site/Src/FiveNine-Collective.Site.Server/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mamanin/Project.Perso.LoaGuildTracker",
+    "files": [
+      "aspire/WildGrowth.ServiceDefaults/AspireExtensions.cs"
+    ]
+  },
+  {
+    "repo": "MaMorell/MyHome",
+    "files": [
+      "MyHome.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mamu7211/workflow",
+    "files": [
+      "Workflow.Tests/WebTests.cs",
+      "Workflow.Tests/WebTests.cs",
+      "Workflow.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Manabe0304/DuongNhan-frontend-backup",
+    "files": [
+      "DuongNhan.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ManuelNinyo/AspireApp2",
+    "files": [
+      "AspireApp2.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Mar-Sn/MealieMcp",
+    "files": [
+      "MealieMcp.E2E/McpServerFixture.cs"
+    ]
+  },
+  {
+    "repo": "MarcelMichau/fake-survey-generator",
+    "files": [
+      "src/server/FakeSurveyGenerator.Acceptance.Tests/AcceptanceTestFixture.cs",
+      "src/server/FakeSurveyGenerator.Acceptance.Tests/AcceptanceTestFixture.cs",
+      "src/server/FakeSurveyGenerator.Acceptance.Tests/AcceptanceTestFixture.cs",
+      "src/server/FakeSurveyGenerator.Application.Tests/Infrastructure/SurveyAnalysis/SurveyAnalysisResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "MarceloDanielToledo/CleanArchitectureTemplate",
+    "files": [
+      "src/Presentation/WebAPI/Extensions/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "marcin-burak/playground",
+    "files": [
+      "src/reminders/Reminders.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "marcoaoteixeira/Nameless",
+    "files": [
+      "libs/web/src/Nameless.Web/Hosting/Features/ServiceDiscoveryWebHostFeature.cs",
+      "libs/web/src/Nameless.Web/ServiceDiscovery/ServiceDiscoveryServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "marcominerva/AgentPlayground",
+    "files": [
+      "AgentPlayground/Program.cs"
+    ]
+  },
+  {
+    "repo": "marcominerva/SqlDatabaseVectorSearch",
+    "files": [
+      "SqlDatabaseVectorSearch/Program.cs"
+    ]
+  },
+  {
+    "repo": "marcosjimenez/Aspire-CleanArchitecture",
+    "files": [
+      "test/CleanArchitectureSample.FunctionalTests/Infrastructure/TestApplicationHost.cs"
+    ]
+  },
+  {
+    "repo": "marcosoikawa/semantic-kernel-tdc",
+    "files": [
+      "dotnet/src/IntegrationTests/BaseIntegrationTest.cs",
+      "dotnet/samples/Concepts/DependencyInjection/HttpClient_Resiliency.cs",
+      "dotnet/samples/Concepts/TextToImage/OpenAI_TextToImageDalle3.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatCompletionTests.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatCompletionTests.cs",
+      "dotnet/src/IntegrationTests/Connectors/AzureAIInference/AzureAIInferenceChatCompletionServiceTests.cs"
+    ]
+  },
+  {
+    "repo": "Marcus-V-Freitas/MVFC.Aspire.Helpers",
+    "files": [
+      "tests/MVFC.Aspire.Helpers.Tests/Integration/Fixture/ProjectAppHost.cs"
+    ]
+  },
+  {
+    "repo": "Marcus-V-Freitas/MVFC.Idempotence",
+    "files": [
+      "tests/MVFC.Idempotence.Tests/Fixture/ProjectAppHost.cs"
+    ]
+  },
+  {
+    "repo": "Marcus-V-Freitas/MVFC.LongPolling",
+    "files": [
+      "tests/MVFC.LongPolling.Tests/Fixture/ProjectAppHost.cs"
+    ]
+  },
+  {
+    "repo": "Marcus-V-Freitas/MVFC.Mediator",
+    "files": [
+      "tests/MVFC.Mediator.Tests/Fixture/ProjectAppHost.cs"
+    ]
+  },
+  {
+    "repo": "Marcus-V-Freitas/MVFC.RazorRender",
+    "files": [
+      "tests/MVFC.RazorRender.Tests/Fixture/ProjectAppHost.cs"
+    ]
+  },
+  {
+    "repo": "marekkardos/eComNetApp",
+    "files": [
+      "src/API/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mariobot/Aspire",
+    "files": [
+      "AspireTestApp/AspireTestApp.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "MarioGruda/Aspire-Blazor-Ollama-RAG",
+    "files": [
+      "src/Gruda.RagBot.Kernel/KernelExtensions.cs"
+    ]
+  },
+  {
+    "repo": "markharrison/sk-DocUploader",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "markheath/globoticket-dapr",
+    "files": [
+      "servicedefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "markheydon/letoryn-m365",
+    "files": [
+      "src/Letoryn.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "markheydon/solo-dev-board",
+    "files": [
+      "src/SoloDevBoard.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "markjprice/tools-skills-net10",
+    "files": [
+      "code/Chapter16/AspireStarter/AspireStarter.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "markjprice/tools-skills-net8",
+    "files": [
+      "code/Chapter09/ChatApp/Program.GetKernel.cs"
+    ]
+  },
+  {
+    "repo": "markjprice/web-dev-net10",
+    "files": [
+      "code/AspireStarter/AspireStarter.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "markski012/RainShineStore",
+    "files": [
+      "RainShineStore.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "markwallace-microsoft/agent-framework-maml",
+    "files": [
+      "dotnet/tests/CosmosDB.IntegrationTests/Microsoft.Extensions.AI.Agents.Runtime.Storage.CosmosDB.Tests/CosmosTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "MarkZither/blood_thinner_INR_tracker",
+    "files": [
+      "tests/BloodThinnerTracker.AppHost.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "Marokos999/Overflow",
+    "files": [
+      "Overflow.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Martin-Duhalde/is.Learning.DDD",
+    "files": [
+      "src/CarRental.Infrastructure/Extensions/ServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Marwansalem122/IcmChatBuddy",
+    "files": [
+      "IcmChat/OllamaResilienceHandlerExtension.cs"
+    ]
+  },
+  {
+    "repo": "mastoj/monostore",
+    "files": [
+      "src/aspire/MonoStore.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "matei97/fii-cloud-computing-practice",
+    "files": [
+      "samples/azure-cloud-sample/observability-sample/Obserability.Sample/Obserability.Sample.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "MateusjsSilva/DotNet.CleanArchitecture",
+    "files": [
+      "src/WebAPI/Program.cs"
+    ]
+  },
+  {
+    "repo": "MatteoRigoni/enterprise-genai-solution-architecture-lab",
+    "files": [
+      "src/AiSa.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mattiamuraro/container-day-2024-aspire",
+    "files": [
+      "src/Cday24.Aspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mattleibow/Hybridisms",
+    "files": [
+      "Hybridisms.Client.WebAssembly.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "maui-containers/orchestration",
+    "files": [
+      "src/Orchestrator.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mauroservienti/welcome-to-the-state-machine-demos",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "MaxNagibator/Money",
+    "files": [
+      "backend/Money.Api/Definitions/CoreLibDefinition.cs"
+    ]
+  },
+  {
+    "repo": "mbarretot/dorn-templates-webapi",
+    "files": [
+      "templates/webapi/src/CleanArchWebApi.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "MCK9595/TicketManagement",
+    "files": [
+      "tests/TicketManagement.IntegrationTests/IntegrationTest1.cs",
+      "tests/TicketManagement.IntegrationTests/IntegrationTest1.cs",
+      "tests/TicketManagement.IntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "MCLifeLeader/SolarianLeague",
+    "files": [
+      "Src/Solarian.League.Web/Solarian.League.Api/RegisterDependentServices.cs"
+    ]
+  },
+  {
+    "repo": "MCLifeLeader/Starter-AspNet-Mvc",
+    "files": [
+      "src/Starter.AspNet.MVC/RegisterDependentServices.cs"
+    ]
+  },
+  {
+    "repo": "mdbabumiamssm/AI-Agentic-Skills-by-Dr.-Mia",
+    "files": [
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/BaseIntegrationTest.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/samples/Concepts/DependencyInjection/HttpClient_Resiliency.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatClientTests.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatCompletionTests.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/Connectors/AzureOpenAI/AzureOpenAIChatClientTests.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/Connectors/AzureOpenAI/AzureOpenAIChatCompletionTests.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/Connectors/AzureAIInference/AzureAIInferenceChatClientTests.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/samples/Demos/ProcessFrameworkWithSignalR/src/ProcessFramework.Aspire.SignalR.ServiceDefaults/CommonExtensions.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/samples/Concepts/TextToImage/OpenAI_TextToImage.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/samples/Demos/ProcessFrameworkWithAspire/ProcessFramework.Aspire/ProcessFramework.Aspire.ServiceDefaults/CommonExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mdbabumiamssm/LLMs-Universal-Life-Science-and-Clinical-Skills-",
+    "files": [
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/BaseIntegrationTest.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/samples/Concepts/DependencyInjection/HttpClient_Resiliency.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatClientTests.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatCompletionTests.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/Connectors/AzureOpenAI/AzureOpenAIChatClientTests.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/Connectors/AzureOpenAI/AzureOpenAIChatCompletionTests.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/samples/Concepts/TextToImage/OpenAI_TextToImage.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/src/IntegrationTests/Connectors/AzureAIInference/AzureAIInferenceChatClientTests.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/samples/Demos/ProcessFrameworkWithSignalR/src/ProcessFramework.Aspire.SignalR.ServiceDefaults/CommonExtensions.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/samples/Concepts/TextToImage/OpenAI_TextToImageLegacy.cs",
+      "Skills/External_Collections/semantic-kernel/dotnet/samples/Demos/ProcessFrameworkWithAspire/ProcessFramework.Aspire/ProcessFramework.Aspire.ServiceDefaults/CommonExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mdelvallemurcia/dotnet-microservice",
+    "files": [
+      "src/_aspire/Aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "MDMoore1764/SpiceWorks-API",
+    "files": [
+      "SpiceWorksAPI.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Mech0z/Foosball2025",
+    "files": [
+      "Foosball.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mehdihadeli/genai-eshop",
+    "files": [
+      "src/Aspire/Aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mehdihadeli/genai-eshop-semantic-kernel",
+    "files": [
+      "src/Aspire/Aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mehmetozkaya/Design-Microservices-Architecture-with-Patterns-Principles",
+    "files": [
+      "3-eshop-monolith-add-ui/eshop-monolith/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mehmetozkaya/eshop-distributed",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Meir017/aspirations-for-aspire",
+    "files": [
+      "test/AspireIntegrationTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "Mercantec-GHC/h2-projekt-the-dream-team",
+    "files": [
+      "H2Projekt.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Mercantech/Aspire-Exampels",
+    "files": [
+      "Aspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mettelephant/Aspire.MassTransit",
+    "files": [
+      "Aspire.MassTransit.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "meysamhadeli/booking-monolith",
+    "files": [
+      "src/Aspire/src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mgpeter/bookmark-feeder",
+    "files": [
+      "BookmarkFeeder.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mgpeter/desktop-companion",
+    "files": [
+      "ServoSkull.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "MichaelHochriegl/AspireFETestingRepro",
+    "files": [
+      "test/AspireFETesting/IntegrationTest.cs",
+      "test/AspireFETesting/IntegrationTest.cs",
+      "test/AspireFETesting/IntegrationTest.cs"
+    ]
+  },
+  {
+    "repo": "michaelhu19671106/KFRoom",
+    "files": [
+      "KFRoom.IntegrationTest/Web/Services/AccountServiceIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "michelescarlato/icin-rq1-cleanarchitecture-dependabot",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "microbian-systems/AeroCMS",
+    "files": [
+      "src/Aero.Cms.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "microcks/microcks-aspire",
+    "files": [
+      "tests/Microcks.Aspire.Testing/TestDistributedApplicationBuilder.cs"
+    ]
+  },
+  {
+    "repo": "microcks/microcks-aspire-demo",
+    "files": [
+      "src/Order.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "microsoft/aspire-templates",
+    "files": [
+      "templates/aspire-starter/Aspire-StarterApplication.1.Tests/WebTests.cs",
+      "templates/aspire-starter/Aspire-StarterApplication.1.Tests/WebTests.cs",
+      "templates/aspire-starter/Aspire-StarterApplication.1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "microsoft/fluentui-blazor",
+    "files": [
+      "src/Templates/templates/aspire-starter/Aspire-StarterApplication.1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "microsoft/micronaire",
+    "files": [
+      "src/Demo/HostBuilderExtensions.cs",
+      "src/Micronaire/Evaluation/Evaluator.cs"
+    ]
+  },
+  {
+    "repo": "microsoft/semantic-kernel",
+    "files": [
+      "dotnet/src/IntegrationTests/BaseIntegrationTest.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatClientTests.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAIChatCompletionTests.cs",
+      "dotnet/src/IntegrationTests/Connectors/AzureAIInference/AzureAIInferenceChatCompletionServiceTests.cs"
+    ]
+  },
+  {
+    "repo": "mikka-1123/clean-architecture-template",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "MikkelRLarsen/TemplateAspireSolution",
+    "files": [
+      "Aspire.IntegrationTest/AspireAppFixture.cs",
+      "Aspire.IntegrationTest/AspireAppFixture.cs",
+      "Aspire.IntegrationTest/AspireAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "MikkelRLarsen/TheParcelApplication",
+    "files": [
+      "Aspire.IntegrationTest/AspireAppFixture.cs",
+      "Aspire.IntegrationTest/AspireAppFixture.cs",
+      "Aspire.IntegrationTest/AspireAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "miladashrafi/Apex.RuleGrid",
+    "files": [
+      "Apex.RuleGrid.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "MilanJB/SemanticKernel-Playground",
+    "files": [
+      "dotnet/src/IntegrationTests/BaseIntegrationTest.cs",
+      "dotnet/samples/Concepts/DependencyInjection/HttpClient_Resiliency.cs",
+      "dotnet/samples/Concepts/TextToImage/OpenAI_TextToImageDalle3.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAICompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "milicaa91/Bookstore",
+    "files": [
+      "AuthenticationService/src/Tests1/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "MingNQ/CoreBanking.NET",
+    "files": [
+      "CoreBanking.IntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "MirolimMajidov/Temporal",
+    "files": [
+      "SagaServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "MirthSystems/pulse-by-mirth-systems",
+    "files": [
+      "tests/Application.IntegrationTests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Misiu/AspireDockerPublisherTest",
+    "files": [
+      "AspireTest1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mitchdenny/aspire1",
+    "files": [
+      "src/AspireDogfood.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mitchdenny/aspire2",
+    "files": [
+      "src/AspireDogfood.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mitchdenny/dotnet-aspire-dogfood",
+    "files": [
+      "src/AspireDogfood.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mitchelsellers/dotnet-aspire-existing-project-demo",
+    "files": [
+      "AspireDemoTemplate/AspireDemoTemplate.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mitoth/football-prediction-engine",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Mitrivxxx/team-hub",
+    "files": [
+      "aspire/TeamHub.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mkasperczyk90/Warehouse",
+    "files": [
+      "src/ServiceDefaults/Warehouse.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "MKGAURAB/DummyRagProject",
+    "files": [
+      "DummyRagSystem.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mmajdeb/Samples.Aspire",
+    "files": [
+      "AspireApp/AspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mmckechney/SpeechAnalytics",
+    "files": [
+      "SpeechAnalytics.ServiceDefaults/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mmpmendes/SecretSanta",
+    "files": [
+      "SecretSanta.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mmpmendes/weges-v2",
+    "files": [
+      "Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "mnglss/Aspire.Ticketsystem",
+    "files": [
+      "Ticketsystem.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ModernPlatforms/fencemark",
+    "files": [
+      "fencemark.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mohabbati/famoria-backend",
+    "files": [
+      "test/Famoria.Functional.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "moheladwy/ExpertBridge",
+    "files": [
+      "server/ExpertBridge.Api/Program.cs",
+      "server/ExpertBridge.Extensions/OpenTelemetry/OpenTelemetry.cs"
+    ]
+  },
+  {
+    "repo": "MoongyProjetos/hello-dotnet10",
+    "files": [
+      "src/Aula 03 - API Minimalista com .NET 10/04-ApireBasico/ExemploAspire/ExemploAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "MoritzWaldau/EmployeeManagementSystem",
+    "files": [
+      "tests/Tests/Configuration/AspireAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "mortenbock/aspire-sqlproj-repro",
+    "files": [
+      "Tests1/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "mortiz-iadev/ShiftFlow",
+    "files": [
+      "src/ShiftFlow.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mpaulosky/IssueManager",
+    "files": [
+      "tests/AppHost.Tests.E2E/Fixtures/PlaywrightFixture.cs"
+    ]
+  },
+  {
+    "repo": "mpaulosky/TinyTicket",
+    "files": [
+      "TinyTicket/TinyTicket.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "MrDeej/AppiSnappi",
+    "files": [
+      "src/FamilyApplication.AspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "MrPix/Briefcase",
+    "files": [
+      "tests/Briefcase.Tests/WebTests.cs",
+      "tests/Briefcase.Tests/WebTests.cs",
+      "tests/Briefcase.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "MrSanderSi/NullamWebApp",
+    "files": [
+      "NullamWebApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "MSBart2/aspire1",
+    "files": [
+      "aspire1.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "mstychanski/RoomBooker",
+    "files": [
+      "RoomBooker.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "MToome/Programmeerimine2",
+    "files": [
+      "Tests1/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "MukhamadullinRinat/nature-ecommerce",
+    "files": [
+      "NatureECommerce.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "muneebtriq/BURAQ-BILT",
+    "files": [
+      "src/BURAQ/Extensions/Startup/AppBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Mysticulous/MMO",
+    "files": [
+      "MMO.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Mystikweb/Mystikweb.Auth.Demo",
+    "files": [
+      "test/Mystikweb.Auth.Demo.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "N-E-W-T-O-N/ShortcutURL",
+    "files": [
+      "ShortcutURL.Tests/IntegrationTest.cs"
+    ]
+  },
+  {
+    "repo": "Naelle47/AkashaRecords",
+    "files": [
+      "AkashaRecords/AkashaRecords.UnitTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "Naelle47/API_PFR2",
+    "files": [
+      "API_PFR2_TestsUnitaires/IntegrationTest1.cs",
+      "API_PFR2_TestsIntegration/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "nareshv82/SemanticKernal",
+    "files": [
+      "dotnet/src/IntegrationTests/BaseIntegrationTest.cs",
+      "dotnet/samples/KernelSyntaxExamples/Example18_DallE.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAICompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "naseemhira1196/octopets-demo",
+    "files": [
+      "servicedefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "natalijaVrnr/XYZ-Billing.API",
+    "files": [
+      "XYZ-Billing.API/XYZ-Billing.API.IntegrationTests/AspireAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "natashalysakova/UtilitiesApp",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "natepaxton/np-api",
+    "files": [
+      "src/NpApi.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "neozhu/cleanaspire",
+    "files": [
+      "tests/CleanAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "NerdsRule/forening",
+    "files": [
+      "src/Organization.Test/OrganizationTesting.cs",
+      "src/Organization.Test/IdentityTesting.cs",
+      "src/Organization.Test/IdentityTesting.cs"
+    ]
+  },
+  {
+    "repo": "Net-Advantage/NabsRagLaunchpad",
+    "files": [
+      "src/NabsRagLaunchpad/NabsRagLaunchpad.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "netcorepal/netcorepal-cloud-template",
+    "files": [
+      "template/test/ABC.Template.Web.Tests/Fixtures/WebAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "neurodance/PowerSharp",
+    "files": [
+      "PowerSharp.Aspire/PowerSharp.Aspire.Tests/ApiServiceTests.cs",
+      "PowerSharp.Aspire/PowerSharp.Aspire.Tests/WeatherApiClientTests.cs"
+    ]
+  },
+  {
+    "repo": "never-test/engine",
+    "files": [
+      "tests/NeverTest.AspireApp/NeverTests.AspireApp/NeverTest.AspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "NewHeap/NewHeap-Platform",
+    "files": [
+      "examples/SampleProjectManagement/src/Back-end/Orchestration/SampleProjectManagement.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "nfsdns/TodoApp",
+    "files": [
+      "src/Server/TodoApp.Server.Shared/Extensions/WebApplicationBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "nghia0coder/aiva-admin-api",
+    "files": [
+      "tests/Aiva.Admin.Api.AspireTests/Fixtures/AspireAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "ngtphat-towa/ReSys.Shop.OldVersion",
+    "files": [
+      "infrastructure/aspire/ReSys.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "NguyenDu2309/CoreBankingApi",
+    "files": [
+      "CoreBanking.IntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "nick4real/MarketCustoms",
+    "files": [
+      "Tests/Catalog/MC.Catalog.IntegrationTests/Fixtures/CatalogAppFixture.cs",
+      "Tests/Catalog/MC.Catalog.IntegrationTests/Fixtures/CatalogAppFixture.cs",
+      "Tests/Catalog/MC.Catalog.IntegrationTests/Fixtures/CatalogAppFixture.cs",
+      "Tests/Notifications/MC.Notifications.IntegrationTests/Fixtures/NotificationsAppFixture.cs",
+      "Tests/Ordering/MC.Ordering.IntegrationTests/Fixtures/OrderingAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "NickSakellariou/team-project-board",
+    "files": [
+      "src/backend/TeamProjectBoard.ServiceDefaults/ServiceDefaultsExtensions.cs",
+      "src/backend/TeamProjectBoard.ServiceDefaults/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "NickSan123/MailSharp",
+    "files": [
+      "MailSharp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "nicogis/VectorSearchXAF",
+    "files": [
+      "XAFVectorSearch.Blazor.Server/Startup.cs"
+    ]
+  },
+  {
+    "repo": "NikiforovAll/channels-composition-and-otel",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "NikiforovAll/keycloak-aspire-starter-template",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "NikiforovAll/social-media-app-aspire",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "NikiforovAll/tests-instrumentation-with-otel-and-aspire",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "NikiforovAll/typical-rag-dotnet",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "nissbran/aca-dapr-demo",
+    "files": [
+      "src/dotnet/credit-api/ApplicationConfiguration.cs",
+      "src/dotnet/booking-processor/ApplicationConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "nissbran/iot-scale-demo",
+    "files": [
+      "src/message-mediator/ApplicationConfiguration.cs",
+      "src/yarp-hub-proxy/ApplicationConfiguration.cs",
+      "src/yarp-hub-proxy/ApplicationConfiguration.cs",
+      "src/yarp-hub-proxy/ApplicationConfiguration.cs",
+      "src/telemetry-ingestion-api/ApplicationConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "nkz-soft/Varuna",
+    "files": [
+      "test/Varuna.Presentation.Rest.Tests/Common/RestApplicationFactory.cs",
+      "test/Varuna.Presentation.Rest.Tests/Common/RestApplicationFactory.cs",
+      "test/Varuna.Presentation.Rest.Tests/Common/RestApplicationFactory.cs"
+    ]
+  },
+  {
+    "repo": "noncasted/mines-leader",
+    "files": [
+      "backend/Orchestration/Extensions/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "nperez0/miniclip.simulator",
+    "files": [
+      "src/Miniclip.Simulator.Api/Startup.cs"
+    ]
+  },
+  {
+    "repo": "npmulder/GameGuardian",
+    "files": [
+      "src/GameGuardian.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Nryyy/uni_programming_practice_2025",
+    "files": [
+      "HromadaWEB.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ntkhanh-tma/BestMed.Platform",
+    "files": [
+      "BestMed.Platform.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ntlong25/SAMO",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "nurzhanme/AspireKafka",
+    "files": [
+      "AspireKafka.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "obiwanjacobi/Adventure-Builder",
+    "files": [
+      "Jacobi.AdventureBuilder.Tests/IntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "ohlus/sqlclient-sqlbulkcopy-json",
+    "files": [
+      "SqlJsonBug.Tests/SqlBulkCopyJsonTests.cs",
+      "SqlJsonBug.Tests/SqlBulkCopyJsonTests.cs"
+    ]
+  },
+  {
+    "repo": "oising/AspireProjectCommander",
+    "files": [
+      "ProjectCommander.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "ojrojas/ExpenseControl",
+    "files": [
+      "src/BuildingBlocks/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "olorunfemidavis/DemoUserManagement",
+    "files": [
+      "UM/UM.Tests/WebTests.cs",
+      "UM/UM.Tests/Integration Tests/Api/UsersControllerApiTests.cs"
+    ]
+  },
+  {
+    "repo": "OmarWatany/ZenithFlow",
+    "files": [
+      "ZenithFlow.Tests/WebTests.cs",
+      "ZenithFlow.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ommdipta12/BetaHub",
+    "files": [
+      "AspireServiceDefault/Extensions.cs",
+      "AspireServiceDefault/Extensions.cs",
+      "AspireServiceDefault/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "omoakin0066/NutriAllergo",
+    "files": [
+      "aspire/NutriAllergo.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Onurryilmazz/Nuclea.ApiGateway",
+    "files": [
+      "src/Gateway/Nuclea.Gateway/Extensions/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "opengeekv2/HotelsBookingKata",
+    "files": [
+      "HotelsBookingKata.Specs/Steps/HotelsBooking.cs",
+      "HotelsBookingKata.Specs/Steps/HotelsBooking.cs"
+    ]
+  },
+  {
+    "repo": "osama220/azure-event-driven-marketplace",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "OsanRobin/kubernetesPoc",
+    "files": [
+      "kubernetesPoc.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "oskardudycz/EventSourcing.NetCore",
+    "files": [
+      "Sample/ECommerce/ECommerce.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Ospo72/semantic-kernel",
+    "files": [
+      "dotnet/samples/KernelSyntaxExamples/Example08_RetryHandler.cs",
+      "dotnet/samples/KernelSyntaxExamples/Example08_RetryHandler.cs",
+      "dotnet/samples/KernelSyntaxExamples/Example08_RetryHandler.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAICompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "OurDotNetOrganization/AspireApp",
+    "files": [
+      "AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "OurDotNetOrganization/JasmineAspireApp",
+    "files": [
+      "AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ovation22/Aspire.ProjectTemplate",
+    "files": [
+      "Aspire.ProjectTemplate.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ox1s/dotnet-zelavia-mass-transit-redis",
+    "files": [
+      "zelavia.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Ozymandros/ERP.Microservices",
+    "files": [
+      "src/AppHost.Tests/Tests/OrdersServiceTests.cs",
+      "src/AppHost.Tests/Tests/SalesServiceTests.cs",
+      "src/AppHost.Tests/Tests/PurchasingServiceTests.cs",
+      "src/AppHost.Tests/Tests/InventoryServiceTests.cs",
+      "src/AppHost.Tests/Tests/AuthServiceTests.cs"
+    ]
+  },
+  {
+    "repo": "PacktPublishing/Building-AI-Powered-Distributed-Architectures-with-Aspire",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "PacktPublishing/Expert-CSharp-Programming",
+    "files": [
+      "ch08/Ch08.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "PacktPublishing/Software-Architecture-with-.NET-10-and-C-sharp-5E",
+    "files": [
+      "ch19/GrpcMicroServiceAspire/FakeSource/Program.cs"
+    ]
+  },
+  {
+    "repo": "Pacman1988/AspireAppIntegrationTestWithSeq",
+    "files": [
+      "AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Pandetthe/Snapflow",
+    "files": [
+      "server/src/Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "PatrickMatthiesen/Cantaro",
+    "files": [
+      "tests/Cantaro.Api.Tests/Media/Providers/MyAnimeList/MyAnimeListApiClientTests.cs"
+    ]
+  },
+  {
+    "repo": "PatrickMisti/AetherFlow",
+    "files": [
+      "src/AetherFlow.Backend/AetherFlow.Backend.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "PatrickPMichaels/AspireTestProject",
+    "files": [
+      "IntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "patware/Patware.PingTrace",
+    "files": [
+      "SampleApplications/AspireAppSample/AspireAppSample.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "paulmuir1981/skittles",
+    "files": [
+      "tests/Host.Tests/HostTestBase.cs"
+    ]
+  },
+  {
+    "repo": "paulobordalo/imediatus",
+    "files": [
+      "src/aspire/service-defaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "PawelFojt/FactorySnap",
+    "files": [
+      "FactorySnap.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "pedro-belarmino/exercicios-5by5",
+    "files": [
+      "FlightTicketsMicroServicesAPIs/FlightTickets.Test/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "pefau72/EnergiApplication",
+    "files": [
+      "Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "peovukea/SPINE",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "perokvist/EDA-Playground",
+    "files": [
+      "test/Sample.App.AppHost.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "perrym75/arms_directories",
+    "files": [
+      "ArmsDirectories.Tests/AspireFixture.cs"
+    ]
+  },
+  {
+    "repo": "peter-fullstack/bookstore-api-aspire",
+    "files": [
+      "BookStoreAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "petesramek/microservices-vs-virtual-actors",
+    "files": [
+      "src/Hosting/Hosting.ServiceDefaults/Extensions/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Philippe-Laval/GraphSearch",
+    "files": [
+      "ITSM.Tests/WebTests.cs",
+      "ITSM.Tests/WebTests.cs",
+      "ITSM.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "philoUK/skills-demo",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Pieplow/shiko-identity-verficiation-page-flow",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "pietronromano/dotnet",
+    "files": [
+      "web-dev-net10/code/AspireStarter/AspireStarter.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "piotrosz/Aspire",
+    "files": [
+      "AspireApp1/AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Pirate-Odyssey/Pirate-s-Odyssey",
+    "files": [
+      "test/PO.Host.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "pjbhakta-outlook/ToDoApp",
+    "files": [
+      "ToDo.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "platformplatform/PlatformPlatform",
+    "files": [
+      "application/shared-kernel/SharedKernel/Configuration/SharedInfrastructureConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "PlaySkyHD/Gainer",
+    "files": [
+      "src/Gainer.Infrastructure/Http/ExternalProviderHttpResilience.cs",
+      "src/Gainer.Infrastructure/Http/ExternalProviderHttpResilience.cs",
+      "src/Gainer.Infrastructure/Http/ExternalProviderHttpResilience.cs"
+    ]
+  },
+  {
+    "repo": "PMCRO-AI-Agent-Company/AgentSkills.Template",
+    "files": [
+      "src/ProjectName.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "pngan/transactionnotes",
+    "files": [
+      "transactionnotes.Tests/Common/HttpTestBase.cs"
+    ]
+  },
+  {
+    "repo": "pngan/transactionnotes-1",
+    "files": [
+      "transactionnotes.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "pownas/ArvidsonFoto-MVC-NET-web",
+    "files": [
+      "ArvidsonFoto.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "pownas/AspireAppExampleApiServices",
+    "files": [
+      "AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "pppoe252110/JobBoard",
+    "files": [
+      "JobBoard.Tests/WebTests.cs",
+      "JobBoard.Tests/WebTests.cs",
+      "JobBoard.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "pradeep3221/dotnet-Template-WebAPI",
+    "files": [
+      "templates/MyCompany.WebApi.Template/src/Clean/Api/Extensions/ResilienceExtensions.cs",
+      "templates/MyCompany.WebApi.Template/src/OData/Api/Extensions/ResilienceExtensions.cs",
+      "templates/MyCompany.WebApi.Template/src/GraphQL/Api/Extensions/ResilienceExtensions.cs",
+      "templates/MyCompany.WebApi.Template/src/VerticalSlice/Api/Extensions/ResilienceExtensions.cs",
+      "templates/MyCompany.WebApi.Template/src/Layered/Api/Extensions/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "predeshen/PCEBASSESSMENT1",
+    "files": [
+      "PPECBDevAssessment1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ProtonDriveApps/sdk",
+    "files": [
+      "incubating/account/cs/src/Proton.Drive.Sdk.Account/ProtonClientConfigurationExtensions.cs"
+    ]
+  },
+  {
+    "repo": "prushorth90/incident-report-rag",
+    "files": [
+      "AspireApp1/IcmChatAPI/OllamaResilienceHandler.cs"
+    ]
+  },
+  {
+    "repo": "psijkof/aspire92dockercomposeYarpgateway",
+    "files": [
+      "test/aspire92.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "pstackebrandt/ModernWeb",
+    "files": [
+      "ChatApp/Program.GetKernel.cs"
+    ]
+  },
+  {
+    "repo": "puneetg1983/AspireResearch",
+    "files": [
+      "AppServiceDiagnostics.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "pvagnozzi/Chishiki",
+    "files": [
+      "src/infrastructure/aspire/Chishiki.Infrastructure.Aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Qas1modo/Software-Architectures",
+    "files": [
+      "HotelSystem/BillingSystem/Extensions/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Qertum/qertum",
+    "files": [
+      "Qertum.ServiceDefaults/Extensions.cs",
+      "Qertum.Tests/Aspire/AspireIntegrationFixture.cs"
+    ]
+  },
+  {
+    "repo": "qiuxan/ChatBuddy",
+    "files": [
+      "ChatAPI/OllamaResilienceHandlersExtensions.cs"
+    ]
+  },
+  {
+    "repo": "quotschmacher/NetAspireTest",
+    "files": [
+      "HelloAspire/HelloAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "qwertyloopa/AnotherNewsPlatform",
+    "files": [
+      "AnotherNewsPlatform.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "r-keenan/dotnet-8-tools-skills",
+    "files": [
+      "Chapter09/ChatApp/Program.GetKernel.cs"
+    ]
+  },
+  {
+    "repo": "r-keenan/dotnet-aspire-gen-ai",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "rafaasx/teste-tecnico-v2",
+    "files": [
+      "Thunders.TechTest.Tests/WebApplicationFixture.cs"
+    ]
+  },
+  {
+    "repo": "rafsanulhasan/HypermediaEngine",
+    "files": [
+      "tests/IntegrationTests/Fixtures/AspireFixture.cs"
+    ]
+  },
+  {
+    "repo": "rainforest-tim/dev-test-preflight",
+    "files": [
+      "src/Preflight.Tests/PreflightTests.cs"
+    ]
+  },
+  {
+    "repo": "rajibmahata/MyOwnPortfolio",
+    "files": [
+      "MyOwnPortfolio.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Rajmote/BackendArchitect",
+    "files": [
+      "src/BackendArchitect/Reliability/Resilience/Production/ProductionResilienceDemo.cs"
+    ]
+  },
+  {
+    "repo": "RajTechPractice/sampleapi",
+    "files": [
+      "AspireCRDemo.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ranababu1/iam",
+    "files": [
+      "iam.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ranahamid/SpeedMeterX",
+    "files": [
+      "SpeedMeterX.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ranjeethmd/AspireFusion",
+    "files": [
+      "AspireFusion.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ranjeethmd/AspireOllama",
+    "files": [
+      "AspireOllama.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Rantonv/NetConfBilbao",
+    "files": [
+      "source/repos/Aspire/GolfAllWeb.AspireTests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Raukie/NextStream",
+    "files": [
+      "NextStream.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "rbmathis/aspire1",
+    "files": [
+      "aspire1.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "rbohnet-arc/aspire-play",
+    "files": [
+      "tests/AspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "rchalco/platheo-template-backend",
+    "files": [
+      "VectorStinger.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "rchalco/seguimiento-asesor-backend",
+    "files": [
+      "VectorStinger.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "rchalco/VectorStingerNet",
+    "files": [
+      "VectorStinger.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "rebeccapowell/Aspire.Hosting.WebhookTester",
+    "files": [
+      "sample/SampleTests/E2EIntegrationTest.cs",
+      "sample/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Redth/RunnerRunner",
+    "files": [
+      "src/RunnerRunner.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ReLiveWP/ReLiveWP",
+    "files": [
+      "src/libraries/ReLiveWP.ServiceDefaults/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "renan-marcel/bond-bend",
+    "files": [
+      "tests/BondBend.Aspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "renan-marcel/bond-project",
+    "files": [
+      "src/Bond-Project.Aspire/Bond-Project.Aspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ResTrauser/ride-sharing-microservices",
+    "files": [
+      "GeoFlow.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ReubenBond/RapidCluster",
+    "files": [
+      "tests/RapidCluster.EndToEnd/RapidCluster.EndToEnd.Tests/ClusterEndToEndTests.cs"
+    ]
+  },
+  {
+    "repo": "review-bench/Gibbs-Morris_mississippi",
+    "files": [
+      "samples/Crescent/Crescent.L2Tests/CrescentFixture.cs"
+    ]
+  },
+  {
+    "repo": "rezamohammadii/ITSMDS",
+    "files": [
+      "ITSMDS.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "RezaShafie/Accounting",
+    "files": [
+      "tests/Accounting.Tests/Integration/VoucherTests.cs"
+    ]
+  },
+  {
+    "repo": "Ricardo-Antikieveski/OpenHelp",
+    "files": [
+      "OpenHelpV1.Tests/WebTests.cs",
+      "Aspire/OpenHelpV1.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Rickcau/gen-ai-itops",
+    "files": [
+      "api-gen-ai-itops/Program.cs"
+    ]
+  },
+  {
+    "repo": "RickyDiAntonio/StreamCodeRepo",
+    "files": [
+      "AspireApp1/AspireApp1.Tests/WebTests.cs",
+      "AspireApp2/AspireApp2.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "rikenze/EspacoStefaniners",
+    "files": [
+      "EspacoStefaniners.IntegrationTests/BarService/IntegrationBarService.cs"
+    ]
+  },
+  {
+    "repo": "RinatMukh/portfolio",
+    "files": [
+      "Aspire/MarketApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "rliberoff/Global-Azure-Spain-2024",
+    "files": [
+      "GlobalAzureSpain.Demo.Services.Common/IHostApplicationBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "rnfst-test/ww-dotnet-interview",
+    "files": [
+      "src/WildWatch.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "robertbravery/FurryFriends",
+    "files": [
+      "src/FurryFriends.BlazorUI/Program.cs"
+    ]
+  },
+  {
+    "repo": "robrich/aspire-accelerator-workshop",
+    "files": [
+      "2-greenfield/done/AspireGreenfield.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "RocketSurgeonsGuild/LaunchPad",
+    "files": [
+      "src/Foundation/Joints/StandardResilienceJoint.cs"
+    ]
+  },
+  {
+    "repo": "Roker-enther-while/Microservices_Insurance_CaseStudy",
+    "files": [
+      "DotNetMicroservices.Poc/Microservices/ProductService/ProductService.Test/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "rova53/WeChoose",
+    "files": [
+      "WeChooz.TechAssessment.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Royal-Code/RoyalIdentity",
+    "files": [
+      "royal-identity/Aspire/Aspire.Tests/RoyalIdentityEnvironmentTests.cs"
+    ]
+  },
+  {
+    "repo": "rstropek/2025-11-03-coding-with-ai",
+    "files": [
+      "WebApiTests/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "rstropek/2025-11-25-copilot",
+    "files": [
+      "WebApiTests/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "rstropek/2026-03-02-basta",
+    "files": [
+      "Tests/WebApi/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "rstropek/DotNetChatbot",
+    "files": [
+      "Tests/WebApi/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "rstropek/htl-2025-26-5th",
+    "files": [
+      "20-fullstack-starter/WebApiTests/WebApiTestFixture.cs",
+      "homeworks/90-running/starter/WebApiTests/WebApiTestFixture.cs",
+      "homeworks/50-wishlist/starter/WebApiTests/WebApiTestFixture.cs",
+      "homeworks/60-travelex/starter/WebApiTests/WebApiTestFixture.cs",
+      "homeworks/30-invoicer/starter/WebApiTests/WebApiTestFixture.cs",
+      "homeworks/80-bracelet/starter/WebApiTests/WebApiTestFixture.cs",
+      "homeworks/80-bracelet/solution/WebApiTests/WebApiTestFixture.cs",
+      "homeworks/30-invoicer/solution/WebApiTests/WebApiTestFixture.cs",
+      "homeworks/60-travelex/solution/WebApiTests/WebApiTestFixture.cs",
+      "homeworks/50-wishlist/solution/WebApiTests/WebApiTestFixture.cs",
+      "homeworks/40-product-mgmt/starter/WebApiTests/WebApiTestFixture.cs",
+      "homeworks/40-product-mgmt/solution/WebApiTests/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "ruhk53/WarhammerSim",
+    "files": [
+      "WarhammerSim.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ruitunion-org/feedback-bot",
+    "files": [
+      "RuItUnion.FeedbackBot.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "rvanoord/wolverine-martin-test",
+    "files": [
+      "WolvarineMartinTest.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "rwjdk/agent-framework-comic-book-sample",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ryanceleslie/cuisenie-aspire",
+    "files": [
+      "tests/Cuisenie.IntegrationTests/IntegrationTests.cs",
+      "tests/Cuisenie.UnitTests/UnitTests.cs"
+    ]
+  },
+  {
+    "repo": "ryannayr/Blazor_Reusable_Component",
+    "files": [
+      "AspireApp2.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ryumartinez/CustomPolicyApi",
+    "files": [
+      "CustomPolicyApi/CustomPolicyApi.Tests/GraphUserControllerTests.cs",
+      "CustomPolicyApi/CustomPolicyApi.Tests/GraphUserControllerTests.cs"
+    ]
+  },
+  {
+    "repo": "s0-sv/AdoptionCenterWeb",
+    "files": [
+      "AdoptionCenterWeb.Server/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "s3nthilg0pal/QuickEnquiry",
+    "files": [
+      "QuickEnquiry.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "SackMaggie/aspire-yarp-test",
+    "files": [
+      "AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "SamuelSBJr97/SSBJr.ndb.integration",
+    "files": [
+      "src/SSBJr.ndb.integration.Web/SSBJr.ndb.integration.Web.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "sandeepyeg/aspire-angular-clean-template",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "santoraphael/FinancasEmpresas",
+    "files": [
+      "Finance.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Sara-Soleman/SecureTemplateMediumProject",
+    "files": [
+      "Tests1/IntegrationTest1.cs",
+      "Tests1/IntegrationTest1.cs",
+      "Tests.Identity/IntegrationTest1.cs",
+      "Tests1/IntegrationTest1.cs",
+      "Tests.Identity/IntegrationTest1.cs",
+      "Tests.Identity/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "saritasa-nest/saritasa-dotnet-samples-aspire-tests",
+    "files": [
+      "AspireTesting.ServiceDefaults/Extensions.cs",
+      "AspireTesting.IntegrationTests/Api/ApiFixture.cs"
+    ]
+  },
+  {
+    "repo": "saulgaray0131/redact-engine",
+    "files": [
+      "RedactEngine.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "sberube/code.playground.semantic-kernel",
+    "files": [
+      "tests/Whiz.Buddy.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "scarabdesign/MailTrash",
+    "files": [
+      "EmailClient.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "seandjones/RecipeManager",
+    "files": [
+      "RecipeManager.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "sebastienros/kassini",
+    "files": [
+      "src/Kassini/ServiceDefaults.cs"
+    ]
+  },
+  {
+    "repo": "secheledelaruse/HorselessRepro.PythonOrchestrator",
+    "files": [
+      "HorselessRepro.PythonOrchestrator.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "secure-web-apps/EndToEndSecurityWeb",
+    "files": [
+      "Bff.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "seiggy/lucia.os",
+    "files": [
+      "src/Lucia.Homelab.Server/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Serares/tools-skills-dotnet",
+    "files": [
+      "16-aspire/AspireStarter/AspireStarter.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "sergidoce/DAPM_Master_Thesis",
+    "files": [
+      "DAPM/DAPM.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "service-fabric-dev/interviews.setworks.covidtracker",
+    "files": [
+      "CovidTracker.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "sfugarino/AspireApp2",
+    "files": [
+      "AspireApp2.Tests/WebTests.cs",
+      "AspireApp2.Tests/WebTests.cs",
+      "AspireApp2.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "sgraphics/ClubberAI",
+    "files": [
+      "ClubberAI.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "sgs2026rater/RaterApi",
+    "files": [
+      "tests/UnitTests/0_Aspire/Hiscox.RaterApiWrapper.Aspire.AppHost.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "ShadmanAbir/CateringServie",
+    "files": [
+      "CateringService.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "shaleen-wonder-ent/octopets",
+    "files": [
+      "servicedefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "sharansudheer/private_library_mgm_dump",
+    "files": [
+      "DotNet/AspireApp1/AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ShaunCurtis/Blazr.VSA",
+    "files": [
+      "Junk/Aspire/Blazr.VSA.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Shawn-Bellazan-jr/Bookstore",
+    "files": [
+      "Bookstore.ApiService.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "Shawn-Bellazan-jr/custom-dotnet-template",
+    "files": [
+      "ProjectName.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Shawn-Bellazan-jr/dotnet-multi-project-template",
+    "files": [
+      "ProjectName.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Shawn-Bellazan-jr/MultiProjectTemplate",
+    "files": [
+      "ProjectName/ProjectName.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "shawn2024bellazan-prog/PMCR-O",
+    "files": [
+      "src/ProjectName.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ShawnDelaineBellazanJr/aspire-mssql-template",
+    "files": [
+      "Aspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ShawnDelaineBellazanJr/AspireSKDemo",
+    "files": [
+      "AspireSKDemo.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ShawnDelaineBellazanJr/dotnet-aspire-template",
+    "files": [
+      "Aspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ShawnDelaineBellazanJr/GitHub",
+    "files": [
+      "GitrHub.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ShawnDelaineBellazanJr/MetaMeta",
+    "files": [
+      "tests/MetaMeta.Core.Tests/WebTests.cs",
+      "tests/MetaMeta.Core.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "SheepReaper/IHeartFiction",
+    "files": [
+      "src/lib/IHFiction.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "shefat2002/AspireGame",
+    "files": [
+      "AspireGame.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Sheldonnadarajah/CapitecTransactionAggregation",
+    "files": [
+      "TransactionAggregation/TransactionAggregation.Tests/WebTests.cs",
+      "TransactionAggregation/TransactionAggregation.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Sheldonnadarajah/SanlamFinTechBankAccount",
+    "files": [
+      "SanlamFinTechBankAccount/SanlamFinTechBankAccount.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "shindy001/devbook-server",
+    "files": [
+      "src/DevBook.API/ServiceDefaults.cs"
+    ]
+  },
+  {
+    "repo": "shinji144/TribesServerViewer",
+    "files": [
+      "WebViewer/WebViewer.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "shirominha-da-motoila/fugro-technical-challenge",
+    "files": [
+      "Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "shopniu/shopniu_api",
+    "files": [
+      "Infrastructure/Configuration/InfrastructureServicesExtensions.cs"
+    ]
+  },
+  {
+    "repo": "shuaihuadu/dotnet-quickstart",
+    "files": [
+      "dotnet-aspire-quickstart/AspireSample/AspireSample.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "siarheitsypko-stacked/stacked-plan",
+    "files": [
+      "src/Stacked/tests/Web.AcceptanceTests/AspireSetup.cs",
+      "src/Stacked/tests/Web.AcceptanceTests/AspireSetup.cs",
+      "src/Stacked/tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "siddharthsingh89/UberAspire",
+    "files": [
+      "UberAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "SiddyHub/a2a-semantic-kernel-dotnet",
+    "files": [
+      "DynamicSKConsoleApp/Program.GetKernel.cs"
+    ]
+  },
+  {
+    "repo": "simakmatveistash-collab/BallastLaneTest",
+    "files": [
+      "BallastLaneTest.Server/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "SimonAdrell/budgettracker",
+    "files": [
+      "BudgetTrackerApp/BudgetTrackerApp.Tests/TransactionsEndpointTests.cs",
+      "BudgetTrackerApp/BudgetTrackerApp.Tests/IdentityTests.cs",
+      "BudgetTrackerApp/BudgetTrackerApp.Tests/DashboardTests.cs",
+      "BudgetTrackerApp/BudgetTrackerApp.Tests/ImportTests.cs"
+    ]
+  },
+  {
+    "repo": "SimonGeering/AdminAssistant",
+    "files": [
+      "src/AdminAssistant.IntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "simonmoravcik2009-spec/portfolio",
+    "files": [
+      "test/UnitTests/UnitTests.TestProject/AppFixture.cs"
+    ]
+  },
+  {
+    "repo": "Simplify4Me2/goal-getter",
+    "files": [
+      "GoalGetter/GoalGetter.Tests/TestAppHost.cs"
+    ]
+  },
+  {
+    "repo": "sjasperse/AspireStarterWithFunctions",
+    "files": [
+      "AspireStarter.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "skedular/skedular",
+    "files": [
+      "src/shared/Enterprise.Shared/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "skozlowsky/MiniShop",
+    "files": [
+      "test/MiniShop.IntegrationTests/IntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "skozlowsky/minishop-btnet",
+    "files": [
+      "test/MiniShop.IntegrationTests/IntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "SmithE65/ProjectTracker",
+    "files": [
+      "ProjectTracker.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "snow-jallen/aspire-maui-otel",
+    "files": [
+      "PublicOtel.Templates/templates/publicotel-aspire-maui/PublicOtel.Tests/WebTests.cs",
+      "PublicOtel.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "snow-jallen/MockingDemo",
+    "files": [
+      "CreatureArena.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "sorinburtoiu/dotnet-aspire-learning",
+    "files": [
+      "src/IntegrationTests/IntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "souzagustavo/desafio-arquitetura-software",
+    "files": [
+      "tests/CashFlow.AppHost.Tests/Fixture/CashFlowAppsFixture.cs"
+    ]
+  },
+  {
+    "repo": "SpaceTimee/SpaceTime-Server",
+    "files": [
+      "SpaceTime-Defaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Spark-Border/architecture-ai-server",
+    "files": [
+      "ArchitectureAI.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "spori-bs/Dusk-Of-Coding",
+    "files": [
+      "DuskOfCoding.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "spydersoft-consulting/platform",
+    "files": [
+      "src/Spydersoft.Platform.Hosting/Spydersoft.Platform.Hosting/StartupExtensions/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "srebrek/PokerManager",
+    "files": [
+      "tests/E2ETests/AspireFixture.cs"
+    ]
+  },
+  {
+    "repo": "srikar7992/Karamchari",
+    "files": [
+      "src/Backend/Hosts/Karamchari.Api/DependencyInjection/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Ssa-hh/car-sharing-microservices",
+    "files": [
+      "src/Aspire/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "stampfordsit/ai-agent-unit-test",
+    "files": [
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-077/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-092/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/benchmark_datasets/v2/real_world/CSHARP-BENCH-159/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/benchmark_datasets/v2/real_world/CSHARP-BENCH-167/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-077/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-092/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-088/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/benchmark_datasets/v2/real_world/CSHARP-BENCH-167/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-092/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-088/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-088/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/benchmark_datasets/v2/real_world/CSHARP-BENCH-152/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-078/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-082/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-076/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/benchmark_datasets/v2/real_world/CSHARP-BENCH-150/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/benchmark_datasets/v2/real_world/CSHARP-BENCH-165/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-091/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/benchmark_datasets/v2/real_world/CSHARP-BENCH-151/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/benchmark_datasets/v2/real_world/CSHARP-BENCH-162/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-087/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-093/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/benchmark_datasets/v2/real_world/CSHARP-BENCH-166/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-085/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/raw_datasets/real_world/CSHARP-BENCH-083/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/benchmark_datasets/v2/real_world/CSHARP-BENCH-161/expected_test.cs",
+      "ai-unit-test-benchmark/benchmark_runner/benchmark_datasets/v2/real_world/CSHARP-BENCH-148/expected_test.cs"
+    ]
+  },
+  {
+    "repo": "SteffenBlake/LlamaSharp-Practice",
+    "files": [
+      "src/AIPractice.IntegrationTests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "stephanel/daily-bytes",
+    "files": [
+      "learning/aspire/test/AppHost.IntegrationTests/Fixtures/InfrastructureSetup.cs"
+    ]
+  },
+  {
+    "repo": "StephenClearyExamples/DotNetTelemetry",
+    "files": [
+      "AspireServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "stephn22/Music",
+    "files": [
+      "Music.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "StevanFreeborn/semantic-kernel-research",
+    "files": [
+      "OllamaTest/Program.cs"
+    ]
+  },
+  {
+    "repo": "Suiram1701/SchulCloud",
+    "files": [
+      "SchulCloud.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "sukumar2530/printer-management-system",
+    "files": [
+      "printer management system.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "sunkanmi-olawuwo/expensify-app",
+    "files": [
+      "src/API/Expensify.Api.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "SURIMI-Project/SURIMI-Common-DotNet",
+    "files": [
+      "SURIMI-Common-DotNet/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Surt7/world-pinball-api-leaderboard",
+    "files": [
+      "Aspire/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "suxrobGM/logistics-app",
+    "files": [
+      "test/Logistics.Infrastructure.AI.Tests/Llm/LlmHttpClientTests.cs"
+    ]
+  },
+  {
+    "repo": "Swamy-s-Tech-Skills-Academy/aspire-2025",
+    "files": [
+      "src/AspireStarterProject/AspireApp/AspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "T4H3R99/VamosTennis",
+    "files": [
+      "AlloTennis.Tests/WebTests.cs",
+      "AlloTennis.Tests/WebTests.cs",
+      "AlloTennis.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "TacticusPlanner/tacticus-planner-api",
+    "files": [
+      "orchestration/TacticusPlanner.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Taiizor/Xavier",
+    "files": [
+      "src/Xavier/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "tailored-apps/SharedComponents",
+    "files": [
+      "src/TailoredApps.Shared.WebApi/Http/HttpClientRegistration.cs"
+    ]
+  },
+  {
+    "repo": "talentconsulting/talentsuite-bidmanager",
+    "files": [
+      "TalentSuite.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "tamirdresher/aspire-workshop",
+    "files": [
+      "Exercise/workshop/Lesson-03/code/Bookstore.AppHost.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "tavanuka/SourceAnalyzers.Sample",
+    "files": [
+      "test/TUnit.Sample.AppHost.IntegrationTests/AppFixture.cs"
+    ]
+  },
+  {
+    "repo": "tavanuka/TUnit.Sample",
+    "files": [
+      "test/TUnit.Sample.AppHost.IntegrationTests/AppFixture.cs"
+    ]
+  },
+  {
+    "repo": "technololy/castamnow",
+    "files": [
+      "test/aspire/CastAmNow.AppHost.IntegrationTest/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "Teck-Lab/Teck.Monorepo",
+    "files": [
+      "src/aspire/Teck.ServiceDefaults/TeckServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "temporal-community/withlove-giftshop-demo",
+    "files": [
+      "tests/WithLove.ProductsAPI.Tests/Fixtures/IntegrationTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "tenjoufire/sreagentkatsujim-octopets",
+    "files": [
+      "servicedefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "teriansilva/superstatus",
+    "files": [
+      "SuperStatus.Tests/WebTests.cs",
+      "SuperStatus.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "thangchung/coffeeshop-agent",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "thangchung/dapr-labs",
+    "files": [
+      "aspire/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "thangchung/sk-hybrid-search",
+    "files": [
+      "ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "TheDiscDb/web",
+    "files": [
+      "code/TheDiscDb.IntegrationTests/AspireAppFixture.cs"
+    ]
+  },
+  {
+    "repo": "Thefights/along-hospital-management",
+    "files": [
+      "along-hospital-server/along-hospital-server.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "THHCorp/Threllaut",
+    "files": [
+      "Threllaut.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Thiagom790/cellsync-api",
+    "files": [
+      "src/CellSync.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "thientt2/fashia-clean-architecture",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "thomasclay/HackerNews",
+    "files": [
+      "HackerNews.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "thomasmartinsen/event-hackathon-20260528",
+    "files": [
+      "case/complete solution/src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "thomhurst/TUnit",
+    "files": [
+      "src/TUnit.Templates/content/TUnit.Aspire.Starter/ExampleNamespace.TestProject/AppFixture.cs",
+      "src/TUnit.Templates/content/TUnit.Aspire.Test/IntegrationTest1.cs",
+      "tests/TUnit.Templates.Tests/Snapshots/InstantiationTest.TUnit.Aspire.Test._.verified/TUnit.Aspire.Test/IntegrationTest1.cs",
+      "tests/TUnit.Templates.Tests/Snapshots/InstantiationTest.TUnit.Aspire.Starter._.verified/TUnit.Aspire.Starter/TUnit.Aspire.Starter.TestProject/AppFixture.cs"
+    ]
+  },
+  {
+    "repo": "thou-mayest/media-platform-template",
+    "files": [
+      "src/CleanModular.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "thuneby/AnimalChat",
+    "files": [
+      "AnimalChat/tests/AnimalChat.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "tiger4589/outbox-pattern-demo",
+    "files": [
+      "Demo/AspireOutboxDemo/AspireOutboxDemo.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "timdeschryver/Sandbox",
+    "files": [
+      "Sandbox.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "TK11703/Holonet.Databank",
+    "files": [
+      "src/Holonet.Databank.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "TNOSC/OtripleS.Api",
+    "files": [
+      "src/Tnosc.OtripleS.Server.Api/Extensions/DefaultServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "tobey7430/portfolio",
+    "files": [
+      "test/UnitTests/UnitTests.TestProject/AppFixture.cs"
+    ]
+  },
+  {
+    "repo": "TobiasRafael/hris-sync-azure",
+    "files": [
+      "tests/HrSync.Adapters.Tests/VendorResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "tobiaswaggoner/xrai.projectradar",
+    "files": [
+      "src/xrai.projectradar.application/xrai.projectradar.backend/Program.cs"
+    ]
+  },
+  {
+    "repo": "TobiStr/Lab",
+    "files": [
+      "Kubernetes/test/DistributedApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "tokKurumi/Task-Manager",
+    "files": [
+      "Task Manager.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "tom3019/E-Commerce",
+    "files": [
+      "src/E-Commerce.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "tomasjurasek/open-telemetry",
+    "files": [
+      "Eshop.ServiceDefaults/Extensions.cs",
+      "Eshop.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "TomizawaAtLogit/MyCRM",
+    "files": [
+      "Ligot.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "tommasodotNET/agent-framework-aspire",
+    "files": [
+      "src/service-defaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "tommasodotNET/agent-framework-city-assistant",
+    "files": [
+      "src/service-defaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "TomSB1423/NetWorth",
+    "files": [
+      "Tests/Networth.Functions.Integration.Tests/Infrastructure/DistributedApplicationTestFactory.cs",
+      "Tests/Networth.Functions.Integration.Tests/Authentication/CustomMockUserConfigurationTests.cs"
+    ]
+  },
+  {
+    "repo": "tonynguyen139/overflow",
+    "files": [
+      "Overflow.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "tooniez/aspnet-blazor-aws-starter",
+    "files": [
+      "src/aspire/service-defaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "tooyioo/tooyioo-api",
+    "files": [
+      "src/Tooyioo.Api/Infrastructure/Health/HealthExtensions.cs"
+    ]
+  },
+  {
+    "repo": "tostyle/OrderDotnet",
+    "files": [
+      "Service/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "tritailk65/MovieBooking",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "trokolisz/DMSAudit",
+    "files": [
+      "DMSAudit.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "trokolisz/TicketApp",
+    "files": [
+      "TicketApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "trondkla/aspire-net-demo",
+    "files": [
+      "AspireDemo/AspireDemo.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "TryCatchLearn/Overflow",
+    "files": [
+      "Overflow.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "TryCatchLearn/overflow-aspire13",
+    "files": [
+      "Overflow.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "tssxsks/HTPT-TMDTMicroservice",
+    "files": [
+      "API/netcore/netcore.Commons/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Ttanhsonsisu/AWE-automation-workflow-engine",
+    "files": [
+      "src/BuildingBlocks/AWE.ServiceDefaults/Extensions/ServiceDefaultsExtentions.cs"
+    ]
+  },
+  {
+    "repo": "TubaMirabilis/EmbassyAirlines",
+    "files": [
+      "src/Shared.ServiceDefaults/ServiceDefaultsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "tung-le-lv/clean-architecture-dotnet",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "TunNetCom/TunNetCom-SilkRoadErp",
+    "files": [
+      "src/Aspire/TunNetCom.SilkRoadErp.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "TuralHasanov11/AspireTutorial",
+    "files": [
+      "AspireSample/AspireSample.Tests/CatalogServiceTests.cs",
+      "AspireSample/AspireSample.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "two4suited/DotNew-NewTools-1024",
+    "files": [
+      "tests/newtools-1014.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "two4suited/FlyballStats.com",
+    "files": [
+      "src/flyballstats.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "two4suited/RFC9457",
+    "files": [
+      "AspireTemplate.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "uia-2026/is-202-programmeringsprosjekt",
+    "files": [
+      "Heimevernet.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "UKHO/Maritime-Safety-Information",
+    "files": [
+      "UKHO.MaritimeSafetyInformation.Web/UKHO.MaritimeSafetyInformation.PlaywrightTests/MSIAdminFunctionalTests.cs",
+      "UKHO.MaritimeSafetyInformation.Web/UKHO.MaritimeSafetyInformation.PlaywrightTests/MSIFunctionalTest.cs"
+    ]
+  },
+  {
+    "repo": "ullgia/Kleios",
+    "files": [
+      "Frontend/Modules/Kleios.Module.Auth/Program.cs"
+    ]
+  },
+  {
+    "repo": "UMTD-TG/CleanTemplate",
+    "files": [
+      "src/ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "unlanza/air-quality-tests",
+    "files": [
+      "src/AirQualityApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ursatile/dsnet-cph-2026",
+    "files": [
+      "aspire/AspireApp/AspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "uvatmvf/LearnAspireApp",
+    "files": [
+      "LearnAspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "vahiidd/TaskFlow",
+    "files": [
+      "TaskFlowApi.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "vancodocton/MoneyGroup",
+    "files": [
+      "test/AppHost.Tests/Fixtures/AppHostFactory.cs"
+    ]
+  },
+  {
+    "repo": "vaniel56/Swift-Bank-",
+    "files": [
+      "SwiftBank_Api/SwiftBank.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "vash-labs/practical-rag-dotnet",
+    "files": [
+      "Section03_Completed/IcmChatBuddy/IcmChatAPI/OllamaResilienceHandlersExtensions.cs",
+      "Section06_Completed/IcmChatBuddy/IcmChatAPI/OllamaResilienceHandlersExtensions.cs",
+      "Section05_Completed/IcmChatBuddy/IcmChatAPI/OllamaResilienceHandlersExtensions.cs",
+      "Section04_Completed/IcmChatAPI/OllamaResilienceHandlersExtensions.cs",
+      "Section07_Completed/IcmChatBuddy/IcmChatAPI/OllamaResilienceHandlersExtensions.cs"
+    ]
+  },
+  {
+    "repo": "VeniaminBalan/BFF.Proxy",
+    "files": [
+      "BFF.Proxy/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "versussun/VroksNet",
+    "files": [
+      "tests/VroksNet.E2ETests/Fixtures/AppHostFixture.cs"
+    ]
+  },
+  {
+    "repo": "vezixig/ApiTemplate",
+    "files": [
+      "Backend/Framework/Config/HttpClient.cs"
+    ]
+  },
+  {
+    "repo": "vicellobre/ChistesAPI",
+    "files": [
+      "Enjoy/src/Enjoy.Infrastructure/DependencyInjection.Options.cs"
+    ]
+  },
+  {
+    "repo": "Victor-Ochoa/revendaapp",
+    "files": [
+      "tests/RevendaApp.IntegrationTests/AppHostTests.cs"
+    ]
+  },
+  {
+    "repo": "victorverdoodt/Disaster-Response-Coordinator",
+    "files": [
+      "DRC.Api.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "VietLD0519/Technology-Advanced-Medical-Research-Intelligence",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs",
+      "tests/Web.AcceptanceTests/AspireSetup.cs",
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "vikramsagarag/Catalyst4Change",
+    "files": [
+      "Catalyst4Change.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Vinodmangalore/Sk",
+    "files": [
+      "semantic-kernel/dotnet/samples/KernelSyntaxExamples/Example08_RetryHandler.cs",
+      "semantic-kernel/dotnet/samples/KernelSyntaxExamples/Example08_RetryHandler.cs",
+      "semantic-kernel/dotnet/samples/KernelSyntaxExamples/Example18_DallE.cs",
+      "semantic-kernel/dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAICompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "vishipayyallore/learn-aspire-2025",
+    "files": [
+      "src/AspireSample/AspireSample.Tests/WebTests.cs",
+      "src/AspireStarterApp/AspireStarterApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "vishipayyallore/vs2026-dev-productivity",
+    "files": [
+      "src/AspireApp.ApiGateway/Program.cs"
+    ]
+  },
+  {
+    "repo": "VisualAcademy/Dul.Me",
+    "files": [
+      "src/Dul.Me/Dul.Me.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "VisualAcademy/Hawaso",
+    "files": [
+      "src/Hawaso.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "VisualAcademy/Kodee",
+    "files": [
+      "src/EmployeePicture/Kodee/Kodee.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "VItalion/CustomPadWeb",
+    "files": [
+      "CustomPadWeb.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "VittorioMorellini/offerteblazor",
+    "files": [
+      "OfferteBlazor.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "VivekGEY/kernal",
+    "files": [
+      "dotnet/src/IntegrationTests/BaseIntegrationTest.cs",
+      "dotnet/samples/Concepts/DependencyInjection/HttpClient_Resiliency.cs",
+      "dotnet/samples/Concepts/TextToImage/OpenAI_TextToImageDalle3.cs",
+      "dotnet/src/IntegrationTests/Connectors/OpenAI/OpenAICompletionTests.cs"
+    ]
+  },
+  {
+    "repo": "vivektyagi-dev/15-leetcode-patterns",
+    "files": [
+      "MyApp/tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "VladislavAntonyuk/.NET-Templates",
+    "files": [
+      "templates/VerticalSliceArchitecture/src/Web/App1.AppHost.Tests/WebTests.cs",
+      "templates/ModularMonolith/src/Web/App1.AppHost.Tests/WebTests.cs",
+      "templates/ModularMonolithVerticalSliceArchitecture/src/Web/App1.AppHost.Tests/WebTests.cs",
+      "templates/VerticalSliceArchitectureBlazorWebAssembly/src/Web/App1.AppHost.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "VladislavAntonyuk/AICalendar",
+    "files": [
+      "src/Web/AICalendar.AppHost.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "VladislavAntonyuk/WorldExplorer",
+    "files": [
+      "tests/WorldExplorer.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "vobrechkov/MotoGPT",
+    "files": [
+      "tests/MotoGPT.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "vompa/aispa-studio",
+    "files": [
+      "src/AispaStudio.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "vpatrinica/pdfedit",
+    "files": [
+      "PdfEdit/PdfEdit.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "vqh17062001/Web_health_app",
+    "files": [
+      "Web_health_app.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "vwzhang/Starter",
+    "files": [
+      "Starter.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "wanderlustgremlin-cloud/Everlore",
+    "files": [
+      "Everlore.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "WangBank/AspireReact",
+    "files": [
+      "Lies.Server/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "waseem15280/MeridianWatchPortal",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "Waylo2016/Orange",
+    "files": [
+      "Orange.IntegrationTests/Helpers/TestAppHostBuilder.cs"
+    ]
+  },
+  {
+    "repo": "wcislom/skill-up",
+    "files": [
+      "orchestration/Forecaster.Aspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "wechooz/tech-assessment",
+    "files": [
+      "WeChooz.TechAssessment.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "WeihanLi/SparkTodo",
+    "files": [
+      "SparkTodo.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "welnn/SevillaSoft.SaaS",
+    "files": [
+      "SevillaSoft.SaaS.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "whizbang-lib/whizbang",
+    "files": [
+      "samples/ECommerce/tests/ECommerce.AzureServiceBus.Integration.Tests/Fixtures/AspireIntegrationFixture.cs"
+    ]
+  },
+  {
+    "repo": "wibu009/evently",
+    "files": [
+      "src/Aspire/Evently.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "william-liebenberg/Aspire9",
+    "files": [
+      "Aspire9.MelbDotNet.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "william-liebenberg/practical-dapr-aspire",
+    "files": [
+      "DaprShop.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "willibrandon/firebird-resources",
+    "files": [
+      "src/FirebirdResource.Tests/DistributedApplicationFixture.cs",
+      "src/FirebirdResource.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "WolfgangOfner/Youtube",
+    "files": [
+      "Protect your Pipelines with Microsoft Defender for DevOps/DefenderForDevOpsDemo/DefenderForDevOpsDemo.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "wolszewski/dow-stats",
+    "files": [
+      "DowStats.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "wvdhouten/tmp-loancalculator",
+    "files": [
+      "LoanCalculator/LoanApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "xaberue/Playground.Aspire",
+    "files": [
+      "Tests/Xaberue.Playground.HospitalManager.Tests/SampleIntegrationTest.cs"
+    ]
+  },
+  {
+    "repo": "Xapm26/EstudianteMateriasCrudApp",
+    "files": [
+      "EstudiantesMateriasCrudApp.Tests/IntegrationTest1.cs",
+      "EstudiantesMateriasCrudApp.Tests/IntegrationTest1.cs",
+      "EstudiantesMateriasCrudApp.Tests/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "xavierjohn/FunctionalAspire",
+    "files": [
+      "FunctionalAspire.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "xavierjohn/Trellis.Templates",
+    "files": [
+      "microservices/template/ServiceDefaults/src/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "XeonFX/HeyHubs-legacy",
+    "files": [
+      "tests/HeyHubs.Tests.Integration/Common/TestWebApplicationFactory.cs"
+    ]
+  },
+  {
+    "repo": "XeshSufferer/Azone",
+    "files": [
+      "Azone/Azone.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "XeshSufferer/GhostCodeBackend",
+    "files": [
+      "GhostCodeBackend.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "xlukasd/WS-AspireApp",
+    "files": [
+      "WS-AspireApp.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "xonium/XoniumTemplate",
+    "files": [
+      "XoniumTemplate.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "xrcdev/AspireDemo",
+    "files": [
+      "AspireDemo.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "xxnickles/anime-feed-manager",
+    "files": [
+      "src/AnimeFeedManager.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Xyrces/Talaria",
+    "files": [
+      "src/Talaria.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "yanis-kr/Quizymode",
+    "files": [
+      "src/Quizymode.Api.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "YanniAlshoufi/yanni-htl-create-exercise",
+    "files": [
+      "starter/WebApiTests/WebApiTestFixture.cs"
+    ]
+  },
+  {
+    "repo": "yazilimcisarman/Forum",
+    "files": [
+      "Forum.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ycanardeau/hydrangean-diva",
+    "files": [
+      "backend/HydrangeanDiva.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ymd65536/BlazorAppContainer",
+    "files": [
+      "Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Ynot1234/BirthdayCollator",
+    "files": [
+      "BirthdayCollator.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "yokinos/Viv",
+    "files": [
+      "src/Vivian/Viv.Aspire/Viv.Aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "yroute-dev/KeycloakBase",
+    "files": [
+      "src/KeycloakTest.Tests/WebTests.cs",
+      "src/KeycloakTest.Tests/WebTests.cs",
+      "src/KeycloakTest.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "Ytin24/FlowersCraft",
+    "files": [
+      "FlowersCraft.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "yuriburger/spanorama",
+    "files": [
+      "ObserveMe/Program.cs"
+    ]
+  },
+  {
+    "repo": "Yuryii/Research-Management-System",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "zandiarash/Arshid-Aspire-ApiDocs-Extensions",
+    "files": [
+      "Test/AspireAppTest.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ZekiKod/XAFVectorSearch",
+    "files": [
+      "XPOVectorSearch.Blazor.Server/Startup.cs"
+    ]
+  },
+  {
+    "repo": "zemires/zemires-aspire",
+    "files": [
+      "tests/Zemires.Aspire.Hosting.N8n.Tests/N8nIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "zenatureza/Zona",
+    "files": [
+      "Zona.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "zeng-dong/dot-netting",
+    "files": [
+      "_nine/AspireStarter/AspireStarter.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "zeryk24/Software-Architectures-seminars",
+    "files": [
+      "FoodDelivery.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "zhengangguo/MultiRegion",
+    "files": [
+      "tests/Web.AcceptanceTests/AspireSetup.cs"
+    ]
+  },
+  {
+    "repo": "ZhuKaiBin/ProDemo",
+    "files": [
+      "NETAspire/FirstNETAspireSln/AspireApp1/AspireApp1.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "zmy15/Eventask",
+    "files": [
+      "Eventask.ApiService/Utilities/HostExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Zpartan-B/BL.Challenge.Rest",
+    "files": [
+      "BL.Challenge.Test/IntegrationTest1.cs"
+    ]
+  },
+  {
+    "repo": "ZuhriDeveloper/Cassandra",
+    "files": [
+      "Cassandra.Tests/WebTests.cs",
+      "Cassandra.Tests/WebTests.cs"
+    ]
+  },
+  {
+    "repo": "ZUOXIANGE/dotnet-modulith",
+    "files": [
+      "src/DotNetModulith.ServiceDefaults/Extensions.cs"
+    ]
+  }
+]

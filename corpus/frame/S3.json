@@ -1,0 +1,6471 @@
+[
+  {
+    "repo": "01vadim10/polly-chaos-engineering",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "19balazs86/PlayingWithHttpClientFactory",
+    "files": [
+      "PlayingWithHttpClientFactory/Program.cs"
+    ]
+  },
+  {
+    "repo": "19balazs86/PlayingWithOpenTelemetry",
+    "files": [
+      "ClientConsoleApp/HelloClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "19balazs86/PlayingWithRefit",
+    "files": [
+      "PlayingWithRefit/Program.cs"
+    ]
+  },
+  {
+    "repo": "1babii1/dotnet-distributed-systems",
+    "files": [
+      "backend/McpServer/Program.cs",
+      "backend/AuthService/AuthService.Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "29haspsfan/VSATest",
+    "files": [
+      "src/Shared/Resiliency/DependencyInjectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "4090rt/free-proxy-refresher",
+    "files": [
+      "ProxyTG_HTTP/HTTP/HTTPClientSettings/Client_GIT_HTTP.cs",
+      "ProxyTG_HTTP/HTTP/HTTPClientSettings/Client_GIT_HTTPS.cs",
+      "ProxyTG_HTTP/HTTP/HTTPClientSettings/Client_Git_ShadowSocks.cs",
+      "ProxyTG_HTTP/HTTP/HTTPClientSettings/Client_GIT_MTProto.cs",
+      "ProxyTG_HTTP/HTTP/HTTPClientSettings/Client_GIT_SOCKS5.cs"
+    ]
+  },
+  {
+    "repo": "4lessandrodev/unip-desenvolvimento-dotnet",
+    "files": [
+      "src/PortalTarefas.Web/Observability/DependencyClient.cs"
+    ]
+  },
+  {
+    "repo": "5jisoo/AspireYouTubeSummarizer",
+    "files": [
+      "AspireYouTubeSummarizer/AspireYouTubeSummarizer.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "67130237/day1",
+    "files": [
+      "code/creditai/apis-orchestrator/src/Shared/Shared.Infrastructure/HttpClientResilienceExtensions.cs",
+      "code/creditai/apis-orchestrator/src/ChatApi/Shared/Infrastructure/HttpClientResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "7irelo/aptiverse",
+    "files": [
+      "api/src/Modules/AiTutor/Aptiverse.AiTutor/AiTutorModule.cs"
+    ]
+  },
+  {
+    "repo": "9097-Experimentos-SmartStay/backend",
+    "files": [
+      "BackendAwSmartstay.API/Shared/Infrastructure/Email/Configuration/EmailServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "9kbx/ProxyHttpClient",
+    "files": [
+      "ProxyHttpClient.Test/Program.cs"
+    ]
+  },
+  {
+    "repo": "9thLevelSoftware/Code-Tutor",
+    "files": [
+      "content/courses/csharp/modules/16-building-cloud-native-apps-with-net-aspire/lessons/04-resilience-patterns-polly-circuit-breakers/challenges/01-practice-challenge/solution.cs"
+    ]
+  },
+  {
+    "repo": "a-postx/Delobytes.App.Backend",
+    "files": [
+      "src/Modules/Integrations/Delobytes.App.Backend.Integrations.Infrastructure/SalesChannels/WildberriesChannelModule.cs",
+      "src/Modules/Integrations/Delobytes.App.Backend.Integrations.Infrastructure/SalesChannels/OzonChannelModule.cs",
+      "src/Modules/Integrations/Delobytes.App.Backend.Integrations.Infrastructure/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "aahme249/positrace-Forward-GeocodingWeb-API-Task",
+    "files": [
+      "GeocodingApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "aalfaroGithub/DevHabit",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "aaronpowell/HanselminutesBot",
+    "files": [
+      "HanselminutesBot.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "AAS-TwinEngine/AAS.TwinEngine.DataEngine",
+    "files": [
+      "source/AAS.TwinEngine.DataEngine/Infrastructure/Http/Policies/ResilienceHandlerExtensions.cs",
+      "source/AAS.TwinEngine.ExportService/Infrastructure/Http/Policies/ResilienceHandlerExtensions.cs"
+    ]
+  },
+  {
+    "repo": "aatifkamrann/ContestWinnerAPI",
+    "files": [
+      "WinnersPortal.Services/Ai/AiResilience.cs",
+      "WinnersPortal.Api.Tests/AiResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "abdallahh166/TowerOps",
+    "files": [
+      "src/TowerOps.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "abdulmajeedkh/AspNetCore-CMS",
+    "files": [
+      "src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs",
+      "src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "AbdulMussawir1994/HttpRelianceCurcuit",
+    "files": [
+      "OrderServiceAPI/Extensions/HttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Abhijit-Kumar-GitHub/TinyLink",
+    "files": [
+      "src/RedirectService/Program.cs"
+    ]
+  },
+  {
+    "repo": "Ace68/PatternsOfDistributedSystems",
+    "files": [
+      "src/Chaos/BrewUp.Chaos/Modules/SalesModule.cs",
+      "src/Chaos/BrewUp.Chaos/Modules/WarehousesModule.cs",
+      "src/Chaos/ResilienceBlazor/ResilienceBlazor.Modules.Warehouses.Extensions/WarehousesHelper.cs",
+      "src/Chaos/ResilienceBlazor/ResilienceBlazor.Modules.Sales.Extensions/SalesHelper.cs"
+    ]
+  },
+  {
+    "repo": "Acestus/acestus-iac",
+    "files": [
+      "fabric-sync/Program.cs"
+    ]
+  },
+  {
+    "repo": "Achi00/Proxy_LoadBalancer",
+    "files": [
+      "Proxy_LoadBalancer.Host/Infrastructure/Extensions/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "activout/Activout.Blue5",
+    "files": [
+      "src/Activout.Blue5.Resilience/Blue5ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Adamd5x/PowerDNS-Manager",
+    "files": [
+      "src/hiPower.Server.Communication/Extensions/DependencyInjection/ConfigureCommunicationExtension.cs"
+    ]
+  },
+  {
+    "repo": "ademi47/MemeCrawler",
+    "files": [
+      "MemesService/src/Memes.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "adiraj297/movies-hub",
+    "files": [
+      "MoviesHub.API/Startup/RegisterServices.cs"
+    ]
+  },
+  {
+    "repo": "AdrianStrugala/SolTechnology.Core",
+    "files": [
+      "src/SolTechnology.Core.HTTP/ModuleInstaller.cs"
+    ]
+  },
+  {
+    "repo": "AGIBuild/LiveLingo",
+    "files": [
+      "src/LiveLingo.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "AgostonAttila/Prjct-BudgetBuddy-3",
+    "files": [
+      "Servers/BudgetBuddy.API.Clean/BudgetBuddy.API.Clean/Infrastructure/Extensions/InfrastructureServicesExtensions.cs",
+      "Servers/BudgetBuddy.API.ModularMonolith/Modules/BudgetBuddy.Module.Investments/InvestmentsModule.cs"
+    ]
+  },
+  {
+    "repo": "agussala2003/ContableAI",
+    "files": [
+      "backend/src/ContableAI.Infrastructure/Resilience/ResiliencePipelines.cs"
+    ]
+  },
+  {
+    "repo": "AidyGit/Final-Project-Arc-AI",
+    "files": [
+      "Services/LotteryService/Program.cs"
+    ]
+  },
+  {
+    "repo": "airy-pay/airy-pay",
+    "files": [
+      "src/AiryPay.Infrastructure/Utils/ResiliencePipelines.cs"
+    ]
+  },
+  {
+    "repo": "ajaydhandare/AutomationAgentNH",
+    "files": [
+      "src/NewHorizon.Automation.ErpClient/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "akashic/SetEmailCategory",
+    "files": [
+      "src/SetEmailCategory/Graph/GraphClientRegistration.cs"
+    ]
+  },
+  {
+    "repo": "akifkemalaksu/FinancialTransactionSystem",
+    "files": [
+      "Services/TransactionService/TransactionService.Infrastructure/ServiceRegistration.cs"
+    ]
+  },
+  {
+    "repo": "akobr/mono.me",
+    "files": [
+      "src/Platform/Storyteller/Access.AuthKit/src/AuthKitEntryPoint.cs"
+    ]
+  },
+  {
+    "repo": "akshaynegi18/SwiggyBackend",
+    "files": [
+      "OrderService/Program.cs"
+    ]
+  },
+  {
+    "repo": "albandvd/EMA-S9-DS-Gestion-des-dependances",
+    "files": [
+      "src/ReveilMusical.Infrastructure.Music/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "AlbertKellner/ClaudeDotNetPlayground",
+    "files": [
+      "src/Albert.Playground.ECS.AOT.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "AlbusKavaliro/WinTokenBridge",
+    "files": [
+      "dev/DataProducer/Program.cs"
+    ]
+  },
+  {
+    "repo": "ALDamico/TombLauncher",
+    "files": [
+      "src/TombLauncher/Extensions/DownloaderServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "aleburrascano/azure-microservices-with-dotnet",
+    "files": [
+      "src/Wpm.Clinic.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "Alexanderbtw/articles-aggregator",
+    "files": [
+      "src/ArticlesAggregator.ExternalServices.Parser/ExternalParserRegistrar.cs"
+    ]
+  },
+  {
+    "repo": "AlexanderGlzPrd/LMS-MicroservicesArchitecture",
+    "files": [
+      "src/bff/BffComposition.Api/Clients/ResilienceRegistration.cs",
+      "src/services/certification/Certification.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Alexandr-AL/CityTraffic",
+    "files": [
+      "CityTraffic/MauiProgram.cs"
+    ]
+  },
+  {
+    "repo": "Alexey-beercode/ConnectorTestTask",
+    "files": [
+      "ConnectorTestTask/ConnectorTestTask.Presentation/Extensions/WebApplicationBuilderExtension.cs"
+    ]
+  },
+  {
+    "repo": "alexindima/food-diary",
+    "files": [
+      "Modules/OpenFoodFacts/Infrastructure/OpenFoodFactsProviderRegistration.cs",
+      "Modules/Ai/Infrastructure/AiProviderRegistration.cs"
+    ]
+  },
+  {
+    "repo": "alexsanderdev/engenharia-labs",
+    "files": [
+      "labs/F5-M06-httpclient-resiliencia/src/F5M06.Pagamentos/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "alexspirou/Alexandros_Spyrou_Assessment",
+    "files": [
+      "EcbGateway/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "alexthunderouse/CleanDemo",
+    "files": [
+      "src/Presentation/Public.Api/Configuration/ResilienceConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "AliAsaad715/QuraaaPlatform",
+    "files": [
+      "Quraaa.Infrastructure/Extensions/InfrastructureDependencyInjectionHandler.cs"
+    ]
+  },
+  {
+    "repo": "aliexpressru/qdrant-client",
+    "files": [
+      "src/Aer.QdrantClient.Http/DependencyInjection/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Alos-no/Cloudflare.NET",
+    "files": [
+      "src/Cloudflare.NET/Core/Resilience/ResilienceDelegatingHandler.cs",
+      "src/Cloudflare.NET/Core/ServiceCollectionExtensions.cs",
+      "src/Cloudflare.NET/Core/Resilience/CloudflareResiliencePipelineBuilder.cs",
+      "tests/Cloudflare.NET.Tests/IntegrationTests/ResiliencePipelineIntegrationTests.cs"
+    ]
+  },
+  {
+    "repo": "Alos-no/Smtp2Go.NET",
+    "files": [
+      "src/Smtp2Go.NET/Http/HttpClientExtensions.cs",
+      "src/Smtp2Go.NET/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Alsairy/NexusCore",
+    "files": [
+      "src/NexusCore.Application/NexusCoreApplicationModule.cs"
+    ]
+  },
+  {
+    "repo": "altair-sossai/l4d2-playstats-web",
+    "files": [
+      "L4D2PlayStats.Web/L4D2PlayStats.Core/Steam/DependencyInjection/SteamInjection.cs"
+    ]
+  },
+  {
+    "repo": "altinburak/AltMiUstMu",
+    "files": [
+      "src/AltMiUstMu.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "amengoli9/tutorial-devpills",
+    "files": [
+      "tutorial-net-resilience/src/Example02.CustomPipeline/Program.cs",
+      "tutorial-net-resilience/src/Example04.DynamicReload/ResilienceConfig.cs",
+      "tutorial-net-resilience/src/Example06.Chaos/ResilienceConfig.cs",
+      "tutorial-net-resilience/src/Example02.CustomPipeline/ResilienceConfig.cs"
+    ]
+  },
+  {
+    "repo": "AmineBoualleguee/data-analytics-ai-workbench",
+    "files": [
+      "src/DataWorkbench.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "AmitSahoo45/rag-semantic-search",
+    "files": [
+      "src/SemanticRagSearch.Api/Resilience/OllamaResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "AmmonRoberts/PauseHole",
+    "files": [
+      "API/Program.cs"
+    ]
+  },
+  {
+    "repo": "Amr905/zaghlol",
+    "files": [
+      "backend/src/Zaghlol.Infrastructure/Purchases/PurchasesServiceCollectionExtensions.cs",
+      "backend/src/Zaghlol.Infrastructure/AppStore/AppStoreServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "amusleh-spotware-com/cmind",
+    "files": [
+      "src/Nodes/NodeHttpClients.cs",
+      "src/Infrastructure/Ai/AiHttpClientRegistration.cs"
+    ]
+  },
+  {
+    "repo": "anamitkovic/RPSLSGame",
+    "files": [
+      "src/RPSLSGame.Infrastructure/Extensions/InfrastructureExtensions.cs"
+    ]
+  },
+  {
+    "repo": "anand-clarivex/ambeeka-vending-bff",
+    "files": [
+      "src/Pervaxis.Vpa.Vending/Infrastructure/Extensions/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "anaradovanovic5/mikroservisnaArhitektura",
+    "files": [
+      "EventService/Program.cs"
+    ]
+  },
+  {
+    "repo": "Anarenaa/flashcards-maker-csharp-react",
+    "files": [
+      "backend/WebAPI/Program.cs"
+    ]
+  },
+  {
+    "repo": "ANcpLua/ANcpLua.Analyzers",
+    "files": [
+      "src/ANcpLua.Analyzers/Analyzers/AL1105MissingResilienceConfigurationAnalyzer.cs",
+      "tests/ANcpLua.Analyzers.Tests/AL1105MissingResilienceConfigurationTests.cs"
+    ]
+  },
+  {
+    "repo": "AndersonCosta28/AndOS.Front-end",
+    "files": [
+      "src/AndOS.Infrastructure/InfrastructureServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "andispapageo/ExchangerPool",
+    "files": [
+      "Infrastructure.Common/Extensions/PolyExtensions.cs"
+    ]
+  },
+  {
+    "repo": "andispapageo/StreamingQuotes-gRPC",
+    "files": [
+      "Infrastructure.CoinGegko/Config/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "andreafreda/corso-java-to-dotnet",
+    "files": [
+      "esempi/8.resilienza-caching/OrderService/OrderService.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "andrealeonee/TrenordTratta",
+    "files": [
+      "src/TrenordTratta.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "andredarcie/backend-dotnet-ai-agent-benchmark",
+    "files": [
+      "evaluator-dotnet/Evaluators/ResilienceEvaluator.cs"
+    ]
+  },
+  {
+    "repo": "andrueastman/HttpStreamIssueRepro",
+    "files": [
+      "TestProject/TestLibSetup.cs"
+    ]
+  },
+  {
+    "repo": "AndyAhhh/DotNetExperiment",
+    "files": [
+      "DotNetResilience/Program.cs"
+    ]
+  },
+  {
+    "repo": "andyswain33/legacy-cloud-orchestrator",
+    "files": [
+      "AutonomousOrchestrator/src/Orchestrator.WorkerService/Program.cs"
+    ]
+  },
+  {
+    "repo": "anilyilmazz/GhostBug",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "ankdas04-test/u3infotechtest",
+    "files": [
+      "Order.Orchestrator.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "anko-code-academy/lastmile-tms-team1",
+    "files": [
+      "src/backend/src/LastMile.TMS.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "anotherdaywillcome/DevHabit",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "AoshiW/Kunc.RiotGames",
+    "files": [
+      "src/Kunc.RiotGames.Lol.DataDragon/LolDataDragonServiceCollectionExtensions.cs",
+      "src/Kunc.RiotGames.Api/RiotGamesApiServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "apourya/dotnet-boilerplate-ai-architect",
+    "files": [
+      "src/Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "App-vNext/Polly",
+    "files": [
+      "samples/Chaos/Program.cs",
+      "src/Snippets/Docs/HttpClientIntegrations.cs",
+      "src/Snippets/Docs/CircuitBreaker.cs"
+    ]
+  },
+  {
+    "repo": "aQulionnn/two-phase-commit",
+    "files": [
+      "TransactionService/Program.cs"
+    ]
+  },
+  {
+    "repo": "Arbeidstilsynet/dotnet-common",
+    "files": [
+      "EraClient/AT.Common.EraClient.Publish/DependencyInjection/DependencyInjectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Architect4Hire/CreatorPantry",
+    "files": [
+      "src/CreatorPantry.Domain/Modules/Billing/Integration/Stripe/StripeBillingRegistration.cs"
+    ]
+  },
+  {
+    "repo": "arkhibr/net-minimal-api",
+    "files": [
+      "src/Catalogo/Catalogo.ClientDemo/ResilienceDemo.cs"
+    ]
+  },
+  {
+    "repo": "armanossiloko/azure-admin",
+    "files": [
+      "src-backend/AzureAdmin.API/DependencyInjection/ApplicationServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "art-of-v/fuel-voucher-platform",
+    "files": [
+      "backend/src/FuelFlow.API/SharedKernel/Resilience/OutboundHttpClient.cs"
+    ]
+  },
+  {
+    "repo": "arthurvalentereis/lms-nomus-erp-synchronizer-job",
+    "files": [
+      "lms-nomus-erp-synchronizer-job/Infrastructure/DependencyInjection/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "arza-developer/tp-distribuidos-grupo2-asientos",
+    "files": [
+      "src/Services/Booking.Api/Presentation/Program.cs"
+    ]
+  },
+  {
+    "repo": "ashutoshgubreleag/ApexPost_Assignment",
+    "files": [
+      "ApexPost.Courier.Core/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "atc-net/atc-rest-api-source-generator",
+    "files": [
+      "test/Atc.Rest.Api.Generator.Tests/Extractors/DependencyInjectionExtractorTests.cs",
+      "test/Scenarios/Retry/Client-Operation/Retry.Resilience.DependencyInjection.verified.cs",
+      "test/Scenarios/Retry/Client-Typed/Retry.Resilience.DependencyInjection.verified.cs",
+      "src/Atc.Rest.Api.Generator/Helpers/UsingStatementHelper.cs",
+      "src/Atc.Rest.Api.Generator/Extractors/ResilienceDependencyInjectionExtractor.cs"
+    ]
+  },
+  {
+    "repo": "ATkingma/unshackle",
+    "files": [
+      "src/Unshackle.Tests/Proofs/Polly/AddPolicyHandler/policy-method.after.cs",
+      "src/Unshackle.Tests/Proofs/Polly/AddPolicyHandler/inline-transient.after.cs",
+      "src/Unshackle.Tests/Proofs/Polly/AddPolicyHandler/transient-or-status.after.cs",
+      "src/Unshackle.Tests/Proofs/Polly/AddPolicyHandler/transient-lambda-429.after.cs",
+      "src/Unshackle.Core/Fixes/Polly/PollyFix.cs",
+      "src/Unshackle.Core/Fixes/Polly/Patterns/AddPolicyHandlerPattern.cs"
+    ]
+  },
+  {
+    "repo": "atlitech/reports",
+    "files": [
+      "src/Atli.Reports.Client/ReportsClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Atypical-Consulting/x402-dotnet",
+    "files": [
+      "src/X402.AspNetCore/Facilitator/HttpFacilitatorClient.cs"
+    ]
+  },
+  {
+    "repo": "auzieman/rx-demo",
+    "files": [
+      "src/rx-ui/Rx.Ui/Program.cs"
+    ]
+  },
+  {
+    "repo": "AveryPBerger/azure-microservices",
+    "files": [
+      "src/Wpm.Clinic.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "Avi-0009/Prakhar_Sahu",
+    "files": [
+      "Day22/piece1/backend/Extensions/ResilienceExtensions.cs",
+      "Day27/backend/src/Modules/Resilience/QuotesApi.Resilience.Infrastructure/ResilienceExtensions.cs",
+      "Day26/backend/Extensions/ResilienceExtensions.cs",
+      "Day5/piece6/QuotesApi/Program.cs",
+      "Day32/apps/quotes/backend/src/Modules/Resilience/QuotesApi.Resilience.Infrastructure/ResilienceExtensions.cs",
+      "Day20/backend/Program.cs",
+      "Day17/backend/Program.cs",
+      "Day18/backend/Program.cs",
+      "Day21/backend/Program.cs",
+      "Day19/backend/Program.cs"
+    ]
+  },
+  {
+    "repo": "avolel/aurum",
+    "files": [
+      "src/Aurum.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "azrng/nuget-packages",
+    "files": [
+      "src/Shared/Common.HttpClients/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "BalinTomsk/efcs-backend",
+    "files": [
+      "service/news_search/NewsSearch/Configuration/ServiceRegistration.cs"
+    ]
+  },
+  {
+    "repo": "bandreit/tnesnoc",
+    "files": [
+      "src/Consent.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "baps-apps/http-resilience-net",
+    "files": [
+      "src/HttpResilience.NET/Internal/HttpResilienceMeteringEnricher.cs",
+      "src/HttpResilience.NET/Extensions/HttpResilienceHttpClientBuilderExtensions.cs",
+      "tests/HttpResilience.NET.Tests/Behavior/RemediationTests.cs",
+      "src/HttpResilience.NET/Internal/ResilienceHandlerCountFilter.cs",
+      "src/HttpResilience.NET/Internal/HttpResilienceLogging.cs",
+      "tests/HttpResilience.NET.Tests/Behavior/ConsumerBoundaryTests.cs"
+    ]
+  },
+  {
+    "repo": "barandasdemir0/Aegis",
+    "files": [
+      "src/Aegis.Resilience.Extensions.Http/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "barandasdemir0/MoneyTransferCenter",
+    "files": [
+      "Src/MoneyTransferCenter.WebAPI/Extension/ResilienceExtension.cs"
+    ]
+  },
+  {
+    "repo": "bariskisir/JevSharp",
+    "files": [
+      "src/JevSharp/DependencyInjection/Resilience/JevHttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "BatistaCo-Pedro/VerticalSlices_Template",
+    "files": [
+      "src/Common/Application/Resiliency/DependencyInjectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "bbajt/csharp-code-map",
+    "files": [
+      "src/CodeMap.Roslyn/Extraction/VbNet/VbRetryPolicyExtractor.cs",
+      "src/CodeMap.Roslyn/Extraction/RetryPolicyExtractor.cs",
+      "tests/CodeMap.Roslyn.Tests/Extraction/RetryPolicyExtractorTests.cs"
+    ]
+  },
+  {
+    "repo": "bcgov/jag-traffic-courts-online",
+    "files": [
+      "src/backend/TrafficCourts/Citizen.Service/Services/Tickets/Search/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "bcgov/unified-scheduling",
+    "files": [
+      "api/Unified.Infrastructure/Email/Ches/ChesEmailServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Belphemur/AddictedProxy",
+    "files": [
+      "AddictedProxy.Upstream/Boostrap/BootstrapAddictedServices.cs",
+      "InversionOfControl/Service/Resilience/ResilienceDefaults.cs"
+    ]
+  },
+  {
+    "repo": "BenjaminEwe/GameTrackServer",
+    "files": [
+      "GameTrackServer/SetupExtensions/ServiceCollectionSetup.cs"
+    ]
+  },
+  {
+    "repo": "Beratoguzhan620/Scootly",
+    "files": [
+      "src/Scootly.Infrastructure/Payments/PaymentResiliencePolicies.cs"
+    ]
+  },
+  {
+    "repo": "Bezaeel/termii-dotnet-sdk",
+    "files": [
+      "termii.sdk/Common/Http/HttpConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "BhalaGanesh30/PropelIQ-POC-Appointment",
+    "files": [
+      "server/src/PropelIQ.SharedKernel/AiGateway/AiGatewayServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "bircex/korkut",
+    "files": [
+      "src/modules/Korkut.LawClients/Extensions/LawClientsHttp.cs"
+    ]
+  },
+  {
+    "repo": "bislerium/Eventing",
+    "files": [
+      "Eventing.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "blanho/auction-platform-microservices",
+    "files": [
+      "src/BuildingBlocks/BuildingBlocks.Infrastructure/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "BlankaKorvo/bcs-investapi-sdk",
+    "files": [
+      "tests/Bcs.InvestApi.Tests/Architecture/BcsInvestApiCoreDependencyTests.cs"
+    ]
+  },
+  {
+    "repo": "blazorstudy/g3j-learn-sk",
+    "files": [
+      "ep11/start/GuidedProject.ServiceDefaults/Extensions.cs",
+      "ep10/complete/GuidedProject.ServiceDefaults/Extensions.cs",
+      "ep11/complete/GuidedProject.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "blehnen/FrigateRelay",
+    "files": [
+      "src/FrigateRelay.Plugins.FrigateSnapshot/PluginRegistrar.cs",
+      "src/FrigateRelay.Plugins.Pushover/PluginRegistrar.cs",
+      "src/FrigateRelay.Plugins.Doods2/PluginRegistrar.cs",
+      "src/FrigateRelay.Plugins.Roboflow/PluginRegistrar.cs",
+      "src/FrigateRelay.Plugins.CodeProjectAi/PluginRegistrar.cs",
+      "src/FrigateRelay.Plugins.BlueIris/PluginRegistrar.cs",
+      "tests/FrigateRelay.Plugins.Pushover.Tests/PushoverActionPluginTests.cs"
+    ]
+  },
+  {
+    "repo": "bobby1072/BT",
+    "files": [
+      "src/BT.Common/BT.Common.Http/Extensions/HttpServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "bogdanSgithub/microservices-dotnet",
+    "files": [
+      "src/Wpm.Clinic.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "Brady-Zhang/Brady-blog",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "brandoov/brandRiot",
+    "files": [
+      "src/BrandRiot.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "brendankowitz/nachos",
+    "files": [
+      "src/Nachos.Client/NachosClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "BrianFrisch/MealShopper",
+    "files": [
+      "apps/orchestrator/MealShopper.Orchestrator/Program.cs"
+    ]
+  },
+  {
+    "repo": "brianpcoffey/gis-portfolio",
+    "files": [
+      "Portfolio.Web/Startup/ArcGisClientRegistration.cs"
+    ]
+  },
+  {
+    "repo": "BridgingIT-GmbH/bITdevKit",
+    "files": [
+      "examples/DoFiesta/DoFiesta.Presentation.Web.Client/Program.cs"
+    ]
+  },
+  {
+    "repo": "BrighterCommand/Fences",
+    "files": [
+      "samples/Chaos/Program.cs",
+      "src/Snippets/Docs/HttpClientIntegrations.cs"
+    ]
+  },
+  {
+    "repo": "brumschlag/commit0-sharp",
+    "files": [
+      "repos/polly/samples/Chaos/Program.cs",
+      "repos/polly/src/Snippets/Docs/HttpClientIntegrations.cs",
+      "repos/polly/src/Snippets/Docs/CircuitBreaker.cs"
+    ]
+  },
+  {
+    "repo": "BrunoCandia/ECommerce",
+    "files": [
+      "Services/Basket/Basket.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "bsakel/agile_task",
+    "files": [
+      "src/Modules/Billing/Billing.Infrastructure/Http/BillingHttpGatewayExtensions.cs"
+    ]
+  },
+  {
+    "repo": "bucolak/MiniSMSGateway",
+    "files": [
+      "Sms/Program.cs"
+    ]
+  },
+  {
+    "repo": "BUNNY-19C/DLSSG-30s-manager",
+    "files": [
+      "src/DLSSGManager.Core/Fetch/PayloadHttp.cs"
+    ]
+  },
+  {
+    "repo": "c-cllano/webvalidatorfront",
+    "files": [
+      "ApiGateways.API/Extensions/HttpClientBuilderExtensions.cs",
+      "Dactyloscopy.API/Extensions/HttpClientBuilderExtensions.cs",
+      "UIConfiguration.API/Extensions/HttpClientBuilderExtensions.cs",
+      "DigitalSignature.API/Extensions/HttpClientBuilderExtensions.cs",
+      "DrawFlowConfiguration.API/Extensions/HttpClientBuilderExtensions.cs",
+      "Process.API/Extensions/HttpClientBuilderExtensions.cs",
+      "UITemplate.API/Extensions/HttpClientBuilderExtensions.cs",
+      "DrawFlowProcess.API/Extensions/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "c23b/DoingTasks",
+    "files": [
+      "src/backend/DoingTasks.Infrastructure/ExternalServices/Common/OAuthResiliencePipeline.cs"
+    ]
+  },
+  {
+    "repo": "cameronrye/clarissabot",
+    "files": [
+      "src/ClarissaBot/ClarissaBot.Core/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Camilo-Pinilla/WebApplication1",
+    "files": [
+      "ChartsProject/Program.cs"
+    ]
+  },
+  {
+    "repo": "cankatcayci1/OrchardCore_Analyze",
+    "files": [
+      "OrchardCore_Analyze/OrchardCore/src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs",
+      "OrchardCore_Analyze/OrchardCore/src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs"
+    ]
+  },
+  {
+    "repo": "carlescs/Namerre",
+    "files": [
+      "Namerre.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "carloscds/CSharpSamples",
+    "files": [
+      "HttpResilience/HttpResilience/Program.cs"
+    ]
+  },
+  {
+    "repo": "carlosdaniiel07/template-net-core",
+    "files": [
+      "TemplateNetCore.Infrastructure.IoC/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Carlou134/tms-oms-integration",
+    "files": [
+      "TmsOmsIntegration.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "cascadiacollections/smodr-winui3",
+    "files": [
+      "smodr/Services/RadioDirectoryHttpClients.cs"
+    ]
+  },
+  {
+    "repo": "Catglobe/Catglobe.CgScript",
+    "files": [
+      "Catglobe.CgScript.Runtime/HostExtensions.cs",
+      "Catglobe.CgScript.Deployment/HostExtensions.cs"
+    ]
+  },
+  {
+    "repo": "cconk/GolfStatsApp",
+    "files": [
+      "Server/PgaTour/PgaTourServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "cemililik/Saydin.Services",
+    "files": [
+      "src/Saydin.PriceIngestion/Extensions/HttpResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "chadsinglee/payments-integration-service",
+    "files": [
+      "src/Payments.Infrastructure/InfrastructureServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "chanakya-net/intelibill",
+    "files": [
+      "src/backend/Intelibill.Infrastructure/Extensions/OpenTelemetryServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "chandelima/LimasIoTDevices",
+    "files": [
+      "LimasIoTDevices.Shared/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "changjian-wang/dawning",
+    "files": [
+      "sdk/Dawning.Resilience/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ChangoJ/CircuitBreakerLab",
+    "files": [
+      "backend/src/CircuitBreakerLab.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Cheranga/coding-delights",
+    "files": [
+      "articles/ResilientHttpClients/tests/ResilientHttpClients.Services.Tests/BankAccountServiceTests.cs",
+      "articles/ResilientHttpClients/tests/ResilientHttpClients.Services.Tests/BankAccountServiceTests.Setup.cs"
+    ]
+  },
+  {
+    "repo": "ChristianVistiLyth/happy-headlines",
+    "files": [
+      "week-45/src/PublisherService/Program.cs",
+      "Old weeks/week-40/src/PublisherService/Program.cs",
+      "Old weeks/week-43/src/PublisherService/Program.cs",
+      "Old weeks/week-44/src/PublisherService/Program.cs",
+      "Old weeks/week-39/src/PublisherService/Program.cs",
+      "week-45/src/CommentService/Program.cs",
+      "Old weeks/week-39/src/CommentService/Program.cs",
+      "Old weeks/week-44/src/NewsletterService/Program.cs",
+      "Old weeks/week-38/src/CommentService/Program.cs",
+      "Old weeks/week-40/src/CommentService/Program.cs",
+      "Old weeks/week-43/src/CommentService/Program.cs",
+      "Old weeks/week-37/src/CommentService/Program.cs",
+      "week-45/src/NewsletterService/Program.cs",
+      "Old weeks/week-44/src/CommentService/Program.cs"
+    ]
+  },
+  {
+    "repo": "christophwille/poc-oh",
+    "files": [
+      "src/HttpResiliencePractices/Program.cs"
+    ]
+  },
+  {
+    "repo": "ChronosSF/myvideogamelist",
+    "files": [
+      "MyVideoGameList.Server/Services/IgdbResilience.cs"
+    ]
+  },
+  {
+    "repo": "ChunPingWang/circuit-breaker-pattern",
+    "files": [
+      "04-dotnet-polly/Services/CircuitBreakerTracker.cs",
+      "04-dotnet-polly/Program.cs"
+    ]
+  },
+  {
+    "repo": "clarivex-tech/pervaxis-forge",
+    "files": [
+      "pervaxis-forge-api/src/Pervaxis.Forge.Api/Infrastructure/Extensions/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "cloud-tek/hive",
+    "files": [
+      "hive.extensions/src/Hive.HTTP/Extension.cs"
+    ]
+  },
+  {
+    "repo": "CMeeg/storyblokdotnet",
+    "files": [
+      "packages/StoryblokDotNet.ContentDeliveryApi/Http/StoryblokContentDeliveryApiResilience.cs"
+    ]
+  },
+  {
+    "repo": "cmw2/ssrs-copilot",
+    "files": [
+      "SSRSCopilot.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "cococelgit/LSCInventoryCopartIaaI",
+    "files": [
+      "src/Lsc.Inventory.Api/Program.cs",
+      "inventory-engine/src/Lsc.Inventory.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "codaxy/cxo-kitchensink-demo",
+    "files": [
+      "examples/acme-internet/Acme.Workers/Program.cs",
+      "examples/acme-vpn/AcmeVpn.Workers/Program.cs"
+    ]
+  },
+  {
+    "repo": "Code2MatterLabs/TraceCommerce",
+    "files": [
+      "src/shared/TraceCommerce.BuildingBlocks/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "codedesignplus/CodeDesignPlus.Net.Microservice.ElectronicInvoicing",
+    "files": [
+      "src/domain/CodeDesignPlus.Net.Microservice.ElectronicInvoicing.Infrastructure/Startup.cs"
+    ]
+  },
+  {
+    "repo": "codewithyusa/ShopApi",
+    "files": [
+      "ShopApi.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "CodingBase2509/TagGame",
+    "files": [
+      "TagGame.Client.Core/Http/Configuration/HttpResilienceConfigurator.cs"
+    ]
+  },
+  {
+    "repo": "coltonspears/ColtonStack",
+    "files": [
+      "src/ColtonStack.Client/Services/ResilientHttpClient.cs"
+    ]
+  },
+  {
+    "repo": "CompositeCode/substratalapps-windows",
+    "files": [
+      "src/Substratal.Hub.Core/HubServices.cs"
+    ]
+  },
+  {
+    "repo": "CorneliusEybers/RockForge",
+    "files": [
+      "RockForge.Solution/RockForge.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "CouchPartyGames/DotnetExamples",
+    "files": [
+      "Resilience/CustomRetryStrategy.cs",
+      "Resilience/CircuitBreakerExample.cs",
+      "Resilience/TimeoutStrategies.cs"
+    ]
+  },
+  {
+    "repo": "Covek01/WCF-chatbot",
+    "files": [
+      "docs-main/docs/core/resilience/snippets/http-resilience/Program.CustomHandler.cs"
+    ]
+  },
+  {
+    "repo": "CPS-Innovation/Case-Management-Register-a-Case",
+    "files": [
+      "src/backend/Cps.CaseManagement.MdsClient/Extensions/IServiceCollectionExtension.cs"
+    ]
+  },
+  {
+    "repo": "CPS-Innovation/Large-and-Complex-Cases",
+    "files": [
+      "backend/CPS.ComplexCases.API/Extensions/IServiceCollectionExtension.cs",
+      "backend/CPS.ComplexCases.Egress/Extensions/IServiceCollectionExtension.cs",
+      "backend/CPS.ComplexCases.DDEI/Extensions/IServiceCollectionExtension.cs",
+      "backend/CPS.ComplexCases.NetApp/Extensions/IServiceCollectionExtension.cs"
+    ]
+  },
+  {
+    "repo": "Crashouks/NexusCoreTeamProject",
+    "files": [
+      "nexuscore/NexusCore.Api/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Cratis/Chronicle",
+    "files": [
+      "Source/Kernel/Core.Specs/Observation/Webhooks/for_WebhookMediator/when_calling_on_next/with_cancellation_during_http_retry.cs",
+      "Source/Kernel/Core/Setup/WebhookHttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "CrazyScienceCoder/Practice.AI.CurrencyConverter",
+    "files": [
+      "Practice.Backend.CurrencyConverter/src/Frankfurter.ApiClient/src/Extensions/ServiceCollectionExtensions.cs",
+      "Practice.Backend.CurrencyConverter/src/Client/src/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "credfeto/credfeto-workflow-mcp",
+    "files": [
+      "src/Credfeto.Workflow.GitHub/GitHubSetup.cs"
+    ]
+  },
+  {
+    "repo": "crgolden/Functions",
+    "files": [
+      "Functions/Curator/CuratorServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "cristofima/dotnet-mcp-server",
+    "files": [
+      "src/MCP-Server/McpServer.Infrastructure/Extensions/InfrastructureServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "crni99/airport-automation",
+    "files": [
+      "mvc-frontend/AirportAutomationWeb/Program.cs"
+    ]
+  },
+  {
+    "repo": "crobibero/Simple-Bike-Trainer",
+    "files": [
+      "src/SimpleBikeTrainer.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "crossdyne/enigma-vault",
+    "files": [
+      "dotnet/src/apps/EnigmaVault.Web.Bff/Extensions/HttpClientsServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Cruciatus-YV/Techcore_Internship",
+    "files": [
+      "Techcore_Internship.WebApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "Cryosurgeryblabber9314/booking-microservices",
+    "files": [
+      "src/Services/Booking/src/Booking/Extensions/Infrastructure/GrpcClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "CSAdvent/csadvent.christmas",
+    "files": [
+      "tests/CSAdvent.IntegrationTests/AppHostFixture.cs"
+    ]
+  },
+  {
+    "repo": "csharper89/ride-tracker",
+    "files": [
+      "RideTracker.Infrastructure/Database/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "cultpodcasts/RedditPodcastPoster",
+    "files": [
+      "Class-Libraries/RedditPodcastPoster.Twitter/Clients/XApiSafeRetryPolicy.cs",
+      "Class-Libraries/RedditPodcastPoster.Twitter/Extensions/ServiceCollectionExtensions.cs",
+      "Class-Libraries/RedditPodcastPoster.Twitter.Tests/BusinessRules/XApiSafeRetryPolicyRules.cs"
+    ]
+  },
+  {
+    "repo": "curt-sorkin-glassbit/gc-dataexchange-svc",
+    "files": [
+      "src/gc-api-common/gc.api.common/Extensions/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "CXTV/DevHabit",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "cyber-lena/game-auth-server",
+    "files": [
+      "src/GameAuth.ServiceDefaults/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "cybersmurf/emistr-watchdog",
+    "files": [
+      "src/Emistr.Watchdog/Configuration/HttpClientResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "cyrilth/ApexAutoBid",
+    "files": [
+      "backend/BiddingService/BiddingService.Infrastructure/Grpc/GrpcFallbackAuctionProvider.cs",
+      "backend/BiddingService/BiddingService.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "cyrrr-mr/AiMicroservice",
+    "files": [
+      "AiMicroservice.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "D1egoSebastian/ControlFinanzas",
+    "files": [
+      "src/ControlDeFinanzasIA.Infrastructure/Llm/LlmServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "D1no209/NoCTF",
+    "files": [
+      "backend/src/NoCTF.Runner/Composition/LibvirtRuntimeProviderRegistration.cs",
+      "backend/src/NoCTF.Infrastructure/Admission/HumanVerificationInfrastructure.cs",
+      "backend/src/NoCTF.Runner/Composition/ServiceRegistration.cs",
+      "backend/src/NoCTF.Infrastructure/Competitions/CompetitionInfrastructure.cs"
+    ]
+  },
+  {
+    "repo": "daanstolp/rate-limiting-examples",
+    "files": [
+      "ClientRateLimited/Program.cs"
+    ]
+  },
+  {
+    "repo": "Daniel-iel/CleanArchitectureTemplate",
+    "files": [
+      "src/RideSharingApp.Infrastructure/DependecyInjection.cs"
+    ]
+  },
+  {
+    "repo": "danzuep/HttpClientTestProject",
+    "files": [
+      "HttpClientResilience/Extensions/HttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "daonhan/TravelBookings",
+    "files": [
+      "src/Services/TravelBooking/TravelBooking.Infrastructure/Resilience/PaymentResiliencePolicies.cs"
+    ]
+  },
+  {
+    "repo": "DariuszTom/ReceptyOksSolution",
+    "files": [
+      "ReceptyOks.Api/Extensions/HomeSeekerExtensions.cs"
+    ]
+  },
+  {
+    "repo": "darryyna/last-dotnet-labs",
+    "files": [
+      "src/services/Aggregator/Aggregator/Program.cs"
+    ]
+  },
+  {
+    "repo": "data-altinn-no/plugin-tilda",
+    "files": [
+      "src/Dan.Plugin.Tilda/Config/SafeHttpClientResilience.cs"
+    ]
+  },
+  {
+    "repo": "datnt97/OrchardCore",
+    "files": [
+      "src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs",
+      "src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Dattoon/WebAppApiPhim",
+    "files": [
+      "WebAppApiPhim/Program.cs"
+    ]
+  },
+  {
+    "repo": "davestaab/lunchnlearn-codestock-presentation",
+    "files": [
+      "snippets/resilience-chaos.cs"
+    ]
+  },
+  {
+    "repo": "DavidAJohn/FotoStorio",
+    "files": [
+      "FotoStorio.Client/Program.cs"
+    ]
+  },
+  {
+    "repo": "DavidCapcuch/DotNetAtlas",
+    "files": [
+      "src/EShop.BFF/EShop.BFF.Infrastructure/Clients/Common/BffResilience.cs"
+    ]
+  },
+  {
+    "repo": "davidlihor/Eshop-Distributed-CloudNative-Architecture",
+    "files": [
+      "BuildingBlocks/BuildingBlocks/Resilience/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "davidphendra/geo-weather",
+    "files": [
+      "src/Modules/Weather/Weather.Modules.Weather.Infrastructure/WeatherModuleExtensions.cs"
+    ]
+  },
+  {
+    "repo": "DawidJankowski00/KAMADAv2",
+    "files": [
+      "src/Shared/Kamada.Shared.Infrastructure/Geocoding/GeocodingServiceCollectionExtensions.cs",
+      "src/Modules/RouteOptimization/Kamada.Modules.RouteOptimization/RouteOptimizationModule.cs"
+    ]
+  },
+  {
+    "repo": "dbhq-uk/gannet",
+    "files": [
+      "src/Gannet.Providers/ProvidersServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "deans-code/signal-box",
+    "files": [
+      "SignalBox.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "DeepakMeena222187/Thinkschool",
+    "files": [
+      "Day7/Task3-SetOperations/QuotesApi/Program.cs",
+      "Day10/Task1-ChangeTrackerBenchmark/QuotesApi/Program.cs",
+      "Day7/Task1-JoinsAndCTEs/QuotesApi/Program.cs",
+      "Day12/Task2-DapperComparison/QuotesApi/Program.cs",
+      "Day9/Task2-Deadlock/QuotesApi/Program.cs",
+      "Day9/Task1-IsolationLevels/QuotesApi/Program.cs",
+      "Day7/Task2-WindowFunctions/QuotesApi/Program.cs",
+      "Day10/Task2-QueryTranslation/QuotesApi/Program.cs",
+      "Day12/Task1-CqrsLite/QuotesApi/Program.cs",
+      "Day8/Task2-CoveringIndexes/QuotesApi/Program.cs",
+      "Day11/Task2-FixSlowEndpoint/QuotesApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "deepgram/deepgram-dotnet-sdk",
+    "files": [
+      "Deepgram/Factory/HttpClientFactory.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/cads-bridge",
+    "files": [
+      "CadsBridge.Infrastructure/ApiClients/Setup/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/epr-pom-api-web",
+    "files": [
+      "WebApiGateway/WebApiGateway.Api/ConfigurationExtensions/HttpClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/epr-pom-func-producer-validation",
+    "files": [
+      "src/EPR.ProducerContentValidation.FunctionApp/Program.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/epr-pom-func-submission-check-splitter",
+    "files": [
+      "src/SubmissionCheckSplitter.Functions/Program.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/epr-pom-producer-validation",
+    "files": [
+      "src/EPR.ProducerContentValidation.FunctionApp/Program.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/epr-registration-validation-function-app",
+    "files": [
+      "src/EPR.RegistrationValidation.Functions/Program.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/epr-subsidiary-func-bulk-upload",
+    "files": [
+      "src/EPR.SubsidiaryBulkUpload.Application/Resilience/Pipelines.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/ls-cads-ingester",
+    "files": [
+      "src/Cads.Infrastructure/ApiClients/Setup/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/ls-keeper-data-api",
+    "files": [
+      "src/KeeperData.Infrastructure/ApiClients/Setup/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/trade-imports-data-api",
+    "files": [
+      "src/Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/trade-imports-decision-deriver",
+    "files": [
+      "src/Deriver/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/trade-imports-gmr-finder",
+    "files": [
+      "src/GmrFinder/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/trade-imports-gmr-processor",
+    "files": [
+      "src/GmrProcessor/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/trade-imports-processor",
+    "files": [
+      "src/Processor/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/waste-obligations",
+    "files": [
+      "src/Api/Utils/Http/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "DEFRA/waste-obligations-notifications",
+    "files": [
+      "src/Consumer/Services/Http/DownstreamHttpExtensions.cs",
+      "src/Consumer/Services/WasteObligations/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "dehol/GameDB2",
+    "files": [
+      "GameDB.Infrastructure/Http/StoreHttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Dekuarg/Prueba-Tecnica-Kaprielian-Federico",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "Dekuarg/Tecnica-Kaprielian-Federico",
+    "files": [
+      "Tecnica-Kaprielian-Federico/Program.cs"
+    ]
+  },
+  {
+    "repo": "denapurnama/ResilientApiApp",
+    "files": [
+      "ResilientApiIntegrator/src/ResilientApiApp/Program.cs"
+    ]
+  },
+  {
+    "repo": "Depaula010/AppControleFinanceiro",
+    "files": [
+      "dotnet/src/MeuSecretario.Infrastructure/Bot/BotServiceCollectionExtensions.cs",
+      "dotnet/src/MeuSecretario.Infrastructure/Llm/LlmServiceCollectionExtensions.cs",
+      "dotnet/src/MeuSecretario.Infrastructure/External/ExternalServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Destrayon/Connapse",
+    "files": [
+      "src/Connapse.Storage/Http/ProviderResilience.cs"
+    ]
+  },
+  {
+    "repo": "Det-rovv/Clew",
+    "files": [
+      "src/Clew.Infrastructure/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Devancy/eShopMicroservices",
+    "files": [
+      "src/Services/Basket/Basket.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "DevCristianoDePaula/Nexus-Curso-Backend-Moderno",
+    "files": [
+      "src/Gateway/Nexus.Gateway.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "devkimchi/aspire-youtube-summariser",
+    "files": [
+      "AspireYouTubeSummariser.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "DFE-Digital/single-unique-identifier",
+    "files": [
+      "Apps/NotificationService/src/SUI.NotificationService.Mesh/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "dhanuvel1985/azure-microservices-with-dotnet",
+    "files": [
+      "Clinic-Management-Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "DHCW-Digital-Health-and-Care-Wales/NWRI-eReferrals-Service-App",
+    "files": [
+      "src/NWRI.eReferralsService.API/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "diego-ancajima/RiskScreeningApi",
+    "files": [
+      "RiskScreeningApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "diego-carriere/9.3.1-Cours-gestion-dependances-risques-maintenabilite-TP-meteo",
+    "files": [
+      "TP-meteo/tests/Meteo.Infrastructure.Tests/ResilienceTests.cs",
+      "TP-meteo/src/Meteo.Infrastructure/InfrastructureServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "diego-carriere/9.3.1-Cours-gestion-dependances-risques-maintenabilite-TP-musical",
+    "files": [
+      "src/ReveilMusical.Infrastructure/Music/MusicServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "diegoiza201220/DonchoCE",
+    "files": [
+      "Backend/WebApiDonCho/Program.cs"
+    ]
+  },
+  {
+    "repo": "diercan/Laborator-PSSC",
+    "files": [
+      "Lucrarea-07/Exemple/Examples.Api/Clients/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "dineshmj/EnterpriseWebPlatform_V3",
+    "files": [
+      "src/Microservices/Payments/API/Infrastructure/PaymentNetwork/FraudScoringRegistration.cs"
+    ]
+  },
+  {
+    "repo": "Dingirsu2800/MathInsight",
+    "files": [
+      "src/MathInsight.Modules.Grading_Analytics/GradingModuleExtensions.cs"
+    ]
+  },
+  {
+    "repo": "divyanshu-sys/TechnicalSuite",
+    "files": [
+      "Ts.WebApi/Configurations/ServiceContainer.cs",
+      "Ts.Infra.Ioc.PublicApp/DependencyContainerApp.cs",
+      "Ts.Infra.Ioc.PublicComApp/DependencyContainerApp.cs"
+    ]
+  },
+  {
+    "repo": "djesusnet/RefitWithPolly",
+    "files": [
+      "src/WebApi/Extensions/RefitClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Djohnnie/CodeRetreat-2026-MetroMania",
+    "files": [
+      "src/MetroMania.Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "Dk1080/SW6-project",
+    "files": [
+      "FitnessApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "DocDamage/Save_State-Gaming-Hub",
+    "files": [
+      "src/SaveState.Infrastructure/Resilience/HttpResiliencePolicyHandler.cs"
+    ]
+  },
+  {
+    "repo": "dodyg/practical-aspnetcore",
+    "files": [
+      "projects/polly/rate-limiter-http-client/Program.cs"
+    ]
+  },
+  {
+    "repo": "dominikus1993/aspnetcore-sqlite-experiment",
+    "files": [
+      "src/Sample.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "DorianSielanczyk/CatFact",
+    "files": [
+      "src/Extensions/HttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "dosaic/dosaic",
+    "files": [
+      "Extensions/RestEase/src/Dosaic.Extensions.RestEase/DependencyInjection/RestEaseClientBuilder.cs"
+    ]
+  },
+  {
+    "repo": "dotDocType/dotnet-core-doc",
+    "files": [
+      "resilience/snippets/http-resilience/Program.CustomHandler.cs"
+    ]
+  },
+  {
+    "repo": "dotnet-blog/mongodb-efcore",
+    "files": [
+      "src/Samples.MongoDb.EFCore.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "dotnet/docker-tools",
+    "files": [
+      "src/ImageBuilder/ImageBuilder.cs"
+    ]
+  },
+  {
+    "repo": "dotnet/docs",
+    "files": [
+      "docs/core/resilience/snippets/http-resilience/Program.CustomHandler.cs"
+    ]
+  },
+  {
+    "repo": "dotnet/extensions",
+    "files": [
+      "bench/Libraries/Microsoft.Extensions.Http.Resilience.PerformanceTests/RetryBenchmark.cs",
+      "src/Libraries/Microsoft.Extensions.Http.Resilience/Resilience/ResilienceHttpClientBuilderExtensions.StandardResilience.cs",
+      "test/Libraries/Microsoft.Extensions.Http.Resilience.Tests/Resilience/GrpcResilienceTests.cs",
+      "test/Libraries/Microsoft.Extensions.Http.Resilience.Tests/Resilience/HttpClientBuilderExtensionsTests.BySelector.cs",
+      "src/Libraries/Microsoft.Extensions.Http.Resilience/Resilience/ResilienceHttpClientBuilderExtensions.Resilience.cs",
+      "src/Libraries/Microsoft.Extensions.Http.Resilience/Hedging/ResilienceHttpClientBuilderExtensions.Hedging.cs",
+      "test/Libraries/Microsoft.Extensions.Http.Resilience.Tests/Resilience/HttpClientBuilderExtensionsTests.Resilience.cs"
+    ]
+  },
+  {
+    "repo": "dotnet/nuget-trends",
+    "files": [
+      "src/NuGetTrends.Scheduler/Startup.cs"
+    ]
+  },
+  {
+    "repo": "dotnetmentor/glenn-code-factory",
+    "files": [
+      "packages/dotnet-api/Source/Features/BoxManagement/Extensions/BoxManagementExtensions.cs"
+    ]
+  },
+  {
+    "repo": "doublej42/whatsMCP",
+    "files": [
+      "src/WhatsBuildingMcp/Program.cs"
+    ]
+  },
+  {
+    "repo": "DOZAKA/AspireYouTubeSummariser",
+    "files": [
+      "AspireYouTubeSummariser.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "DuendeSoftware/foss",
+    "files": [
+      "access-token-management/src/AccessTokenManagement/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "dusantavic/CreditFlow",
+    "files": [
+      "CreditFlow.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "DVT-Graduate-Application-Programme/Liftoff",
+    "files": [
+      "worker/Program.cs"
+    ]
+  },
+  {
+    "repo": "dymaptic/GeoBlazor",
+    "files": [
+      "pro/test/dymaptic.GeoBlazor.Pro.Test.WebApp/dymaptic.GeoBlazor.Pro.Test.WebApp/ServerProxy.cs"
+    ]
+  },
+  {
+    "repo": "dymaptic/GeoBlazor-Samples",
+    "files": [
+      "samples/pro/dymaptic.GeoBlazor.Pro.Sample.WebApp/dymaptic.GeoBlazor.Pro.Sample.WebApp/ServerProxy.cs"
+    ]
+  },
+  {
+    "repo": "Early-Bird-Solutions-LLC/PinballWizard",
+    "files": [
+      "tests/PinballWizard.Infrastructure.Tests/IntegrationTests.cs",
+      "src/PinballWizard.Cli/Program.cs"
+    ]
+  },
+  {
+    "repo": "easykeys/EasyKeys.Veeqo",
+    "files": [
+      "src/EasyKeys.Veeqo.Abstractions/VeeqoAbstractionsServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Echways/LinkTracker",
+    "files": [
+      "src/LinkTracker.Shared/Infrastructure/Resilience/HttpClientBuilderResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Eduard0corona/TienditApp",
+    "files": [
+      "src/FoodParkDigital.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "edutuvarna/AuraCorePro",
+    "files": [
+      "src/Backend/AuraCore.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "efibs/GeoClubBot",
+    "files": [
+      "GeoClubBot.API/DependencyInjection/ClubBotServices.cs",
+      "GeoClubBot.Tests/Api/ResilienceTelemetryTests.cs",
+      "GeoClubBot.API/DependencyInjection/AiServices.cs"
+    ]
+  },
+  {
+    "repo": "Egitim10/AI_Essentials2_OpenAI",
+    "files": [
+      "A1-OpenAITooling/Program.cs"
+    ]
+  },
+  {
+    "repo": "Egoushka/oura-platform",
+    "files": [
+      "src/OuraPlatform.Oura/OuraServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "EhsaNShayaN/bazneshastegi-fava",
+    "files": [
+      "Bazneshastegi/src/Bazneshastegi.Infrastructure/DI/ProjectInstaller.cs"
+    ]
+  },
+  {
+    "repo": "EhsaNShayaN/ParsMedeQ",
+    "files": [
+      "src/ParsMedeq.Infrastructure/DI/ProjectInstaller.cs"
+    ]
+  },
+  {
+    "repo": "eliasandraade/nexo-erp",
+    "files": [
+      "nexo-backend/src/Nexo.Infrastructure/Integrations/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "ElysMaldov/Whisprr",
+    "files": [
+      "lib/Whisprr.BlueskyService/Modules/BlueskyServiceExtensions.cs",
+      "lib/Whisprr.MastodonService/Modules/MastodonServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "emata6/MovieApp",
+    "files": [
+      "MovieApp.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "EmilFilip/EFSoft.BFF",
+    "files": [
+      "EFSoft.BFF.Api/Setup/HttpClientExtentions.cs"
+    ]
+  },
+  {
+    "repo": "endatix/endatix",
+    "files": [
+      "src/Endatix.Infrastructure/Setup/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "enesozmert/music-room",
+    "files": [
+      "MusicRoom/src/MusicRoom/Infrastructure/Catalog/CatalogRegistration.cs",
+      "MusicRoom/src/MusicRoom/Infrastructure/Identity/SocialIdentityRegistration.cs"
+    ]
+  },
+  {
+    "repo": "enrico23/Eshop",
+    "files": [
+      "src/EShop.Web/Extensions/HttpClientExtension.cs"
+    ]
+  },
+  {
+    "repo": "EricCogen/GauntletCI",
+    "files": [
+      "src/GauntletCI.Core/Rules/Patterns/ExternalServicePatterns.cs",
+      "src/GauntletCI.Core/Rules/Patterns/CodePatterns.cs"
+    ]
+  },
+  {
+    "repo": "erik-mostert/erik-mostert-profile-resilient-integration",
+    "files": [
+      "src/ShippingClient.Api/Configuration/ResilientShippingClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "erikshafer/CritterSupply",
+    "files": [
+      "src/Marketplaces/Marketplaces.Api/Program.cs",
+      "tests/Marketplaces/Marketplaces.Api.IntegrationTests/AdapterResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "EslamAboalnaga22/WarehouseDemo",
+    "files": [
+      "Order.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "evangelosvlachos96-dotcom/booking-microservices",
+    "files": [
+      "src/Services/Booking/src/Booking/Extensions/Infrastructure/GrpcClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "evisoft/cnas",
+    "files": [
+      "src/Cnas.Ps.Infrastructure/MGov/MGovResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "exikoz/Lianer-backend",
+    "files": [
+      "Lianer.Features.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "exthand/Gateway",
+    "files": [
+      "GatewayConfigurator.cs"
+    ]
+  },
+  {
+    "repo": "FA26SE142-GFA26SE04-AI-Storytelling/AI_Storytelling_Backend",
+    "files": [
+      "src/Core/StoryPlatform.Infrastructure/AI/MediaHttpResilience.cs"
+    ]
+  },
+  {
+    "repo": "faaaami/FACSO-P.R.O-Management-System",
+    "files": [
+      "PROManagementSystem.Infrastructure/AI/DocumentExtractionService/OpenRouterExtractionServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Fabaladibbasey/hook",
+    "files": [
+      "backend/src/Features/Ai/AiServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "fabioono25/dotnet_studies",
+    "files": [
+      "EfCoreDemo/Program.cs"
+    ]
+  },
+  {
+    "repo": "FabioSimones/Korp_Teste_FabioSimones",
+    "files": [
+      "src/backend/Billing.Api/Features/Invoices/InventoryResilience.cs"
+    ]
+  },
+  {
+    "repo": "fabriciosenadev/BankMore",
+    "files": [
+      "src/services/Transferencia/Transferencia.Api/Config/DependencyInjectionConfig.cs"
+    ]
+  },
+  {
+    "repo": "faridun2004/PollyDemo",
+    "files": [
+      "TaxIntegration.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "farleybsd/elemar-jr",
+    "files": [
+      "IntegraccesSincronas-HTTP/Examples/IntelligentServiceFindZipCode/IntelligentServiceFindZipCode.App/Crosscutting/Extensions/ServiceCollectionViaCepExtensions.cs"
+    ]
+  },
+  {
+    "repo": "FarukValjevac/Live-Flight-Ops-Dashboard",
+    "files": [
+      "Backend/FlightOps.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "fcofrias96/Template",
+    "files": [
+      "src/BuildingBlocks/Template.BuildingBlocks.Application/Utilities/HttpResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "fdbartoli/backend-challenge",
+    "files": [
+      "src/Banco.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "fegmm/ElvantoSync",
+    "files": [
+      "Nextcloud/Extensions/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "fhazraty/AspireTestResiliency",
+    "files": [
+      "AspireApp1/AspireApp1.Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "FIAP-G04/iburguer-payments",
+    "files": [
+      "src/iBurguer.Payments.Infrastructure/Http/HttpClientHostApplicationExtensions.cs"
+    ]
+  },
+  {
+    "repo": "FIAP-G04/iburguer-shopping-cart",
+    "files": [
+      "src/iBurguer.ShoppingCart.Infrastructure/Http/HttpClientHostApplicationExtensions.cs"
+    ]
+  },
+  {
+    "repo": "fjord-code/DataIngestorService",
+    "files": [
+      "src/DataIngestorService.Infrastructure/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "FlorezZ1025/DogSitter",
+    "files": [
+      "UDEM.DEVOPS.DogSitter.Infrastructure/Extensions/AutoLoadServices.cs"
+    ]
+  },
+  {
+    "repo": "FoggyFreek/bosdat-v2",
+    "files": [
+      "src/BosDAT.Worker/Program.cs"
+    ]
+  },
+  {
+    "repo": "FontayneCodes/PulsePanel-Template",
+    "files": [
+      "OrchardCore-2.2.1/src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs",
+      "OrchardCore-2.2.1/src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "fordprefect480/CommonGround",
+    "files": [
+      "CommonGround.Server/Program.cs"
+    ]
+  },
+  {
+    "repo": "Foxtrot47/Crimson",
+    "files": [
+      "Crimson.WinUI/App.xaml.cs"
+    ]
+  },
+  {
+    "repo": "FranRuiz98/Stampede.Http",
+    "files": [
+      "Stampede.Http/Options/CoalescerOptions.cs",
+      "samples/Stampede.Http.Sample.Client/PipelineRegistration.cs",
+      "Stampede.Http/Extensions/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Freeesia/WondayWall",
+    "files": [
+      "WondayWall/Program.cs"
+    ]
+  },
+  {
+    "repo": "frigini/MeAjudaAi",
+    "files": [
+      "tests/MeAjudaAi.Shared.Tests/ServiceDefaults/Unit/ExtensionsTests.cs"
+    ]
+  },
+  {
+    "repo": "FroeFam/TalkingPointsSummary",
+    "files": [
+      "src/TalkingPointsSummary/Configuration/WorkerConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "fspelling/MonitorBoardK8s",
+    "files": [
+      "src/MonitorK8sPod/Poc.MonitorK8sPod.IoC/ExternalServiceResilience.cs"
+    ]
+  },
+  {
+    "repo": "futugyou/CodeFragments",
+    "files": [
+      "KaleidoCode/src/KaleidoCode/HttpDiagnosticsExtensions/ClientSideRateLimitedHandler.cs"
+    ]
+  },
+  {
+    "repo": "Gabriel-Oliveira-Prado/CineCatalog-API",
+    "files": [
+      "src/CineCatalog.Infrastructure/ExternalServices/Tmdb/TmdbHttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Gabriel-PereiraL/fulfillment-hub",
+    "files": [
+      "src/FulfillmentHub.Infrastructure/Providers/ProviderResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "GabrieleTronchin/Flowgent",
+    "files": [
+      "backend/src/Engine/Flowgent.Runtime/RuntimeServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "GannonTeam/digital-twin-dotnet-backend",
+    "files": [
+      "DigitalTwinDotNetBackend/ApiHost/Program.cs"
+    ]
+  },
+  {
+    "repo": "gaurav-init/craftcms",
+    "files": [
+      "src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs",
+      "src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "gberikov/SendPulser",
+    "files": [
+      "src/SendPulser.Resilience/SendPulserResilienceHttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "gclopes1978/market-data-api",
+    "files": [
+      "src/MarketData.Infrastructure/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "gekichumai/DxRating-Backend",
+    "files": [
+      "src/DxRating.Services.Api/Configurator/HttpClientConfigurator.cs"
+    ]
+  },
+  {
+    "repo": "generic-automation-and-it/smooth-llm-imposter",
+    "files": [
+      "src/SmoothLlmImposter.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "georgepwall1991/HttpClient.Resilience.Analyzers",
+    "files": [
+      "src/HttpClient.Resilience.Analyzers/Analyzers/Resilience/HCR043_CustomPipelineUnsafeRetryAnalyzer.cs",
+      "samples/HttpClient.Resilience.Showcase/BadExamples.cs",
+      "src/HttpClient.Resilience.Analyzers/Models/ResilienceRetryInvocation.cs",
+      "tests/HttpClient.Resilience.Analyzers.Tests/TestInfrastructure/CustomPipelineSources.cs",
+      "tests/HttpClient.Resilience.Analyzers.Tests/Resilience/HCR040_StackedResilienceHandlersAnalyzerTests.cs",
+      "tests/HttpClient.Resilience.Analyzers.Tests/Resilience/HCR043_CustomPipelineUnsafeRetryAnalyzerTests.cs",
+      "tests/HttpClient.Resilience.Analyzers.Tests/Resilience/HCR043_CustomPipelineUnsafeRetryMutationTests.cs",
+      "src/HttpClient.Resilience.Analyzers/Analyzers/Resilience/HCR040_StackedResilienceHandlersAnalyzer.cs"
+    ]
+  },
+  {
+    "repo": "getcellm/cellm",
+    "files": [
+      "src/Cellm/Models/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "getdipakkumar2008-coder/assignment_APINASA",
+    "files": [
+      "src/MarsPhotos.Infrastructure/Http/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "getsentry/symbol-collector",
+    "files": [
+      "test/SymbolCollector.Core.Tests/ResilienceHelpersTests.cs",
+      "src/SymbolCollector.Console/Program.cs"
+    ]
+  },
+  {
+    "repo": "ghostnotee/DevHabit",
+    "files": [
+      "DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "gichira22/CMS-App",
+    "files": [
+      "src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs",
+      "src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "gitViwe/blazor",
+    "files": [
+      "src/Blazor.Infrastructure/Startup.cs"
+    ]
+  },
+  {
+    "repo": "givasques/devhabit",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "gogetenk/vetolib-2",
+    "files": [
+      "src/backend/Modules/Messaging/Vetolib.Messaging/MessagingModuleServiceRegistrar.cs"
+    ]
+  },
+  {
+    "repo": "Goldie228/GoldPC",
+    "files": [
+      "src/backend/GoldPC.Api/Program.cs",
+      "src/backend/GoldPC.Api/Services/PollyPolicies.cs"
+    ]
+  },
+  {
+    "repo": "granticusmaximus/GwsBusinessSuite",
+    "files": [
+      "src/GwsBusinessSuite.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "gtagliente/Forma",
+    "files": [
+      "Forma.Planner/src/Forma.Planner.Infrastructure/ConfigureServices.cs"
+    ]
+  },
+  {
+    "repo": "gtmkumar/docslot",
+    "files": [
+      "backend/mediq/mediq.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "GuedesPlace/SimpleDynamicsConnector",
+    "files": [
+      "SimpleDynamicsConnector/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "guicamarotto/voiceassistlab",
+    "files": [
+      "src/VoiceAssistLab.Resilience/Policies/AsrResiliencePipeline.cs",
+      "src/VoiceAssistLab.Resilience/Policies/TtsResiliencePipeline.cs",
+      "src/VoiceAssistLab.Resilience/Policies/LlmResiliencePipeline.cs"
+    ]
+  },
+  {
+    "repo": "Guidev123/Eventix",
+    "files": [
+      "src/Modules/Users/Eventix.Modules.Users.Infrastructure/UsersModule.cs"
+    ]
+  },
+  {
+    "repo": "Guidev123/FlashSales-Microservices",
+    "files": [
+      "src/BuildingBlocks/FlashSales.Infrastructure/Http/HttpClientExtensions.cs",
+      "src/Modules/Users/Modules.Users.Infrastructure/UsersModule.cs"
+    ]
+  },
+  {
+    "repo": "Guidev123/FlashSales-ModularMonolith",
+    "files": [
+      "src/Modules/Users/Modules.Users.Infrastructure/UsersModule.cs"
+    ]
+  },
+  {
+    "repo": "Guidev123/Learnix-Microservice",
+    "files": [
+      "src/Services/Users/Users.Infrastructure/UsersModule.cs",
+      "src/Services/Courses/Courses.Infrastructure/CourseModule.cs",
+      "src/Services/Learning/Learning.Infrastructure/LearningModule.cs"
+    ]
+  },
+  {
+    "repo": "gulizay91/sms-service",
+    "files": [
+      "src/SmsService.Infrastructure/Handlers/CustomResilienceHandler.cs"
+    ]
+  },
+  {
+    "repo": "GuyHale/payment-gateway-submission-dotnet",
+    "files": [
+      "src/PaymentGateway.Api/Helpers/ServiceRegistration.cs"
+    ]
+  },
+  {
+    "repo": "gyorgy-gulyas/SrvKit",
+    "files": [
+      "src/dotnet/ServiceKit.Net.General/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "hacket41/Eventing-WebApp",
+    "files": [
+      "Eventing.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "hadi6jokhadar/MicroservicesArchitecture",
+    "files": [
+      "src/Apps/Nasheed/Nasheed.Infrastructure/Extensions/InfrastructureServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Hafa22/V7ReceivablesJob",
+    "files": [
+      "IoC/InjectionBootstrapper.cs"
+    ]
+  },
+  {
+    "repo": "HarishKing-venom/BarTenderCloudProxy",
+    "files": [
+      "src/BarTenderProxy.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "HarrisCJ/PageCollator",
+    "files": [
+      "PageCollator/Program.cs"
+    ]
+  },
+  {
+    "repo": "Harshmaury/AspireApp1",
+    "files": [
+      "src/Governance/Aegis.Core/Rules/ResiliencePolicyRule.cs"
+    ]
+  },
+  {
+    "repo": "hech2030/CleanArchitecutureskeleton",
+    "files": [
+      "Skeleton.CleanArchitecture/Skeleton.CleanArchitecture/Extensions/ResilienceHandlerExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Hectorberi01/HBA_Marketplace",
+    "files": [
+      "bff/src/HBA.Gateway.Infrastructure/Resilience/HbaResilience.cs"
+    ]
+  },
+  {
+    "repo": "Hemanth8989/stonebridgeapi",
+    "files": [
+      "src/StoneBridge.Infrastructure/Extensions/InfrastructureServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "hernangonzalez93/Test_Enhancement",
+    "files": [
+      "src/Rentals/Rentals.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "HeroesReplay/HeroesReplay",
+    "files": [
+      "src/HeroesReplay.Tests/Unit/HeroesProfile/ReplayTierLookupTests.cs",
+      "src/HeroesReplay.Tests/Unit/HeroesProfile/Interest/ReplayDetailTests.cs",
+      "src/HeroesReplay.Tests/Unit/HeroesProfile/FilteredReplaySearchTests.cs",
+      "src/HeroesReplay.CLI/ServiceCollectionExtensions.cs",
+      "src/HeroesReplay.Tests/Unit/Replays/RejectedKeyListingTests.cs",
+      "src/HeroesReplay.Tests/Unit/HeroesProfile/HeroesProfileHttpTests.cs",
+      "src/HeroesReplay.Tests/Unit/HeroesProfile/SampleDownloadTests.cs"
+    ]
+  },
+  {
+    "repo": "HeroesToolChest/HeroesDataParser",
+    "files": [
+      "HeroesDataParser/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "herolava259/EmailNotification",
+    "files": [
+      "Playground/Playground.Application.Example/SemanticKernel/External/WebSearch/DependencyInjections/WebSearchDependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "heunseoRyu/aspire-app-dev-in-a-day-ko",
+    "files": [
+      "save-points/session-07/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "save-points/session-04/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "save-points/session-03/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "workshop/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "save-points/session-05/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "save-points/session-06/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "src/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "heunseoRyu/aspire-app-dev-in-a-day-ko2",
+    "files": [
+      "save-points/session-07/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "save-points/session-04/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "workshop/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "save-points/session-03/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "save-points/session-05/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "save-points/session-06/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs",
+      "src/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "HillPhelmuth/AIDetectorMcp",
+    "files": [
+      "AIDetectorMcp/Pangram/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "hispafox/orderflow",
+    "files": [
+      "src/Orders.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "HK9750/ecom-java-dotnet-angular",
+    "files": [
+      "dotnet/src/Ecom.Payments.Worker/Program.cs"
+    ]
+  },
+  {
+    "repo": "HobbesMD/PrecipitationNotification",
+    "files": [
+      "src/Worker/Resilience/GetResilience.cs",
+      "src/Worker/Resilience/NtfyResilience.cs"
+    ]
+  },
+  {
+    "repo": "Hoempapa/Talentforces-demo",
+    "files": [
+      "src/JobSync.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "hojjatzangeneh/DotNet-Core-Code-Showcase",
+    "files": [
+      "Asp_vNext_polly/Program.cs"
+    ]
+  },
+  {
+    "repo": "hphucloc/PartnerIntegration.Api",
+    "files": [
+      "PartnerIntegration.Tests/Services/PartnerVerificationServiceTests.cs",
+      "PartnerIntegration.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "hristianGH/document-archive",
+    "files": [
+      "src/Export/Export.Api/Startup/ServiceRegistration.cs"
+    ]
+  },
+  {
+    "repo": "hugoalves-dev/dotnet.MeatData",
+    "files": [
+      "src/MeatData.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "husseinbbassam/ResilientGate",
+    "files": [
+      "ResilientGate.Gateway/Program.cs"
+    ]
+  },
+  {
+    "repo": "iambenjamin-developer/microservices-demo",
+    "files": [
+      "src/Services/Ordering/Ordering.Infrastructure/Catalog/CatalogClientRegistration.cs"
+    ]
+  },
+  {
+    "repo": "iamr8/apps",
+    "files": [
+      "apps/HttpClientRegistration.cs"
+    ]
+  },
+  {
+    "repo": "ig2bagd/CRUDNet8",
+    "files": [
+      "CRUDNet8/CRUDNet8.Client/Program.cs"
+    ]
+  },
+  {
+    "repo": "IKLSI/Sentinel",
+    "files": [
+      "server/tests/Sentinel.Tests/Services/HttpRetryPolicyTests.cs",
+      "server/src/API/Extensions/ServiceCollectionExtensions.Services.cs"
+    ]
+  },
+  {
+    "repo": "iliami/SimpleUrlShortener",
+    "files": [
+      "services/SimpleUrlShortener.AnalyticsCollector/src/SimpleUrlShortener.AnalyticsCollector.Infrastructure/Clients/_ServiceCollectionExtensions.cs",
+      "services/SimpleUrlShortener.UrlLifetimeManager/src/SimpleUrlShortener.UrlLifetimeManager.Infrastructure/Clients/_ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "iliana212/TechMarket",
+    "files": [
+      "TechMarket_Pedidos/TechMarket_Pedidos/Program.cs"
+    ]
+  },
+  {
+    "repo": "ilijaracic/CustomerCampaign",
+    "files": [
+      "src/CustomerCampaign.WebApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "ilroberts/AuditedApi",
+    "files": [
+      "RequestService/Program.cs"
+    ]
+  },
+  {
+    "repo": "imamulkarim/SponsorShipRequest",
+    "files": [
+      "src/Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "imamulkarim/SponsorShipRequestReact",
+    "files": [
+      "SponsorShipRequestReact/src/Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "imatiqul/azure-ai-cloud-healthcare",
+    "files": [
+      "src/HealthQCopilot.Infrastructure/Resilience/ResilienceExtensions.cs",
+      "src/HealthQCopilot.Infrastructure/Resilience/AzureOpenAiResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ImmobilisCommander/ADEX",
+    "files": [
+      "Adex/Adex.WebApi.Client/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "imsashantnicky/Apex_Post_Logistic",
+    "files": [
+      "src/Mobile/ApexPost.Courier.ApiClient/Resilience/ApexResilience.cs"
+    ]
+  },
+  {
+    "repo": "infinyte/Azure-Func-ee",
+    "files": [
+      "src/AzureFunctions.Shared/Resilience/ResiliencePolicies.cs"
+    ]
+  },
+  {
+    "repo": "initinll-dotnet/dev-habit",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "innovayse/hostpanel",
+    "files": [
+      "backend/src/Innovayse.Hostpanel.Infrastructure/Resilience/Settings/HttpResilienceOptionsValidator.cs"
+    ]
+  },
+  {
+    "repo": "insomniachi/TotoroNext-Avalonia",
+    "files": [
+      "TotoroNext.Anime.Anilist/Module.cs"
+    ]
+  },
+  {
+    "repo": "intelligentplant/IndustrialAppStore.ClientTools.DotNet",
+    "files": [
+      "src/IntelligentPlant.IndustrialAppStore.Authentication/IndustrialAppStoreAuthenticationExtensions.cs"
+    ]
+  },
+  {
+    "repo": "InteractiveAgents/IAW",
+    "files": [
+      "src/Aspire.Client/LlmResilienceConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "intesar123/DotnetCore_Apps",
+    "files": [
+      "CircuitBreakerTestApp/Infrastructure/Resilience/ResilienceServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ipelengmekgwe/tendersync",
+    "files": [
+      "src/TenderSync.Infrastructure/Documents/DocumentServiceExtensions.cs",
+      "src/TenderSync.Infrastructure/ETenders/ETendersServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "irarainey/beeching",
+    "files": [
+      "src/Program.cs"
+    ]
+  },
+  {
+    "repo": "irinascurtu/k-micro",
+    "files": [
+      "DesigningAPIs/OrdersApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "irinascurtu/kruk-messaging",
+    "files": [
+      "DesigningAPIs/OrdersApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "irinascurtu/unsung-hero",
+    "files": [
+      "async-msg/AsyncMessaging/API/Program.cs"
+    ]
+  },
+  {
+    "repo": "isaacoselukwue/MediaLocator",
+    "files": [
+      "src/main/ML.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "islamu-ngo/Event",
+    "files": [
+      "src/Explore.Blazor/Extensions/HttpClientExtensions.cs",
+      "src/Explore.Infrastructure/InfrastructureServicesRegistration.cs"
+    ]
+  },
+  {
+    "repo": "islamu-ngo/islamu.ngo",
+    "files": [
+      "tests/Event.Architecture.Tests/LocalizationResilienceTests.cs",
+      "src/Explore.Infrastructure/InfrastructureServicesRegistration.cs",
+      "src/Explore.Blazor/Extensions/HttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ismailsahin07/async-document-process-and-analytics-api",
+    "files": [
+      "DocumentProcessor.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "IsraelIyonsi/eaas",
+    "files": [
+      "src/SendNex.Mailgun/MailgunClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "issamansur/search-robot",
+    "files": [
+      "SearchRobot/SearchRobot.Core.HtmlDownloader/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "ItzSkyReed/ClashStats",
+    "files": [
+      "App/Program.cs"
+    ]
+  },
+  {
+    "repo": "IvanDmitriev1/FluentBitwarden",
+    "files": [
+      "src/BitwardenApi/BitwardenApiServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "IvanMarkitan/dotnet-docs",
+    "files": [
+      "docs/core/resilience/snippets/http-resilience/Program.CustomHandler.cs"
+    ]
+  },
+  {
+    "repo": "J03LK/AsistenteJuridico",
+    "files": [
+      "backend/src/AsistenteJuridico.Infrastructure/Services/AI/EmbeddingServiceCollectionExtensions.cs",
+      "backend/src/AsistenteJuridico.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "JackJiang1234/Hify",
+    "files": [
+      "src/Hify.Shared/Resilience/HttpClientResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "jackyjiale-oss/modulith-backend",
+    "files": [
+      "src/BuildingBlocks/TemplateName.Infrastructure.Common/Http/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "jaheer2322/InboxIntelligence",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "JakeYallop/WaybackDownloader",
+    "files": [
+      "WaybackDownloader/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "james-d12/Orchitect",
+    "files": [
+      "platform/src/Orchitect.Engine.Execution/ExecutionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "james-s-tayler/realworld-vibe-coded",
+    "files": [
+      "Test/e2e/E2eTests/ApiFixture.cs"
+    ]
+  },
+  {
+    "repo": "jamesmcquarrie/FinancialData",
+    "files": [
+      "FinancialData.Worker/DependencyInjection/HttpClientConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "janithperera/Swivel-AssetMiddleware",
+    "files": [
+      "src/AssetMiddleware.Infrastructure/Resilience/ResiliencePipelineConfigurator.cs"
+    ]
+  },
+  {
+    "repo": "janovrom/playground",
+    "files": [
+      "modular-monolith/src/ModularMonolith.Host/WorkerClientFactory.cs"
+    ]
+  },
+  {
+    "repo": "jaslam94/Junaid.GoogleGemini.Net",
+    "files": [
+      "Junaid.GoogleGemini.Net/Extensions/GeminiExtensions.cs"
+    ]
+  },
+  {
+    "repo": "JASSBR/devlab-dotnet-angular",
+    "files": [
+      "backend/DevLab.Api/Features/Resilience/ResilienceLesson.cs"
+    ]
+  },
+  {
+    "repo": "Javi-RC/weatherroute",
+    "files": [
+      "backend/WeatherRoute.Infrastructure/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "jayden2064859/Toeristenscraper",
+    "files": [
+      "Toeristenscraper.Scraper/Program.cs"
+    ]
+  },
+  {
+    "repo": "jcocchi/resiliency-demos",
+    "files": [
+      "ResiliencyPatterns.OrderService/Program.cs"
+    ]
+  },
+  {
+    "repo": "jdavidIP/Marquee",
+    "files": [
+      "src/Marquee.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "jeanhibbert/CourseManagerApp",
+    "files": [
+      "CourseManager.Monolith.Api.Sdk/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "jedyskate/SmartProject",
+    "files": [
+      "tools/SmartConfig.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "JeeEssEm/LinkTracker",
+    "files": [
+      "src/Bot/LinkTracker.Bot.App/Program.cs",
+      "src/Scrapper/LinkTracker.Scrapper/Program.cs",
+      "src/LinkTracker.Tests/Bot/Resilience/ResilienceTests.cs",
+      "src/LinkTracker.Tests/Scrapper/Resilience/ResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "jeffzhou12/micro-netcore",
+    "files": [
+      "src/Services/Cart/Program.cs",
+      "src/Services/Review/Program.cs",
+      "src/Services/AfterSales/Program.cs",
+      "src/Services/Fulfillment/Program.cs",
+      "src/Services/Payment/Program.cs",
+      "src/Services/Order/Program.cs",
+      "src/Services/Product/Program.cs"
+    ]
+  },
+  {
+    "repo": "jehveiga/RefitWithPolly",
+    "files": [
+      "src/WebApi/Extensions/RefitClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "jeni-diaz/JemarBackend",
+    "files": [
+      "Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "jeshua8es/miniLoan",
+    "files": [
+      "backend/src/MiniLoan.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "jetelain/GameMapStorage",
+    "files": [
+      "GameMapStorageWebSite/Program.cs"
+    ]
+  },
+  {
+    "repo": "JhoanHurtado/RetoArchitecture",
+    "files": [
+      "Action.Orchestrator/Action.Orchestrator/Program.cs"
+    ]
+  },
+  {
+    "repo": "jihyunmoon16/aspire-project",
+    "files": [
+      "AspireYouTubeSummariser.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "jimatas/clbl_order_completion",
+    "files": [
+      "src/OrderCompletion.Api/Adapters/NotificationAdapter/NotificationAdapter.cs"
+    ]
+  },
+  {
+    "repo": "JiteshSonkusare/dotnetcore-clean-api-template",
+    "files": [
+      "src/Shared/Extension/ResillienceExtension.cs"
+    ]
+  },
+  {
+    "repo": "JJQuispillo/SriYa",
+    "files": [
+      "src/Qora.Billing.Infrastructure/Sri/SriResiliencePolicies.cs"
+    ]
+  },
+  {
+    "repo": "jk-atbas/httpclient_example",
+    "files": [
+      "src/cli/Infrastructure/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "jmc0593-pdds/fit-flow",
+    "files": [
+      "fit-flow-users.WebApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "JoanProjects/mesadigna",
+    "files": [
+      "BackEnd/API/Program.cs"
+    ]
+  },
+  {
+    "repo": "joao-antao/chaos-engineering-examples",
+    "files": [
+      "src/Pandemonium/Program.cs"
+    ]
+  },
+  {
+    "repo": "joaofbantunes/chaos-workshop",
+    "files": [
+      "support/Client/Program.cs"
+    ]
+  },
+  {
+    "repo": "joaovieira0087/Korp_Teste_JoaoVieira",
+    "files": [
+      "backend/src/Korp.Faturamento.Infrastructure/InjecaoDependencia.cs"
+    ]
+  },
+  {
+    "repo": "jockesoft/Recall",
+    "files": [
+      "Recall.Web/Infrastructure/External/ExternalHttpResilience.cs"
+    ]
+  },
+  {
+    "repo": "JoelCrosby/netptune",
+    "files": [
+      "server/Netptune.SourceControl/Providers/GitHub/GitHubServiceCollectionExtensions.cs",
+      "server/Netptune.SourceControl/Providers/AzureDevOps/AzureDevOpsServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "joeldyscs0613/my-todos",
+    "files": [
+      "src/BuildingBlocks/MyTodos.BuildingBlocks.Infrastructure/Http/Resilience/Extensions/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Jogai/Mail.Smtp2Go",
+    "files": [
+      "src/Scott.Mail.Smtp2Go.DependencyInjection/Smtp2GoServiceCollectionExtensions.cs",
+      "src/Scott.Mail.Smtp2Go.DependencyInjection/Resilience/Smtp2GoResilienceBuilder.cs"
+    ]
+  },
+  {
+    "repo": "johannacarolinep/nostalgi-maskinen",
+    "files": [
+      "NostalgiAPI/Program.cs"
+    ]
+  },
+  {
+    "repo": "jonsagara/PollyCoreTest",
+    "files": [
+      "src/PollyCoreConsole/Infrastructure/ApplicationStartup.cs"
+    ]
+  },
+  {
+    "repo": "jonsagara/Sagara.FeedReader",
+    "files": [
+      "src/Sagara.FeedReader/Extensions/FeedReaderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "josealmir/notredame",
+    "files": [
+      "src/Notredame.Api/Settings/ClientHttpNotredame.cs"
+    ]
+  },
+  {
+    "repo": "josefernandoferreiragomes/ResilienceSignalRDemo",
+    "files": [
+      "ConsumerApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "josefjura/polly-examples",
+    "files": [
+      "Program.cs",
+      "Resilience/HttpClientResiliencePolicy.cs",
+      "Examples/Retry/AddResilienceHandlerExample.cs"
+    ]
+  },
+  {
+    "repo": "josehelioaraujo/comprai",
+    "files": [
+      "src/UcpAgent.Api/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Joseleno/CleanStart",
+    "files": [
+      "src/CleanStart.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "joseluisgs/TiendaDawApi-MicroServices-ApiGateway-NetCore",
+    "files": [
+      "BuildingBlocks/Http/ResilienceDelegatingHandler.cs"
+    ]
+  },
+  {
+    "repo": "josephgarner/BenchMovieHubAPI",
+    "files": [
+      "MovieHubAPI/Program.cs"
+    ]
+  },
+  {
+    "repo": "JosephKung/ets-solution",
+    "files": [
+      "src/Ets.Infrastructure/Resilience/ResiliencePipelineKeys.cs",
+      "src/Ets.Infrastructure/Resilience/ResilienceServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "joshishubh03/ApexPost-Project",
+    "files": [
+      "ApexPost.Courier.Core/Resilience/CourierResilience.cs"
+    ]
+  },
+  {
+    "repo": "JSdotNet/Backlog",
+    "files": [
+      "src/Infrastructure/Backlog.Infrastructure.AzureFoundry/AzureFoundryTranscriptionRegistration.cs"
+    ]
+  },
+  {
+    "repo": "juandarios/order-processing-system",
+    "files": [
+      "src/PaymentService/PaymentService.Api/Program.cs",
+      "src/OrderIntake/OrderIntake.Api/Program.cs",
+      "src/OrderOrchestrator/OrderOrchestrator.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "juantlt2811-cell/Back-End-Gameficando-Estudos",
+    "files": [
+      "src/GameficandoEstudos.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "JuergenGutsch/agentic-pentester",
+    "files": [
+      "src/Pentester.Agents.Tests/Http/RateLimitingRetryTests.cs"
+    ]
+  },
+  {
+    "repo": "justinyoo/semantic-kernel-four-pillars-of-destiny-analyser",
+    "files": [
+      "src/FourPillarsAnalyser.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Kadantte/Kurumi",
+    "files": [
+      "nhitomi/Startup.cs"
+    ]
+  },
+  {
+    "repo": "kahowell/GameLibrary",
+    "files": [
+      "GameLibrary.Steam/ServiceCollectionExtensions.cs",
+      "GameLibrary.PCGamingWiki/ServiceCollectionExtensions.cs",
+      "GameLibrary.IGDB/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "kallebelins/mvp24hours-dotnet",
+    "files": [
+      "src/Mvp24Hours.Infrastructure/Helpers/HttpPolicyHelper.cs",
+      "src/Mvp24Hours.Infrastructure/Http/Resilience/HttpClientResilienceExtensions.cs",
+      "src/Mvp24Hours.Infrastructure/Http/Resilience/NativeHttpResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Kamalanabha1983/mcp",
+    "files": [
+      "PgsqlMcpClient/Program.cs"
+    ]
+  },
+  {
+    "repo": "kanevskkyy/Clothy",
+    "files": [
+      "src/Clothy.Services/Clothy.PaymentService/Clothy.PaymentService.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "kanzler26/demo_api",
+    "files": [
+      "AlphaLising/Program.cs"
+    ]
+  },
+  {
+    "repo": "KarateJB/AspNetCore.EncryptRequest.Sample",
+    "files": [
+      "src/AspNetCore.EncryptRequest/Program.cs"
+    ]
+  },
+  {
+    "repo": "kauanhindlmayer/dev-habit",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "kcwalters/BiteTheBookie",
+    "files": [
+      "BiteTheBookie/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "keithtmccartney/turbo-invention",
+    "files": [
+      "InfoTrack/InfoTrack.Infrastructure/Resilience/HttpResilienceServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "KennedySilva8907/Bus-Lisbon",
+    "files": [
+      "backend/src/BusLisbon.Api/Carris/CarrisClient.cs",
+      "backend/src/BusLisbon.Api/Schedules/TmlNetworkClient.cs"
+    ]
+  },
+  {
+    "repo": "Kevin-Noriega/FactCloudAPI",
+    "files": [
+      "FactCloudAPI/Program.cs"
+    ]
+  },
+  {
+    "repo": "KiarashMinoo/ThunderPropagator.Feeviders",
+    "files": [
+      "Feeviders/WebApi/ThunderPropagator.Providers.DotNet.WebApi/WebApiProviderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "KienNguyen1911/rotating-fly",
+    "files": [
+      "src/AssetAutomator.WinUI/App.xaml.cs"
+    ]
+  },
+  {
+    "repo": "killerk3emstar/gittez",
+    "files": [
+      "src/Gittez.Infrastructure/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "KimaiDotNet/KimaiDotNet.oDataReporting",
+    "files": [
+      "src/KimaiDotNet.Reporting.ODataService/Program.cs"
+    ]
+  },
+  {
+    "repo": "kimonekuppasamy/VirginActiveAssignment",
+    "files": [
+      "MemberCommitment.API/VirginActiveAssignment/Program.cs"
+    ]
+  },
+  {
+    "repo": "kingkeamo/fishing-logbook",
+    "files": [
+      "src/FishingLogBook.Client/Resilience/HttpClientResilienceExtensions.cs",
+      "src/FishingLogBook.Infrastructure/HttpClients/Geoapify/GeoapifyHttpClientResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "kirandevops1993/DOTNET-UPDATED",
+    "files": [
+      "src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs",
+      "src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "kirandevops1993/NUGET",
+    "files": [
+      "src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs",
+      "src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "kiranvattikuti146/DOTNET-MAIN",
+    "files": [
+      "src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs",
+      "src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "KirillSachkov/education-platform",
+    "files": [
+      "backend/AssignmentReviewService/src/AssignmentReviewService.Infrastructure.GitHub/DependencyInjectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Kiruthikaecesnsct/Cortexa-Local",
+    "files": [
+      "Cortexa-dev/services/model-router/src/Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Kisslo/reacher-csharp",
+    "files": [
+      "backend/src/Reacher.Ingestion/Scb/ScbServiceCollectionExtensions.cs",
+      "backend/src/Reacher.Ingestion/Bolagsverket/BolagsverketServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "KiwiBryn/MistralAI",
+    "files": [
+      "Claude.PoC/MistralAI.Client.Claude/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "klasolsson81/jobbliggaren",
+    "files": [
+      "tests/Jobbliggaren.Api.IntegrationTests/JobAds/JobTechStreamResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "KlayRhapsody/dev-habit",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "kleban/edu-csharp",
+    "files": [
+      "2026_1/KN2_2026/api-demo/CityExplorer/Program.cs"
+    ]
+  },
+  {
+    "repo": "kodeknightdev/medical-claim-bridge",
+    "files": [
+      "src/services/payers-gateway/ClaimBridge.PayersGateway/Resilience/PayerResilience.cs"
+    ]
+  },
+  {
+    "repo": "Koles2004/CurrencyConverter",
+    "files": [
+      "CurrencyConverter/Providers/ServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "koniecdev/LotroKoniecDev",
+    "files": [
+      "src/Frontend/LotroKoniecDev.Frontend/Infrastructure/HttpClients/HttpClientsDependencyInjectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "konradcinkusz/postman-clone",
+    "files": [
+      "tests/PostmanClone.ServiceDefaults.Tests/Architecture/ArchitectureRules.cs"
+    ]
+  },
+  {
+    "repo": "kontent-ai/dotnet",
+    "files": [
+      "src/common/Http/ResilienceHandlers.cs"
+    ]
+  },
+  {
+    "repo": "krishnad1982/ChaosEngg",
+    "files": [
+      "ToDoApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "krosoft-dev/Krosoft.Extensions.Resilience",
+    "files": [
+      "src/Krosoft.Extensions.Resilience/Extensions/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "krusty93/relego",
+    "files": [
+      "src/Relego.Cli/Infrastructure/HttpClientResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "kta136/tally-wrapper",
+    "files": [
+      "src/ShowroomBilling.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "kulasekara02/ApiHubSystem",
+    "files": [
+      "src/ApiHub.Infrastructure/Resilience/ResiliencePolicies.cs"
+    ]
+  },
+  {
+    "repo": "kumarmageshr/ProductInventory",
+    "files": [
+      "src/Shared/Shared.Infrastructure/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Kumbus/Prediction-league",
+    "files": [
+      "src/server/PredictionLeague.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "L-Sypniewski/AiDevs2-szkolenie",
+    "files": [
+      "AiDevs2/Program.cs",
+      "AiDevs3/Program.cs"
+    ]
+  },
+  {
+    "repo": "lahiru1115/Knowledge-Hub",
+    "files": [
+      "services/core-api/src/KnowledgeHub.Infrastructure/Ai/AiServiceRegistration.cs"
+    ]
+  },
+  {
+    "repo": "lampartondrej/WeatherstackAPIShowcaseProject",
+    "files": [
+      "WeatherstackApi.Web/Program.cs",
+      "WeatherstackApi.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "LarsBergqvist/resilience-playground",
+    "files": [
+      "App/Program.cs"
+    ]
+  },
+  {
+    "repo": "lcheunglci/aspnetcore-webapi-practice",
+    "files": [
+      "Books.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "LegendaryB/Vigil",
+    "files": [
+      "src/Vigil/Domain/Events/EventActions/WebhookResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "lents/ResilienceDemo",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "leowagnersouza/andmore",
+    "files": [
+      "src/AtMarket.Maui.Infrastructure/Extensions/HttpClientResilienceExtensions.cs",
+      "tests/AtMarket.Maui.Infrastructure.Tests/HttpClients/EihAtMarketHttpClient/TestFixture.cs",
+      "tests/AtMarket.Maui.Infrastructure.Tests/HttpClients/ImageUrlValidatorHttpClient/TestFixture.cs",
+      "src/AtMarket.Maui.Infrastructure/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "levan-s-eb/HttpClient",
+    "files": [
+      "HttpClient/ServiceCollectionHttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "lhorcajada/RFFM",
+    "files": [
+      "Back/ExtractionApi/src/RFFM.Api/Features/Federation/SquadHistory/Services/RffmBackgroundHttp.cs"
+    ]
+  },
+  {
+    "repo": "lifekit-hq/finance-sentry",
+    "files": [
+      "backend/src/FinanceSentry.Modules.BankSync/Infrastructure/Monobank/MonobankResilience.cs"
+    ]
+  },
+  {
+    "repo": "Lijcoesh/WaterZacht",
+    "files": [
+      "server/Program.cs",
+      "server/WaterZacht.API.Tests/Domain/Services/BrevoEmailServiceTests.cs"
+    ]
+  },
+  {
+    "repo": "lindanimdlalose04/Panda-Pocket",
+    "files": [
+      "src/Services/Invoice.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "LINDECKER-Charles/LeagueOfDataBaseFinal",
+    "files": [
+      "src/LoDb.Ingestion/Egress/EgressRegistration.cs"
+    ]
+  },
+  {
+    "repo": "LionKefentse/integration-demos",
+    "files": [
+      "soap-rest-facade/src/RestFacade/Upstream/UpstreamRegistration.cs"
+    ]
+  },
+  {
+    "repo": "lisenhuang/v2en",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "LiterallyStarlk/Sndr",
+    "files": [
+      "Sndr.Client/SndrClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "loekd/CoreBankDemo",
+    "files": [
+      "CoreBankDemo.PaymentsAPI/CoreBankCircuitBreakerLogging.cs",
+      "CoreBankDemo.PaymentsAPI/CoreBankClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "long1712578/PartnerIntegration",
+    "files": [
+      "PartnerIntegration.BFF.Tests/VerificationClients/PartnerVerificationClientTests.cs",
+      "PartnerIntegration.BFF.Infrastructure/Extensions/InfrastructureServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Loppone/ReviewAI",
+    "files": [
+      "src/ReviewAI.Api/Configuration/ResilientHttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "loudiamond13/CarmensStitchAndPrintingServices",
+    "files": [
+      "src/Csps.Infrastructure/Images/ImagesRegistration.cs"
+    ]
+  },
+  {
+    "repo": "luanholiv/pointlurker",
+    "files": [
+      "backend/src/Infrastructure.ExternalServices/GauPointsApi/GauPointsServiceCollectionExtensions.cs",
+      "backend/src/Infrastructure.ExternalServices/StreamElementsApi/StreamElementsServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "LucasDiasJorge/CSharp-Codebase",
+    "files": [
+      "13-SDKsAndLibraries/ResilientHttpSdk/src/ResilientHttpSdk/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "LucasFrenhan/Order-Management-System",
+    "files": [
+      "src/PedidoFulfillment.Infrastructure/Pagamentos/ExtensoesPagamento.cs"
+    ]
+  },
+  {
+    "repo": "LucasLoFaro/eShopAcademy",
+    "files": [
+      "src/ServiceDefaults/Http/HttpResilienceDefaults.cs"
+    ]
+  },
+  {
+    "repo": "luckymoneyDEV/partner-integration",
+    "files": [
+      "src/PartnerIntegrationBff.Infrastructure/DependencyInjection/InfrastructureServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "lufelipe111/Tech-Challenge-Fase-1",
+    "files": [
+      "Contact-Register/Contact-Register-Service/src/ContactRegister.Application/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "luiszkm/Product.Template",
+    "files": [
+      "src/Api/Configurations/ResilienceConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "LukasMtt/LittleSimpleShop",
+    "files": [
+      "api/src/App/Program.cs"
+    ]
+  },
+  {
+    "repo": "LukasVojacek/UserOrg",
+    "files": [
+      "src/Modules/Integrations/Waldur.Sync/Http/WaldurRetryStrategy.cs",
+      "Tests/Modules/Integrations/Waldur.Sync.Tests/WaldurRetryStrategyTests.cs",
+      "src/Modules/Integrations/Waldur.Sync/WaldurSyncServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Lukdrasil/StepUpLogging",
+    "files": [
+      "tests/Lukdrasil.StepUpLogging/EncryptedSpoolResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "lukemurraynz/WC2026_FanIntelligence",
+    "files": [
+      "src/FanIntelligence.Api/Hosting/HttpClientResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "LukeVidalis/lemon-stack",
+    "files": [
+      "apps/dashboard/api/Program.cs"
+    ]
+  },
+  {
+    "repo": "lvlup-sw/bifrost",
+    "files": [
+      "src/Bifrost.Resilience/BifrostHttpResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mabusall/archetype-template",
+    "files": [
+      "Application/Modules/Sample.Core.Api/DependencyInjection.cs",
+      "Shared/Archetype.Keycloak.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "mahavoid/mymoneytrackingbot",
+    "files": [
+      "src/MyMoneyTrackingBot.Bot/Program.cs"
+    ]
+  },
+  {
+    "repo": "MaheshSuranga/cloud-native-resilience-patterns",
+    "files": [
+      "src/RecommendationsService/Program.cs"
+    ]
+  },
+  {
+    "repo": "mahir-hs/ParcelTrack",
+    "files": [
+      "src/Services/TrackingService/ParcelTrack.TrackingService.Infrastructure/Extensions/CarrierExtensions.cs"
+    ]
+  },
+  {
+    "repo": "maidics/gym-pass-handling-platform-backend",
+    "files": [
+      "src/Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "MaikPeters1511/CRM",
+    "files": [
+      "Services/employee-service/src/EmployeeService.Infrastructure/DependencyInjection.cs",
+      "Services/appointment-service/src/AppointmentService.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Makajda/geren",
+    "files": [
+      "src/Geren.Client.Generator/Emit/EmitFactoryBridge.cs"
+    ]
+  },
+  {
+    "repo": "maksionkin/Axion.Extensions",
+    "files": [
+      "tests/Axion.Extensions.Http.Resilience.DuplicateRequestCollapsing.Caching.Hybrid.Tests/DuplicateRequestCollapserTests.cs"
+    ]
+  },
+  {
+    "repo": "MALIEV-Co-Ltd/Maliev.AuthService",
+    "files": [
+      "Maliev.AuthService.Tests/Unit/IAMServiceClientAdditionalTests.cs"
+    ]
+  },
+  {
+    "repo": "manasseh-zw/pragmatic-rest-api-reference",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "manassehkafoh/superapp-platform",
+    "files": [
+      "src/services/payment-api/src/Extensions/ServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Mang-X/Nerv-IIP",
+    "files": [
+      "backend/gateway/PlatformGateway/src/Nerv.IIP.PlatformGateway.Web/GatewayHttpClientResilience.cs",
+      "backend/gateway/BusinessGateway/src/Nerv.IIP.BusinessGateway.Web/BusinessGatewayHttpClientResilience.cs",
+      "backend/gateway/BusinessGateway/tests/Nerv.IIP.BusinessGateway.Web.Tests/BusinessConsoleShiftHandoverAttachmentFacadeTests.cs"
+    ]
+  },
+  {
+    "repo": "ManikantaMundru/VirginActive.Rocks",
+    "files": [
+      "src/VirginActive.Rocks.Infrastructure/ServiceCollectionExtension.cs"
+    ]
+  },
+  {
+    "repo": "mantra0519/Harborshield-maritime-risk-platform",
+    "files": [
+      "HarborShield/HarborShield.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "manu042k/AspNetCorePrep",
+    "files": [
+      "CircuitBreaker/CircuitBreaker.Example/Program.cs"
+    ]
+  },
+  {
+    "repo": "manuelllf/Velacre",
+    "files": [
+      "backend/Program.cs"
+    ]
+  },
+  {
+    "repo": "marija-sta/CurrencyConverter",
+    "files": [
+      "server/src/CurrencyConverter.Infrastructure/DependencyInjection/InfrastructureServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Mariohcb95/sales-green",
+    "files": [
+      "src/Services/Pedidos/SalesGreen.Pedidos.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "markoeltermann/HomeSystem",
+    "files": [
+      "ValueReaderService/Program.cs"
+    ]
+  },
+  {
+    "repo": "marksreid-displayr/camera-light",
+    "files": [
+      "CameraLight/Program.cs"
+    ]
+  },
+  {
+    "repo": "markysoft/ResilienceSpike",
+    "files": [
+      "ResiliencySpike/Program.cs"
+    ]
+  },
+  {
+    "repo": "marlenhalvorsen/happy-headlines",
+    "files": [
+      "src/CommentService/Program.cs"
+    ]
+  },
+  {
+    "repo": "martin-david/portfolio-signals",
+    "files": [
+      "backend/src/PortfolioSignals.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "MartinCa/audiobook-manager",
+    "files": [
+      "AudiobookManager/AudiobookManager.Scraping/RateLimiting/HardcoverResilience.cs"
+    ]
+  },
+  {
+    "repo": "MASh4p/ItchDB",
+    "files": [
+      "src/ItchDB.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Masterman234/Nexus",
+    "files": [
+      "backend/src/Nexus.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "matthewhoung/DevHabit",
+    "files": [
+      "src/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "maverick70192/ZcomApp",
+    "files": [
+      "OrderService.API/Extensions/RegisterHttpClientExtension.cs"
+    ]
+  },
+  {
+    "repo": "MavrixConsulting/mavrix-common-clients",
+    "files": [
+      "src/Dataverse/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "maxi-hahn/tpi-programacion-IV-UTN",
+    "files": [
+      "Src/Presentation/Program.cs"
+    ]
+  },
+  {
+    "repo": "MaxNagibator/MediaOrcestrator",
+    "files": [
+      "MediaOrcestrator.Rutube/RutubeModule.cs",
+      "MediaOrcestrator.Youtube/YoutubeModule.cs",
+      "MediaOrcestrator.VkVideo/VkVideoModule.cs"
+    ]
+  },
+  {
+    "repo": "maysamgamini/hicleanarch-crowdfunding",
+    "files": [
+      "src/Platform/RemoteCalls/RemoteCalls.cs"
+    ]
+  },
+  {
+    "repo": "mazen-khattab/MultiBotSaaS_back-end",
+    "files": [
+      "SaaS.Infrastructure/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "MCKRUZ/c-sharp-14-resilient-communications-demos",
+    "files": [
+      "m03-building-resilience-pipelines-polly/c07-composing-standard-resilience-handler/finish/OrderProcessing/Program.cs"
+    ]
+  },
+  {
+    "repo": "MCKRUZ/microsoft-agentic-harness",
+    "files": [
+      "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Megaraz/MediaVault.Api",
+    "files": [
+      "media-vault-app.Infrastructure/API/Clients/ProviderHttpResilience.cs"
+    ]
+  },
+  {
+    "repo": "mehdihadeli/squirrel",
+    "files": [
+      "src/Squirrel.Resiliency/DependencyInjectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mehdihadeli/vertical-slice-api-template",
+    "files": [
+      "src/Shared/Resiliency/DependencyInjectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "melih154/beststories-api",
+    "files": [
+      "src/BestStories.Service/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Merlin262/Korp_Teste_JoaoMerlin",
+    "files": [
+      "Billing.API/Infrastructure/HttpClients/InventoryHttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mesutergul/MyTts",
+    "files": [
+      "Config/ServiceConfigurations/ApplicationConfig.cs",
+      "Config/ServiceConfigurations/HttpClientsConfig.cs"
+    ]
+  },
+  {
+    "repo": "meysamhadeli/booking-microservices",
+    "files": [
+      "src/Services/Booking/src/Booking/Extensions/Infrastructure/GrpcClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "meysamhadeli/booking-modular-monolith",
+    "files": [
+      "src/Modules/Booking/src/Extensions/Infrastructure/GrpcClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "meysamhadeli/eshop-genai",
+    "files": [
+      "src/Services/Order/src/Extensions/Infrastructure/GrpcClientExtensions.cs",
+      "src/Services/Basket/src/Extensions/Infrastructure/GrpcClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mggarofalo/receipts",
+    "files": [
+      "src/Infrastructure/Services/InfrastructureService.cs"
+    ]
+  },
+  {
+    "repo": "michakpl/PocketLibrarian",
+    "files": [
+      "src/PocketLibrarian.Infrastructure/ExternalApis/GoogleBooks/GoogleBooksServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "michaltulejko/hackernews",
+    "files": [
+      "HackerNewsASP/Extensions/HttpClientsExtensions.cs"
+    ]
+  },
+  {
+    "repo": "microsoft/dsl-copilot",
+    "files": [
+      "src/Web/KernelHelpers/KernelBuilderExtensions.cs",
+      "src/FineTuning.Generator/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "microsoft/Dynamics-365-FastTrack-Implementation-Assets",
+    "files": [
+      "Agents/AI ERP Agents/StoreMonitoringAgent/alerts/StoreMonitoringAlertFunction/Program.cs"
+    ]
+  },
+  {
+    "repo": "MicrosoftLearning/Build-pro-skills-with-CSharp",
+    "files": [
+      "MSLearnCodeProjects/VendorSource/lp6/Starter/src/Library.Web/Program.cs",
+      "MSLearnCodeProjects/VendorSource/lp5/Solution/src/Library.Web/Program.cs",
+      "MSLearnCodeProjects/VendorSource/lp6/Solution/src/Library.Web/Program.cs",
+      "MSLearnCodeProjects/GuidedProjects/LibraryApp-LP6-Starter/src/Library.Web/Program.cs",
+      "MSLearnCodeProjects/GuidedProjects/LibraryApp-LP6-Complete/src/Library.Web/Program.cs",
+      "MSLearnCodeProjects/GuidedProjects/LibraryApp-LP5-Complete/src/Library.Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "mig-now/mignow-atc-app",
+    "files": [
+      "atc-back/src/Mignow.Atc.Infra.External/Sap/SapServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mihailshterev/sentium",
+    "files": [
+      "src/shared/Sentium.Infrastructure/Extensions/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mihailshterev/tunespace",
+    "files": [
+      "backend/TuneSpace.Infrastructure/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mikevanoo/dotnet-distributed-app",
+    "files": [
+      "src/DotNetDistributedApp.McpServer/CoreWebApplicationBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mikewild-wcl/CompaniesHouseResilience",
+    "files": [
+      "CompaniesHouseResilience/Resilience/PollyResilienceStrategies.cs",
+      "CompaniesHouseResilience/Extensions/ConfigurationExtensions.cs"
+    ]
+  },
+  {
+    "repo": "miladashrafi/WebApiResilienceSample",
+    "files": [
+      "WebApiResilienceSample/Program.cs"
+    ]
+  },
+  {
+    "repo": "MiladRv/Keycloak.Net",
+    "files": [
+      "Keycloak.Net.Sdk/Extensions/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "miltonisblurrd/DugoutIQMLB",
+    "files": [
+      "src/DugoutIQ.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "mindbox-cloud/Mindbox.YandexTracker",
+    "files": [
+      "Mindbox.YandexTracker.Tests/YandexTrackerTestBase.cs"
+    ]
+  },
+  {
+    "repo": "MindProber07/CsClaudeResearchAgent",
+    "files": [
+      "src/ClaudeResearchAgent/Infrastructure/TransientRetryHandler.cs"
+    ]
+  },
+  {
+    "repo": "miracum/fhir-pseudonymizer",
+    "files": [
+      "src/FhirPseudonymizer/Pseudonymization/PseudonymServiceHttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "miroslavpolednak/noby",
+    "files": [
+      "CIS/Infrastructure.ExternalServicesHelpers/Extensions/StartupRestExtensions.cs"
+    ]
+  },
+  {
+    "repo": "MirRahim/otp",
+    "files": [
+      "Infrastructure/Resilience/ResiliencePipelineFactory.cs"
+    ]
+  },
+  {
+    "repo": "mistruna/Mistruna.Core",
+    "files": [
+      "test/Mistruna.Core.Tests/Resilience/ResilienceRegistrationTests.cs"
+    ]
+  },
+  {
+    "repo": "mm-ksha-PersonalOrg/DataEnginePublicRepo",
+    "files": [
+      "source/AAS.TwinEngine.DataEngine/Infrastructure/Http/Policies/ResilienceHandlerExtensions.cs"
+    ]
+  },
+  {
+    "repo": "MM-YJN/DockerMirror",
+    "files": [
+      "source/DockerMirror/Registry/UpstreamResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "MM-YJN/NuGetMirror",
+    "files": [
+      "source/NuGetMirror/Upstream/UpstreamResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mmaideveloper/aiagentic",
+    "files": [
+      "DocumentIntelligenceWeb/Program.cs"
+    ]
+  },
+  {
+    "repo": "mohamedtalal2003/SmartCity",
+    "files": [
+      "src/Gateway/SmartCity.ApiGateway/Program.cs"
+    ]
+  },
+  {
+    "repo": "MohammedAssem/FitX",
+    "files": [
+      "src/FitX.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "MomchilAngelovv/QuizBar",
+    "files": [
+      "QuizBarBackend/QuizBar.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "Monkey-Funky/vfr-backend",
+    "files": [
+      "Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Moritz1708/OrderSphere",
+    "files": [
+      "src/Hosting/OrderSphere.ServiceDefaults/Chaos/ChaosExtensions.cs",
+      "src/Frontend/OrderSphere.Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "mousaamiri/Portfolio",
+    "files": [
+      "src/Presentation/Portfolio.Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "mpcs2013/currency-tracker",
+    "files": [
+      "src/CurrencyTracker.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Mpooks/ExpressYourself",
+    "files": [
+      "ExpressYourself.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "MR-444/ImageGenerator.MAUI",
+    "files": [
+      "ImageGenerator.MAUI/Extensions/RefitServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "MrEdHardy/schleuben",
+    "files": [
+      "src/Shared/Infrastructure/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "MrTDL123/SQLiScanner",
+    "files": [
+      "SQLiScanner/Program.cs"
+    ]
+  },
+  {
+    "repo": "mrtlptkn/NetMicroservicesMastery_Net8.0",
+    "files": [
+      "src/BuildingBlocks/BuildingBlocks.Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mujakzs/TodoAPI",
+    "files": [
+      "Todo.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "MultifactorLab/DirectorySync",
+    "files": [
+      "src/DirectorySync.Infrastructure/Extensions/CloudAdapterBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "musicislife08/TelegramGroupsAdmin",
+    "files": [
+      "TelegramGroupsAdmin/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "mykolabodnar4/highload",
+    "files": [
+      "replicated-log/ReplicatedLog/Program.cs"
+    ]
+  },
+  {
+    "repo": "n-saraseka/Lazerboard",
+    "files": [
+      "Backend/Lazerboard.ExternalApis/Program.cs",
+      "Backend/Lazerboard/Program.cs",
+      "Backend/Lazerboard.ScoreFetcher/Program.cs"
+    ]
+  },
+  {
+    "repo": "Nacorpio/AI-Sandbox",
+    "files": [
+      "src/AISandbox.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Nandan1234567/SGPA-CALCULATOR",
+    "files": [
+      "backend/Program.cs"
+    ]
+  },
+  {
+    "repo": "NarendraDappili/ApexPostLogisticsRepo",
+    "files": [
+      "src/ApexPost.Courier/Api/ApiResilience.cs"
+    ]
+  },
+  {
+    "repo": "NaseatMAN/dgc-api-guidelines",
+    "files": [
+      "src/DGC.Sample.Api/Extensions/HttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "natezimm/wheelhouse",
+    "files": [
+      "src/Wheelhouse.Api/Weather/WeatherEndpoints.cs"
+    ]
+  },
+  {
+    "repo": "ncdiapp/app_dotnetcore",
+    "files": [
+      "AppAI.Web/Mcp/McpGatewayExtensions.cs"
+    ]
+  },
+  {
+    "repo": "nefarius/DsHidMini",
+    "files": [
+      "ControlApp/Models/HttpRetryPolicy.cs",
+      "ControlApp/Models/DocsHttpClient.cs"
+    ]
+  },
+  {
+    "repo": "nefarius/PS5LM.Companion",
+    "files": [
+      "src/PS5LM.Companion.Infrastructure/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "neominalbilisim/DotnetMicroservicesMastery",
+    "files": [
+      "NetMicroservicesMastery/src/BuildingBlocks/BuildingBlocks.Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "net0well/NaHora",
+    "files": [
+      "backend/src/NaHora.Infrastructure/InfrastructureServiceRegistration.cs"
+    ]
+  },
+  {
+    "repo": "nextalkhub/NexTalk",
+    "files": [
+      "src/websocket-gateway/NextTalk.Websocket.Gateway.Tests/Resilience/CircuitBreakerTests.cs",
+      "src/guild-service/NexTalk.Guild.Service/Program.cs",
+      "src/voice-service/NexTalk.Voice.Service/Program.cs",
+      "src/messaging-service/NexTalk.Messaging.Service/Program.cs"
+    ]
+  },
+  {
+    "repo": "nguyenchithuan2311/partner-intergration-bff",
+    "files": [
+      "src/Infrastructure/DependencyInjection.cs",
+      "tests/UnitTests/Infrastructure/PartnerVerification/PartnerVerificationClientTests.cs"
+    ]
+  },
+  {
+    "repo": "nhatduong146/training-exercise",
+    "files": [
+      "ConcurrencyLab/Program.cs"
+    ]
+  },
+  {
+    "repo": "nhemmings/EveStatsCollector_v2",
+    "files": [
+      "EveStatsCollector.App/Esi/EsiHttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "NicholasArnaud/ERPWebApp",
+    "files": [
+      "ERPWebApp/Program.cs"
+    ]
+  },
+  {
+    "repo": "nightscout/nocturne",
+    "files": [
+      "src/Connectors/Nocturne.Connectors.Core/Extensions/HttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "NihadMandzo/eTicketing",
+    "files": [
+      "backend/services/notifications/eTicketing.Notifications/Infrastructure/NotificationsServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Nika-nerd/NightOwl",
+    "files": [
+      "src/NightOwl.Extraction/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "NikaNats/NetCommerce",
+    "files": [
+      "src/NetCommerce.ServiceDefaults/ChaosExtensions.cs"
+    ]
+  },
+  {
+    "repo": "NikolaVetnic/Emneflyt",
+    "files": [
+      "backend/src/Emneflyt.Integrations/Resilience/ResiliencePolicies.cs"
+    ]
+  },
+  {
+    "repo": "nikolaypanchev/x_HttpClientsShowcase",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "NinaRocket/OrchardCore",
+    "files": [
+      "src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs",
+      "src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs"
+    ]
+  },
+  {
+    "repo": "NMS1010/storage-microservice",
+    "files": [
+      "src/BuildingBlocks/HttpClient/Extenstion.cs"
+    ]
+  },
+  {
+    "repo": "no1ross/Kaleido",
+    "files": [
+      "src/Http/Http.Client/Registration/KaleidoHttpClientsServiceCollectionExtensions.cs",
+      "src/Http/Http.Client/Registry/KaleidoControlRegistryClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "noel-odero/Capstone-101",
+    "files": [
+      "backend/tests/Amr.UnitTests/Infrastructure/Python/InfrastructureRegistrationTests.cs"
+    ]
+  },
+  {
+    "repo": "noemmang/InmoDomain",
+    "files": [
+      "backend/MarketData/MarketData.ImportJob/Program.cs"
+    ]
+  },
+  {
+    "repo": "NoMercyLabs/nomnomzbot",
+    "files": [
+      "server/src/NomNomzBot.Infrastructure/Platform/Resilience/ResiliencePolicies.cs"
+    ]
+  },
+  {
+    "repo": "Noural07/PBA-Project",
+    "files": [
+      "src/AiService/Program.cs"
+    ]
+  },
+  {
+    "repo": "nspukcode-hub/UKBatch",
+    "files": [
+      "src/UKBatch.Transport.Http/Resilience/PollyResilienceHandlerSetup.cs"
+    ]
+  },
+  {
+    "repo": "nxlllllll/FinanceTracker",
+    "files": [
+      "FinanceTracker.Worker.CurrencyRate/Program.cs"
+    ]
+  },
+  {
+    "repo": "o-ii/YoutubeSummarizer",
+    "files": [
+      "AspireYouTubeSummariser/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "oa-ek/c-3-final-stage-project-in-collaration-moonlight-coders",
+    "files": [
+      "App/Program.cs"
+    ]
+  },
+  {
+    "repo": "oatsoda/GooglePhotoSync",
+    "files": [
+      "Google/Api/GooglePhotosApiResilience.cs"
+    ]
+  },
+  {
+    "repo": "obimmatimothy/ranking-ron-service",
+    "files": [
+      "src/Adapters/RankingRon.Adapters.Funda/Bootstrapper.cs"
+    ]
+  },
+  {
+    "repo": "ochronus/dotnetputioarr",
+    "files": [
+      "src/Csharparr/Startup.cs",
+      "src/Csharparr/Program.cs"
+    ]
+  },
+  {
+    "repo": "off-a7/PayGate",
+    "files": [
+      "src/PayGate/DependencyInjection/PayGateBuilder.Http.cs"
+    ]
+  },
+  {
+    "repo": "ogulcanturan/samples",
+    "files": [
+      "dotnet/HttpClientResiliency/src/Sample.Api/Resilience/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "okkartal/re-authorize",
+    "files": [
+      "client/Program.cs"
+    ]
+  },
+  {
+    "repo": "Old-Butt-Gold/Gaze-of-Skadi",
+    "files": [
+      "API/src/GoS.Application/Extensions/ServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "OllieOsman/dotnet-production-baseline",
+    "files": [
+      "src/DotnetProductionBaseline.Api/Extensions/MiddlewareExtensions.cs"
+    ]
+  },
+  {
+    "repo": "OmarIsaid/booking-microservices",
+    "files": [
+      "src/Services/Booking/src/Booking/Extensions/Infrastructure/GrpcClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "oncoursesystems/kami-sdk",
+    "files": [
+      "ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "OneGround/ZGW-APIs",
+    "files": [
+      "src/OneGround.ZGW.Common.ServiceAgent/Extensions/ServiceAgentExtensions.cs",
+      "src/OneGround.ZGW.Common.Web/Authentication/ZGWAuthentication.cs",
+      "src/OneGround.ZGW.Notificaties.Messaging/ServiceConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "OneSAHDEVSINH/ChatBotRAGAPI",
+    "files": [
+      "ChatBotRAGAPI/Services/BackendResilience.cs"
+    ]
+  },
+  {
+    "repo": "ONLYOFFICE/DocSpace-server",
+    "files": [
+      "common/ASC.Core.Common/Billing/BillingClient.cs",
+      "products/ASC.Files/Core/Helpers/DocumentService.cs",
+      "common/ASC.Core.Common/Billing/DocsCloudClient.cs",
+      "common/ASC.Core.Common/Billing/AccountingClient.cs"
+    ]
+  },
+  {
+    "repo": "openonion/oochat-windows",
+    "files": [
+      "ConnectOnion.WinUIClient/Services/ServiceRegistration.cs"
+    ]
+  },
+  {
+    "repo": "optivem/shop",
+    "files": [
+      "system/monolith/dotnet/Api/Resilience/ResilienceExtensions.cs",
+      "system/multitier/backend-dotnet/Api/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "OrchardCMS/OrchardCore",
+    "files": [
+      "src/OrchardCore.Modules/OrchardCore.Facebook/StartupPixel.cs",
+      "src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs",
+      "src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs"
+    ]
+  },
+  {
+    "repo": "OrchardCoreContrib/OrchardCoreContrib.Modules",
+    "files": [
+      "src/OrchardCoreContrib.CloudflareTurnstile/Startup.cs"
+    ]
+  },
+  {
+    "repo": "OrganizationUsername/clawsharp",
+    "files": [
+      "src/clawsharp/Cli/GatewayHost.cs"
+    ]
+  },
+  {
+    "repo": "Oriolowo-Mustapha/Team-HackForge",
+    "files": [
+      "src/FarmHand.Infrastructure/ServiceRegistration.cs"
+    ]
+  },
+  {
+    "repo": "OrodruinLabs/CryptoExchanges.Net",
+    "files": [
+      "src/CryptoExchanges.Net.Http/ResilientHttpClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "oroumand/ProAspNetCore9",
+    "files": [
+      "Session11/Solution/ShortUrl/ShortUrl.RazorShortener/Program.cs"
+    ]
+  },
+  {
+    "repo": "oss-brewers/MicroFx",
+    "files": [
+      "src/MicroFx/Resilience/ResilienceFeature.cs"
+    ]
+  },
+  {
+    "repo": "oudaykhaled/chat-service",
+    "files": [
+      "ChatService.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "ourneckdev/community",
+    "files": [
+      "source/community.middleware/Builders/ConfigureHttpClientResilience.cs"
+    ]
+  },
+  {
+    "repo": "Ovsyannikov345/PulseAnalytics",
+    "files": [
+      "services/DataIngestor/DataIngestor.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "owlillp/DirectoryService",
+    "files": [
+      "backend/FileService/src/FileService.Contracts/Communication/FileServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ozkankaa/payment-gateway-challenge-dotnet",
+    "files": [
+      "src/PaymentGateway.Api/Extensions/FraudServiceClientExtensions.cs",
+      "src/PaymentGateway.Api/Extensions/AcquiringBankClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "PandaTechAM/be-lib-sharedkernel",
+    "files": [
+      "src/SharedKernel/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "PanosPanagiotopoulos/Consult",
+    "files": [
+      "Consult.Rag/Extentions/Extentions.cs"
+    ]
+  },
+  {
+    "repo": "Patrick16/link-shortener-edu",
+    "files": [
+      "src/backend/Shared/Common/ResiliencePipelines.cs",
+      "src/backend/Shared/Infrastructure/GeoIpExtensions.cs"
+    ]
+  },
+  {
+    "repo": "PaulBaezaDev/prueba_tecnica_ecert",
+    "files": [
+      "src/DocumentManager.Infrastructure/ExternalServices/Common/PollyPolicies.cs",
+      "src/DocumentManager.Infrastructure/DependencyInjection/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "PauloBusch/rural-properties-monitor",
+    "files": [
+      "src/Analytics/Analitycs.IOC/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "pauloeugenioreis/dotnet-enterprise-template-10",
+    "files": [
+      "src/Server/Infrastructure/Extensions/ResilienceExtension.cs"
+    ]
+  },
+  {
+    "repo": "PauwConsultancy/DonetickCalDAVBridge",
+    "files": [
+      "src/DonetickCalDav/Program.cs"
+    ]
+  },
+  {
+    "repo": "pavika1038-maker/hand-on-workshop-claude",
+    "files": [
+      "LeaveRequest/src/LeaveRequest.Infrastructure/Extensions/HrisServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Pavlo-0/QsMessaging",
+    "files": [
+      "QsMessaging/Public/QsMessagingRegistering.cs"
+    ]
+  },
+  {
+    "repo": "PaymentOrderSampleAviva/ProductsAPI",
+    "files": [
+      "src/ProductsAPI/DependencyConfig.cs"
+    ]
+  },
+  {
+    "repo": "PBSW-easv-ea-peter/HappyHeadlines",
+    "files": [
+      "apps/comment_service/src/CommentService/Program.cs",
+      "apps/publish_service/src/PublishService/Setup/ServiceRegistration.cs",
+      "apps/draft_service/src/DraftService/Program.cs"
+    ]
+  },
+  {
+    "repo": "pedrior/assyst-alerta",
+    "files": [
+      "src/Assyst.Alerta/Ingestion/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "pedroduarte0/ApiResilience",
+    "files": [
+      "ApiClient/Program.cs"
+    ]
+  },
+  {
+    "repo": "PedroGasquez/steamchecks",
+    "files": [
+      "SteamTracker.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "pedroonovais/customer-registration",
+    "files": [
+      "Web.CustomerRegistration.Api.Cep/Program.cs"
+    ]
+  },
+  {
+    "repo": "PedroRamoss/EventDrivenWithSagaPattern",
+    "files": [
+      "src/EventDrivenOutboxProject.Worker/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "pepelax/Pepelax.Extensions.Http",
+    "files": [
+      "Pepelax.Extensions.Http/ProxyRotationHttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "photo-cli/photo-cli",
+    "files": [
+      "src/Program.cs"
+    ]
+  },
+  {
+    "repo": "pietrisdimpetros/MyHttpApi",
+    "files": [
+      "Shared.ExternalIntegration/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "pinkroosterai/ClariveSDK",
+    "files": [
+      "sdks/csharp/src/ClariveSDK/ClariveServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "PMCRO-AI-Agent-Company/pmcro-runtime",
+    "files": [
+      "src/ProjectName.OrchestratorApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "pngdeity/the-orthogonizer",
+    "files": [
+      "src/TheOrthogonizer/Program.cs"
+    ]
+  },
+  {
+    "repo": "polatayd/boardgame-warofthering",
+    "files": [
+      "BoardGame.WarOfTheRing.Fellowships/BoardGame.WarOfTheRing.Fellowships.Api/ServiceRegistrations/HttpClientServiceRegistration.cs"
+    ]
+  },
+  {
+    "repo": "praivesi/my_first_azure",
+    "files": [
+      "my_first_aspire/my_first_aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Prakasha3007/Nuget-All-Branches",
+    "files": [
+      "src/OrchardCore.Modules/OrchardCore.Twitter/Startup.cs",
+      "src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "praveenprabharavindran/polly.demo",
+    "files": [
+      "Polly.Demo.Api/Program.cs",
+      "Polly.Demo.IntegrationTests/HttpRetryStrategyShould.cs"
+    ]
+  },
+  {
+    "repo": "project-vrcz/content-publisher",
+    "files": [
+      "src/Core/VRChatContentPublisher.Core/Extensions/ServicesExtenstion.cs"
+    ]
+  },
+  {
+    "repo": "ProtonDriveApps/sdk-tech-demo",
+    "files": [
+      "src/Proton.Sdk/ProtonClientConfigurationExtensions.cs"
+    ]
+  },
+  {
+    "repo": "PSamuel-HC/MonolithModularHexagonal",
+    "files": [
+      "src/MyModularStore.Orders/Program.cs"
+    ]
+  },
+  {
+    "repo": "punkouter27/PoLocalCompare",
+    "files": [
+      "src/PoLocalCompare.Api/InfrastructureServiceExtensions.cs",
+      "src/PoLocalCompare.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "punkouter27/PoTraffic",
+    "files": [
+      "src/PoTraffic.API/Features/Places/PlacesEndpoints.cs",
+      "src/PoTraffic.API/Infrastructure/Resilience/ResiliencePipelineExtensions.cs",
+      "src/PoTraffic.API/Infrastructure/Providers/ProviderExtensions.cs",
+      "src/PoTraffic.API/Program.cs",
+      "src/PoTraffic.API/Infrastructure/Security/SecurityExtensions.cs"
+    ]
+  },
+  {
+    "repo": "PXLARIZEDL/mantenimiento-hotel",
+    "files": [
+      "servicios/ordenes/Program.cs"
+    ]
+  },
+  {
+    "repo": "qaz216/webCrawler",
+    "files": [
+      "src/Crawler.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "queennduji/atlas-bank",
+    "files": [
+      "src/Shared/AtlasBank.Shared/Resilience/GrpcResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "quincy-tromp/pragmatic-rest-api-sample",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "quranicapps/memquran-api",
+    "files": [
+      "src/MemQuran.Api.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "r109431968/ApexPost-Logistics",
+    "files": [
+      "ApexPost.Courier.Core/Resilience/ApexApiRegistration.cs"
+    ]
+  },
+  {
+    "repo": "rabbitzcool/PartnerIntegrationBff",
+    "files": [
+      "tests/PartnerIntegrationBff.Tests/Resilience/PartnerVerificationResilienceTests.cs",
+      "src/PartnerIntegrationBff.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "radek-vlacil/PollySim",
+    "files": [
+      "PollySim.Runner/Retry.cs",
+      "PollySim.Runner/Timeout.cs",
+      "PollySim.Runner/CircuitBreaker.cs",
+      "PollySim.Runner/Hedging.cs"
+    ]
+  },
+  {
+    "repo": "rafalczajka/integration-platform",
+    "files": [
+      "integrations/Todoist/src/TodoistClient/HttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "rafsanulhasan/ResiliencyTest",
+    "files": [
+      "src/ResiliencyTest.Resilience/Pipeline/CustomPipelineComposer.cs",
+      "src/ResiliencyTest.Resilience/Http/RequestSnapshot.cs",
+      "src/ResiliencyTest.Resilience/DependencyInjection/CustomHttpClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "rahulpandey15/TodoAPI",
+    "files": [
+      "Todo.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "rajarajan52/POS",
+    "files": [
+      "POSSystem.Infrastructure/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "RakhyTee/rock-commitment-tracker",
+    "files": [
+      "RockCommitmentTracker.Infrastructure/ServiceCollections.cs"
+    ]
+  },
+  {
+    "repo": "Ramitha-Silva/mageride",
+    "files": [
+      "backend/src/MageRide.Shared/Resilience/MageRideResilience.cs"
+    ]
+  },
+  {
+    "repo": "raulptel/TicketTriage",
+    "files": [
+      "TicketTriage.Infrastructure/DependencyInjection/AiAnalysisServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ravitejabollineni/ChatBot",
+    "files": [
+      "ChatBot.Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "RBBHHM/rbbh-studentskapraksa-tim1",
+    "files": [
+      "Frontend/Platform/RBI.ApiCore/ApiClients.cs"
+    ]
+  },
+  {
+    "repo": "rcarubbi/Carubbi.ResilientFlurl",
+    "files": [
+      "Carubbi.ResilientFlurl/Extensions/HttpClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "renan-marcel/MyMovieApp",
+    "files": [
+      "src/MyMovieApp.Infrastructure/Hosting/HostingExtensions.cs"
+    ]
+  },
+  {
+    "repo": "renatojsilvas/tesouro-direto",
+    "files": [
+      "src/TesouroDireto.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "reshmapotthuri/SecAgent",
+    "files": [
+      "src/SecAgent.Functions/Program.cs"
+    ]
+  },
+  {
+    "repo": "restex03/employment-application-tracking-system",
+    "files": [
+      "Eats.Ingestion/Infrastructure/Configuration/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "restocado/stubby",
+    "files": [
+      "src/Infrastructure/AiGateway/AiGatewayRegistration.cs"
+    ]
+  },
+  {
+    "repo": "review-bench/s205109_AHKFlowApp",
+    "files": [
+      "src/Tools/AHKFlowApp.CLI/Services/CliHttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Reyme87/TrendSense",
+    "files": [
+      "TrendSense.Backend/TrendSense.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "rhsenso/IntegracaoSolidesDP",
+    "files": [
+      "src/IntegracaoSolidesDP.Worker/Api/SolidesDpClientRegistration.cs"
+    ]
+  },
+  {
+    "repo": "RichardKT88/DevHabit",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "richcrd/bookstore-microservices",
+    "files": [
+      "src/Services/Orders/Orders.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "rnacodes/my-mediaverse",
+    "files": [
+      "tests/MyMediaVerse.UnitTests/Infrastructure/YouTubeResilienceTests.cs",
+      "tests/MyMediaVerse.UnitTests/Infrastructure/TmdbResilienceTests.cs",
+      "src/MyMediaVerse/MyMediaVerse.Web.API/Extensions/ExternalApiClientsExtensions.cs",
+      "tests/MyMediaVerse.UnitTests/Infrastructure/GoogleBooksResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "robcross1977/Ithil",
+    "files": [
+      "src/Ithil.Gateway/Resilience/CircuitBreakerPolicyFactory.cs",
+      "src/Ithil.Gateway/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "RobsonDevCode/Papyrus.Ai",
+    "files": [
+      "Papyrus.Ai/Extensions/HttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "RodrigoFNascimento/WeatherReport",
+    "files": [
+      "src/Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "rogerfar/rdt-client",
+    "files": [
+      "server/RdtClient.Service/DiConfig.cs"
+    ]
+  },
+  {
+    "repo": "roiveredritesh/SupportForge-AI",
+    "files": [
+      "backend/SupportForge.Api.Tests/Agents/LlmClientResilienceTests.cs",
+      "backend/SupportForge.Agents/LlmServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "rolspace/blazor-football-scoreboard",
+    "files": [
+      "src/Hosts/Blazor/Program.cs"
+    ]
+  },
+  {
+    "repo": "ronaldbarbosa/cortex-api",
+    "files": [
+      "src/Cortex.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "ronaldocestrela/CopyPersona",
+    "files": [
+      "src/BuildingBlocks/PersonaScript.BuildingBlocks.AI/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "rowanverschoor/mentorship",
+    "files": [
+      "backend/WeatherApi/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "rpetrietc/Multiple-API-POC",
+    "files": [
+      "Multiple-API-POC.Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "rSeeFip/nem.Mimir",
+    "files": [
+      "src/Mimir.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "rtharris619/DevHabit",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "rubensfiorellidev/ClientPositions",
+    "files": [
+      "Positions.ConsoleApp/Program.cs"
+    ]
+  },
+  {
+    "repo": "ruhex/BGPLite",
+    "files": [
+      "BGPLite/Program.cs"
+    ]
+  },
+  {
+    "repo": "ruifaguiar/VFX-Practical-Test",
+    "files": [
+      "src/VfxGateway/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Runaka/IQAir.Integration.Api",
+    "files": [
+      "src/IQAir.Integration.Api/Extensions/IQAirOpenApiIntegrationExtension.cs"
+    ]
+  },
+  {
+    "repo": "s205109/AHKFlowApp",
+    "files": [
+      "src/Tools/AHKFlowApp.CLI/Services/CliHttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "sachinkmahapure/SemanticKernel.AI.Agent",
+    "files": [
+      "src/AI.ChatAgent/Program.cs"
+    ]
+  },
+  {
+    "repo": "Safaa-MIS/error-management-api",
+    "files": [
+      "src/ErrorManagement.Shared/Http/HttpResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "safwyls/winnow",
+    "files": [
+      "src/Winnow.Covers/CoverCacheServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "SAHerath/Customer_Care_Portal",
+    "files": [
+      "SriCare.Billing/SriCare.Billing.Infrastructure/Configurations.cs"
+    ]
+  },
+  {
+    "repo": "sainiteshGit/dotnet-mcp-k8s",
+    "files": [
+      "src/McpServer/Backing/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "salem84/DotNetConf2024",
+    "files": [
+      "02_InitChaos/Program.cs",
+      "06_ResilienceRefit/Program.cs",
+      "03_ResilienceFixChaos/Program.cs",
+      "04_ResilienceWithConfig/Program.cs",
+      "05_CustomResilienceWithMetrics/Program.cs"
+    ]
+  },
+  {
+    "repo": "samadhanchavan373/ResilanceUsingPolly",
+    "files": [
+      "BulkHeadUsingPolly/Program.cs"
+    ]
+  },
+  {
+    "repo": "Samitova/ShopMicroservices",
+    "files": [
+      "ShopMicroservices.OrdersManagement.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "SamuelMMLopes/ndc-dotnet-aspire",
+    "files": [
+      "src/Dometrain.Monolith.Api.Sdk/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Santazis/Microservices",
+    "files": [
+      "Services/Basket/Basket.Api/Extensions/ServiceRegistrationExtension.cs"
+    ]
+  },
+  {
+    "repo": "saoirse28/ApiFeaturesMustHave",
+    "files": [
+      "Resilience/HttpClients/HttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "sara-dev12/Polly",
+    "files": [
+      "samples/Chaos/Program.cs",
+      "src/Snippets/Docs/HttpClientIntegrations.cs",
+      "src/Snippets/Docs/CircuitBreaker.cs"
+    ]
+  },
+  {
+    "repo": "Sara-gitCount/microservise",
+    "files": [
+      "Services/LotteryService/Program.cs"
+    ]
+  },
+  {
+    "repo": "sarastatoua/Food_Delivery_Service_EAAT",
+    "files": [
+      "Workers/Program.cs"
+    ]
+  },
+  {
+    "repo": "sattyam-kishor-mishra/AuthenticationWebAPI",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "SeanHaughian/VirginActive",
+    "files": [
+      "RockTracker.Api/Services/MemberProfileResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "secretsurvivor/Casette",
+    "files": [
+      "Casette.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "seesathish/AntKart-MS",
+    "files": [
+      "AK.BuildingBlocks/AK.BuildingBlocks/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "seesathish/AntKart-Src3",
+    "files": [
+      "AK.BuildingBlocks/AK.BuildingBlocks/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "SeifMohmmed/DevHabit",
+    "files": [
+      "src/DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Seji64/VegaBridge",
+    "files": [
+      "src/VegaBridgeApp/MauiProgram.cs",
+      "src/VegaBridgeApp/Services/Closures/OverpassRoadClosureProvider.cs"
+    ]
+  },
+  {
+    "repo": "selcukgural/AfterApply",
+    "files": [
+      "tests/AfterApply.UnitTests/JobSources/LinkedInJobSourceClientTests.cs",
+      "tests/AfterApply.UnitTests/JobSources/KariyerNetJobSourceTests.cs",
+      "src/AfterApply.Infrastructure/DependencyInjection.cs",
+      "tests/AfterApply.UnitTests/JobLiveness/JobLivenessClientTests.cs"
+    ]
+  },
+  {
+    "repo": "semperdigitalsolutions/recon508",
+    "files": [
+      "Recon508.Scanning/DependencyInjection/ScanningServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "sencipeter/PocasieTestApi",
+    "files": [
+      "WeatherTestApp/WeatherTestApp.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "senrecep/CSharpEssentials",
+    "files": [
+      "benchmarks/CSharpEssentials.Http.Comparison.Benchmarks/HttpResilienceComparison.cs"
+    ]
+  },
+  {
+    "repo": "SeokgyuYun/hackersground-assignment",
+    "files": [
+      "Assignment.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "serfirazab/ResilientTelemedicine",
+    "files": [
+      "Appointment.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "Sergey-Anderw/prozorro-mining",
+    "files": [
+      "src/Backend/ProzorroMining.Infrastructure/InfrastructureServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "sevi35unal03-star/carbon-emissions-app",
+    "files": [
+      "src/IzTek.Carbon.Footprint.Infrastructure/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "seyit-tekce/Dev.Aigen.QueryEngine",
+    "files": [
+      "Dev.Aigen.QueryEngine/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ShagunYadav1208/thinkschool_Shagun_Yadav",
+    "files": [
+      "day-5/piece6/ResilientClient.Tests/TestSupport/ResilientClientFactory.cs",
+      "day-5/piece6/ResilientClient/Program.cs",
+      "day-23/piece1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "day-26/piece1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "day-22/piece1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "day-24/piece1/QuotesApi/Extensions/InfrastructureExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Shajeeve567/Custodian---Client-Life-Cycle-Management-Platform",
+    "files": [
+      "backend/src/services/Workflow/Services/Gates/DocumentComplianceResilience.cs"
+    ]
+  },
+  {
+    "repo": "shakerkamal/cheaphours",
+    "files": [
+      "src/CheapHours.Host/Prices/PricesSetup.cs"
+    ]
+  },
+  {
+    "repo": "ShakotkoPavlo/dev-habit",
+    "files": [
+      "DevHabit/DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Sharathsekar10/Microservice_Mastery_App",
+    "files": [
+      "OrderService/Program.cs"
+    ]
+  },
+  {
+    "repo": "ShawnDelaineBellazanLoop/PMCR-O-Marketplace",
+    "files": [
+      "src/ProjectName.OrchestratorApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "Shelman2/WeatherApi",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "sheviak/TransmissionHub",
+    "files": [
+      "lib/src/TransmissionHub.Client/Internal/Http/SessionIdDelegatingHandler.cs",
+      "lib/src/TransmissionHub.Client/Abstractions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ShuJinHao/IIoT.EdgeClient",
+    "files": [
+      "src/Infrastructure/IIoT.Edge.Infrastructure.Integration/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "siarhei-plusnin/weak-app-wrapper",
+    "files": [
+      "src/services/WeakAppWrapper.Ingestor/Program.cs"
+    ]
+  },
+  {
+    "repo": "sidharthack/BillFlow",
+    "files": [
+      "BillFlow.IdentityService/Program.cs",
+      "BillFlow.NotificationService/Program.cs",
+      "BillFlow.CustomerService/Program.cs",
+      "BillFlow.InvoiceService/Program.cs"
+    ]
+  },
+  {
+    "repo": "signalbeam-io/signalbeam-edge",
+    "files": [
+      "src/DeviceManager/SignalBeam.DeviceManager.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "sillsdev/languageforge-lexbox",
+    "files": [
+      "backend/FwLite/FwLiteShared/FwLiteSharedKernel.cs"
+    ]
+  },
+  {
+    "repo": "simachenko/ShoppingAssistant",
+    "files": [
+      "src/ProductAdvisor/ProductAdvisor.Infrastructure/AdvisorHttpClientsExtensions.cs",
+      "src/Gateway/Gateway.Api/Program.cs",
+      "src/WebApp/WebApp.Blazor/Program.cs"
+    ]
+  },
+  {
+    "repo": "simon-alkhoury/CurrencyConverter",
+    "files": [
+      "CurrencyConverter.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "SimonCropp/Replicant",
+    "files": [
+      "src/Tests/ResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "siqbalk/MicroMart-api",
+    "files": [
+      "src/ApiGateway/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "sitecoreops/experience-edge-emu",
+    "files": [
+      "src/ExperienceEdgeEmu.Web/EmuStartupExtensions.cs"
+    ]
+  },
+  {
+    "repo": "siyadoutlook/ShopFlow",
+    "files": [
+      "ShopFlow.OrderService/Resilience/ResiliencePipeline.cs"
+    ]
+  },
+  {
+    "repo": "sjroesink/Strydr",
+    "files": [
+      "src/Meander.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "skaegebein/HealthChecks.Publisher.Telegram",
+    "files": [
+      "src/HealthChecks.Publisher.Telegram/HealthChecksBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "skb127/BookifyRepo",
+    "files": [
+      "src/Bookify.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Skluks/ReportService",
+    "files": [
+      "src/ReportService.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "skuill/ConcertBuddy",
+    "files": [
+      "src/MusicSearcher/Http/MusicServiceHttpClients.cs"
+    ]
+  },
+  {
+    "repo": "sliekens/gw2sdk",
+    "files": [
+      "samples/PollyUsage/Program.cs",
+      "src/GuildWars2.TestDataHelper/Program.cs"
+    ]
+  },
+  {
+    "repo": "slucky31/WinAiBar",
+    "files": [
+      "tests/WinAIBar.Tests/Services/Anthropic/AnthropicUsageClientTests.cs",
+      "src/WinAIBar/Infrastructure/AppHost.cs"
+    ]
+  },
+  {
+    "repo": "sn1chzz/libraryAPI",
+    "files": [
+      "Infrastructure/HttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "snehaaa16/FundooApp",
+    "files": [
+      "Fundoo.Users.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "SOFTURE/FAKTUROWNIA",
+    "files": [
+      "FAKTUROWNIA/SOFTURE.Fakturownia/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "softwares-sorcerer-supreme/Microservice",
+    "files": [
+      "BuildingBlocks/Shared/Extensions/HttpClientCustomExtensions.cs"
+    ]
+  },
+  {
+    "repo": "sohamy/WebServer",
+    "files": [
+      "WebpServer/WebpServer/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "SolidProgramming/AniWorldReminder_API",
+    "files": [
+      "AniWorldReminder_API/Program.cs"
+    ]
+  },
+  {
+    "repo": "SolidProgramming/ProxyMov_DownloadServer",
+    "files": [
+      "Proxymov_DownloadServer/ProxyMov_DownloadServer/Program.cs"
+    ]
+  },
+  {
+    "repo": "SonHuy160293/BookingSystem",
+    "files": [
+      "BookingSystem/src/BuildingBlocks/BookingSystem.HttpClients/Resilience/HttpApiClientResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "SP-Tiwari/Satya_ApexPost-Counter-Platform",
+    "files": [
+      "src/ApexPost.Courier.Sync/CourierResilience.cs"
+    ]
+  },
+  {
+    "repo": "Speakat/dev-speakat-server",
+    "files": [
+      "Speakat.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "Spectara/Revela",
+    "files": [
+      "src/Plugins/Source/OneDrive/OneDrivePlugin.cs"
+    ]
+  },
+  {
+    "repo": "stabrez07/AutoLeaseNet",
+    "files": [
+      "packages/adapters/AutoLeaseNet.Adapters.Zatca/ServiceCollectionExtensions.cs",
+      "packages/adapters/AutoLeaseNet.Adapters.Tajeer/ServiceCollectionExtensions.cs",
+      "packages/adapters/AutoLeaseNet.Adapters.Tajeer.Tests/Unit/TajeerContractClientResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "StanisavM/RockPaperScissorsLizardSpockGame",
+    "files": [
+      "src/RockPaperScissorsLizardSpockGame.Infrastructure/Extensions/InfrastructureExtensions.cs"
+    ]
+  },
+  {
+    "repo": "stefanftn/image-segmentation",
+    "files": [
+      "back/src/ImageSeg.Infrastructure/Shared/Ai/LocalSegmentationClient.cs",
+      "back/src/ImageSeg.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "stefjnl/MAF.InsightStreamer",
+    "files": [
+      "MAF.InsightStreamer.ServiceDefaults/MAF.InsightStreamer.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "StevenJDH/maven-version-checker",
+    "files": [
+      "MavenVersionChecker.Action/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "stevenlesterpf/dynamic-sitemap",
+    "files": [
+      "DataAggregator/Infrastructure/Configurations/ServicesExtensions.cs"
+    ]
+  },
+  {
+    "repo": "steverzag/resilience-demo",
+    "files": [
+      "ResilienceDemo.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "sthg321/CryptoWatcher",
+    "files": [
+      "src/modules/wallet-ingestion/src/CryptoWatcher.Modules.WalletIngestion.Infrastructure/Extensions/ServiceCollectionExtensions.cs",
+      "src/modules/hyperliquid/CryptoWatcher.Modules.Hyperliquid.Infrastructure/Extensions/ServiceCollectionExtensions.cs",
+      "src/modules/uniswap/CryptoWatcher.Modules.Uniswap.Infrastructure/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "stoneynutcase/cloud-native-workshop-dometrain-2502",
+    "files": [
+      "src/Dometrain.Monolith.Api.Sdk/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "stormid/storm-tech-test-dotnet",
+    "files": [
+      "src/Storm.TechTask.Web/ApiClient/ApiClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "str4n/Rapido",
+    "files": [
+      "src/Framework/Rapido.Framework.HTTP/Resilience/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Strafe153/GamingStore",
+    "files": [
+      "Web/Configurations/HttpClientsConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "SubochArtem/CityPulse",
+    "files": [
+      "src/Backend/Services/Users/Users.Business/Policies/HttpPolicies.cs"
+    ]
+  },
+  {
+    "repo": "SudhakarGarikipati/Talentjobneeds",
+    "files": [
+      "FrontendServices/JobNeedsWebApp/Program.cs"
+    ]
+  },
+  {
+    "repo": "sukarthi06/PhysicianNotes",
+    "files": [
+      "PhysicianNotes.Infrastructure/DependencyInjection/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "suryadotnet/ecommerceapp",
+    "files": [
+      "src/OrderService/Infrastructure/Resilience/ResiliencePipelineExtensions.cs"
+    ]
+  },
+  {
+    "repo": "SushantWadhawan/CapstoneProject",
+    "files": [
+      "src/OrchardCore/OrchardCore.ReCaptcha.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Sussman-Club/group-split",
+    "files": [
+      "src/GroupSplit.API/Extensions/ReceiptTranscriptionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "suvoislam123/eOrnamentsShop",
+    "files": [
+      "src/BuildingBlocks/BuildingBlocks.Resiliency/DependencyInjectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "SwiftPay-Prod/swiftpay---Prod",
+    "files": [
+      "swiftpay-api-payment/Extensions/HttpClientResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "swigerb/retail-pulse",
+    "files": [
+      "src/RetailPulse.Api/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Synctest-hub/dotnet-extensions",
+    "files": [
+      "bench/Libraries/Microsoft.Extensions.Http.Resilience.PerformanceTests/RetryBenchmark.cs",
+      "src/Libraries/Microsoft.Extensions.Http.Resilience/Resilience/ResilienceHttpClientBuilderExtensions.StandardResilience.cs",
+      "test/Libraries/Microsoft.Extensions.Http.Resilience.Tests/Resilience/HttpClientBuilderExtensionsTests.BySelector.cs",
+      "test/Libraries/Microsoft.Extensions.Http.Resilience.Tests/Resilience/GrpcResilienceTests.cs",
+      "src/Libraries/Microsoft.Extensions.Http.Resilience/Resilience/ResilienceHttpClientBuilderExtensions.Resilience.cs",
+      "test/Libraries/Microsoft.Extensions.Http.Resilience.Tests/Resilience/HttpClientBuilderExtensionsTests.Resilience.cs"
+    ]
+  },
+  {
+    "repo": "Synon1003/ShoppingList",
+    "files": [
+      "ShoppingList.ServiceProxy/Program.cs"
+    ]
+  },
+  {
+    "repo": "syyNcgoD/event-bride",
+    "files": [
+      "tests/Booking.UnitTests/TicketInventoryServiceResilienceTests.cs",
+      "src/Services/Booking/Booking.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "sza-alan/IncidentHub",
+    "files": [
+      "src/IncidentHub.Infrastructure/Integrations/ServiceHealth/ServiceHealthDependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "szapata85/ACHInterbank",
+    "files": [
+      "src/Cfa.ACHInterbank.External/DependencyInjectionService.cs",
+      "tests/Cfa.ACHInterbank.Tests/RefactorArchitectureRatchetTests.cs"
+    ]
+  },
+  {
+    "repo": "tableau/tableau-migration-sdk",
+    "files": [
+      "src/Tableau.Migration/Net/IServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "tae0y/ossca-aoai-challenges-all-together",
+    "files": [
+      "backend/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Taha7865/FindBook",
+    "files": [
+      "app/Api/HttpClientRegistration.cs"
+    ]
+  },
+  {
+    "repo": "TamTTran/BankLoan",
+    "files": [
+      "src/LoanFlow.API/ExternalServices/NapasPaymentGatewayService.cs"
+    ]
+  },
+  {
+    "repo": "TanteiBot/Tantei",
+    "files": [
+      "src/PaperMalKing.AniList.UpdateProvider.Installer/ServiceCollectionExtensions.cs",
+      "src/PaperMalKing.MyAnimeList.Wrapper/Tenrai/TenraiEnrichmentServiceCollectionExtensions.cs",
+      "src/PaperMalKing.MyAnimeList.UpdateProvider.Installer/ServiceCollectionExtensions.cs",
+      "src/PaperMalKing.Shikimori.UpdateProvider.Installer/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "TarekNajem04/AI-Assisted-Professional-Engineering-with-.NET",
+    "files": [
+      "book/samples/Chapter-01/DistributedPaymentService/src/PaymentService.Infrastructure/Gateway/ExternalGatewayClient.cs"
+    ]
+  },
+  {
+    "repo": "tariqul2814/ATS",
+    "files": [
+      "ATS_Web_API/ATS_Web_API/Program.cs"
+    ]
+  },
+  {
+    "repo": "tarlan-code/PeopleApp",
+    "files": [
+      "src/PeopleApp.Infrastructure/DependencyInjection/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "tassosgomes/poc-iam-service",
+    "files": [
+      "libs/sdk-dotnet/AuthzSdk/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "tatoand97/RestClient",
+    "files": [
+      "RestClient/Internal/RestClientResilienceHandlerBuilder.cs"
+    ]
+  },
+  {
+    "repo": "tatoand97/TemplateMicroservicio",
+    "files": [
+      "template/content/src/NameProject.Core/RestClient/Internal/RestClientResilienceHandlerBuilder.cs"
+    ]
+  },
+  {
+    "repo": "tauraigombera/.NET-Samples",
+    "files": [
+      "Resilience and Chaos Engineering/Chaos/Program.cs"
+    ]
+  },
+  {
+    "repo": "TBCBank/TBC.OpenAPI.SDK.Core",
+    "files": [
+      "src/TBC.OpenAPI.SDK.Core/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Team-PuPul/Push-Pull-server",
+    "files": [
+      "src/PushAndPull/Domain/Auth/Config/AuthServiceConfig.cs"
+    ]
+  },
+  {
+    "repo": "TebohoMosakoaCIDB/CIDB.iBidder",
+    "files": [
+      "CIDB.iBidder.Infrastructure/Resilience/HttpClientResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "TebohoMosakoaCIDB/iTender.Integrator",
+    "files": [
+      "iTender.Integrator.Infrastructure/Resilience/HttpClientResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "techbuzzz/Delibera",
+    "files": [
+      "src/Delibera.Core/Providers/Mcp/McpClientAdapter.cs",
+      "src/Delibera.Core/Providers/LLM/OllamaProvider.cs",
+      "src/Delibera.Core/DependencyInjection/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "techhubms/techhub",
+    "files": [
+      "src/TechHub.Web/Program.cs"
+    ]
+  },
+  {
+    "repo": "TEGTO/SceneSplit",
+    "files": [
+      "src/SceneSplit.Backend/SceneSplit.GrpcClientShared/Extenstions/ServiceCollectionExtenstions.cs"
+    ]
+  },
+  {
+    "repo": "TempooDev/asistente-ayuntamiento",
+    "files": [
+      "src/AsistenteAyuntamiento.ApiService/Program.cs"
+    ]
+  },
+  {
+    "repo": "tenzinkabsang/myEcomShop",
+    "files": [
+      "Ecom.Web/Configuration/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "tepecam18/Linbik",
+    "files": [
+      "src/AspNet/Linbik.Core/Extensions/LinbikServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "TeresDev/stephen-king-web-api",
+    "files": [
+      "src/Investec.SK.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "tgrabus/InvoiceToPdf",
+    "files": [
+      "src/Tasks/HtmlToPdf.Tasks/Infrastructure/Renderer/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "thaihoangmt4/LanguageLearning",
+    "files": [
+      "LanguageLearning.WebApi/Infrastructure/Ai/AiServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ThanasisBalamatsis/cat-service",
+    "files": [
+      "src/Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "thangchung/agent-engineering-experiment",
+    "files": [
+      "coffeeshop-jev/tests/CoffeeShop.Tests/ServiceDefaultsTests.cs"
+    ]
+  },
+  {
+    "repo": "thanhnguyen162003/TodoAppMicroserviceAspire",
+    "files": [
+      "User.App/src/Shared/Resiliency/DependencyInjectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "thaonmce130353/partner-integration-bff",
+    "files": [
+      "src/PartnerIntegrationBff.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "thaophamhetxat/shopflow",
+    "files": [
+      "src/Services/Order/OrderService.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "The-Aperbase/ApesDb",
+    "files": [
+      "src/backend/sdks/ApesDb.Igdb.Sdk/IgdbSdkServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "thedangander/godaddyddns",
+    "files": [
+      "src/GoDaddyDdns.Core/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "TheMasonX/SplitBrain.AI",
+    "files": [
+      "src/Orchestrator.Hosting/DependencyInjection/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ThindalTV/Thiccdal26",
+    "files": [
+      "src/Remote/Thiccdal.Remote.Twitch/TwitchRegistrationExtensions.cs"
+    ]
+  },
+  {
+    "repo": "thinkbridge-thinkschool/avishkar-online-bus-ticket-booking-system-capstone",
+    "files": [
+      "src/BusBooking.Api/Program.cs",
+      "src/BusBooking.Infrastructure/InfrastructureServiceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "thinkbridge-thinkschool/ThinkSchoo-ameykhot-Day1",
+    "files": [
+      "DAY5/Piece-6-Add Polly resilience to HTTP calls/QuotesAPI-Amey/Extensions/ServiceCollectionExtensions.cs",
+      "DAY5/Piece-6-Add Polly resilience to HTTP calls/QuotesAPI-Amey/Quotes.Tests.Unit/ExternalQuoteResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "thinkbridge-thinkschool/thinkschool---YashRathi",
+    "files": [
+      "Day5/piece35_SmokeTest/Extensions/InfrastructureExtensions.cs",
+      "Day5/piece34_PolicyResilence/Extensions/InfrastructureExtensions.cs"
+    ]
+  },
+  {
+    "repo": "thinkbridge-thinkschool/thinkschool--PrakharSahu",
+    "files": [
+      "Day22/piece1/backend/Extensions/ResilienceExtensions.cs",
+      "Day26/backend/Extensions/ResilienceExtensions.cs",
+      "Day27/backend/src/Modules/Resilience/QuotesApi.Resilience.Infrastructure/ResilienceExtensions.cs",
+      "Day5/piece6/QuotesApi/Program.cs",
+      "Day32/apps/quotes/backend/src/Modules/Resilience/QuotesApi.Resilience.Infrastructure/ResilienceExtensions.cs",
+      "Day17/backend/Program.cs",
+      "Day20/backend/Program.cs",
+      "Day18/backend/Program.cs",
+      "Day21/backend/Program.cs",
+      "Day19/backend/Program.cs"
+    ]
+  },
+  {
+    "repo": "thinkbridge-thinkschool/thinkschool-AryanBhalerao",
+    "files": [
+      "Day22/Piece1/QuotesApi/Extensions/ResilienceExtensions.cs",
+      "Day17/Piece1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day16/Piece2/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day13/Piece1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day13/Piece2/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day11/Piece1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day11/Piece2/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day12/Piece1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day5/piece6/Quotes.Tests.Unit/EntraIdResilienceTests.cs",
+      "Day5/piece6/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day14/Piece2/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day12/Piece2/QuotesApi/Extensions/InfrastructureExtensions.cs"
+    ]
+  },
+  {
+    "repo": "thinkbridge-thinkschool/thinkschool-AvishkarPatil",
+    "files": [
+      "Day-5/piece-6/Extensions/InfrastructureExtensions.cs",
+      "Day-11/piece-1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-16/piece-2/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-18/piece-1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-20/piece-1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-22/piece-1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-13/piece-1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-12/piece-2/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-15/piece-1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-16/piece-1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-17/piece-1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-13/piece-2/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-14/piece-2/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-19/piece-1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "Day-5/piece-6/Quotes.Tests.Unit/HttpResilienceTests.cs"
+    ]
+  },
+  {
+    "repo": "thinkbridge-thinkschool/thinkschool-Shagun_Yadav",
+    "files": [
+      "day-5/piece6/ResilientClient.Tests/TestSupport/ResilientClientFactory.cs",
+      "day-5/piece6/ResilientClient/Program.cs",
+      "day-23/piece1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "day-26/piece1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "day-22/piece1/QuotesApi/Extensions/InfrastructureExtensions.cs",
+      "day-24/piece1/QuotesApi/Extensions/InfrastructureExtensions.cs"
+    ]
+  },
+  {
+    "repo": "thinkbridge-thinkschool/ThinkSchool_Khushi_Jain",
+    "files": [
+      "QuotesApi/Resilience/EntraHttpClientExtensions.cs",
+      "day22_polly/Program.cs"
+    ]
+  },
+  {
+    "repo": "thinkbridge-thinkschool/Thinkschool_Ujjwal",
+    "files": [
+      "day-10/QuotesApi/Extensions/RandomQuoteClientExtensions.cs",
+      "day-5/QuotesApi/Extensions/RandomQuoteClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "thinkbridge-thinkschool/VaishaleeSingh",
+    "files": [
+      "Day7/piece2/QuotesApi/Extensions/ResilienceExtensions.cs",
+      "Day5/piece2/QuotesApi/Extensions/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "ThisTimeNull/pre-workshop-challenge",
+    "files": [
+      "workshop/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "thomasmoreira/resilience-and-chaos",
+    "files": [
+      "src/Orders/Program.cs"
+    ]
+  },
+  {
+    "repo": "thomastran117/SchoolSpace",
+    "files": [
+      "backend/src/app/configurations/application/WebConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "thomastran117x/Elevate",
+    "files": [
+      "backend/src/main/application/handlers/WebHandler.cs"
+    ]
+  },
+  {
+    "repo": "ThompsonNye/Kundenportal.AdminUi",
+    "files": [
+      "src/Application/DependencyInjectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "TiagoGuarda/FiapSecureSystems",
+    "files": [
+      "FiapSecureSystems/src/Gateway/Fss.Gateway/Program.cs"
+    ]
+  },
+  {
+    "repo": "tiennguyen072020-cloud/Partner_Integration_BFF",
+    "files": [
+      "src/PartnerIntegrationBff.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "TiesVreeswijk/library_microservices",
+    "files": [
+      "services/MemberService/LoanServiceClient.cs",
+      "services/ApiGateway/Resilience.cs"
+    ]
+  },
+  {
+    "repo": "timabell/azure-function-app-polly",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "timariadantas/plataforma_tcc_2026",
+    "files": [
+      "services/sales-service/SalesService/Program.cs"
+    ]
+  },
+  {
+    "repo": "TimNitsas/Buildforge",
+    "files": [
+      "Buildforge.Service/Domain/Authenticator/Github/GithubAuthenticator.cs"
+    ]
+  },
+  {
+    "repo": "timohermans/Hertmans.Shared",
+    "files": [
+      "src/Hertmans.Shared.Auth/Services/ResilienceHandler.cs"
+    ]
+  },
+  {
+    "repo": "tinytoolsllc/ai-patch-notes",
+    "files": [
+      "PatchNotes.Sync.Core/GitHub/GitHubServiceCollectionExtensions.cs",
+      "PatchNotes.Sync.Core/AI/AiServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "tirbofish/Proton.SDK",
+    "files": [
+      "src/Proton.Sdk/ProtonClientConfigurationExtensions.cs"
+    ]
+  },
+  {
+    "repo": "TitTolkachev/trb-auth",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "TitTolkachev/trb-officer-backend",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "toleZ/conversor-2026",
+    "files": [
+      "web/Program.cs"
+    ]
+  },
+  {
+    "repo": "tomasz-plewniak/xm-technical-interview",
+    "files": [
+      "src/Infrastructure/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "traciborski/telemetry",
+    "files": [
+      "ServiceC/Program.cs"
+    ]
+  },
+  {
+    "repo": "TrackSeries/TrackSeries.TVMaze.Client",
+    "files": [
+      "src/TrackSeries.TVMaze.Client/IServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "trangkhanh-ai/Calories-Tracking-App",
+    "files": [
+      "backend/src/CaloriesTracking.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "treidaci/waf_design_patterns",
+    "files": [
+      "circuit-breaker/CircuitBreaker/Program.cs"
+    ]
+  },
+  {
+    "repo": "TudorStanca/medical-clinic-consultation-assistant",
+    "files": [
+      "backend/ClinicAssistant/Program.cs"
+    ]
+  },
+  {
+    "repo": "TuralHasanov11/Cloud-Native-Identity-Thesis",
+    "files": [
+      "src/WebApp/WebApp.Server/Extensions/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "TuralHasanov11/Dotnet-Auth0",
+    "files": [
+      "WebApp/Program.cs"
+    ]
+  },
+  {
+    "repo": "TUSHAR240203/HEALTHCAREMANAGEMENTSYSTEM",
+    "files": [
+      "Hms.BillingApi/Program.cs"
+    ]
+  },
+  {
+    "repo": "tvnoms/tvnoms-proxy",
+    "files": [
+      "proxy/Program.cs"
+    ]
+  },
+  {
+    "repo": "ucudal/ANDIS2_UT4_DEMO1",
+    "files": [
+      "src/OrdersService/Resilience.cs"
+    ]
+  },
+  {
+    "repo": "ueshiman/VideoIndexerSDK",
+    "files": [
+      "VideoIndexerAccessCoreExtension/Service/VideoIndexerApiService.cs",
+      "VideoIndexPoc2/App.xaml.cs",
+      "VideoIndexerExperiment2/App.xaml.cs"
+    ]
+  },
+  {
+    "repo": "UKAT7/hgrd",
+    "files": [
+      "AspireYouTubeSummariser.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "UmbraSun/FastChange-Platform",
+    "files": [
+      "Fast_Change_Backend/Core/Extensions/BuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "unifesspa-edu-br/uniplus-api",
+    "files": [
+      "src/selecao/Unifesspa.UniPlus.Selecao.Infrastructure/Geo/GeoClientRegistration.cs",
+      "src/discentes/Unifesspa.UniPlus.Discentes.Infrastructure/Sigaa/SigaaClientRegistration.cs",
+      "src/portal/Unifesspa.UniPlus.Portal.Infrastructure/Origens/OrigensRegistration.cs"
+    ]
+  },
+  {
+    "repo": "usausa/Work-Net",
+    "files": [
+      "Work/WorkMockHttp2/Program.cs"
+    ]
+  },
+  {
+    "repo": "usuleymanli16281/Elarge",
+    "files": [
+      "Presentation/Elarge.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "utos/daemon-dapr",
+    "files": [
+      "src/execution/Execution.Infrastructure/Extensions/ExecutionInfrastructureExtensions.cs"
+    ]
+  },
+  {
+    "repo": "uyScutty/HappyHeadlines",
+    "files": [
+      "CommentService/Program.cs"
+    ]
+  },
+  {
+    "repo": "v1nkore/dotnet-petprojects",
+    "files": [
+      "OrderFlow/src/OrderFlow.Payments/BankClient.cs",
+      "OrderFlow/src/OrderFlow.Payments/Program.cs"
+    ]
+  },
+  {
+    "repo": "valdamd/DevHabit",
+    "files": [
+      "DevHabit.Api/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "Valjean15/ModShelf",
+    "files": [
+      "src/ModShelf.Sources.DegMods/DegModsServiceCollectionExtensions.cs",
+      "src/ModShelf.Infrastructure/InfrastructureServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "vantaflow/RIVORA",
+    "files": [
+      "src/modules/RVR.Framework.Resilience/Extensions/ResilienceServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "VANTUANKIET1239/HRKSYSTEM",
+    "files": [
+      "CoreEngine/Core.InternalApi/DependencyInjection/InternalApiRegistration.cs"
+    ]
+  },
+  {
+    "repo": "vasanth32/Scenario-poc",
+    "files": [
+      "Azure + .Net Microservice Poc/InsuranceClaims/Claims.Api/PolicyClientRegistration.cs"
+    ]
+  },
+  {
+    "repo": "vaso514d/IPS.Gateway",
+    "files": [
+      "src/IPS.Middleware.Infrastructure/Transport/SingleAttemptHttp.cs"
+    ]
+  },
+  {
+    "repo": "vaxosoft/backend-development",
+    "files": [
+      "languages/csharp/modules/07-http-client/solutions/Ex3_ResilientClientFactory.cs",
+      "languages/csharp/modules/07-http-client/examples/04_retry_and_timeout.cs"
+    ]
+  },
+  {
+    "repo": "vellus-tech/forge-harness",
+    "files": [
+      ".forge/evals/agents/backend-engineer-dotnet/workspace/iteration-1/eval-consumer-cashback-layout-legado-retry-nao-idempotente/with_skill/run-1/outputs/src/Cashback.Worker/Program.cs"
+    ]
+  },
+  {
+    "repo": "vercellmotive/ApexPost-TusharSharma",
+    "files": [
+      "ApexPost.Courier.Core/Resilience/ApexResilience.cs"
+    ]
+  },
+  {
+    "repo": "Vheissu/uptime-king",
+    "files": [
+      "src/UptimeKing.Api/Monitoring/ProbeClientConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "vickysrawat/AIMeridianStudio",
+    "files": [
+      "MeridianStudio.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "victorfrye/chaosseas",
+    "files": [
+      "src/HarborApi/RoughSeasEndpoints.cs",
+      "src/HarborApi/GameDayEndpoints.cs"
+    ]
+  },
+  {
+    "repo": "VictorMMosqueraG/calendar-hub",
+    "files": [
+      "backend/Infrastructure/Extensions/ResilienceExtension.cs"
+    ]
+  },
+  {
+    "repo": "victornovik/GameStore.Net10",
+    "files": [
+      "GameStore.Worker/Program.cs"
+    ]
+  },
+  {
+    "repo": "VietTitans/PubTracker",
+    "files": [
+      "api/RecordService/DataAccess/Summarization/LlmHttpClientExtensions.cs",
+      "api/RecordService/DataAccess/ExternalSources/PubMedHttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "vikashchauhan90/components",
+    "files": [
+      "src/resilience/Jnvp.Platform.Resilience/PlatformResilienceHttpClientBuilderExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Viluoicode/PriceAlert",
+    "files": [
+      "src/PriceAlert.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "vimalshan/erpService",
+    "files": [
+      "src/Services/adminServices/transactionServices/src/TransactionService.Infrastructure/Resilience/ResiliencePolicies.cs",
+      "src/Services/mainsparshServices/timesheetServices/src/TimesheetService.Infrastructure/Resilience/ResiliencePolicies.cs",
+      "src/Services/loanServices/loanTransactionServices/src/LoanTransaction.Infrastructure/Resilience/ResilienceExtensions.cs",
+      "src/Services/myworkServices/csaServices/CSA.Service/src/CSA.Service.Infrastructure/Services/PollyPolicies.cs",
+      "src/Services/AuthProvider/src/AuthProvider.Infrastructure/DependencyInjection.cs",
+      "src/Services/adminServices/transactionServices/src/TransactionService.Infrastructure/DependencyInjection.cs",
+      "src/Services/myworkServices/Gateway/src/ERPGateway/Program.cs",
+      "src/Services/sscServices/apigateway/src/SSC.ApiGateway/Extensions/ServiceCollectionExtensions.cs",
+      "src/Services/sciServices/ApiGateway/src/ApiGateway/Program.cs"
+    ]
+  },
+  {
+    "repo": "ViniciusLucas14/EcommerceApi",
+    "files": [
+      "Ecommerce.Data/Startup.cs"
+    ]
+  },
+  {
+    "repo": "virendrayadav201/NotificationService",
+    "files": [
+      "NotificationService.API/CircuitBreakers/CircuitBreakerRegistration.cs"
+    ]
+  },
+  {
+    "repo": "vitor-dan/ability-teste-tecnico",
+    "files": [
+      "src/IbgeRpa.Worker/Program.cs"
+    ]
+  },
+  {
+    "repo": "VlastaPeyton/BackendPartOfReactAndAspNetCoreApp",
+    "files": [
+      "backend/Api/Extensions/HttpClientCustomResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "VlastaPeyton/ReactTSAspNetCoreApp",
+    "files": [
+      "backend/Api/Extensions/HttpClientCustomResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "VM-s-Solutions/cleansia",
+    "files": [
+      "src/Cleansia.Infra.Services/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "vmikhailov/code-explorer",
+    "files": [
+      "cli/src/Parsers/CodeExplorer.Parser.CSharp/Libraries/PollyResilienceLibraryParser.cs"
+    ]
+  },
+  {
+    "repo": "vobrechkov/SemanticHub",
+    "files": [
+      "src/SemanticHub.Tests/WebTests.cs",
+      "src/SemanticHub.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "vscr/CardMerchantSystem",
+    "files": [
+      "CardMerchantSystem.Shared/Resilience/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "vzaiats/Prozorro-Analytics-Dashboard",
+    "files": [
+      "ProzorroDataMining.Api/Extensions/HttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "vzzdaniel/CursoNetIA",
+    "files": [
+      "src/AulaPedidos.Infrastructure/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "w00lfer/NbpPlnExchangeRatesApi",
+    "files": [
+      "src/NbpPlnExchangeRates.API/Infrastructure/NbpApiClientConfiguration.cs"
+    ]
+  },
+  {
+    "repo": "WayneSheu/SGSFramework",
+    "files": [
+      "Infrastructure/Enterprise.HttpSdk/Extensions/SystemAccountHttpClientExtensions.cs"
+    ]
+  },
+  {
+    "repo": "WFeneberg/FeWoLearning",
+    "files": [
+      "MicroServices/exercises/01-beginner/Ex021_ServiceDefaults.cs",
+      "MicroServices/solutions/01-beginner/Ex021_ServiceDefaults.cs",
+      "MicroServices/tests/01-beginner/Ex021_ServiceDefaultsTests.cs"
+    ]
+  },
+  {
+    "repo": "wilbyang/netcorehello",
+    "files": [
+      "Program.cs"
+    ]
+  },
+  {
+    "repo": "WilC96/ChuDropship",
+    "files": [
+      "ChuDropship.Tests/Integration/LocationClientShould.cs",
+      "ChuDropship/Infra/ClientRegistration.cs"
+    ]
+  },
+  {
+    "repo": "WilliamNever/MyKnowledgeBase_V1",
+    "files": [
+      "TestProjects/Net6Test/Net8Test/EntranceBase.cs"
+    ]
+  },
+  {
+    "repo": "willianrmattos/OficinaMecanica",
+    "files": [
+      "src/OficinaMecanica.Infrastructure/Execucao/ExecucaoExtensions.cs"
+    ]
+  },
+  {
+    "repo": "willvelida/talks",
+    "files": [
+      "whats-new-cloud-native-dev-dotnet8/resilience-demo/WeatherTracker/WeatherTracker.Console/Program.cs"
+    ]
+  },
+  {
+    "repo": "wilsonneto-swe/demo-resilient-http-clients",
+    "files": [
+      "Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "Witivio/Copilot4Researcher",
+    "files": [
+      "Sources/APIs/Witivio.Copilot4Researcher.Api/Core/ResilienceExtensions.cs",
+      "Sources/APIs/Witivio.Copilot4Researcher.Api/Core/Web/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "WoozChucky/Avalon.Server",
+    "files": [
+      "src/Server/Avalon.Api.Worlds/Balance/BalanceClient.cs"
+    ]
+  },
+  {
+    "repo": "work-wallet/BIClient",
+    "files": [
+      "SampleCode/WorkWallet.BI.ClientServices/ServiceExtension.cs"
+    ]
+  },
+  {
+    "repo": "wosledon/ledon-framework",
+    "files": [
+      "src/Ledon.Resilience/LedonResilienceServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "XenovaDevs/azulyoro",
+    "files": [
+      "back/src/Azulyoro.Infrastructure/ApiFootball/ApiFootballServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "xping-dev/sdk-dotnet",
+    "files": [
+      "src/Xping.Sdk.Core/Extensions/XpingServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "yaochangyu/sample.dotblog",
+    "files": [
+      "Retry/Polly/Lab.HttpResilienceBenchmark/src/Lab.HttpResilienceBenchmark.Console/HttpClientBenchmark.cs"
+    ]
+  },
+  {
+    "repo": "YaoXinDaple/TechSharing",
+    "files": [
+      "AspireWithResilientHttpClient.ApiService/Program.cs"
+    ]
+  },
+  {
+    "repo": "ych98/IntelligentAI",
+    "files": [
+      "IntelligentAI.Client/AppDefaultsExtensions.cs",
+      "IntelligentAI.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "yegorb21new/MiniRiskPlatform",
+    "files": [
+      "RiskService/Program.cs"
+    ]
+  },
+  {
+    "repo": "yeldos13/OrderFlow",
+    "files": [
+      "src/OrderFlow.Consumer/Warehouse/WarehouseServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "yjchun626/dotnet-aspire-app-quest_3",
+    "files": [
+      "workshop/AspireYouTubeSummariser.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "ykemer/Test-Aspire-App",
+    "files": [
+      "src/Frontend/Aspire App.Web/DependencyInjection.cs"
+    ]
+  },
+  {
+    "repo": "yngvemag/2025-Emne7-AvansertProgrammering-Students",
+    "files": [
+      "week46/WeatherApiResilience/Program.cs"
+    ]
+  },
+  {
+    "repo": "YoonKeumJae/MelonAI",
+    "files": [
+      "Aspire.ServiceDefaults/Extensions.cs"
+    ]
+  },
+  {
+    "repo": "Zerudosuu/ASP.NET-MVC-Projs",
+    "files": [
+      "React.Net-LibrarySystem/server/LibrarySystemServer/LibrarySystemServer.API/Program.cs"
+    ]
+  },
+  {
+    "repo": "zizu28/CraftConnect",
+    "files": [
+      "PaymentManagement.Application/Extensions/PaymentManagementApplicationExtensions.cs"
+    ]
+  },
+  {
+    "repo": "zms9110750/Utils",
+    "files": [
+      "src/Utils.Adapters/DependencyInjection/ResiliencePipelineBuilderContext.cs"
+    ]
+  },
+  {
+    "repo": "zms9110750/Warframe.Market",
+    "files": [
+      "samples/Warframe.Market.GUI/Program.cs",
+      "test/Warframe.Market.Tests/PollyHttpCacheTests.cs"
+    ]
+  },
+  {
+    "repo": "zorz98/DIS_i7_10_2025_Djordje_Sevic",
+    "files": [
+      "src/Services/ESGService/ESGService.Api/Program.cs"
+    ]
+  },
+  {
+    "repo": "zribktad/API-Template",
+    "files": [
+      "src/APITemplate.Api/Extensions/WebhookServiceCollectionExtensions.cs",
+      "src/APITemplate.Api/Extensions/KeycloakAdminServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "zribktad/API-Template-Modules",
+    "files": [
+      "src/Modules/Identity/Auth/Http/KeycloakHttpClientBuilderExtensions.cs",
+      "src/Modules/Webhooks/WebhooksRuntimeBridge.cs"
+    ]
+  },
+  {
+    "repo": "zubair1599/D365CopilotMCPConnector",
+    "files": [
+      "Infrastructure/Resilience/ResilienceExtensions.cs"
+    ]
+  },
+  {
+    "repo": "Zufics2/StockManager",
+    "files": [
+      "StockManager/Service/Extensions/ServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "zulfahmi93/ai-ballot-counter",
+    "files": [
+      "apps/api/UNDI.Api/Ocr/OcrClientServiceCollectionExtensions.cs"
+    ]
+  },
+  {
+    "repo": "zulq2019/security-triage-agent-poc",
+    "files": [
+      "src/SecAgent.Connectors/Http/ConnectorHttp.cs"
+    ]
+  }
+]

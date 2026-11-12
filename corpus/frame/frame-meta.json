@@ -1,0 +1,125 @@
+{
+  "retrieved_utc": "2026-11-12T09:51:27+00:00",
+  "queries": [
+    {
+      "stratum": "S3",
+      "query": "AddResilienceHandler language:C# size:0..1500",
+      "total_count": 82,
+      "retrieved": 82
+    },
+    {
+      "stratum": "S3",
+      "query": "AddResilienceHandler language:C# size:1501..3000",
+      "total_count": 308,
+      "retrieved": 308
+    },
+    {
+      "stratum": "S3",
+      "query": "AddResilienceHandler language:C# size:3001..6000",
+      "total_count": 515,
+      "retrieved": 515
+    },
+    {
+      "stratum": "S3",
+      "query": "AddResilienceHandler language:C# size:>6000",
+      "total_count": 574,
+      "retrieved": 499
+    },
+    {
+      "stratum": "S4",
+      "query": "AddTransientHttpErrorPolicy language:C# size:0..1500",
+      "total_count": 1446,
+      "retrieved": 1000
+    },
+    {
+      "stratum": "S4",
+      "query": "AddTransientHttpErrorPolicy language:C# size:1501..3000",
+      "total_count": 895,
+      "retrieved": 895
+    },
+    {
+      "stratum": "S4",
+      "query": "AddTransientHttpErrorPolicy language:C# size:3001..6000",
+      "total_count": 554,
+      "retrieved": 554
+    },
+    {
+      "stratum": "S4",
+      "query": "AddTransientHttpErrorPolicy language:C# size:>6000",
+      "total_count": 396,
+      "retrieved": 396
+    },
+    {
+      "stratum": "S4",
+      "query": "AddPolicyHandler language:C# size:0..1500",
+      "total_count": 608,
+      "retrieved": 608
+    },
+    {
+      "stratum": "S4",
+      "query": "AddPolicyHandler language:C# size:1501..3000",
+      "total_count": 2284,
+      "retrieved": 1000
+    },
+    {
+      "stratum": "S4",
+      "query": "AddPolicyHandler language:C# size:3001..6000",
+      "total_count": 1700,
+      "retrieved": 1000
+    },
+    {
+      "stratum": "S4",
+      "query": "AddPolicyHandler language:C# size:>6000",
+      "total_count": 1192,
+      "retrieved": 1000
+    },
+    {
+      "stratum": "S2",
+      "query": "AddStandardResilienceHandler AddHttpClient language:C# size:0..1500",
+      "total_count": 378,
+      "retrieved": 378
+    },
+    {
+      "stratum": "S2",
+      "query": "AddStandardResilienceHandler AddHttpClient language:C# size:1501..3000",
+      "total_count": 1224,
+      "retrieved": 1000
+    },
+    {
+      "stratum": "S2",
+      "query": "AddStandardResilienceHandler AddHttpClient language:C# size:3001..6000",
+      "total_count": 9568,
+      "retrieved": 1000
+    },
+    {
+      "stratum": "S2",
+      "query": "AddStandardResilienceHandler AddHttpClient language:C# size:>6000",
+      "total_count": 1904,
+      "retrieved": 1000
+    },
+    {
+      "stratum": "S1",
+      "query": "ConfigureHttpClientDefaults AddStandardResilienceHandler language:C# size:0..1500",
+      "total_count": 498,
+      "retrieved": 498
+    },
+    {
+      "stratum": "S1",
+      "query": "ConfigureHttpClientDefaults AddStandardResilienceHandler language:C# size:1501..3000",
+      "total_count": 1280,
+      "retrieved": 1000
+    },
+    {
+      "stratum": "S1",
+      "query": "ConfigureHttpClientDefaults AddStandardResilienceHandler language:C# size:3001..6000",
+      "total_count": 9456,
+      "retrieved": 1000
+    },
+    {
+      "stratum": "S1",
+      "query": "ConfigureHttpClientDefaults AddStandardResilienceHandler language:C# size:>6000",
+      "total_count": 1049,
+      "retrieved": 1000
+    }
+  ]
+}
