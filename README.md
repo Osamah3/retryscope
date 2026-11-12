@@ -30,7 +30,7 @@ The first restore creates `packages.lock.json` files. Commit them: CI restores i
 | Path | Contents |
 | --- | --- |
 | `src/RetryScope.Model` | The intermediate representation (`ResilienceGraph`), value provenance, validation, canonical JSON |
-| `src/RetryScope.Extraction` | Roslyn extractor: loads a project and produces its `ResilienceGraph` (in progress: P01–P04, P06, P09, V03, V05) |
+| `src/RetryScope.Extraction` | Roslyn extractor: loads a project and produces its `ResilienceGraph` (18 of 20 fixtures; gaps in `docs/extractor-scope.md`) |
 | `fixtures/` | One small project per configuration pattern, with expected labels (`expected.json`) |
 | `tests/RetryScope.Model.Tests` | Unit tests for the IR |
 | `tests/RetryScope.Extraction.Tests` | Extractor output vs every supported fixture's `expected.json`, field by field |

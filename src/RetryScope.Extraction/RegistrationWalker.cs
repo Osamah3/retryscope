@@ -1,12 +1,13 @@
+using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Operations;
 using RetryScope.Model;
-using RsDiagnostic = RetryScope.Model.Diagnostic;
+using static RetryScope.Extraction.OperationHelpers;
 
 namespace RetryScope.Extraction;
 
-/// <summary>A client registration found by the walker, with its per-client handlers in registration order.</summary>
+/// <summary>A client found by the extractor, with its per-client handlers in registration order.</summary>
 internal sealed class ClientRecord(string name, ClientKind kind, SourceLocation location)
 {
     public string Name { get; } = name;
@@ -20,8 +21,27 @@ internal sealed class ClientRecord(string name, ClientKind kind, SourceLocation 
     /// <summary>Host of a constant BaseAddress (with Aspire service discovery, the service name).</summary>
     public string? Target { get; set; }
 
-    /// <summary>Per-client handlers; the first one registered is outermost.</summary>
-    public List<Handler> Handlers { get; } = [];
+    /// <summary>Whether any part of the registration depends on a condition (labelling guide hard case 1).</summary>
+    public bool Conditional { get; set; }
+
+    /// <summary>Sequence number of the last <c>RemoveAllResilienceHandlers</c> on this client, if any.</summary>
+    public int? RemovedAt { get; set; }
+
+    /// <summary>Per-client handlers with their registration sequence numbers, in order.</summary>
+    public List<(int Sequence, Handler Handler)> Registered { get; } = [];
+
+    /// <summary>
+    /// The effective handlers, outermost first: defaults wrap per-client handlers (docs/findings.md F1).
+    /// <c>RemoveAllResilienceHandlers</c> removes every Polly v8 handler added before it, defaults included; Polly v7
+    /// handlers are not <c>ResilienceHandler</c>s and survive (ResilienceHttpClientBuilderExtensions.Resilience.cs).
+    /// </summary>
+    public IReadOnlyList<Handler> EffectiveHandlers(IReadOnlyList<Handler> defaults)
+    {
+        bool Survives(int sequence, Handler handler) =>
+            RemovedAt is not { } removed || sequence > removed || handler.Kind == HandlerKind.PollyV7;
+
+        return [.. defaults.Where(h => Survives(-1, h)), .. Registered.Where(r => Survives(r.Sequence, r.Handler)).Select(r => r.Handler)];
+    }
 }
 
 /// <summary>
@@ -30,56 +50,107 @@ internal sealed class ClientRecord(string name, ClientKind kind, SourceLocation 
 /// calls are matched by resolved symbol (<see cref="KnownApis"/>). Call <see cref="Complete"/> after the last root.
 /// </summary>
 /// <remarks>
-/// Supported: <c>AddHttpClient</c> (named, typed; constant <c>BaseAddress</c>), <c>ConfigureHttpClientDefaults</c>
-/// with a lambda, <c>AddStandardResilienceHandler</c> with no options, an options lambda or a configuration section,
-/// and chained <c>.Configure(...)</c>. Anything else on that path produces a diagnostic rather than a silent guess.
+/// Branches guarded by host-environment checks are decided for the configured environment; registrations under any
+/// other condition are kept (both branches) and marked conditional, with a warning. Anything not understood produces a
+/// diagnostic rather than a silent guess.
 /// </remarks>
-internal sealed class RegistrationWalker(Solution solution, string rootDirectory, string packageVersion, AppSettingsReader? appSettings)
+internal sealed class RegistrationWalker(Solution solution, ExtractionContext context, AppSettingsReader? appSettings)
 {
     private const int MaxDepth = 8;
 
+    private readonly HandlerReaders _readers = new(context);
     private readonly HashSet<(string File, int Start)> _visited = [];
 
     // Lambda parameters that stand for "every client" (the IHttpClientBuilder inside ConfigureHttpClientDefaults).
     private readonly HashSet<ISymbol> _defaultsBuilders = new(SymbolEqualityComparer.Default);
 
-    // Standard handlers are collected first and built in Complete(), so that chained Configure(...) calls, which the
-    // pre-order walk sees before the AddStandardResilienceHandler call they wrap, are applied in runtime order.
+    // Handlers are collected first and built in Complete(), so that chained Configure(...) calls, which the pre-order
+    // walk sees before the AddStandardResilienceHandler call they wrap, are applied in runtime order. Sequence numbers
+    // order handlers and removals as they run.
     private readonly Dictionary<SyntaxNode, PendingHandler> _pending = new();
-    private readonly List<PendingHandler> _pendingOrder = [];
     private readonly HashSet<SyntaxNode> _appliedConfigureCalls = [];
+    private readonly HashSet<SyntaxNode> _recordedRemovals = [];
+    private readonly HashSet<SyntaxNode> _warnedConditions = [];
+    private int _sequence;
 
     public Dictionary<string, ClientRecord> Clients { get; } = new(StringComparer.Ordinal);
 
     /// <summary>Handlers from <c>ConfigureHttpClientDefaults</c>; the first one registered is outermost.</summary>
     public List<Handler> DefaultHandlers { get; } = [];
 
-    public List<RsDiagnostic> Diagnostics { get; } = [];
+    /// <summary>Whether a defaults handler was registered under a condition (then every client is conditional).</summary>
+    public bool DefaultsConditional { get; private set; }
 
     public Task WalkAsync(IMethodSymbol root, CancellationToken cancellationToken) =>
-        WalkMethodAsync(root, depth: 0, cancellationToken);
+        WalkMethodAsync(root, depth: 0, conditional: false, cancellationToken);
 
     /// <summary>Builds the collected handlers and attaches them to their clients (or to the defaults).</summary>
     public void Complete()
     {
-        foreach (var pending in _pendingOrder)
+        foreach (var pending in _pending.Values.OrderBy(p => p.Sequence))
         {
+            var origin = pending.Target is DefaultsTarget ? HandlerOrigin.Defaults : HandlerOrigin.PerClient;
+            var handler = (pending.Built ?? pending.Standard!.Build(origin, pending.Location)) with { Origin = origin };
+
             switch (pending.Target)
             {
                 case DefaultsTarget:
-                    DefaultHandlers.Add(pending.Settings.Build(HandlerOrigin.Defaults, pending.Location));
+                    DefaultHandlers.Add(handler);
+                    DefaultsConditional |= pending.Conditional;
                     break;
                 case ClientTarget(var client):
-                    client.Handlers.Add(pending.Settings.Build(HandlerOrigin.PerClient, pending.Location));
+                    client.Registered.Add((pending.Sequence, handler));
+                    client.Conditional |= pending.Conditional;
                     break;
             }
         }
 
-        _pendingOrder.Clear();
         _pending.Clear();
     }
 
-    private async Task WalkMethodAsync(IMethodSymbol method, int depth, CancellationToken cancellationToken)
+    /// <summary>
+    /// Records every <c>new HttpClient(...)</c> in the project. Such clients bypass IHttpClientFactory, so no factory
+    /// handler applies to them; they are reported as direct clients with no resilience (diagnostic RS003).
+    /// </summary>
+    public async Task ScanDirectClientsAsync(Project project, CancellationToken cancellationToken)
+    {
+        foreach (var document in project.Documents)
+        {
+            if (await document.GetSyntaxRootAsync(cancellationToken).ConfigureAwait(false) is not { } root
+                || await document.GetSemanticModelAsync(cancellationToken).ConfigureAwait(false) is not { } model)
+            {
+                continue;
+            }
+
+            foreach (var creation in root.DescendantNodes().OfType<BaseObjectCreationExpressionSyntax>())
+            {
+                if (model.GetOperation(creation, cancellationToken) is not IObjectCreationOperation { Type: { } type } operation
+                    || type.ToDisplayString() != KnownApis.HttpClientType)
+                {
+                    continue;
+                }
+
+                var name = EnclosingMemberName(model, creation.SpanStart);
+                if (!Clients.TryGetValue($"direct:{name}", out var client))
+                {
+                    client = new ClientRecord(name, ClientKind.Direct, context.LocationOf(creation));
+                    Clients.Add($"direct:{name}", client);
+                    context.Info(DiagnosticCodes.DirectHttpClient,
+                        $"'new HttpClient()' in {name} bypasses IHttpClientFactory; no factory resilience handlers apply.", creation);
+                }
+
+                foreach (var initializer in operation.Initializer?.Initializers ?? ImmutableArray<IOperation>.Empty)
+                {
+                    if (initializer is ISimpleAssignmentOperation { Target: IPropertyReferenceOperation { Property.Name: "BaseAddress" } } assignment)
+                    {
+                        ReadUri(assignment, client);
+                    }
+                }
+            }
+        }
+    }
+
+    private async Task WalkMethodAsync(IMethodSymbol method, int depth, bool conditional, CancellationToken cancellationToken)
     {
         foreach (var reference in method.DeclaringSyntaxReferences)
         {
@@ -91,7 +162,7 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
             var document = solution.GetDocument(reference.SyntaxTree);
             if (document is null || await document.GetSemanticModelAsync(cancellationToken).ConfigureAwait(false) is not { } model)
             {
-                Warn(DiagnosticCodes.WorkspaceLoad, $"Source of '{method.ToDisplayString()}' is not part of the loaded solution; not followed.");
+                context.Warn(DiagnosticCodes.WorkspaceLoad, $"Source of '{method.ToDisplayString()}' is not part of the loaded solution; not followed.");
                 continue;
             }
 
@@ -100,20 +171,41 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
             // Pre-order: an outer call (e.g. ConfigureHttpClientDefaults) is seen before the calls inside its lambda.
             foreach (var invocation in body.DescendantNodes().OfType<InvocationExpressionSyntax>())
             {
-                await VisitInvocationAsync(invocation, model, depth, cancellationToken).ConfigureAwait(false);
+                await VisitInvocationAsync(invocation, model, body, depth, conditional, cancellationToken).ConfigureAwait(false);
             }
         }
     }
 
     private async Task VisitInvocationAsync(
-        InvocationExpressionSyntax syntax, SemanticModel model, int depth, CancellationToken cancellationToken)
+        InvocationExpressionSyntax syntax, SemanticModel model, SyntaxNode body, int depth, bool inheritedConditional, CancellationToken cancellationToken)
     {
         if (model.GetOperation(syntax, cancellationToken) is not IInvocationOperation invocation)
         {
             return;
         }
 
+        var (skip, branchConditional) = BranchState(syntax, model, body);
+        var conditional = inheritedConditional || branchConditional;
         var method = invocation.TargetMethod;
+
+        if (skip)
+        {
+            // The branch does not run in this environment, but the client's behaviour still depends on it.
+            if (IsHandlerRegistration(method))
+            {
+                switch (ResolveBuilder(Argument(invocation, ordinal: 0), register: false))
+                {
+                    case ClientTarget(var client):
+                        client.Conditional = true;
+                        break;
+                    case DefaultsTarget:
+                        DefaultsConditional = true;
+                        break;
+                }
+            }
+
+            return;
+        }
 
         if (KnownApis.ConfigureHttpClientDefaults.Matches(method))
         {
@@ -121,15 +213,40 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
         }
         else if (KnownApis.AddHttpClient.Matches(method))
         {
-            _ = GetOrAddClient(invocation);
+            if (GetOrAddClient(invocation, register: true) is { } client)
+            {
+                client.Conditional |= conditional;
+            }
         }
         else if (KnownApis.AddStandardResilienceHandler.Matches(method))
         {
-            _ = GetOrCreatePending(invocation);
+            _ = GetOrCreateStandard(invocation, conditional);
         }
         else if (KnownApis.ConfigureStandardHandler.Matches(method))
         {
-            ApplyConfigureChain(invocation);
+            ApplyConfigureChain(invocation, conditional);
+        }
+        else if (KnownApis.AddResilienceHandler.Matches(method))
+        {
+            CreateHandler(invocation, conditional, _readers.ReadCustomPipeline);
+        }
+        else if (KnownApis.AddStandardHedgingHandler.Matches(method))
+        {
+            CreateHandler(invocation, conditional, _readers.ReadStandardHedging);
+        }
+        else if (KnownApis.AddPollyV7Policy.Matches(method))
+        {
+            CreateHandler(invocation, conditional, _readers.ReadPollyV7);
+        }
+        else if (KnownApis.RemoveAllResilienceHandlers.Matches(method))
+        {
+            RecordRemoval(invocation, conditional);
+        }
+        else if (KnownApis.AddResiliencePipeline.Matches(method))
+        {
+            context.Warn(DiagnosticCodes.UnlinkedPipeline,
+                "Keyed resilience pipeline registered in DI; code that executes it around HttpClient calls is not linked to a client in V1.",
+                invocation.Syntax);
         }
         else if (depth < MaxDepth)
         {
@@ -137,9 +254,58 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
             var declared = (method.ReducedFrom ?? method).OriginalDefinition;
             if (declared.DeclaringSyntaxReferences.Length > 0)
             {
-                await WalkMethodAsync(declared, depth + 1, cancellationToken).ConfigureAwait(false);
+                await WalkMethodAsync(declared, depth + 1, conditional, cancellationToken).ConfigureAwait(false);
             }
         }
+    }
+
+    private static bool IsHandlerRegistration(IMethodSymbol method) =>
+        KnownApis.AddStandardResilienceHandler.Matches(method)
+        || KnownApis.ConfigureStandardHandler.Matches(method)
+        || KnownApis.AddResilienceHandler.Matches(method)
+        || KnownApis.AddStandardHedgingHandler.Matches(method)
+        || KnownApis.AddPollyV7Policy.Matches(method)
+        || KnownApis.RemoveAllResilienceHandlers.Matches(method);
+
+    /// <summary>
+    /// Whether the call sits in an <c>if</c> branch or <c>?:</c> arm (within the walked method). Returns skip = true when
+    /// a host-environment condition rules the branch out; an undecidable condition keeps the call, with a warning.
+    /// </summary>
+    private (bool Skip, bool Conditional) BranchState(SyntaxNode syntax, SemanticModel model, SyntaxNode root)
+    {
+        var conditional = false;
+        SyntaxNode child = syntax;
+
+        for (var node = syntax.Parent; node is not null && child != root; child = node, node = node.Parent)
+        {
+            var (condition, inTrueBranch) = node switch
+            {
+                IfStatementSyntax ifStatement when child == ifStatement.Statement => (ifStatement.Condition, true),
+                IfStatementSyntax ifStatement when child == ifStatement.Else => (ifStatement.Condition, false),
+                ConditionalExpressionSyntax ternary when child == ternary.WhenTrue => (ternary.Condition, true),
+                ConditionalExpressionSyntax ternary when child == ternary.WhenFalse => (ternary.Condition, false),
+                _ => ((ExpressionSyntax?)null, false),
+            };
+
+            if (condition is null)
+            {
+                continue;
+            }
+
+            conditional = true;
+            switch (ConditionEvaluator.Evaluate(model.GetOperation(condition), context.Environment))
+            {
+                case null when _warnedConditions.Add(condition):
+                    context.Warn(DiagnosticCodes.UnresolvedValue,
+                        $"Condition '{Shorten(condition)}' cannot be decided statically; registrations in both branches are kept and marked conditional.",
+                        condition);
+                    break;
+                case { } taken when taken != inTrueBranch:
+                    return (true, true);
+            }
+        }
+
+        return (false, conditional);
     }
 
     private void RegisterDefaultsLambda(IInvocationOperation invocation)
@@ -150,12 +316,13 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
             return;
         }
 
-        Warn(DiagnosticCodes.UnresolvedValue,
+        context.Warn(DiagnosticCodes.UnresolvedValue,
             "ConfigureHttpClientDefaults is called with something other than a lambda; its handlers are not followed yet.",
             invocation.Syntax);
     }
 
-    private ClientRecord? GetOrAddClient(IInvocationOperation invocation)
+    /// <summary>The client an <c>AddHttpClient</c> call configures; created only when <paramref name="register"/>.</summary>
+    private ClientRecord? GetOrAddClient(IInvocationOperation invocation, bool register)
     {
         var method = invocation.TargetMethod;
         string name;
@@ -176,9 +343,12 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
             }
             else
             {
-                var location = LocationOf(nameArgument.Syntax);
+                var location = context.LocationOf(nameArgument.Syntax);
                 name = $"<unresolved:{location.File}:{location.Line}>";
-                Warn(DiagnosticCodes.UnresolvedValue, $"Client name '{nameArgument.Syntax}' is not a compile-time constant.", nameArgument.Syntax);
+                if (register)
+                {
+                    context.Warn(DiagnosticCodes.UnresolvedValue, $"Client name '{Shorten(nameArgument.Syntax)}' is not a compile-time constant.", nameArgument.Syntax);
+                }
             }
         }
         else
@@ -189,75 +359,116 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
 
         if (!Clients.TryGetValue(name, out var client))
         {
-            client = new ClientRecord(name, kind, LocationOf(MethodNameSyntax(invocation.Syntax)));
+            if (!register)
+            {
+                return null;
+            }
+
+            client = new ClientRecord(name, kind, context.LocationOf(MethodNameSyntax(invocation.Syntax)));
             Clients.Add(name, client);
         }
 
-        ReadBaseAddress(invocation, client);
+        if (register && Lambda(Argument(invocation, "configureClient")) is { } configureClient)
+        {
+            foreach (var assignment in configureClient.Body.Descendants().OfType<ISimpleAssignmentOperation>())
+            {
+                if (assignment.Target is IPropertyReferenceOperation { Property.Name: "BaseAddress" })
+                {
+                    ReadUri(assignment, client);
+                }
+            }
+        }
+
         return client;
     }
 
-    /// <summary>Reads <c>c.BaseAddress = new Uri("...")</c> from the configureClient lambda.</summary>
-    private void ReadBaseAddress(IInvocationOperation addHttpClient, ClientRecord client)
+    /// <summary>Reads <c>BaseAddress = new Uri("...")</c>; anything non-constant is recorded as unresolved.</summary>
+    private void ReadUri(ISimpleAssignmentOperation assignment, ClientRecord client)
     {
-        if (Lambda(Argument(addHttpClient, "configureClient")) is not { } lambda)
+        var location = context.LocationOf(assignment.Syntax);
+        if (Unwrap(assignment.Value) is IObjectCreationOperation create
+            && create.Type?.ToDisplayString() == "System.Uri"
+            && create.Arguments.FirstOrDefault()?.Value.ConstantValue is { HasValue: true, Value: string text }
+            && Uri.TryCreate(text, UriKind.Absolute, out var uri))
         {
-            return;
+            client.BaseAddress = Values.Explicit(text, location);
+            client.Target = uri.Host;
         }
-
-        foreach (var assignment in lambda.Body.Descendants().OfType<ISimpleAssignmentOperation>())
+        else
         {
-            if (assignment.Target is not IPropertyReferenceOperation { Property.Name: "BaseAddress" })
-            {
-                continue;
-            }
-
-            var location = LocationOf(assignment.Syntax);
-            if (Unwrap(assignment.Value) is IObjectCreationOperation create
-                && create.Type?.ToDisplayString() == "System.Uri"
-                && create.Arguments.FirstOrDefault()?.Value.ConstantValue is { HasValue: true, Value: string text }
-                && Uri.TryCreate(text, UriKind.Absolute, out var uri))
-            {
-                client.BaseAddress = Values.Explicit(text, location);
-                client.Target = uri.Host;
-            }
-            else
-            {
-                client.BaseAddress = Values.Unresolved(string.Empty, assignment.Value.Syntax.ToString(), location);
-                client.Target = null;
-            }
+            client.BaseAddress = Values.Unresolved(string.Empty, Shorten(assignment.Value.Syntax), location);
+            client.Target = null;
         }
     }
 
     /// <summary>The pending standard handler for an <c>AddStandardResilienceHandler</c> call, created on first sight.</summary>
-    private PendingHandler GetOrCreatePending(IInvocationOperation add)
+    private PendingHandler GetOrCreateStandard(IInvocationOperation add, bool conditional)
     {
         if (_pending.TryGetValue(add.Syntax, out var existing))
         {
+            existing.Conditional |= conditional;
             return existing;
         }
 
-        var location = LocationOf(MethodNameSyntax(add.Syntax));
-        var target = ResolveBuilder(Argument(add, ordinal: 0));
-        if (target is null)
-        {
-            Warn(DiagnosticCodes.UnresolvedValue, "Could not determine which HttpClient this resilience handler belongs to.", add.Syntax);
-        }
-
-        var pending = new PendingHandler(new StandardHandlerSettings(packageVersion), target, location);
-        _pending.Add(add.Syntax, pending);
-        _pendingOrder.Add(pending);
+        var pending = NewPending(add, conditional);
+        pending.Standard = new StandardHandlerSettings(context.ResilienceVersion);
 
         // AddStandardResilienceHandler(section) / AddStandardResilienceHandler(o => ...).
-        ApplyOptions(add, pending.Settings);
+        ApplyOptions(add, pending.Standard);
         return pending;
+    }
+
+    /// <summary>Records a non-standard handler (custom pipeline, hedging, Polly v7) built by <paramref name="read"/>.</summary>
+    private void CreateHandler(IInvocationOperation call, bool conditional, Func<IInvocationOperation, SourceLocation, Handler> read)
+    {
+        if (_pending.ContainsKey(call.Syntax))
+        {
+            return;
+        }
+
+        var pending = NewPending(call, conditional);
+        pending.Built = read(call, pending.Location);
+    }
+
+    /// <summary>Resolves the client first (which may record a chained removal), then takes the next sequence number.</summary>
+    private PendingHandler NewPending(IInvocationOperation call, bool conditional)
+    {
+        var location = context.LocationOf(MethodNameSyntax(call.Syntax));
+        var target = ResolveBuilder(Argument(call, ordinal: 0), register: true);
+        if (target is null)
+        {
+            context.Warn(DiagnosticCodes.UnresolvedValue, "Could not determine which HttpClient this resilience handler belongs to.", call.Syntax);
+        }
+
+        var pending = new PendingHandler(++_sequence, target, location) { Conditional = conditional };
+        _pending.Add(call.Syntax, pending);
+        return pending;
+    }
+
+    private void RecordRemoval(IInvocationOperation removal, bool conditional)
+    {
+        if (!_recordedRemovals.Add(removal.Syntax))
+        {
+            return;
+        }
+
+        switch (ResolveBuilder(Argument(removal, ordinal: 0), register: true))
+        {
+            case ClientTarget(var client):
+                client.RemovedAt = ++_sequence;
+                client.Conditional |= conditional;
+                break;
+            default:
+                context.Warn(DiagnosticCodes.UnresolvedValue, "RemoveAllResilienceHandlers on a builder that is not traced to one client; ignored.", removal.Syntax);
+                break;
+        }
     }
 
     /// <summary>
     /// Applies <c>.Configure(...)</c> calls chained on a standard handler, innermost first, which is the order they run in.
     /// Visiting the outermost call applies the whole chain; inner calls visited later are skipped.
     /// </summary>
-    private void ApplyConfigureChain(IInvocationOperation outermost)
+    private void ApplyConfigureChain(IInvocationOperation outermost, bool conditional)
     {
         var chain = new List<IInvocationOperation>();
         IOperation? current = outermost;
@@ -269,17 +480,17 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
 
         if (Unwrap(current) is not IInvocationOperation add || !KnownApis.AddStandardResilienceHandler.Matches(add.TargetMethod))
         {
-            Warn(DiagnosticCodes.UnresolvedValue,
+            context.Warn(DiagnosticCodes.UnresolvedValue,
                 "Configure(...) is called on a pipeline builder that is not traced to an AddStandardResilienceHandler call; not interpreted.",
                 outermost.Syntax);
             return;
         }
 
-        var pending = GetOrCreatePending(add);
+        var pending = GetOrCreateStandard(add, conditional);
         chain.Reverse();
         foreach (var call in chain.Where(c => _appliedConfigureCalls.Add(c.Syntax)))
         {
-            ApplyOptions(call, pending.Settings);
+            ApplyOptions(call, pending.Standard!);
         }
     }
 
@@ -288,11 +499,11 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
     {
         if (Argument(call, "section") is { } section)
         {
-            var location = LocationOf(section.Syntax);
+            var location = context.LocationOf(section.Syntax);
             if (SectionPath(section) is not { } path)
             {
-                MarkAllUnresolved(settings, $"configuration section not resolved: {section.Syntax}", location);
-                Warn(DiagnosticCodes.UnresolvedValue, $"Configuration section '{section.Syntax}' could not be resolved to a constant path.", section.Syntax);
+                MarkAllUnresolved(settings, $"configuration section not resolved: {Shorten(section.Syntax)}", location);
+                context.Warn(DiagnosticCodes.UnresolvedValue, $"Configuration section '{Shorten(section.Syntax)}' could not be resolved to a constant path.", section.Syntax);
             }
             else if (appSettings is null)
             {
@@ -312,105 +523,92 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
             }
             else
             {
-                MarkAllUnresolved(settings, $"options delegate is not a lambda: {configure.Syntax}", LocationOf(configure.Syntax));
-                Warn(DiagnosticCodes.OpaqueDelegate, $"Options delegate '{configure.Syntax}' is not a lambda; its settings are unresolved.", configure.Syntax);
+                MarkAllUnresolved(settings, $"options delegate is not a lambda: {Shorten(configure.Syntax)}", context.LocationOf(configure.Syntax));
+                context.Warn(DiagnosticCodes.OpaqueDelegate, $"Options delegate '{Shorten(configure.Syntax)}' is not a lambda; its settings are unresolved.", configure.Syntax);
             }
         }
     }
 
-    /// <summary>Interprets <c>o.Path = value;</c> statements. Anything else is reported, never guessed.</summary>
+    /// <summary>
+    /// Interprets <c>o.Path = value;</c> and <c>o.Retry.DisableFor...(...)</c> statements. Anything else is reported,
+    /// and any modelled option assigned inside it becomes unresolved.
+    /// </summary>
     private void ApplyLambda(IAnonymousFunctionOperation lambda, StandardHandlerSettings settings)
     {
         var options = lambda.Symbol.Parameters[0];
 
-        foreach (var statement in lambda.Body.Operations)
+        foreach (var statement in Statements(lambda))
         {
-            if (statement is IReturnOperation { ReturnedValue: null })
-            {
-                continue;
-            }
+            var expression = ExpressionOf(statement);
 
-            if (statement is IExpressionStatementOperation { Operation: ISimpleAssignmentOperation assignment }
-                && PathFrom(assignment.Target, options) is { } path)
+            if (expression is ISimpleAssignmentOperation assignment && PathFrom(assignment.Target, options) is { } path)
             {
                 if (StandardHandlerSettings.TryGetKind(path, out var kind))
                 {
-                    if (Evaluate(assignment.Value, kind, settings.Current(path), LocationOf(assignment.Syntax)) is { } value)
+                    if (context.Evaluate(assignment.Value, kind, settings.Current(path), context.LocationOf(assignment.Syntax)) is { } value)
                     {
                         settings.Set(path, value);
                     }
                 }
                 else
                 {
-                    Diagnostics.Add(new RsDiagnostic(DiagnosticCodes.UnresolvedValue, Severity.Info,
-                        $"Option '{path}' is not modelled; ignored.", LocationOf(assignment.Syntax)));
+                    context.Info(DiagnosticCodes.UnresolvedValue, $"Option '{path}' is not modelled; ignored.", assignment.Syntax);
                 }
 
                 continue;
             }
 
-            // A call, a condition, a loop...: report it, and mark any modelled option assigned inside it as unresolved.
-            Warn(DiagnosticCodes.UnresolvedValue, $"Statement not interpreted: {statement.Syntax}", statement.Syntax);
+            if (expression is IInvocationOperation call && PathFrom(Argument(call, ordinal: 0), options) == "Retry"
+                && TryDisableMethods(call, settings))
+            {
+                continue;
+            }
+
+            context.Warn(DiagnosticCodes.UnresolvedValue, $"Statement not interpreted: {Shorten(statement.Syntax)}", statement.Syntax);
             foreach (var nested in statement.Descendants().OfType<ISimpleAssignmentOperation>())
             {
                 if (PathFrom(nested.Target, options) is { } nestedPath
                     && StandardHandlerSettings.TryGetKind(nestedPath, out _)
                     && settings.Current(nestedPath) is { } fallback)
                 {
-                    settings.Set(nestedPath, Values.Unresolved<object>(fallback, $"assigned inside an uninterpreted statement: {nested.Syntax}", LocationOf(nested.Syntax)));
+                    settings.Set(nestedPath, Values.Unresolved<object>(fallback, $"assigned inside an uninterpreted statement: {Shorten(nested.Syntax)}", context.LocationOf(nested.Syntax)));
                 }
             }
         }
     }
 
-    /// <summary>A literal value becomes Explicit; a predicate becomes Opaque; anything else Unresolved (keeping the fallback).</summary>
-    private Value<object>? Evaluate(IOperation value, SettingKind kind, object? fallback, SourceLocation location)
+    /// <summary><c>o.Retry.DisableForUnsafeHttpMethods()</c> and <c>o.Retry.DisableFor(HttpMethod.Post, ...)</c>.</summary>
+    private bool TryDisableMethods(IInvocationOperation call, StandardHandlerSettings settings)
     {
-        if (kind == SettingKind.Predicate)
+        if (KnownApis.DisableForUnsafeHttpMethods.Matches(call.TargetMethod))
         {
-            return Values.Opaque<object>(PredicateKind.Custom, $"custom predicate: {Shorten(value.Syntax)}", location);
+            settings.DisabledForMethods.UnionWith(KnownApis.UnsafeHttpMethods);
+            return true;
         }
 
-        object? result = kind switch
+        if (!KnownApis.DisableFor.Matches(call.TargetMethod))
         {
-            SettingKind.Int when ConstantEvaluator.TryInt(value, out var i) => i,
-            SettingKind.Double when ConstantEvaluator.TryDouble(value, out var d) => d,
-            SettingKind.Bool when ConstantEvaluator.TryBool(value, out var b) => b,
-            SettingKind.TimeSpan when ConstantEvaluator.TryTimeSpan(value, out var t) => t,
-            SettingKind.Backoff when ConstantEvaluator.TryBackoff(value, out var e) => e,
-            _ => null,
-        };
-
-        if (result is not null)
-        {
-            return Values.Explicit<object>(result, location);
+            return false;
         }
 
-        if (fallback is null)
+        var elements = Unwrap(Argument(call, "methods")) is IArrayCreationOperation { Initializer: { } initializer }
+            ? initializer.ElementValues
+            : ImmutableArray<IOperation>.Empty;
+
+        foreach (var element in elements)
         {
-            Warn(DiagnosticCodes.UnresolvedValue, $"Value '{value.Syntax}' could not be evaluated and has no default; ignored.", value.Syntax);
-            return null;
+            if (Unwrap(element) is IPropertyReferenceOperation { Property: { IsStatic: true } property }
+                && property.ContainingType.ToDisplayString() == "System.Net.Http.HttpMethod")
+            {
+                _ = settings.DisabledForMethods.Add(property.Name.ToUpperInvariant());
+            }
+            else
+            {
+                context.Warn(DiagnosticCodes.UnresolvedValue, $"HTTP method '{Shorten(element.Syntax)}' is not a constant; retries for it are assumed enabled.", element.Syntax);
+            }
         }
 
-        return Values.Unresolved<object>(fallback, value.Syntax.ToString(), location);
-    }
-
-    /// <summary>For <c>o.Retry.MaxRetryAttempts</c> rooted at the options parameter, returns <c>Retry.MaxRetryAttempts</c>.</summary>
-    private static string? PathFrom(IOperation target, IParameterSymbol options)
-    {
-        var names = new Stack<string>();
-        var current = target;
-        while (current is IPropertyReferenceOperation property)
-        {
-            names.Push(property.Property.Name);
-            current = property.Instance;
-        }
-
-        return names.Count > 0
-            && current is IParameterReferenceOperation parameter
-            && SymbolEqualityComparer.Default.Equals(parameter.Parameter, options)
-            ? string.Join('.', names)
-            : null;
+        return true;
     }
 
     /// <summary>
@@ -440,8 +638,11 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
         }
     }
 
-    /// <summary>Follows an <c>IHttpClientBuilder</c> expression back to the client (or defaults) it configures.</summary>
-    private BuilderTarget? ResolveBuilder(IOperation? operation)
+    /// <summary>
+    /// Follows an <c>IHttpClientBuilder</c> expression back to the client (or defaults) it configures. With
+    /// <paramref name="register"/> false it has no side effects (used for branches that do not run).
+    /// </summary>
+    private BuilderTarget? ResolveBuilder(IOperation? operation, bool register)
     {
         switch (Unwrap(operation))
         {
@@ -449,18 +650,48 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
                 return DefaultsTarget.Instance;
 
             case IInvocationOperation call when KnownApis.AddHttpClient.Matches(call.TargetMethod):
-                return GetOrAddClient(call) is { } client ? new ClientTarget(client) : null;
+                return GetOrAddClient(call, register) is { } client ? new ClientTarget(client) : null;
+
+            // A removal in the chain runs before whatever is chained after it.
+            case IInvocationOperation call when KnownApis.RemoveAllResilienceHandlers.Matches(call.TargetMethod):
+                if (register)
+                {
+                    RecordRemoval(call, conditional: false);
+                }
+
+                return ResolveBuilder(Argument(call, ordinal: 0), register);
 
             // A builder extension that returns its receiver (e.g. ConfigureHttpClient, AddHttpMessageHandler).
             case IInvocationOperation call when call.TargetMethod.IsExtensionMethod
                 && IsHttpClientBuilder(call.TargetMethod.ReturnType)
                 && call.TargetMethod.Parameters.Length > 0
                 && IsHttpClientBuilder(call.TargetMethod.Parameters[0].Type):
-                return ResolveBuilder(Argument(call, ordinal: 0));
+                return ResolveBuilder(Argument(call, ordinal: 0), register);
+
+            // var search = services.AddHttpClient(...); search.AddStandardResilienceHandler(); (initializer only).
+            case ILocalReferenceOperation local when LocalInitializer(local) is { } initializer:
+                return ResolveBuilder(initializer, register);
 
             default:
                 return null;
         }
+    }
+
+    /// <summary>The initializer of a local variable, if it has one. Later reassignments are not tracked.</summary>
+    private static IOperation? LocalInitializer(ILocalReferenceOperation local) =>
+        local.Local.DeclaringSyntaxReferences.FirstOrDefault()?.GetSyntax() is VariableDeclaratorSyntax { Initializer.Value: { } value }
+            ? local.SemanticModel?.GetOperation(value)
+            : null;
+
+    private static string EnclosingMemberName(SemanticModel model, int position)
+    {
+        var symbol = model.GetEnclosingSymbol(position);
+        while (symbol is IMethodSymbol { MethodKind: MethodKind.AnonymousFunction or MethodKind.LocalFunction })
+        {
+            symbol = symbol.ContainingSymbol;
+        }
+
+        return symbol is null ? "<unknown>" : $"{symbol.ContainingType?.Name}.{symbol.Name}";
     }
 
     private static void MarkAllUnresolved(StandardHandlerSettings settings, string reason, SourceLocation location)
@@ -477,46 +708,22 @@ internal sealed class RegistrationWalker(Solution solution, string rootDirectory
     private static bool IsHttpClientBuilder(ITypeSymbol type) =>
         type.ToDisplayString() == KnownApis.HttpClientBuilderInterface;
 
-    private static IOperation? Argument(IInvocationOperation invocation, string parameterName) =>
-        invocation.Arguments.FirstOrDefault(a => a.Parameter?.Name == parameterName)?.Value;
-
-    private static IOperation? Argument(IInvocationOperation invocation, int ordinal) =>
-        invocation.Arguments.FirstOrDefault(a => a.Parameter?.Ordinal == ordinal)?.Value;
-
-    private static IAnonymousFunctionOperation? Lambda(IOperation? operation) =>
-        Unwrap(operation) is IDelegateCreationOperation { Target: IAnonymousFunctionOperation lambda } ? lambda : null;
-
-    private static IOperation? Unwrap(IOperation? operation)
+    private sealed class PendingHandler(int sequence, BuilderTarget? target, SourceLocation location)
     {
-        while (operation is IConversionOperation conversion)
-        {
-            operation = conversion.Operand;
-        }
+        public int Sequence { get; } = sequence;
 
-        return operation;
+        public BuilderTarget? Target { get; } = target;
+
+        public SourceLocation Location { get; } = location;
+
+        public bool Conditional { get; set; }
+
+        /// <summary>For the standard handler: settings that Configure(...) calls may still change.</summary>
+        public StandardHandlerSettings? Standard { get; set; }
+
+        /// <summary>For other handlers: built on sight.</summary>
+        public Handler? Built { get; set; }
     }
-
-    private static string Shorten(SyntaxNode node)
-    {
-        var text = string.Join(' ', node.ToString().Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries));
-        return text.Length <= 80 ? text : text[..77] + "...";
-    }
-
-    /// <summary>For <c>a.B(...)</c>, the <c>B</c> token, so chained calls are located at the method, not the chain start.</summary>
-    private static SyntaxNode MethodNameSyntax(SyntaxNode invocation) =>
-        invocation is InvocationExpressionSyntax { Expression: MemberAccessExpressionSyntax access } ? access.Name : invocation;
-
-    private void Warn(string code, string message, SyntaxNode? node = null) =>
-        Diagnostics.Add(new RsDiagnostic(code, Severity.Warning, message, node is null ? null : LocationOf(node)));
-
-    private SourceLocation LocationOf(SyntaxNode node)
-    {
-        var span = node.GetLocation().GetLineSpan();
-        var file = Path.GetRelativePath(rootDirectory, span.Path).Replace('\\', '/');
-        return new SourceLocation(file, span.StartLinePosition.Line + 1, span.StartLinePosition.Character + 1);
-    }
-
-    private sealed record PendingHandler(StandardHandlerSettings Settings, BuilderTarget? Target, SourceLocation Location);
 
     private abstract record BuilderTarget;
 

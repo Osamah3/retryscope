@@ -47,6 +47,9 @@ internal sealed class StandardHandlerSettings
 
     private readonly Dictionary<string, Value<object>> _values = new(StringComparer.OrdinalIgnoreCase);
 
+    /// <summary>HTTP methods for which retries are disabled (<c>o.Retry.DisableFor...</c>), upper case.</summary>
+    public SortedSet<string> DisabledForMethods { get; } = new(StringComparer.Ordinal);
+
     public StandardHandlerSettings(string packageVersion)
     {
         foreach (var (path, _, value) in Table)
@@ -96,7 +99,7 @@ internal sealed class StandardHandlerSettings
                 Get<bool>("Retry.UseJitter"),
                 Get<bool>("Retry.ShouldRetryAfterHeader"),
                 Get<PredicateKind>("Retry.ShouldHandle"),
-                Array.Empty<string>(),
+                [.. DisabledForMethods],
                 _values.ContainsKey("Retry.MaxDelay") ? Get<TimeSpan>("Retry.MaxDelay") : null),
             new CircuitBreakerStrategy(
                 Get<double>("CircuitBreaker.FailureRatio"),

@@ -54,7 +54,7 @@ public sealed record BindingLabels(
             binding.TargetService,
             hedged ? null : EffectiveConfiguration.MaxAttemptsPerCall(binding, "GET").MaxAttempts,
             hedged ? null : EffectiveConfiguration.MaxAttemptsPerCall(binding, "POST").MaxAttempts,
-            RetryCountSourceOf(retries),
+            RetryCountSourceOf(retries, hedged),
             attemptTimeout,
             totalTimeout,
             binding.Handlers.Any(h => h.Strategies.OfType<CircuitBreakerStrategy>().Any()),
@@ -63,14 +63,16 @@ public sealed record BindingLabels(
     }
 
     /// <summary>
-    /// Guide §4.4. With several retry strategies, the least certain source wins:
+    /// Guide §4.4. No retry at all is "none" (or "default" under hedging). With several retry strategies, the least
+    /// certain source wins:
     /// unresolved, then opaque, then config, then explicit, then default.
     /// </summary>
-    private static string RetryCountSourceOf(IReadOnlyList<RetryStrategy> retries)
+    private static string RetryCountSourceOf(IReadOnlyList<RetryStrategy> retries, bool hedged)
     {
         if (retries.Count == 0)
         {
-            return "none";
+            // Guide row P11: a hedging handler's attempts come from its (default) hedged-attempt count.
+            return hedged ? "default" : "none";
         }
 
         if (retries.Any(r => r.MaxRetryAttempts.Provenance is Provenance.Unresolved or Provenance.Assumed))

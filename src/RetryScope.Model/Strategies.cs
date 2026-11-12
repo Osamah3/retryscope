@@ -33,6 +33,12 @@ public enum PredicateKind
 
     /// <summary>A custom delegate; see the value's provenance (normally <see cref="Provenance.Opaque"/>).</summary>
     Custom,
+
+    /// <summary>
+    /// Polly v8's own default for non-HTTP options: any exception except <c>OperationCanceledException</c>, and no
+    /// results. A plain <c>RetryStrategyOptions&lt;HttpResponseMessage&gt;</c> therefore does not retry a 503.
+    /// </summary>
+    ExceptionsOnly,
 }
 
 /// <summary>One resilience strategy inside a handler's pipeline. Order in the pipeline is outermost first.</summary>

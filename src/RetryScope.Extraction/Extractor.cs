@@ -57,29 +57,35 @@ public static class Extractor
             diagnostics.Add(new RsDiagnostic(DiagnosticCodes.WorkspaceLoad, Severity.Error, $"Compiler error {error.Id}: {error.GetMessage()}"));
         }
 
-        var packageVersion = ResiliencePackageVersion(compilation, diagnostics);
+        var resilienceVersion = ResiliencePackageVersion(compilation, diagnostics);
+        var pollyVersion = compilation.ReferencedAssemblyNames.FirstOrDefault(a => a.Name == "Polly.Core") is { } polly
+            ? $"Polly.Core@{polly.Version}"
+            : "Polly.Core@not-referenced";
+        var context = new ExtractionContext(rootDirectory, resilienceVersion, pollyVersion, options.Environment);
 
         // Configuration is read relative to the project directory, the host's default content root.
         var projectDirectory = Path.GetDirectoryName(project.FilePath ?? Path.GetFullPath(projectPath)) ?? rootDirectory;
         using var appSettings = new AppSettingsReader(projectDirectory, options.Environment);
 
-        var walker = new RegistrationWalker(project.Solution, rootDirectory, packageVersion, appSettings);
+        var walker = new RegistrationWalker(project.Solution, context, appSettings);
         foreach (var root in FindRoots(compilation, options.RootMethods))
         {
             await walker.WalkAsync(root, cancellationToken).ConfigureAwait(false);
         }
 
         walker.Complete();
+        await walker.ScanDirectClientsAsync(project, cancellationToken).ConfigureAwait(false);
 
-        // Defaults handlers wrap per-client handlers regardless of call order (docs/findings.md F1).
         var bindings = walker.Clients.Values.Select(client => new ClientBinding(
             Id: $"{options.ServiceId}/{client.Name}",
             OwnerService: options.ServiceId,
             ClientName: client.Name,
             Kind: client.Kind,
-            Handlers: [.. walker.DefaultHandlers, .. client.Handlers],
+            // Direct clients bypass the factory: no defaults apply to them.
+            Handlers: client.Kind == ClientKind.Direct ? Array.Empty<Handler>() : client.EffectiveHandlers(walker.DefaultHandlers),
             TargetService: client.Target,
             BaseAddress: client.BaseAddress,
+            Conditional: client.Conditional || (walker.DefaultsConditional && client.Kind != ClientKind.Direct),
             Location: client.Location));
 
         var service = new Service(
@@ -90,7 +96,7 @@ public static class Extractor
             options.Source ?? new SourceInfo(),
             [service],
             bindings,
-            diagnostics: [.. loadProblems, .. diagnostics, .. walker.Diagnostics]).Canonicalize();
+            diagnostics: [.. loadProblems, .. diagnostics, .. context.Diagnostics]).Canonicalize();
     }
 
     private static IEnumerable<IMethodSymbol> FindRoots(Compilation compilation, IReadOnlyList<string>? rootMethods)

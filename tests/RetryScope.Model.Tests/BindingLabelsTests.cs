@@ -29,7 +29,7 @@ public class BindingLabelsTests
     }
 
     [Fact]
-    public void Hedging_leaves_the_attempt_bound_unknown_and_no_retry_means_source_none()
+    public void Hedging_leaves_the_attempt_bound_unknown_with_default_source()
     {
         var hedging = new Handler(HandlerKind.Hedging, HandlerOrigin.PerClient,
             [new TimeoutStrategy(TimeoutRole.Total, Values.PackageDefault(TimeSpan.FromSeconds(30), TestData.DefaultsVersion))]);
@@ -38,8 +38,18 @@ public class BindingLabelsTests
 
         Assert.Null(labels.AttemptBoundGet);
         Assert.Null(labels.AttemptBoundPost);
-        Assert.Equal("none", labels.RetryCountSource);
+        Assert.Equal("default", labels.RetryCountSource);
         Assert.Equal(30, labels.TotalTimeoutSeconds);
         Assert.False(labels.Breaker);
+    }
+
+    [Fact]
+    public void No_handlers_means_one_attempt_and_source_none()
+    {
+        var labels = BindingLabels.From(TestData.Binding("b1"));
+
+        Assert.Equal(1, labels.AttemptBoundGet);
+        Assert.Equal("none", labels.RetryCountSource);
+        Assert.Equal(0, labels.RetryHandlers);
     }
 }

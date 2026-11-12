@@ -11,6 +11,9 @@ public enum ClientKind
 
     /// <summary>The unnamed default client (affected only by process-wide defaults).</summary>
     Default,
+
+    /// <summary><c>new HttpClient()</c>: bypasses IHttpClientFactory, so no factory handlers apply (diagnostic RS003).</summary>
+    Direct,
 }
 
 /// <summary>How the resilience pipeline instance (and so circuit-breaker state) is shared.</summary>

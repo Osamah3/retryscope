@@ -33,9 +33,32 @@ timeout → retry → circuit breaker → attempt timeout.
 | Attempt timeout | 10 s | extensions `HttpStandardResilienceOptions` |
 | Transient outcomes | `HttpRequestException`, `TimeoutRejectedException`, status ≥ 500, 408, 429 | extensions `HttpClientResiliencePredicates` |
 
-Plain Polly v8 `RetryStrategyOptions` (not the HTTP subclass): 3 retries, 2 s, **constant** backoff.
+## Plain Polly v8 options (custom pipelines)
+
+| Options type | Defaults that differ from the HTTP subclass | Defined in |
+| --- | --- | --- |
+| `RetryStrategyOptions<T>` | **constant** backoff, jitter **off**, predicate **exceptions only** (any exception except `OperationCanceledException`; no results) | Polly `RetryConstants`, `RetryStrategyOptions<T>`, `DefaultPredicates.HandleOutcome` |
+| `CircuitBreakerStrategyOptions<T>` | same numbers (0.1, 100, 30 s, 5 s); predicate exceptions only | Polly `CircuitBreakerConstants` |
+| `TimeoutStrategyOptions` | 30 s | Polly `TimeoutStrategyOptions.Timeout` |
+| `AddConcurrencyLimiter(permitLimit, queueLimit = 0)` | queue 0 | Polly.RateLimiting |
+
+`HttpRetryStrategyOptions` sets exponential backoff, jitter, `ShouldRetryAfterHeader` and the HTTP transient predicate
+in its constructor; `HttpCircuitBreakerStrategyOptions` sets the HTTP transient predicate.
+
+## Polly v7 (Microsoft.Extensions.Http.Polly)
+
+Polly 7.2.4 `AsyncRetryTResultSyntax`: `RetryAsync()` retries once; `RetryAsync(int retryCount)`,
+`WaitAndRetryAsync(int retryCount, ...)`. `AddTransientHttpErrorPolicy` handles `HttpRequestException`, 5xx and 408
+(not 429). Recorded, not simulated in V1.
+
+## Removal
+
+`RemoveAllResilienceHandlers()` (`ResilienceHttpClientBuilderExtensions.Resilience.cs`) registers a
+`ConfigureAdditionalHttpMessageHandlers` action that removes every `ResilienceHandler` added before it.
 
 ## Standard hedging handler (`AddStandardHedgingHandler`)
 
 `MaxHedgedAttempts` = 1 (Polly `HedgingConstants`), so a call makes at most 2 attempts by default; this was also
-observed in the fixture oracle (`docs/findings.md`, F2). Not simulated in V1.
+observed in the fixture oracle (`docs/findings.md`, F2). Structure: total request timeout 30 s outside the hedging
+strategy; per endpoint a rate limiter, circuit breaker (HTTP defaults) and 10 s timeout
+(`HttpStandardHedgingResilienceOptions`, `HedgingEndpointOptions`). Not simulated in V1.
