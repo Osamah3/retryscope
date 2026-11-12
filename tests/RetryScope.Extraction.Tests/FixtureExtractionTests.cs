@@ -14,6 +14,12 @@ public class FixtureExtractionTests
     {
         "P01-aspire-defaults",
         "P02-per-client-standard",
+        "P03-lambda-options",
+        "P04-config-bound",
+        "P06-stacked-defaults-and-client",
+        "P09-custom-predicate",
+        "V03-helper-extension",
+        "V05-production-override",
     };
 
     [Theory]
@@ -43,6 +49,7 @@ public class FixtureExtractionTests
 
             Log($"{fixtureId}/{want.Client}: {got}");
             Compare(mismatches, want.Client, "clientKind", want.ClientKind, got.ClientKind);
+            Compare(mismatches, want.Client, "target", want.Target, got.Target);
             Compare(mismatches, want.Client, "attemptBoundGet", want.AttemptBoundGet, got.AttemptBoundGet);
             Compare(mismatches, want.Client, "attemptBoundPost", want.AttemptBoundPost, got.AttemptBoundPost);
             Compare(mismatches, want.Client, "retryCountSource", want.RetryCountSource, got.RetryCountSource);

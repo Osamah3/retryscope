@@ -44,6 +44,23 @@ internal static class KnownApis
     public static readonly KnownMethod ConfigureHttpClientDefaults = new(HttpAssembly, HttpFactoryExtensions, "ConfigureHttpClientDefaults");
     public static readonly KnownMethod AddStandardResilienceHandler = new(ResilienceAssembly, ResilienceBuilderExtensions, "AddStandardResilienceHandler");
 
+    // Same release, Resilience/HttpStandardResiliencePipelineBuilderExtensions.cs. The lambda and section overloads of
+    // AddStandardResilienceHandler are implemented as AddStandardResilienceHandler().Configure(...).
+    public static readonly KnownMethod ConfigureStandardHandler = new(
+        ResilienceAssembly, "Microsoft.Extensions.Http.Resilience.HttpStandardResiliencePipelineBuilderExtensions", "Configure");
+
+    /// <summary><c>IConfiguration.GetSection(string key)</c>; matched by containing interface.</summary>
+    public const string ConfigurationInterface = "Microsoft.Extensions.Configuration.IConfiguration";
+
+    /// <summary>Static types that denote the root configuration (not a section).</summary>
+    public static readonly IReadOnlySet<string> RootConfigurationTypes = new HashSet<string>(StringComparer.Ordinal)
+    {
+        "Microsoft.Extensions.Configuration.IConfiguration",
+        "Microsoft.Extensions.Configuration.IConfigurationManager",
+        "Microsoft.Extensions.Configuration.IConfigurationRoot",
+        "Microsoft.Extensions.Configuration.ConfigurationManager",
+    };
+
     /// <summary>Metadata name of the builder interface every handler registration extends.</summary>
     public const string HttpClientBuilderInterface = "Microsoft.Extensions.DependencyInjection.IHttpClientBuilder";
 }

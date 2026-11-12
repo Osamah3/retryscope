@@ -32,11 +32,11 @@ public class KnownApiMatchingTests
     [Fact]
     public void Only_the_library_method_matches_not_a_lookalike_with_the_same_name()
     {
-        var (compilation, tree) = Compile(Snippet);
+        var (compilation, tree) = Snippets.Compile(Snippet);
         var model = compilation.GetSemanticModel(tree);
 
-        var calls = tree.GetRoot(Ct).DescendantNodes().OfType<InvocationExpressionSyntax>()
-            .Select(i => (Text: i.ToString(), Method: model.GetSymbolInfo(i, Ct).Symbol as IMethodSymbol))
+        var calls = tree.GetRoot(Snippets.Ct).DescendantNodes().OfType<InvocationExpressionSyntax>()
+            .Select(i => (Text: i.ToString(), Method: model.GetSymbolInfo(i, Snippets.Ct).Symbol as IMethodSymbol))
             .Where(c => c.Text.EndsWith(".AddStandardResilienceHandler()", StringComparison.Ordinal)
                      || c.Text.EndsWith(".AddStandardResilienceHandler(42)", StringComparison.Ordinal))
             .ToList();
@@ -49,35 +49,12 @@ public class KnownApiMatchingTests
     [Fact]
     public void AddHttpClient_matches_through_the_reduced_extension_call()
     {
-        var (compilation, tree) = Compile(Snippet);
+        var (compilation, tree) = Snippets.Compile(Snippet);
         var model = compilation.GetSemanticModel(tree);
 
-        var addHttpClient = tree.GetRoot(Ct).DescendantNodes().OfType<InvocationExpressionSyntax>()
+        var addHttpClient = tree.GetRoot(Snippets.Ct).DescendantNodes().OfType<InvocationExpressionSyntax>()
             .First(i => i.ToString() == "services.AddHttpClient(\"a\")");
 
-        Assert.True(KnownApis.AddHttpClient.Matches(model.GetSymbolInfo(addHttpClient, Ct).Symbol as IMethodSymbol));
-    }
-
-    private static CancellationToken Ct => TestContext.Current.CancellationToken;
-
-    private static (CSharpCompilation Compilation, SyntaxTree Tree) Compile(string source)
-    {
-        var tree = CSharpSyntaxTree.ParseText(source, cancellationToken: Ct);
-
-        // Everything this test process can load: the BCL plus the real Microsoft.Extensions.* packages it references.
-        var references = ((string)AppContext.GetData("TRUSTED_PLATFORM_ASSEMBLIES")!)
-            .Split(Path.PathSeparator)
-            .Select(path => MetadataReference.CreateFromFile(path));
-
-        var compilation = CSharpCompilation.Create(
-            "Snippet",
-            [tree],
-            references,
-            new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));
-
-        var errors = compilation.GetDiagnostics(Ct).Where(d => d.Severity == DiagnosticSeverity.Error).ToList();
-        Assert.True(errors.Count == 0, string.Join("\n", errors));
-
-        return (compilation, tree);
+        Assert.True(KnownApis.AddHttpClient.Matches(model.GetSymbolInfo(addHttpClient, Snippets.Ct).Symbol as IMethodSymbol));
     }
 }

@@ -13,11 +13,16 @@ namespace RetryScope.Extraction;
 /// Where registration starts, as <c>Namespace.Type.Method</c>. Empty means the program's entry point.
 /// </param>
 /// <param name="Source">Repository URL and commit, recorded in the graph.</param>
+/// <param name="Environment">
+/// Host environment whose <c>appsettings.{Environment}.json</c> overrides <c>appsettings.json</c>. Production by
+/// default, matching the behaviour oracle and what a deployed service runs with.
+/// </param>
 public sealed record ExtractionOptions(
     string ServiceId,
     string RootDirectory,
     IReadOnlyList<string>? RootMethods = null,
-    SourceInfo? Source = null);
+    SourceInfo? Source = null,
+    string Environment = "Production");
 
 /// <summary>Reads one .NET project and produces the resilience configuration of its HttpClients.</summary>
 public static class Extractor
@@ -54,11 +59,17 @@ public static class Extractor
 
         var packageVersion = ResiliencePackageVersion(compilation, diagnostics);
 
-        var walker = new RegistrationWalker(project.Solution, rootDirectory, packageVersion);
+        // Configuration is read relative to the project directory, the host's default content root.
+        var projectDirectory = Path.GetDirectoryName(project.FilePath ?? Path.GetFullPath(projectPath)) ?? rootDirectory;
+        using var appSettings = new AppSettingsReader(projectDirectory, options.Environment);
+
+        var walker = new RegistrationWalker(project.Solution, rootDirectory, packageVersion, appSettings);
         foreach (var root in FindRoots(compilation, options.RootMethods))
         {
             await walker.WalkAsync(root, cancellationToken).ConfigureAwait(false);
         }
+
+        walker.Complete();
 
         // Defaults handlers wrap per-client handlers regardless of call order (docs/findings.md F1).
         var bindings = walker.Clients.Values.Select(client => new ClientBinding(
@@ -67,6 +78,8 @@ public static class Extractor
             ClientName: client.Name,
             Kind: client.Kind,
             Handlers: [.. walker.DefaultHandlers, .. client.Handlers],
+            TargetService: client.Target,
+            BaseAddress: client.BaseAddress,
             Location: client.Location));
 
         var service = new Service(

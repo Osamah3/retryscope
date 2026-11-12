@@ -6,6 +6,7 @@ namespace RetryScope.Model;
 /// </summary>
 /// <param name="Client">Client name (typed clients: the short type name).</param>
 /// <param name="ClientKind">named, typed or default.</param>
+/// <param name="Target">Target service (host of a constant BaseAddress), or null.</param>
 /// <param name="AttemptBoundGet">Attempt bound for GET; null when not determinable (hedging).</param>
 /// <param name="AttemptBoundPost">Attempt bound for POST; null when not determinable.</param>
 /// <param name="RetryCountSource">none, default, explicit, config, unresolved or opaque (guide §4.4).</param>
@@ -17,6 +18,7 @@ namespace RetryScope.Model;
 public sealed record BindingLabels(
     string Client,
     string ClientKind,
+    string? Target,
     int? AttemptBoundGet,
     int? AttemptBoundPost,
     string RetryCountSource,
@@ -49,6 +51,7 @@ public sealed record BindingLabels(
         return new BindingLabels(
             binding.ClientName,
             binding.Kind.ToString().ToLowerInvariant(),
+            binding.TargetService,
             hedged ? null : EffectiveConfiguration.MaxAttemptsPerCall(binding, "GET").MaxAttempts,
             hedged ? null : EffectiveConfiguration.MaxAttemptsPerCall(binding, "POST").MaxAttempts,
             RetryCountSourceOf(retries),

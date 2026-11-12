@@ -17,5 +17,8 @@
          MSBuildWorkspace loads projects in an out-of-process BuildHost that locates MSBuild itself, so no MSBuildLocator. -->
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.0.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="5.0.0" />
+    <!-- The extractor reads appsettings files with the runtime's own configuration library. 10.0.0 is a floor: a project
+         that also references Microsoft.Extensions.Hosting gets the higher version Hosting requires. -->
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="10.0.0" />
   </ItemGroup>
 </Project>
