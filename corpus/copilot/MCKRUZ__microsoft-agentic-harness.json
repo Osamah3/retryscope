@@ -1,0 +1,296 @@
+[
+  {
+    "project": "src/Content/Presentation/Presentation.AuditArchiver/Presentation.AuditArchiver.csproj",
+    "bindings": []
+  },
+  {
+    "project": "src/Content/Presentation/Presentation.ConsoleUI/Presentation.ConsoleUI.csproj",
+    "bindings": [
+      {
+        "client": "egress", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Egress.cs:76", "src/Content/Infrastructure/Infrastructure.AI/Egress/EgressPolicyDelegatingHandler.cs:42", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "A2A.Harness", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.A2A.cs:63", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:32", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:132", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:138", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:140", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "BingWebSearch", "clientKind": "named", "target": "api.bing.microsoft.com", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.Retrieval.cs:205", "src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.Retrieval.cs:207", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "IGenerationStatsClient", "clientKind": "typed", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Tools.cs:283", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:24", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:42", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:44", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "remote-memory", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.cs:356", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:23", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:29", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:44", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:46", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "purview-information-protection", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.Governance/DependencyInjection.cs:248", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:51", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:93", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:186", "src/Content/Domain/Domain.Common/Config/AI/Governance/InformationProtectionProviderConfig.cs:38", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "purview-data-map", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.Governance/DependencyInjection.cs:251", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:56", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:111", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:157", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:253", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "McpConnectionManager.McpConnectionManager", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/DependencyInjection.cs:52", "src/Content/Infrastructure/Infrastructure.AI.MCP/DependencyInjection.cs:66", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:133", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:151"]
+      },
+      {
+        "client": "McpConnectionManager.ResolveHostConfiguredTransportHttpClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1058", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1088"]
+      },
+      {
+        "client": "McpConnectionManager.ResolveBundleEgressClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1117", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1130"]
+      },
+      {
+        "client": "ChatClientFactory.GetAnthropicChatClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Tools.cs:283", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:177", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:229", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:211", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.Providers.cs:226", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.Providers.cs:245"]
+      }
+    ]
+  },
+  {
+    "project": "src/Content/Presentation/Presentation.EvalRunner/Presentation.EvalRunner.csproj",
+    "bindings": [
+      {
+        "client": "egress", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Egress.cs:76", "src/Content/Infrastructure/Infrastructure.AI/Egress/EgressPolicyDelegatingHandler.cs:42", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "A2A.Harness", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.A2A.cs:63", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:32", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:132", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:138", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:140", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "BingWebSearch", "clientKind": "named", "target": "api.bing.microsoft.com", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.Retrieval.cs:205", "src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.Retrieval.cs:207", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "IGenerationStatsClient", "clientKind": "typed", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Tools.cs:283", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:24", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:42", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:44", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "remote-memory", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.cs:356", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:23", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:29", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:44", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:46", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "purview-information-protection", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.Governance/DependencyInjection.cs:248", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:51", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:93", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:186", "src/Content/Domain/Domain.Common/Config/AI/Governance/InformationProtectionProviderConfig.cs:38", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "purview-data-map", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.Governance/DependencyInjection.cs:251", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:56", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:111", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:157", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:253", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "McpConnectionManager.McpConnectionManager", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/DependencyInjection.cs:52", "src/Content/Infrastructure/Infrastructure.AI.MCP/DependencyInjection.cs:66", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:133", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:151"]
+      },
+      {
+        "client": "McpConnectionManager.ResolveHostConfiguredTransportHttpClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1058", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1088"]
+      },
+      {
+        "client": "McpConnectionManager.ResolveBundleEgressClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1117", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1130"]
+      },
+      {
+        "client": "ChatClientFactory.GetAnthropicChatClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Tools.cs:283", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:177", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:229", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:211", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.Providers.cs:226", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.Providers.cs:245"]
+      },
+      {
+        "client": "EvalRunIngestClient.PostReportAsync", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 30, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Presentation/Presentation.EvalRunner/Program.cs:208", "src/Content/Presentation/Presentation.EvalRunner/Program.cs:211", "src/Content/Presentation/Presentation.EvalRunner/Program.cs:215", "src/Content/Presentation/Presentation.EvalRunner/EvalRunIngestClient.cs:50", "src/Content/Presentation/Presentation.EvalRunner/EvalRunIngestClient.cs:60", "src/Content/Presentation/Presentation.EvalRunner/EvalRunIngestClient.cs:70"]
+      }
+    ]
+  },
+  {
+    "project": "src/Content/Presentation/Presentation.FoundryHost/Presentation.FoundryHost.csproj",
+    "bindings": [
+      {
+        "client": "egress", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Egress.cs:76", "src/Content/Infrastructure/Infrastructure.AI/Egress/EgressPolicyDelegatingHandler.cs:42", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "A2A.Harness", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.A2A.cs:63", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:32", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:132", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:138", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:140", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "BingWebSearch", "clientKind": "named", "target": "api.bing.microsoft.com", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.Retrieval.cs:205", "src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.Retrieval.cs:207", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "IGenerationStatsClient", "clientKind": "typed", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Tools.cs:283", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:24", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:42", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:44", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "remote-memory", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.cs:356", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:23", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:29", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:44", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:46", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "purview-information-protection", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.Governance/DependencyInjection.cs:248", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:51", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:93", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:186", "src/Content/Domain/Domain.Common/Config/AI/Governance/InformationProtectionProviderConfig.cs:38", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "purview-data-map", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.Governance/DependencyInjection.cs:251", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:56", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:111", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:157", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:253", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "McpConnectionManager.McpConnectionManager", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/DependencyInjection.cs:52", "src/Content/Infrastructure/Infrastructure.AI.MCP/DependencyInjection.cs:66", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:133", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:151"]
+      },
+      {
+        "client": "McpConnectionManager.ResolveHostConfiguredTransportHttpClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1058", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1088"]
+      },
+      {
+        "client": "McpConnectionManager.ResolveBundleEgressClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1117", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1130"]
+      },
+      {
+        "client": "ChatClientFactory.GetAnthropicChatClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Tools.cs:283", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:177", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:229", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:211", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.Providers.cs:226", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.Providers.cs:245"]
+      }
+    ]
+  },
+  {
+    "project": "src/Content/Presentation/Presentation.ExecutionApi/Presentation.ExecutionApi.csproj",
+    "bindings": [
+      {
+        "client": "egress", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Egress.cs:76", "src/Content/Infrastructure/Infrastructure.AI/Egress/EgressPolicyDelegatingHandler.cs:42", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "A2A.Harness", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.A2A.cs:63", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:32", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:132", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:138", "src/Content/Infrastructure/Infrastructure.AI/A2A/HarnessA2AClient.cs:140", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "BingWebSearch", "clientKind": "named", "target": "api.bing.microsoft.com", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.Retrieval.cs:205", "src/Content/Infrastructure/Infrastructure.AI.RAG/DependencyInjection.Retrieval.cs:207", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "IGenerationStatsClient", "clientKind": "typed", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Tools.cs:283", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:24", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:42", "src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Caching.cs:44", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "remote-memory", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.cs:356", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:23", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:29", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:44", "src/Content/Infrastructure/Infrastructure.AI.KnowledgeGraph/DependencyInjection.RemoteMemory.cs:46", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "purview-information-protection", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.Governance/DependencyInjection.cs:248", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:51", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:93", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/GraphSensitivityLabelClient.cs:186", "src/Content/Domain/Domain.Common/Config/AI/Governance/InformationProtectionProviderConfig.cs:38", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "purview-data-map", "clientKind": "named", "target": "?", "attemptBoundGet": "?", "attemptBoundPost": 1,
+        "retryCountSource": "config", "attemptTimeoutSeconds": "?", "totalTimeoutSeconds": "?", "breaker": true,
+        "retryHandlers": 1, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.Governance/DependencyInjection.cs:251", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:56", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:111", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:157", "src/Content/Infrastructure/Infrastructure.AI.Governance/Classification/PurviewDataMapClient.cs:253", "src/Content/Infrastructure/Infrastructure.APIAccess/DependencyInjection.cs:43", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:324", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:331", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:347", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:353", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:358", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:436", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:457", "src/Content/Infrastructure/Infrastructure.APIAccess/Common/Extensions/IServiceCollectionExtensions.cs:84"]
+      },
+      {
+        "client": "McpConnectionManager.McpConnectionManager", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": false,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/DependencyInjection.cs:52", "src/Content/Infrastructure/Infrastructure.AI.MCP/DependencyInjection.cs:66", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:133", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:151"]
+      },
+      {
+        "client": "McpConnectionManager.ResolveHostConfiguredTransportHttpClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1058", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1088"]
+      },
+      {
+        "client": "McpConnectionManager.ResolveBundleEgressClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1117", "src/Content/Infrastructure/Infrastructure.AI.MCP/Services/McpConnectionManager.cs:1130"]
+      },
+      {
+        "client": "ChatClientFactory.GetAnthropicChatClient", "clientKind": "direct", "target": "?", "attemptBoundGet": 1, "attemptBoundPost": 1,
+        "retryCountSource": "none", "attemptTimeoutSeconds": null, "totalTimeoutSeconds": 100, "breaker": false,
+        "retryHandlers": 0, "conditional": true,
+        "evidence": ["src/Content/Infrastructure/Infrastructure.AI/DependencyInjection.Tools.cs:283", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:177", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:229", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.cs:211", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.Providers.cs:226", "src/Content/Infrastructure/Infrastructure.AI/Factories/ChatClientFactory.Providers.cs:245"]
+      }
+    ]
+  }
+]

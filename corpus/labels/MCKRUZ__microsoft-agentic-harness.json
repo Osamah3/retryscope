@@ -1,0 +1,50 @@
+{
+  "repo": "MCKRUZ/microsoft-agentic-harness",
+  "commit": "91e90990739afe74e1cfef82d0a60649c28be314",
+  "stratum": "S3",
+  "rank": 1,
+  "guideVersion": "1.2",
+  "pass": 1,
+  "startedUtc": "2026-11-17T07:04:35+00:00",
+  "finishedUtc": null,
+  "minutes": null,
+  "aiExposure": "copilot-output-seen",
+  "projects": [
+    {
+      "project": "src/Content/Presentation/Presentation.AuditArchiver/Presentation.AuditArchiver.csproj",
+      "service": "Presentation.AuditArchiver",
+      "inScope": true,
+      "bindings": [],
+      "notes": ""
+    },
+    {
+      "project": "src/Content/Presentation/Presentation.ConsoleUI/Presentation.ConsoleUI.csproj",
+      "service": "Presentation.ConsoleUI",
+      "inScope": true,
+      "bindings": [],
+      "notes": ""
+    },
+    {
+      "project": "src/Content/Presentation/Presentation.EvalRunner/Presentation.EvalRunner.csproj",
+      "service": "Presentation.EvalRunner",
+      "inScope": true,
+      "bindings": [],
+      "notes": ""
+    },
+    {
+      "project": "src/Content/Presentation/Presentation.FoundryHost/Presentation.FoundryHost.csproj",
+      "service": "Presentation.FoundryHost",
+      "inScope": true,
+      "bindings": [],
+      "notes": ""
+    },
+    {
+      "project": "src/Content/Presentation/Presentation.ExecutionApi/Presentation.ExecutionApi.csproj",
+      "service": "Presentation.ExecutionApi",
+      "inScope": true,
+      "bindings": [],
+      "notes": ""
+    }
+  ],
+  "guideAmbiguities": []
+}

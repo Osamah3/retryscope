@@ -67,6 +67,7 @@ def cmd_new(repo: str) -> None:
     sheet = {
         "repo": row["repo"], "commit": row["commit"], "stratum": row["stratum"], "rank": int(row["rank"]),
         "guideVersion": GUIDE_VERSION, "pass": 1, "startedUtc": now(), "finishedUtc": None, "minutes": None,
+        "aiExposure": "none",  # "copilot-output-seen" if an AI's labels for this repository were seen first (C8)
         "projects": [{"project": p, "service": Path(p).stem, "inScope": True, "bindings": [], "notes": ""} for p in projects],
         "guideAmbiguities": [],
     }
@@ -76,6 +77,8 @@ def cmd_new(repo: str) -> None:
 
 def problems(sheet: dict) -> list[str]:
     found = []
+    if sheet.get("aiExposure", "none") not in ("none", "copilot-output-seen"):
+        found.append('aiExposure must be "none" or "copilot-output-seen"')
     for project in sheet.get("projects", []):
         where = project.get("project", "?")
         if not project.get("inScope", True) and not project.get("notes"):
